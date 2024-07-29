@@ -44,3 +44,6 @@ yarn-error.log*
 
 # idea files
 .idea
+
+# google api key file
+nonstop-fencing-9e53d3f629cb

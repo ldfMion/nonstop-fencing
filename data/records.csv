@@ -1,0 +1,123 @@
+First name,Last name,Team,Weapon,Wins,Losses,University 
+Monica,Balakrishnan,Women,Epee,27,15,Duke
+Sarah,Lurye,Women,Epee,28,23,Duke
+Chloe,Beittel,Women,Epee,42,28,Duke
+Rachel,Kowalsky,Women,Epee,38,23,Duke
+Aretha,Gao,Women,Epee,5,9,Duke
+Vanessa,Lin,Women,Epee,23,17,Duke
+Katie,Lin,Women,Epee,2,2,Duke
+Christina,Ferrari,Women,Foil,37,16,Duke
+Rachel,Koo,Women,Foil,38,12,Duke
+Skylar,Knight,Women,Foil,24,14,Duke
+Sophia,Shen,Women,Foil,34,13,Duke
+Zizi,Newhard,Women,Foil,20,13,Duke
+Elisha,Tan,Women,Foil,10,1,Duke
+Charlotte,Koenig,Women,Foil,23,5,Duke
+Catherine,Flanagan,Women,Foil,2,1,Duke
+Lulu,Tang,Women,Foil,3,0,Duke
+Kavya,Menke,Women,Saber,21,12,Duke
+Kunling,Tong,Women,Saber,41,24,Duke
+Hava,Stone,Women,Saber,34,22,Duke
+Natalie,Olsen,Women,Saber,37,13,Duke
+Victoria,Gorman,Women,Saber,47,18,Duke
+Xavier,Ghazaleh,Men,Epee,8,12,Duke
+Allen,Marakov,Men,Epee,34,27,Duke
+Xander,Wilcox,Men,Epee,26,24,Duke
+Chandler,Wimmer,Men,Epee,14,20,Duke
+Kozmo,Rhyu,Men,Epee,20,30,Duke
+Ethan,Nguyen,Men,Epee,4,11,Duke
+David,Tierney,Men,Foil,27,29,Duke
+Cam,Evans,Men,Foil,10,12,Duke
+Dayaal,Singh,Men,Foil,32,34,Duke
+Noah,Nager,Men,Foil,17,16,Duke
+Tuna,Korkmaz,Men,Foil,6,15,Duke
+Ryan,Pelosky,Men,Foil,23,14,Duke
+Stephen,Kim,Men,Saber,45,24,Duke
+Justin,Morrill,Men,Saber,23,24,Duke
+Samir,Travers,Men,Saber,38,31,Duke
+Maxwell,Greenbaum,Men,Saber,22,24,Duke
+,Bauer,Men,Saber,15,6,Ohio State
+,Buergenthal,Men,Saber,9,4,Ohio State
+,Fioretto,Men,Saber,62,20,Ohio State
+,Haney,Men,Saber,24,13,Ohio State
+,Liu,Men,Saber,14,25,Ohio State
+,Rai,Men,Saber,26,20,Ohio State
+,Rightler,Men,Saber,45,23,Ohio State
+,Williams,Men,Saber,26,13,Ohio State
+,Ariza,Men,Foil,17,1,Ohio State
+,Ayupov,Men,Foil,26,19,Ohio State
+,Cervantes,Men,Foil,23,16,Ohio State
+,Cheng,Men,Foil,1,2,Ohio State
+,Freedman,Men,Foil,9,1,Ohio State
+,Huth,Men,Foil,20,13,Ohio State
+,Li,Men,Foil,28,26,Ohio State
+,Mion,Men,Foil,23,13,Ohio State
+,Ndiaye,Men,Foil,23,6,Ohio State
+,Prassana,Men,Foil,5,2,Ohio State
+,Upton,Men,Foil,8,2,Ohio State
+,Vogler,Men,Foil,31,24,Ohio State
+,Bulau,Men,Epee,6,8,Ohio State
+,Feinberg,Men,Epee,47,14,Ohio State
+,Kumar,Men,Epee,12,3,Ohio State
+,Kokenge,Men,Epee,12,3,Ohio State
+,Gibson,Men,Epee,24,20,Ohio State
+,Lavenstein,Men,Epee,9,4,Ohio State
+,Lee,Men,Epee,5,4,Ohio State
+,Rodney,Men,Epee,20,12,Ohio State
+,Shah,Men,Epee,22,9,Ohio State
+,Veltrup,Men,Epee,30,20,Ohio State
+,Weiss,Men,Epee,44,26,Ohio State
+,Aleke,Women,Saber,51,47,Ohio State
+,Arnipalli,Women,Saber,16,20,Ohio State
+,Larimer,Women,Saber,41,43,Ohio State
+,Perrier,Women,Saber,20,26,Ohio State
+,Wiggers,Women,Saber,30,23,Ohio State
+,Antal,Women,Foil,1,0,Ohio State
+,Brush,Women,Foil,6,3,Ohio State
+,Galavotti,Women,Foil,56,37,Ohio State
+,Guillen,Women,Foil,1,0,Ohio State
+,Heiser,Women,Foil,6,4,Ohio State
+,Lee,Women,Foil,39,24,Ohio State
+,Moradi,Women,Foil,22,24,Ohio State
+,Myroniuk,Women,Foil,68,24,Ohio State
+,Dyner,Women,Epee,36,28,Ohio State
+,Fan,Women,Epee,6,4,Ohio State
+,Feng,Women,Epee,2,4,Ohio State
+,Mazur,Women,Epee,55,21,Ohio State
+,Popa,Women,Epee,0,3,Ohio State
+,Santos,Women,Epee,5,3,Ohio State
+,Semikin,Women,Epee,30,29,Ohio State
+,Viveros,Women,Epee,19,15,Ohio State
+,Weiss,Women,Epee,17,16,Ohio State
+,Whittemore,Women,Epee,20,30,Ohio State
+,Zhou,Women,Epee,13,7,Ohio State
+Jared,Hammerstrom,Men,Saber,24,15,Stanford
+Max,Scherer,Men,Saber,11,28,Stanford
+Nash,Young,Men,Saber,15,24,Stanford
+Draper,Dayton,Men,Foil,2,7,Stanford
+Joshua,Kang,Men,Foil,5,21,Stanford
+Sanjay,Kasi,Men,Foil,19,19,Stanford
+Luke,Park,Men,Foil,14,24,Stanford
+Alexander,Jeon,Men,Foil,3,0,Stanford
+Alexander,Jeon,Men,Epee,15,18,Stanford
+Connor,Jeong,Men,Epee,15,18,Stanford
+Kai,Rayle,Men,Epee,23,10,Stanford
+Stanley,Zhou,Men,Epee,5,13,Stanford
+Casey,Chan,Women,Saber,17,10,Stanford
+Jeanette,Han,Women,Saber,8,16,Stanford
+Charlotte,He,Women,Saber,5,8,Stanford
+Shining,Xi,Women,Saber,7,8,Stanford
+Erika,Yong,Women,Saber,10,7,Stanford
+Joy,Yun,Women,Saber,24,3,Stanford
+Arianna,Cao,Women,Foil,9,3,Stanford
+Haley,Koo,Women,Foil,16,11,Stanford
+Crystal,Qian,Women,Foil,18,11,Stanford
+Sofia,Raso,Women,Foil,16,14,Stanford
+Ellen,Wang,Women,Foil,11,14,Stanford
+Lauren,McLane,Women,Epee,17,25,Stanford
+Meghana,Paturu,Women,Epee,1,1,Stanford
+Joelle,Warden,Women,Epee,0,38,Stanford
+Irene,Yeu,Women,Epee,23,16,Stanford
+Jeanette,Han,Women,Epee,0,3,Stanford
+Haley,Koo,Women,Epee,1,0,Stanford
+Joy,Yun,Women,Epee,0,1,Stanford
