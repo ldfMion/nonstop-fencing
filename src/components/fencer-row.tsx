@@ -13,10 +13,10 @@ export default function FencerRow({ fencer }: { fencer: FencerSummary }) {
         <div className="h-fit p-0">{fencer.fullName}</div>
       </div>
       <div className="flex flex-row gap-1">
-        <div className="rounded-md bg-green-400 px-[4px] py-[2px] font-semibold text-white">
+        <div className="flex h-[28px] w-[28px] items-center justify-center rounded-md bg-green-400 font-semibold leading-none text-white">
           {fencer.record.wins}
         </div>
-        <div className="rounded-md bg-red-400 px-[4px] py-[2px] font-semibold text-white">
+        <div className="flex h-[28px] w-[28px] items-center justify-center rounded-md bg-red-400 font-semibold leading-none text-white">
           {fencer.record.losses}
         </div>
       </div>
