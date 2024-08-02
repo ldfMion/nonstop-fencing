@@ -1,5 +1,5 @@
 import FencerSummary, {Team, Weapon} from '~/models/FencerSummary';
-import getValuesfromCsv from '../../helpers/getValuesFromCsv';
+import getRecordsFromCsv from '../../helpers/getRecordsFromCsv';
 
 export default async function getHomePageFencers(): Promise<{
     mens: {
@@ -13,7 +13,7 @@ export default async function getHomePageFencers(): Promise<{
         saber: FencerSummary[];
     };
 }> {
-    const data = await getValuesfromCsv();
+    const data = await getRecordsFromCsv();
     return {
         mens: {
             foil: getTopFive(
