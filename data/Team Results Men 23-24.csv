@@ -1,0 +1,540 @@
+Team A,Team A Overall,Team A Foil,Team A Epee,Team A Saber,Team B,Team B Overall,Team B Foil,Team B Epee,Team B Saber,Date,Host
+NYU,20,3,8,9,Lafayette,7,6,1,0,2024-02-25,Long Island University
+LIU,24,7,8,9,Hunter,3,2,1,0,2024-02-25,Long Island University
+LIU,15,5,3,7,Lafayette,12,4,6,2,2024-02-25,Long Island University
+NYU,27,9,9,9,Hunter,0,0,0,0,2024-02-25,Long Island University
+Lafayette,21,5,8,8,Hunter,6,4,1,1,2024-02-25,Long Island University
+NYU,22,9,8,5,Wagner,5,0,1,4,2024-02-25,Long Island University
+NYU,18,8,5,5,LIU,9,1,4,4,2024-02-25,Long Island University
+Wagner,14,6,3,5,Hunter,13,3,6,4,2024-02-25,Long Island University
+LIU,18,5,9,4,Wagner,9,4,0,5,2024-02-25,Long Island University
+Notre Dame,17,6,7,4,Duke,10,3,2,5,2024-02-25,Notre Dame
+North Carolina,15,3,6,6,Boston College,12,6,3,3,2024-02-25,Notre Dame
+North Carolina,17,6,5,6,Notre Dame,10,3,4,3,2024-02-25,Notre Dame
+Duke,17,6,6,5,Boston College,10,3,3,4,2024-02-25,Notre Dame
+North Carolina,19,6,6,7,Duke,8,3,3,2,2024-02-25,Notre Dame
+Notre Dame,20,6,7,7,Boston College,7,3,2,2,2024-02-25,Notre Dame
+Penn State,17,5,7,5,Johns Hopkins,10,4,2,4,2024-02-25,Temple
+Princeton,20,7,6,7,Stevens,7,2,3,2,2024-02-25,Temple
+Penn State,19,6,7,6,Penn,8,3,2,3,2024-02-25,Temple
+Princeton,18,5,7,6,Johns Hopkins,9,4,2,3,2024-02-25,Temple
+St Johns,17,6,8,3,Stevens,10,3,1,6,2024-02-25,Temple
+Princeton,16,4,6,6,Penn State,11,5,3,3,2024-02-25,Temple
+St Johns,14,5,5,4,Johns Hopkins,13,4,4,5,2024-02-25,Temple
+Penn,15,5,3,7,Johns Hopkins,12,4,6,2,2024-02-25,Temple
+Princeton,21,7,8,6,St Johns,6,2,1,3,2024-02-25,Temple
+Penn State,21,8,6,7,Stevens,6,1,3,2,2024-02-25,Temple
+Penn State,17,5,4,8,St Johns,10,4,5,1,2024-02-25,Temple
+Johns Hopkins,21,9,7,5,Stevens,6,0,2,4,2024-02-25,Temple
+Penn,19,7,6,6,Stevens,8,2,3,3,2024-02-25,Temple
+Cleveland State,23,9,6,8,Detroit Mercy,4,0,3,1,2024-02-24,Ohio State
+Wayne State,17,6,9,2,Lawrence,10,3,0,7,2024-02-24,Ohio State
+Ohio State,25,9,8,8,Detroit Mercy,2,0,1,1,2024-02-24,Ohio State
+Wayne State,14,4,6,4,Cleveland State,13,5,3,5,2024-02-24,Ohio State
+Ohio State,24,9,8,7,Lawrence,3,0,1,2,2024-02-24,Ohio State
+Wayne State,23,9,7,7,Detroit Mercy,4,0,2,2,2024-02-24,Ohio State
+Ohio State,23,9,7,7,Cleveland State,4,0,2,2,2024-02-24,Ohio State
+Lawrence,24,9,6,9,Detroit Mercy,3,0,3,0,2024-02-24,Ohio State
+Ohio State,21,7,6,8,Wayne State,6,2,3,1,2024-02-24,Ohio State
+Cleveland State,19,6,8,5,Lawrence,8,3,1,4,2024-02-24,Ohio State
+Haverford,24,8,9,7,Hunter,3,1,0,2,2024-02-18,Stevens Tech
+Johns Hopkins,27,9,9,9,Hunter,0,0,0,0,2024-02-18,Stevens Tech
+NJIT,16,6,5,5,Johns Hopkins,11,3,4,4,2024-02-18,Stevens Tech
+Stevens,16,2,6,8,Haverford,11,7,3,1,2024-02-18,Stevens Tech
+Johns Hopkins,27,9,9,9,Yeshiva,0,0,0,0,2024-02-18,Stevens Tech
+NJIT,18,5,5,8,Haverford,9,4,4,1,2024-02-18,Stevens Tech
+Haverford,24,9,9,6,Yeshiva,3,0,0,3,2024-02-18,Stevens Tech
+Columbia,15,7,6,2,NYU,12,2,3,7,2024-02-14,Columbia University
+Columbia,19,7,6,6,Sacred Heart,8,2,3,3,2024-02-14,Columbia University
+Columbia,15,5,4,6,Vassar,12,4,5,3,2024-02-14,Columbia University
+NYU,16,4,5,7,Vassar,11,5,4,2,2024-02-14,Columbia University
+NYU,14,4,5,5,Sacred Heart,13,5,4,4,2024-02-14,Columbia University
+Columbia,15,7,2,6,Harvard,12,2,7,3,2024-02-10,Columbia University
+Princeton,18,4,7,7,Penn,9,5,2,2,2024-02-10,Columbia University
+Harvard,15,6,5,4,Princeton,12,3,4,5,2024-02-10,Columbia University
+Penn,17,6,5,6,Yale,10,3,4,3,2024-02-10,Columbia University
+Columbia,16,5,7,4,Penn,11,4,2,5,2024-02-10,Columbia University
+Princeton,20,7,6,7,Yale,7,2,3,2,2024-02-10,Columbia University
+Columbia,19,8,8,3,Yale,8,1,1,6,2024-02-10,Columbia University
+Harvard,17,5,7,5,Penn,10,4,2,4,2024-02-10,Columbia University
+Harvard,16,7,6,3,Yale,11,2,3,6,2024-02-10,Columbia University
+Princeton,15,5,6,4,Columbia,12,4,3,5,2024-02-10,Columbia University
+Air Force,15,3,5,7,Brandeis,12,6,4,2,2024-02-10,Duke
+Johns Hopkins,15,7,6,2,Duke,12,2,3,7,2024-02-10,Duke
+Brandeis,14,5,5,4,Duke,13,4,4,5,2024-02-10,Duke
+Air Force,15,8,4,3,Johns Hopkins,12,1,5,6,2024-02-10,Duke
+Air Force,14,8,6,0,Duke,13,1,3,9,2024-02-10,Duke
+Brandeis,14,5,4,5,Johns Hopkins,13,4,5,4,2024-02-10,Duke
+NYU,19,9,1,9,LIU,8,0,8,0,2024-02-10,Univ North Carolina
+North Carolina,15,5,6,4,Boston College,12,4,3,5,2024-02-10,Univ North Carolina
+North Carolina,23,9,6,8,LIU,4,0,3,1,2024-02-10,Univ North Carolina
+North Carolina,15,5,6,4,NYU,12,4,3,5,2024-02-10,Univ North Carolina
+Boston College,14,8,3,3,NYU,13,1,6,6,2024-02-10,Univ North Carolina
+Boston College,23,8,7,8,LIU,4,1,2,1,2024-02-10,Univ North Carolina
+Stanford,24,9,6,9,Detroit Mercy,3,0,3,0,2024-02-04,Northwestern
+UC San Diego,20,9,2,9,Incarnate Word,7,0,7,0,2024-02-04,Northwestern
+Ohio State,22,9,6,7,Lawrence,5,0,3,2,2024-02-04,Northwestern
+Air Force,18,8,4,6,Wayne State,9,1,5,3,2024-02-04,Northwestern
+Incarnate Word,16,2,8,6,Lawrence,11,7,1,3,2024-02-04,Northwestern
+Air Force,24,9,8,7,Detroit Mercy,3,0,1,2,2024-02-04,Northwestern
+Ohio State,14,6,5,3,UC San Diego,13,3,4,6,2024-02-04,Northwestern
+Boston College,16,4,4,8,Stanford,11,5,5,1,2024-02-04,Northwestern
+UC San Diego,23,9,6,8,Detroit Mercy,4,0,3,1,2024-02-04,Northwestern
+Stanford,21,8,7,6,Lawrence,6,1,2,3,2024-02-04,Northwestern
+Boston College,14,4,3,7,Ohio State,13,5,6,2,2024-02-04,Northwestern
+Incarnate Word,13,2,6,5,Wayne State,12,7,3,2,2024-02-04,Northwestern
+Boston College,24,9,8,7,Detroit Mercy,3,0,1,2,2024-02-04,Northwestern
+Ohio State,22,9,7,6,Incarnate Word,5,0,2,3,2024-02-04,Northwestern
+Air Force,25,9,9,7,Lawrence,2,0,0,2,2024-02-04,Northwestern
+UC San Diego,19,8,4,7,Wayne State,8,1,5,2,2024-02-04,Northwestern
+Boston College,17,8,4,5,Incarnate Word,10,1,5,4,2024-02-04,Northwestern
+UC San Diego,25,9,8,8,Lawrence,2,0,1,1,2024-02-04,Northwestern
+Stanford,14,3,6,5,Air Force,13,6,3,4,2024-02-04,Northwestern
+Air Force,16,6,7,3,Boston College,11,3,2,6,2024-02-04,Northwestern
+NJIT,27,9,9,9,Yeshiva,0,0,0,0,2024-02-04,Stevens Tech
+Stevens,24,7,8,9,Hunter,3,2,1,0,2024-02-04,Stevens Tech
+NJIT,20,8,4,8,Stevens,7,1,5,1,2024-02-04,Stevens Tech
+Hunter,17,9,5,3,Yeshiva,10,0,4,6,2024-02-04,Stevens Tech
+NJIT,26,8,9,9,Hunter,1,1,0,0,2024-02-04,Stevens Tech
+Stevens,24,9,8,7,Yeshiva,3,0,1,2,2024-02-04,Stevens Tech
+Wagner,15,3,6,6,Vassar,12,6,3,3,2024-02-04,Wagner
+Columbia,18,8,6,4,Wagner,9,1,3,5,2024-02-04,Wagner
+Columbia,18,6,5,7,Lafayette,9,3,4,2,2024-02-04,Wagner
+Columbia,18,6,7,5,Drew,9,3,2,4,2024-02-04,Wagner
+Lafayette,14,5,7,2,Drew,13,4,2,7,2024-02-04,Wagner
+Wagner,14,1,4,9,Lafayette,13,8,5,0,2024-02-04,Wagner
+Wagner,14,0,7,7,Drew,13,9,2,2,2024-02-04,Wagner
+Boston College,14,3,3,8,UC San Diego,13,6,6,1,2024-02-03,Northwestern
+Air Force,19,7,5,7,Cleveland State,8,2,4,2,2024-02-03,Northwestern
+Air Force,24,9,7,8,Detroit Mercy,3,0,2,1,2024-02-03,Northwestern
+Boston College,17,9,4,4,Cleveland State,10,0,5,5,2024-02-03,Northwestern
+UC San Diego,15,7,2,6,Wayne State,12,2,7,3,2024-02-03,Northwestern
+Boston College,17,5,6,6,Notre Dame,10,4,3,3,2024-02-03,Northwestern
+Air Force,17,8,3,6,Wayne State,10,1,6,3,2024-02-03,Northwestern
+UC San Diego,24,9,9,6,Lawrence,3,0,0,3,2024-02-03,Northwestern
+Stanford,18,9,3,6,Cleveland State,9,0,6,3,2024-02-03,Northwestern
+Incarnate Word,19,6,7,6,Detroit Mercy,5,0,2,3,2024-02-03,Northwestern
+Boston College,17,5,4,8,Wayne State,10,4,5,1,2024-02-03,Northwestern
+Notre Dame,24,8,7,9,Lawrence,3,1,2,0,2024-02-03,Northwestern
+Ohio State,16,6,5,5,Stanford,11,3,4,4,2024-02-03,Northwestern
+Incarnate Word,16,3,4,9,Cleveland State,11,6,5,0,2024-02-03,Northwestern
+Ohio State,22,8,7,7,Wayne State,5,1,2,2,2024-02-03,Northwestern
+Notre Dame,15,5,4,6,UC San Diego,12,4,5,3,2024-02-03,Northwestern
+Air Force,17,7,4,6,Lawrence,10,2,5,3,2024-02-03,Northwestern
+Air Force,15,7,4,4,Lawrence,12,2,5,5,2024-02-03,Northwestern
+Ohio State,24,9,7,8,Detroit Mercy,3,0,2,1,2024-02-03,Northwestern
+Boston College,19,9,3,7,Lawrence,8,0,6,2,2024-02-03,Northwestern
+Stanford,18,6,5,7,Wayne State,9,3,4,2,2024-02-03,Northwestern
+UC San Diego,21,8,6,7,Cleveland State,6,1,3,2,2024-02-03,Northwestern
+Notre Dame,22,9,5,8,Incarnate Word,5,0,4,1,2024-02-03,Northwestern
+UC San Diego,24,9,8,7,Detroit Mercy,3,0,1,2,2024-02-03,Northwestern
+Wayne State,15,7,5,3,Incarnate Word,12,2,4,6,2024-02-03,Northwestern
+Notre Dame,17,7,5,5,Stanford,10,2,4,4,2024-02-03,Northwestern
+Air Force,15,8,3,4,Incarnate Word,12,1,6,5,2024-02-03,Northwestern
+Penn,16,5,4,7,St Johns,11,4,5,2,2024-01-28,Long Island University
+Princeton,22,9,6,7,LIU,5,0,3,2,2024-01-28,Long Island University
+Princeton,18,6,5,7,Columbia,9,3,4,2,2024-01-28,Long Island University
+Penn,22,8,8,6,LIU,5,1,1,3,2024-01-28,Long Island University
+Princeton,18,5,6,7,Penn,9,4,3,2,2024-01-28,Long Island University
+St Johns,15,3,6,6,Columbia,12,6,3,3,2024-01-28,Long Island University
+Columbia,22,9,7,6,LIU,5,0,2,3,2024-01-28,Long Island University
+Princeton,18,6,7,5,St Johns,9,3,2,4,2024-01-28,Long Island University
+St Johns,21,9,6,6,LIU,6,0,3,3,2024-01-28,Long Island University
+NYU,14,4,8,2,Harvard,13,5,1,7,2024-01-28,Harvard
+Yale,19,7,4,8,Sacred Heart,8,2,5,1,2024-01-27,Yale
+Yale,19,4,7,8,Vassar,8,5,2,1,2024-01-27,Yale
+Wayne State,23,9,8,6,Detroit Mercy,4,0,1,3,2024-01-27,Notre Dame
+Cleveland State,16,5,7,4,Lawrence,11,4,2,5,2024-01-27,Notre Dame
+Notre Dame,18,8,3,7,Wayne State,9,1,6,2,2024-01-27,Notre Dame
+Wayne State,14,5,6,3,Cleveland State,13,4,3,6,2024-01-27,Notre Dame
+Cleveland State,23,9,8,6,Detroit Mercy,4,0,1,3,2024-01-27,Notre Dame
+Notre Dame,24,8,8,8,Lawrence,3,1,1,1,2024-01-27,Notre Dame
+Notre Dame,26,9,9,8,Detroit Mercy,1,0,0,1,2024-01-27,Notre Dame
+Wayne State,15,7,6,2,Lawrence,11,2,3,6,2024-01-27,Notre Dame
+Lawrence,23,9,7,7,Detroit Mercy,4,0,2,2,2024-01-27,Notre Dame
+Notre Dame,22,9,5,8,Cleveland State,5,0,4,1,2024-01-27,Notre Dame
+Boston College,16,5,5,6,Stevens,11,4,4,3,2024-01-27,Brandeis
+Brandeis,14,7,5,2,NJIT,13,2,4,7,2024-01-27,Brandeis
+Duke,18,6,4,8,Haverford,9,3,5,1,2024-01-27,Brandeis
+MIT,27,9,9,9,Hunter,0,0,0,0,2024-01-27,Brandeis
+Brandeis,14,7,2,5,Stevens,13,2,7,4,2024-01-27,Brandeis
+NYU,14,3,3,8,MIT,13,6,6,1,2024-01-27,Brandeis
+Duke,16,7,4,5,Boston College,11,2,5,4,2024-01-27,Brandeis
+NYU,18,9,4,5,Brandeis,9,0,5,4,2024-01-27,Brandeis
+MIT,19,8,5,6,Haverford,8,1,4,3,2024-01-27,Brandeis
+Boston College,17,6,3,8,Haverford,10,3,6,1,2024-01-27,Brandeis
+Brandeis,26,9,8,9,Hunter,1,0,1,0,2024-01-27,Brandeis
+NYU,14,5,3,6,Boston College,13,4,6,3,2024-01-27,Brandeis
+Brandeis,16,7,4,5,Duke,11,2,5,4,2024-01-27,Brandeis
+NJIT,15,3,4,8,MIT,12,6,5,1,2024-01-27,Brandeis
+Stevens,25,8,8,9,Hunter,2,1,1,0,2024-01-27,Brandeis
+Boston College,26,8,9,9,Hunter,1,1,0,0,2024-01-27,Brandeis
+Brandeis,19,6,6,7,Haverford,8,3,3,2,2024-01-27,Brandeis
+Duke,19,5,8,6,NYU,8,4,1,3,2024-01-27,Brandeis
+NJIT,14,5,4,5,Boston College,13,4,5,4,2024-01-27,Brandeis
+MIT,14,4,5,5,Stevens,13,5,4,4,2024-01-27,Brandeis
+Harvard,16,6,5,5,Duke,11,3,4,4,2024-01-26,Harvard
+Princeton,24,8,9,7,Wagner,3,1,0,2,2024-01-24,Princeton
+Princeton,23,8,7,8,Drew,4,1,2,1,2024-01-21,Penn
+Penn State,16,7,4,5,NJIT,11,2,5,4,2024-01-21,Penn
+Ohio State,15,2,8,5,NYU,12,7,1,4,2024-01-21,Penn
+Yale,14,6,4,4,Notre Dame,13,3,5,5,2024-01-21,Penn
+Penn,21,6,7,8,Drew,6,3,2,1,2024-01-21,Penn
+NJIT,14,3,6,5,NYU,13,6,3,4,2024-01-21,Penn
+Ohio State,15,4,5,6,Yale,12,5,4,3,2024-01-21,Penn
+Notre Dame,15,4,5,6,Princeton,12,5,4,3,2024-01-21,Penn
+Penn State,16,3,8,5,Duke,11,6,1,4,2024-01-21,Penn
+Ohio State,15,3,7,5,Penn,12,6,2,4,2024-01-21,Penn
+Columbia,20,8,5,7,NJIT,7,1,4,2,2024-01-21,Penn
+Yale,14,4,5,5,Penn State,13,5,4,4,2024-01-21,Penn
+Princeton,20,5,8,7,Duke,7,4,1,2,2024-01-21,Penn
+Notre Dame,22,7,7,8,St Johns,5,2,2,1,2024-01-21,Penn
+Notre Dame,14,3,5,6,Penn,13,6,4,3,2024-01-21,Penn
+Penn State,20,7,5,8,Drew,7,2,4,1,2024-01-21,Penn
+Columbia,15,7,3,5,NYU,12,2,6,4,2024-01-21,Penn
+Ohio State,14,3,6,5,St Johns,13,6,3,4,2024-01-21,Penn
+Yale,17,7,6,4,Duke,10,2,3,5,2024-01-21,Penn
+Penn,16,4,6,6,St Johns,11,5,3,3,2024-01-21,Penn
+Princeton,16,4,9,3,Ohio State,11,5,0,6,2024-01-21,Penn
+Columbia,14,3,4,7,Notre Dame,13,6,5,2,2024-01-21,Penn
+Duke,20,8,4,8,Drew,7,1,5,1,2024-01-21,Penn
+Columbia,22,7,6,9,Drew,5,2,3,0,2024-01-21,Penn
+Penn State,15,6,3,6,Princeton,12,3,6,3,2024-01-21,Penn
+Yale,17,4,7,6,NJIT,10,5,2,3,2024-01-21,Penn
+St Johns,16,4,8,4,NYU,11,5,1,5,2024-01-21,Penn
+Princeton,15,4,6,5,Yale,12,5,3,4,2024-01-21,Penn
+NYU,19,7,4,8,Drew,8,2,5,1,2024-01-21,Penn
+Vassar,19,7,4,8,Hunter,8,2,5,1,2024-01-21,Vassar College
+Haverford,14,6,5,3,Wagner,13,3,4,6,2024-01-20,Penn
+North Carolina,17,6,5,6,Sacred Heart,10,3,4,3,2024-01-20,Penn
+Duke,17,5,7,5,NJIT,10,4,2,4,2024-01-20,Penn
+Johns Hopkins,24,8,8,8,Lafayette,3,1,1,1,2024-01-20,Penn
+Penn,15,8,3,4,UC San Diego,12,1,6,5,2024-01-20,Penn
+Duke,14,5,3,6,Johns Hopkins,13,4,6,3,2024-01-20,Penn
+NYU,19,6,6,7,North Carolina,8,3,3,2,2024-01-20,Penn
+Penn,19,7,6,6,Wagner,8,2,3,3,2024-01-20,Penn
+NJIT,19,4,7,8,Haverford,8,5,2,1,2024-01-20,Penn
+Duke,14,5,4,5,Penn,13,4,5,4,2024-01-20,Penn
+North Carolina,14,7,4,3,NJIT,13,2,5,6,2024-01-20,Penn
+NYU,14,4,5,5,UC San Diego,13,5,4,4,2024-01-20,Penn
+Johns Hopkins,19,9,7,3,Wagner,8,0,2,6,2024-01-20,Penn
+Sacred Heart,17,5,6,6,Lafayette,8,4,3,1,2024-01-20,Penn
+Penn,15,5,4,6,Sacred Heart,12,4,5,3,2024-01-20,Penn
+UC San Diego,23,7,7,9,Lafayette,4,2,2,0,2024-01-20,Penn
+NYU,19,7,5,7,Duke,8,2,4,2,2024-01-20,Penn
+North Carolina,23,6,8,9,Haverford,4,3,1,0,2024-01-20,Penn
+NYU,17,4,5,8,Penn,10,5,4,1,2024-01-20,Penn
+North Carolina,22,7,6,9,Lafayette,5,2,3,0,2024-01-20,Penn
+Johns Hopkins,17,7,5,5,UC San Diego,10,2,4,4,2024-01-20,Penn
+Duke,22,9,8,5,Wagner,5,0,1,4,2024-01-20,Penn
+Penn,14,6,4,4,NJIT,13,3,5,5,2024-01-20,Penn
+UC San Diego,18,7,5,6,Sacred Heart,9,2,4,3,2024-01-20,Penn
+NYU,17,7,5,5,Johns Hopkins,10,2,4,4,2024-01-20,Penn
+Haverford,18,6,6,6,Lafayette,9,3,3,3,2024-01-20,Penn
+Penn,16,4,5,7,Haverford,11,5,4,2,2024-01-20,Penn
+NJIT,21,6,7,8,Lafayette,6,3,2,1,2024-01-20,Penn
+UC San Diego,19,7,7,5,Wagner,8,2,2,4,2024-01-20,Penn
+Duke,20,7,6,7,Sacred Heart,7,2,3,2,2024-01-20,Penn
+Columbia,15,4,5,6,St Johns,12,5,4,3,2024-01-20,St Johns
+Notre Dame,17,7,5,5,Ohio State,10,2,4,4,2024-01-20,St Johns
+Harvard,14,3,7,4,Penn State,13,6,2,5,2024-01-20,St Johns
+Ohio State,16,4,5,7,St Johns,11,5,4,2,2024-01-20,St Johns
+Notre Dame,16,4,5,7,Penn State,11,5,4,2,2024-01-20,St Johns
+Columbia,16,6,3,7,Harvard,11,3,6,2,2024-01-20,St Johns
+St Johns,14,4,5,5,Penn State,13,5,4,4,2024-01-20,St Johns
+Notre Dame,17,5,5,7,Harvard,10,4,4,2,2024-01-20,St Johns
+Columbia,19,8,3,8,Ohio State,8,1,6,1,2024-01-20,St Johns
+Notre Dame,16,6,4,6,St Johns,11,3,5,3,2024-01-20,St Johns
+Columbia,19,4,8,7,Penn State,8,5,1,2,2024-01-20,St Johns
+Ohio State,14,6,4,4,Harvard,13,3,5,5,2024-01-20,St Johns
+Harvard,16,7,6,3,St Johns,11,2,3,6,2024-01-20,St Johns
+Ohio State,14,3,5,6,Penn State,13,6,4,3,2024-01-20,St Johns
+Columbia,15,6,4,5,Notre Dame,12,3,5,4,2024-01-20,St Johns
+Princeton,18,6,8,4,UC San Diego,9,3,1,5,2024-01-19,Temple
+Princeton,16,5,7,4,North Carolina,11,4,2,5,2024-01-19,Temple
+UC San Diego,15,6,5,4,North Carolina,12,3,4,5,2024-01-19,Temple
+Wayne State,19,9,7,3,Detroit Mercy,8,0,2,6,2024-01-14,Detroit Mercy
+Penn,18,6,7,5,North Carolina,9,3,2,4,2024-01-14,Penn State
+Yale,14,2,7,5,Penn State,13,7,2,4,2024-01-14,Penn State
+Penn State,23,8,8,7,Haverford,4,1,1,2,2024-01-14,Penn State
+Yale,16,6,5,5,North Carolina,11,3,4,4,2024-01-14,Penn State
+Columbia,20,7,7,6,Penn,7,2,2,3,2024-01-14,Penn State
+Penn State,16,8,3,5,North Carolina,11,1,6,4,2024-01-14,Penn State
+Yale,20,5,6,9,Penn,7,4,3,0,2024-01-14,Penn State
+Columbia,22,7,8,7,Haverford,5,2,1,2,2024-01-14,Penn State
+Penn State,14,6,5,3,Columbia,13,3,4,6,2024-01-14,Penn State
+North Carolina,18,6,5,7,Haverford,9,3,4,2,2024-01-14,Penn State
+Penn State,19,7,6,6,Penn,8,2,3,3,2024-01-14,Penn State
+Columbia,16,7,4,5,Yale,11,2,5,4,2024-01-14,Penn State
+Yale,15,5,3,7,Haverford,12,4,6,2,2024-01-14,Penn State
+Columbia,20,8,4,8,North Carolina,7,1,5,1,2024-01-14,Penn State
+Princeton,17,5,7,5,Penn State,10,4,2,4,2023-12-03,Sacred Heart
+NYU,20,8,5,7,Vassar,7,1,4,2,2023-12-03,Sacred Heart
+Princeton,15,5,8,2,NYU,12,4,1,7,2023-12-03,Sacred Heart
+Penn State,19,6,7,6,NJIT,8,3,2,3,2023-12-03,Sacred Heart
+Sacred Heart,17,7,5,5,Vassar,10,2,4,4,2023-12-03,Sacred Heart
+Penn State,17,6,8,3,NYU,10,3,1,6,2023-12-03,Sacred Heart
+Sacred Heart,15,4,6,5,NJIT,12,5,3,4,2023-12-03,Sacred Heart
+Princeton,22,7,8,7,Vassar,5,2,1,2,2023-12-03,Sacred Heart
+Princeton,22,6,8,8,Sacred Heart,5,3,1,1,2023-12-03,Sacred Heart
+NJIT,17,5,6,6,Vassar,10,4,3,3,2023-12-03,Sacred Heart
+Princeton,24,8,9,7,NJIT,3,1,0,2,2023-12-03,Sacred Heart
+NYU,19,6,6,7,Sacred Heart,8,3,3,2,2023-12-03,Sacred Heart
+Penn State,23,8,7,8,Vassar,4,1,2,1,2023-12-03,Sacred Heart
+NYU,17,3,6,8,NJIT,10,6,3,1,2023-12-03,Sacred Heart
+Penn State,22,8,7,7,Sacred Heart,5,1,2,2,2023-12-03,Sacred Heart
+Brandeis,14,6,3,5,Drew,13,3,6,4,2023-12-03,Brandeis
+MIT,18,9,5,4,Lawrence,9,0,4,5,2023-12-03,Brandeis
+Yale,27,9,9,9,Yeshiva,0,0,0,0,2023-12-03,Brandeis
+Boston College,16,7,2,7,Drew,11,2,7,2,2023-12-03,Brandeis
+Brandeis,16,7,5,4,Lawrence,11,2,4,5,2023-12-03,Brandeis
+St Johns,16,4,8,4,MIT,11,5,1,5,2023-12-03,Brandeis
+St Johns,16,2,7,7,Brandeis,11,7,2,2,2023-12-03,Brandeis
+Drew,14,7,3,4,LIU,13,2,6,5,2023-12-03,Brandeis
+Yale,22,8,5,9,MIT,5,1,4,0,2023-12-03,Brandeis
+Boston College,26,9,9,8,Lawrence,1,0,0,1,2023-12-03,Brandeis
+Brandeis,26,9,8,9,Yeshiva,1,0,1,0,2023-12-03,Brandeis
+Yale,15,4,3,8,St Johns,12,5,6,1,2023-12-03,Brandeis
+Boston College,19,8,5,6,LIU,8,1,4,3,2023-12-03,Brandeis
+Yale,20,8,6,6,Lawrence,7,1,3,3,2023-12-03,Brandeis
+St Johns,26,9,8,9,Yeshiva,1,0,1,0,2023-12-03,Brandeis
+Yale,16,6,5,5,Brandeis,11,3,4,4,2023-12-03,Brandeis
+MIT,25,9,9,7,Yeshiva,2,0,0,2,2023-12-03,Brandeis
+Yale,15,4,7,4,Boston College,12,5,2,5,2023-12-03,Brandeis
+Drew,18,3,8,7,MIT,9,6,1,2,2023-12-03,Brandeis
+St Johns,21,9,7,5,LIU,6,0,2,4,2023-12-03,Brandeis
+Boston College,16,7,2,7,St Johns,11,2,7,2,2023-12-03,Brandeis
+Brandeis,22,9,6,7,LIU,5,0,3,2,2023-12-03,Brandeis
+Drew,18,8,7,3,Lawrence,9,1,2,6,2023-12-03,Brandeis
+North Carolina,17,5,7,5,Air Force,10,4,2,4,2023-11-19,Ohio State
+Duke,17,6,5,6,Stanford,10,3,4,3,2023-11-19,Ohio State
+Princeton,19,8,5,6,Ohio State,8,1,4,3,2023-11-19,Ohio State
+Duke,20,8,5,7,Cleveland State,7,1,4,2,2023-11-19,Ohio State
+North Carolina,14,7,4,3,Stanford,13,2,5,6,2023-11-19,Ohio State
+Penn,15,6,6,3,Notre Dame,12,3,3,6,2023-11-19,Ohio State
+Ohio State,14,6,3,5,Air Force,13,3,6,4,2023-11-19,Ohio State
+North Carolina,20,7,5,8,Cleveland State,7,2,4,1,2023-11-19,Ohio State
+Notre Dame,16,4,7,5,Princeton,11,5,2,4,2023-11-19,Ohio State
+Ohio State,18,6,8,4,Duke,9,3,1,5,2023-11-19,Ohio State
+Penn,16,8,3,5,Stanford,11,1,6,4,2023-11-19,Ohio State
+Notre Dame,21,7,7,7,Air Force,6,2,2,2,2023-11-19,Ohio State
+Ohio State,14,3,6,5,Penn,13,6,3,4,2023-11-19,Ohio State
+Princeton,15,5,4,6,Duke,12,4,5,3,2023-11-19,Ohio State
+Stanford,23,8,8,7,Cleveland State,4,1,1,2,2023-11-19,Ohio State
+Notre Dame,16,5,4,7,Ohio State,11,4,5,2,2023-11-19,Ohio State
+Princeton,18,7,5,6,North Carolina,9,2,4,3,2023-11-19,Ohio State
+Penn,16,5,5,6,Air Force,11,4,4,3,2023-11-19,Ohio State
+Notre Dame,18,6,5,7,Duke,9,3,4,2,2023-11-19,Ohio State
+Ohio State,21,9,5,7,Cleveland State,6,0,4,2,2023-11-19,Ohio State
+Princeton,16,5,6,5,Air Force,11,4,3,4,2023-11-19,Ohio State
+Air Force,22,8,6,8,Cleveland State,5,1,3,1,2023-11-19,Ohio State
+MIT,19,8,7,4,Vassar,8,1,2,5,2023-11-19,Boston College
+Boston College,17,6,8,3,Brandeis,10,3,1,6,2023-11-19,Boston College
+MIT,15,9,2,4,Wagner,12,0,7,5,2023-11-19,Boston College
+MIT,15,6,5,4,Boston College,12,3,4,5,2023-11-19,Boston College
+Sacred Heart,15,9,4,2,Wagner,12,0,5,7,2023-11-19,Boston College
+Boston College,19,3,7,9,Vassar,8,6,2,0,2023-11-19,Boston College
+Sacred Heart,16,2,8,6,Brandeis,11,7,1,3,2023-11-19,Boston College
+Boston College,20,9,3,8,Wagner,7,0,6,1,2023-11-19,Boston College
+Brandeis,14,0,6,8,Vassar,13,9,3,1,2023-11-19,Boston College
+MIT,15,6,4,5,Sacred Heart,12,3,5,4,2023-11-19,Boston College
+Brandeis,17,9,2,6,Wagner,10,0,7,3,2023-11-19,Boston College
+Sacred Heart,16,5,5,6,Vassar,11,4,4,3,2023-11-19,Boston College
+MIT,17,6,8,3,Brandeis,10,3,1,6,2023-11-19,Boston College
+Vassar,14,9,2,3,Wagner,13,0,7,6,2023-11-19,Boston College
+Boston College,21,9,7,5,Sacred Heart,6,0,2,4,2023-11-19,Boston College
+Johns Hopkins,15,5,4,6,NJIT,12,4,5,3,2023-11-18,Columbia University
+Johns Hopkins,21,7,9,5,Stevens,6,2,0,4,2023-11-18,Columbia University
+Columbia,21,8,6,7,Stevens,6,1,3,2,2023-11-18,Columbia University
+Columbia,21,9,5,7,NJIT,6,0,4,2,2023-11-18,Columbia University
+Columbia,17,6,4,7,Johns Hopkins,10,3,5,2,2023-11-18,Columbia University
+Boston College,18,8,5,5,Brandeis,9,1,4,4,2023-11-15,Brandeis
+Boston College,14,3,4,7,MIT,13,6,5,2,2023-11-15,Brandeis
+Harvard,14,5,7,2,Brandeis,13,4,2,7,2023-11-15,Brandeis
+MIT,18,8,5,5,Brandeis,9,1,4,4,2023-11-15,Brandeis
+Harvard,17,9,5,3,Boston College,10,0,4,6,2023-11-15,Brandeis
+Harvard,17,6,5,6,MIT,10,3,4,3,2023-11-15,Brandeis
+Johns Hopkins,17,5,5,7,Sacred Heart,10,4,4,2,2023-11-12,Vassar College
+Yale,19,4,8,7,Vassar,8,5,1,2,2023-11-12,Vassar College
+Drew,15,7,5,3,Wagner,12,2,4,6,2023-11-12,Vassar College
+Haverford,23,8,7,8,Hunter,4,1,2,1,2023-11-12,Vassar College
+Johns Hopkins,15,3,6,6,Drew,12,6,3,3,2023-11-12,Vassar College
+Vassar,25,8,8,9,Hunter,2,1,1,0,2023-11-12,Vassar College
+Sacred Heart,26,8,9,9,Yeshiva,1,1,0,0,2023-11-12,Vassar College
+Stevens,17,5,6,6,Drew,10,4,3,3,2023-11-12,Vassar College
+Yale,17,6,5,6,Wagner,10,3,4,3,2023-11-12,Vassar College
+Johns Hopkins,22,8,7,7,Wagner,5,1,2,2,2023-11-12,Vassar College
+Yale,18,4,7,7,Sacred Heart,9,5,2,2,2023-11-12,Vassar College
+Drew,25,8,9,8,Yeshiva,2,1,0,1,2023-11-12,Vassar College
+Vassar,15,7,4,4,Stevens,12,2,5,5,2023-11-12,Vassar College
+Haverford,14,3,6,5,Vassar,13,6,3,4,2023-11-12,Vassar College
+Johns Hopkins,22,9,4,9,Drew,5,0,5,0,2023-11-12,Vassar College
+Sacred Heart,18,8,5,5,Wagner,9,1,4,4,2023-11-12,Vassar College
+Yale,18,4,5,9,Lafayette,9,5,4,0,2023-11-12,Vassar College
+Yeshiva,18,5,4,9,Hunter,9,4,5,0,2023-11-12,Vassar College
+Yale,18,6,4,8,Stevens,9,3,5,1,2023-11-12,Vassar College
+Haverford,18,8,6,4,Wagner,9,1,3,5,2023-11-12,Vassar College
+Vassar,15,5,3,7,Lafayette,12,4,6,2,2023-11-12,Vassar College
+Sacred Heart,26,8,9,9,Hunter,1,1,0,0,2023-11-12,Vassar College
+Vassar,23,8,6,9,Yeshiva,4,1,3,0,2023-11-12,Vassar College
+Yale,19,5,5,9,Johns Hopkins,8,4,4,0,2023-11-12,Vassar College
+Sacred Heart,15,8,4,3,Stevens,12,1,5,6,2023-11-12,Vassar College
+Haverford,14,4,4,6,Drew,13,5,5,3,2023-11-12,Vassar College
+Yale,15,5,4,6,Haverford,12,4,5,3,2023-11-12,Vassar College
+Johns Hopkins,20,4,8,8,Vassar,7,5,1,1,2023-11-12,Vassar College
+Wagner,15,2,5,8,Lafayette,12,7,4,1,2023-11-12,Vassar College
+Stevens,26,8,9,9,Yeshiva,1,1,0,0,2023-11-12,Vassar College
+Sacred Heart,18,5,6,7,Drew,9,4,3,2,2023-11-12,Vassar College
+Drew,27,9,9,9,Hunter,0,0,0,0,2023-11-12,Vassar College
+Wagner,16,5,6,5,Stevens,11,4,3,4,2023-11-12,Vassar College
+Sacred Heart,16,3,6,7,Haverford,11,6,3,2,2023-11-12,Vassar College
+Yale,24,6,9,9,Hunter,3,3,0,0,2023-11-12,Vassar College
+Drew,14,4,6,4,Vassar,13,5,3,5,2023-11-12,Vassar College
+Harvard,22,7,8,7,Air Force,5,2,1,2,2023-11-05,US Air Force Academy
+Brandeis,19,5,6,8,North Carolina,8,4,3,1,2023-11-05,US Air Force Academy
+Ohio State,19,7,6,6,Stanford,8,2,3,3,2023-11-05,US Air Force Academy
+UC San Diego,22,9,5,8,Incarnate Word,5,0,4,1,2023-11-05,US Air Force Academy
+Ohio State,20,5,6,9,Air Force,7,4,3,0,2023-11-05,US Air Force Academy
+Harvard,20,8,7,5,North Carolina,7,1,2,4,2023-11-05,US Air Force Academy
+Stanford,17,6,5,6,Incarnate Word,10,3,4,3,2023-11-05,US Air Force Academy
+UC San Diego,14,4,7,3,Brandeis,13,5,2,6,2023-11-05,US Air Force Academy
+Air Force,22,7,7,8,Columbia,5,2,2,1,2023-11-05,US Air Force Academy
+Brandeis,16,7,3,6,Incarnate Word,11,2,6,3,2023-11-05,US Air Force Academy
+Stanford,15,6,5,4,UC San Diego,12,3,4,5,2023-11-05,US Air Force Academy
+Ohio State,19,7,6,6,North Carolina,8,2,3,3,2023-11-05,US Air Force Academy
+UC San Diego,21,6,6,9,Air Force,6,3,3,0,2023-11-05,US Air Force Academy
+Columbia,17,5,7,5,Brandeis,10,4,2,4,2023-11-05,US Air Force Academy
+North Carolina,20,8,5,7,Incarnate Word,7,1,4,2,2023-11-05,US Air Force Academy
+Stanford,16,6,6,4,Air Force,11,3,3,5,2023-11-05,US Air Force Academy
+Drew,25,7,9,9,Yeshiva,2,2,0,0,2023-11-05,Drew
+Lafayette,14,8,4,2,LIU,13,1,5,7,2023-11-05,Drew
+Cleveland State,20,5,7,8,Yeshiva,7,4,2,1,2023-11-05,Drew
+Drew,20,8,5,7,LIU,7,1,4,2,2023-11-05,Drew
+Wagner,15,4,5,6,Cleveland State,11,4,4,3,2023-11-05,Drew
+LIU,22,6,8,8,Yeshiva,5,3,1,1,2023-11-05,Drew
+Lafayette,15,9,5,1,Wagner,12,0,4,8,2023-11-05,Drew
+Cleveland State,14,5,5,4,LIU,13,4,4,5,2023-11-05,Drew
+Lafayette,15,7,4,4,Cleveland State,12,2,5,5,2023-11-05,Drew
+Drew,19,8,7,4,Wagner,8,1,2,5,2023-11-05,Drew
+Wagner,21,6,6,9,Yeshiva,6,3,3,0,2023-11-05,Drew
+Drew,15,2,4,9,Lafayette,12,7,5,0,2023-11-05,Drew
+Cleveland State,14,2,7,5,Drew,12,6,2,4,2023-11-05,Drew
+Lafayette,24,9,7,8,Yeshiva,3,0,2,1,2023-11-05,Drew
+Wagner,16,6,4,6,LIU,11,3,5,3,2023-11-05,Drew
+Air Force,18,8,5,5,Incarnate Word,9,1,4,4,2023-11-04,US Air Force Academy
+Ohio State,18,4,8,6,Harvard,9,5,1,3,2023-11-04,US Air Force Academy
+Notre Dame,25,9,8,8,Stanford,2,0,1,1,2023-11-04,US Air Force Academy
+UC San Diego,19,8,5,6,North Carolina,8,1,4,3,2023-11-04,US Air Force Academy
+Air Force,17,8,7,2,Brandeis,10,1,2,7,2023-11-04,US Air Force Academy
+Columbia,21,6,7,8,North Carolina,6,3,2,1,2023-11-04,US Air Force Academy
+Notre Dame,17,6,5,6,UC San Diego,10,3,4,3,2023-11-04,US Air Force Academy
+Ohio State,20,9,5,6,Incarnate Word,7,0,4,3,2023-11-04,US Air Force Academy
+North Carolina,16,4,4,8,Air Force,11,5,5,1,2023-11-04,US Air Force Academy
+Notre Dame,16,5,8,3,Brandeis,11,4,1,6,2023-11-04,US Air Force Academy
+Columbia,18,7,3,8,Stanford,9,2,6,1,2023-11-04,US Air Force Academy
+Harvard,22,8,5,9,Incarnate Word,5,1,4,0,2023-11-04,US Air Force Academy
+Columbia,17,5,6,6,Ohio State,10,4,3,3,2023-11-04,US Air Force Academy
+North Carolina,17,4,6,7,Stanford,10,5,3,2,2023-11-04,US Air Force Academy
+Notre Dame,23,5,9,9,Air Force,4,4,0,0,2023-11-04,US Air Force Academy
+Brandeis,15,5,5,5,Stanford,12,4,4,4,2023-11-04,US Air Force Academy
+Columbia,16,6,4,6,UC San Diego,11,3,5,3,2023-11-04,US Air Force Academy
+Columbia,15,4,4,7,Air Force,12,5,5,2,2023-11-04,US Air Force Academy
+Ohio State,20,7,7,6,Brandeis,7,2,2,3,2023-11-04,US Air Force Academy
+Harvard,17,7,5,5,UC San Diego,10,2,4,4,2023-11-04,US Air Force Academy
+Notre Dame,21,8,5,8,Incarnate Word,6,1,4,1,2023-11-04,US Air Force Academy
+Columbia,24,9,6,9,Incarnate Word,3,0,3,0,2023-11-04,US Air Force Academy
+Harvard,19,7,7,5,Stanford,8,2,2,4,2023-11-04,US Air Force Academy
+Notre Dame,20,6,8,6,North Carolina,7,3,1,3,2023-11-04,US Air Force Academy
+Ohio State,18,6,5,7,UC San Diego,9,3,4,2,2023-11-04,US Air Force Academy
+Notre Dame,20,7,7,6,Harvard,7,2,2,3,2023-11-04,US Air Force Academy
+Drew,18,5,8,5,Vassar,9,4,1,4,2023-10-29,Drew
+Stevens,14,2,5,7,Lafayette,13,7,4,2,2023-10-29,Drew
+Stevens,24,7,8,9,Yeshiva,3,2,1,0,2023-10-29,Drew
+NJIT,17,4,4,9,Lafayette,10,5,5,0,2023-10-29,Drew
+Drew,17,7,6,4,Lafayette,10,2,3,5,2023-10-29,Drew
+NJIT,27,9,9,9,Yeshiva,0,0,0,0,2023-10-29,Drew
+Vassar,16,3,6,7,Lafayette,11,6,3,2,2023-10-29,Drew
+Drew,27,9,9,9,Yeshiva,0,0,0,0,2023-10-29,Drew
+NJIT,16,8,3,5,Stevens,11,1,6,4,2023-10-29,Drew
+Vassar,22,7,7,8,Yeshiva,5,2,2,1,2023-10-29,Drew
+Drew,17,7,4,6,Stevens,10,2,5,3,2023-10-29,Drew
+Stevens,15,3,6,6,Vassar,12,6,3,3,2023-10-29,Drew
+NJIT,19,7,5,7,Drew,8,2,4,2,2023-10-29,Drew
+Lafayette,25,9,7,9,Yeshiva,2,0,2,0,2023-10-29,Drew
+NJIT,21,7,7,7,Vassar,6,2,2,2,2023-10-29,Drew
+NYU,27,9,9,9,Hunter,0,0,0,0,2024-02-25,Long Island University
+NYU,22,9,8,5,Wagner,5,0,1,4,2024-02-25,Long Island University
+Wagner,14,6,3,5,Hunter,13,3,6,4,2024-02-25,Long Island University
+Johns Hopkins,21,9,7,5,Stevens,6,0,2,4,2024-02-25,Temple
+Wayne State,17,6,9,2,Lawrence,10,3,0,7,2024-02-24,Ohio State
+Haverford,24,8,9,7,Hunter,3,1,0,2,2024-02-18,Stevens Tech
+Johns Hopkins,27,9,9,9,Hunter,0,0,0,0,2024-02-18,Stevens Tech
+Stevens,16,2,6,8,Haverford,11,7,3,1,2024-02-18,Stevens Tech
+Johns Hopkins,27,9,9,9,Yeshiva,0,0,0,0,2024-02-18,Stevens Tech
+Haverford,24,9,9,6,Yeshiva,3,0,0,3,2024-02-18,Stevens Tech
+NYU,16,4,5,7,Vassar,11,5,4,2,2024-02-14,Columbia University
+Brandeis,14,5,4,5,Johns Hopkins,13,4,5,4,2024-02-10,Duke
+Stevens,24,7,8,9,Hunter,3,2,1,0,2024-02-04,Stevens Tech
+Hunter,17,9,5,3,Yeshiva,10,0,4,6,2024-02-04,Stevens Tech
+Stevens,24,9,8,7,Yeshiva,3,0,1,2,2024-02-04,Stevens Tech
+Wagner,15,3,6,6,Vassar,12,6,3,3,2024-02-04,Wagner
+Wagner,14,0,7,7,Drew,13,9,2,2,2024-02-04,Wagner
+Wayne State,15,7,6,2,Lawrence,11,2,3,6,2024-01-27,Notre Dame
+MIT,27,9,9,9,Hunter,0,0,0,0,2024-01-27,Brandeis
+Brandeis,14,7,2,5,Stevens,13,2,7,4,2024-01-27,Brandeis
+NYU,14,3,3,8,MIT,13,6,6,1,2024-01-27,Brandeis
+NYU,18,9,4,5,Brandeis,9,0,5,4,2024-01-27,Brandeis
+MIT,19,8,5,6,Haverford,8,1,4,3,2024-01-27,Brandeis
+Brandeis,26,9,8,9,Hunter,1,0,1,0,2024-01-27,Brandeis
+Stevens,25,8,8,9,Hunter,2,1,1,0,2024-01-27,Brandeis
+Brandeis,19,6,6,7,Haverford,8,3,3,2,2024-01-27,Brandeis
+MIT,14,4,5,5,Stevens,13,5,4,4,2024-01-27,Brandeis
+NYU,19,7,4,8,Drew,8,2,5,1,2024-01-21,Penn
+Vassar,19,7,4,8,Hunter,8,2,5,1,2024-01-21,Vassar College
+Haverford,14,6,5,3,Wagner,13,3,4,6,2024-01-20,Penn
+Johns Hopkins,19,9,7,3,Wagner,8,0,2,6,2024-01-20,Penn
+NYU,17,7,5,5,Johns Hopkins,10,2,4,4,2024-01-20,Penn
+NYU,20,8,5,7,Vassar,7,1,4,2,2023-12-03,Sacred Heart
+Brandeis,14,6,3,5,Drew,13,3,6,4,2023-12-03,Brandeis
+MIT,18,9,5,4,Lawrence,9,0,4,5,2023-12-03,Brandeis
+Brandeis,16,7,5,4,Lawrence,11,2,4,5,2023-12-03,Brandeis
+Brandeis,26,9,8,9,Yeshiva,1,0,1,0,2023-12-03,Brandeis
+MIT,25,9,9,7,Yeshiva,2,0,0,2,2023-12-03,Brandeis
+Drew,18,3,8,7,MIT,9,6,1,2,2023-12-03,Brandeis
+Drew,18,8,7,3,Lawrence,9,1,2,6,2023-12-03,Brandeis
+MIT,19,8,7,4,Vassar,8,1,2,5,2023-11-19,Boston College
+MIT,15,9,2,4,Wagner,12,0,7,5,2023-11-19,Boston College
+Brandeis,14,0,6,8,Vassar,13,9,3,1,2023-11-19,Boston College
+Brandeis,17,9,2,6,Wagner,10,0,7,3,2023-11-19,Boston College
+MIT,17,6,8,3,Brandeis,10,3,1,6,2023-11-19,Boston College
+Vassar,14,9,2,3,Wagner,13,0,7,6,2023-11-19,Boston College
+Johns Hopkins,21,7,9,5,Stevens,6,2,0,4,2023-11-18,Columbia University
+MIT,18,8,5,5,Brandeis,9,1,4,4,2023-11-15,Brandeis
+Drew,15,7,5,3,Wagner,12,2,4,6,2023-11-12,Vassar College
+Haverford,23,8,7,8,Hunter,4,1,2,1,2023-11-12,Vassar College
+Johns Hopkins,15,3,6,6,Drew,12,6,3,3,2023-11-12,Vassar College
+Vassar,25,8,8,9,Hunter,2,1,1,0,2023-11-12,Vassar College
+Stevens,17,5,6,6,Drew,10,4,3,3,2023-11-12,Vassar College
+Johns Hopkins,22,8,7,7,Wagner,5,1,2,2,2023-11-12,Vassar College
+Drew,25,8,9,8,Yeshiva,2,1,0,1,2023-11-12,Vassar College
+Vassar,15,7,4,4,Stevens,12,2,5,5,2023-11-12,Vassar College
+Haverford,14,3,6,5,Vassar,13,6,3,4,2023-11-12,Vassar College
+Johns Hopkins,22,9,4,9,Drew,5,0,5,0,2023-11-12,Vassar College
+Yeshiva,18,5,4,9,Hunter,9,4,5,0,2023-11-12,Vassar College
+Haverford,18,8,6,4,Wagner,9,1,3,5,2023-11-12,Vassar College
+Vassar,23,8,6,9,Yeshiva,4,1,3,0,2023-11-12,Vassar College
+Haverford,14,4,4,6,Drew,13,5,5,3,2023-11-12,Vassar College
+Johns Hopkins,20,4,8,8,Vassar,7,5,1,1,2023-11-12,Vassar College
+Stevens,26,8,9,9,Yeshiva,1,1,0,0,2023-11-12,Vassar College
+Drew,27,9,9,9,Hunter,0,0,0,0,2023-11-12,Vassar College
+Wagner,16,5,6,5,Stevens,11,4,3,4,2023-11-12,Vassar College
+Drew,14,4,6,4,Vassar,13,5,3,5,2023-11-12,Vassar College
+Drew,25,7,9,9,Yeshiva,2,2,0,0,2023-11-05,Drew
+Drew,19,8,7,4,Wagner,8,1,2,5,2023-11-05,Drew
+Wagner,21,6,6,9,Yeshiva,6,3,3,0,2023-11-05,Drew
+Drew,18,5,8,5,Vassar,9,4,1,4,2023-10-29,Drew
+Stevens,24,7,8,9,Yeshiva,3,2,1,0,2023-10-29,Drew
+Drew,27,9,9,9,Yeshiva,0,0,0,0,2023-10-29,Drew
+Vassar,22,7,7,8,Yeshiva,5,2,2,1,2023-10-29,Drew
+Drew,17,7,4,6,Stevens,10,2,5,3,2023-10-29,Drew
+Stevens,15,3,6,6,Vassar,12,6,3,3,2023-10-29,Drew

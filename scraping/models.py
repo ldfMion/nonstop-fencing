@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+import datetime
 
 
 @dataclass
@@ -19,3 +20,5 @@ class MatchSide:
 class Match:
     side_A: MatchSide
     side_B: MatchSide
+    date: datetime.date
+    host: str

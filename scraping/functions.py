@@ -1,12 +1,14 @@
-from dataclasses import dataclass
 from bs4 import BeautifulSoup, ResultSet
 import pandas as pd
 from models import Match, MatchSide, PartialScores
+import datetime
 
 TEAM_A_NAME_IDX = 0
 TEAM_A_SCORE_IDX = 2
 TEAM_B_SCORE_IDX = 3
 TEAM_B_NAME_IDX = 5
+DATE_IDX = 6
+HOST_IDX = 7
 
 COLUMN_NAMES = [
     "Team A",
@@ -19,6 +21,8 @@ COLUMN_NAMES = [
     "Team B Foil",
     "Team B Epee",
     "Team B Saber",
+    "Date",
+    "Host",
 ]
 
 REPLACE_MISSING = "Wagner"
@@ -43,11 +47,23 @@ def get_side_from_row(cols, name_idx, score_idx) -> MatchSide:
     return MatchSide(name, overall_score, partials)
 
 
+def get_date_from_row(cols) -> datetime:
+    raw = cols[DATE_IDX].get_text()
+    date = datetime.date.fromisoformat(raw)
+    return date
+
+
+def get_host_from_row(cols) -> str:
+    return cols[HOST_IDX].get_text()
+
+
 def convert_row_to_match(row) -> Match:
     columns = row.find_all("td")  # .get_text()
     side_A = get_side_from_row(columns, TEAM_A_NAME_IDX, TEAM_A_SCORE_IDX)
     side_B = get_side_from_row(columns, TEAM_B_NAME_IDX, TEAM_B_SCORE_IDX)
-    return Match(side_A=side_A, side_B=side_B)
+    date = get_date_from_row(columns)
+    host = get_host_from_row(columns)
+    return Match(side_A=side_A, side_B=side_B, date=date, host=host)
 
 
 def convert_side_to_row(side: MatchSide) -> list:
@@ -60,8 +76,12 @@ def convert_side_to_row(side: MatchSide) -> list:
     ]
 
 
-def convert_match_to_row(match: MatchSide) -> list:
-    return convert_side_to_row(match.side_A) + convert_side_to_row(match.side_B)
+def convert_match_to_row(match: Match) -> list:
+    return (
+        convert_side_to_row(match.side_A)
+        + convert_side_to_row(match.side_B)
+        + [match.date.isoformat(), match.host]
+    )
 
 
 def parse_matches_from_html(html_file_name):
