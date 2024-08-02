@@ -28,12 +28,9 @@ export default function Navbar(): JSX.Element {
             <NavigationMenu>
                 <NavigationMenuList>
                     {paths.map((path) => (
-                        <NavigationMenuItem>
+                        <NavigationMenuItem key={path.url}>
                             <Link passHref legacyBehavior href={`/${path.url}`}>
-                                <NavigationMenuLink
-                                    className={navigationMenuTriggerStyle()}
-                                    key={path.url}
-                                >
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                     {path.displayName}
                                 </NavigationMenuLink>
                             </Link>

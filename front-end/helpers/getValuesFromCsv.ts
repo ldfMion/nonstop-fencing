@@ -7,7 +7,7 @@ import parseTeam from 'helpers/parseTeam';
 
 export default async function getValuesfromCsv(): Promise<FencerSummary[]> {
     const results: any[] = [];
-    const csvFilePath = path.join(process.cwd(), 'data', 'records.csv');
+    const csvFilePath = path.join(process.cwd(), '..', 'data', 'records.csv');
     let formattedResults: Promise<FencerSummary[]> = new Promise((resolve, reject) =>
         fs
             .createReadStream(csvFilePath)

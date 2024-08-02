@@ -1,0 +1,540 @@
+Team A,Team A Overall,Team A Foil,Team A Epee,Team A Saber,Team B,Team B Overall,Team B Foil,Team B Epee,Team B Saber
+NYU,20,3,8,9,Lafayette,7,6,1,0
+LIU,24,7,8,9,Hunter,3,2,1,0
+LIU,15,5,3,7,Lafayette,12,4,6,2
+NYU,27,9,9,9,Hunter,0,0,0,0
+Lafayette,21,5,8,8,Hunter,6,4,1,1
+NYU,22,9,8,5,Wagner,5,0,1,4
+NYU,18,8,5,5,LIU,9,1,4,4
+Wagner,14,6,3,5,Hunter,13,3,6,4
+LIU,18,5,9,4,Wagner,9,4,0,5
+Notre Dame,17,6,7,4,Duke,10,3,2,5
+North Carolina,15,3,6,6,Boston College,12,6,3,3
+North Carolina,17,6,5,6,Notre Dame,10,3,4,3
+Duke,17,6,6,5,Boston College,10,3,3,4
+North Carolina,19,6,6,7,Duke,8,3,3,2
+Notre Dame,20,6,7,7,Boston College,7,3,2,2
+Penn State,17,5,7,5,Johns Hopkins,10,4,2,4
+Princeton,20,7,6,7,Stevens,7,2,3,2
+Penn State,19,6,7,6,Penn,8,3,2,3
+Princeton,18,5,7,6,Johns Hopkins,9,4,2,3
+St Johns,17,6,8,3,Stevens,10,3,1,6
+Princeton,16,4,6,6,Penn State,11,5,3,3
+St Johns,14,5,5,4,Johns Hopkins,13,4,4,5
+Penn,15,5,3,7,Johns Hopkins,12,4,6,2
+Princeton,21,7,8,6,St Johns,6,2,1,3
+Penn State,21,8,6,7,Stevens,6,1,3,2
+Penn State,17,5,4,8,St Johns,10,4,5,1
+Johns Hopkins,21,9,7,5,Stevens,6,0,2,4
+Penn,19,7,6,6,Stevens,8,2,3,3
+Cleveland State,23,9,6,8,Detroit Mercy,4,0,3,1
+Wayne State,17,6,9,2,Lawrence,10,3,0,7
+Ohio State,25,9,8,8,Detroit Mercy,2,0,1,1
+Wayne State,14,4,6,4,Cleveland State,13,5,3,5
+Ohio State,24,9,8,7,Lawrence,3,0,1,2
+Wayne State,23,9,7,7,Detroit Mercy,4,0,2,2
+Ohio State,23,9,7,7,Cleveland State,4,0,2,2
+Lawrence,24,9,6,9,Detroit Mercy,3,0,3,0
+Ohio State,21,7,6,8,Wayne State,6,2,3,1
+Cleveland State,19,6,8,5,Lawrence,8,3,1,4
+Haverford,24,8,9,7,Hunter,3,1,0,2
+Johns Hopkins,27,9,9,9,Hunter,0,0,0,0
+NJIT,16,6,5,5,Johns Hopkins,11,3,4,4
+Stevens,16,2,6,8,Haverford,11,7,3,1
+Johns Hopkins,27,9,9,9,Yeshiva,0,0,0,0
+NJIT,18,5,5,8,Haverford,9,4,4,1
+Haverford,24,9,9,6,Yeshiva,3,0,0,3
+Columbia,15,7,6,2,NYU,12,2,3,7
+Columbia,19,7,6,6,Sacred Heart,8,2,3,3
+Columbia,15,5,4,6,Vassar,12,4,5,3
+NYU,16,4,5,7,Vassar,11,5,4,2
+NYU,14,4,5,5,Sacred Heart,13,5,4,4
+Columbia,15,7,2,6,Harvard,12,2,7,3
+Princeton,18,4,7,7,Penn,9,5,2,2
+Harvard,15,6,5,4,Princeton,12,3,4,5
+Penn,17,6,5,6,Yale,10,3,4,3
+Columbia,16,5,7,4,Penn,11,4,2,5
+Princeton,20,7,6,7,Yale,7,2,3,2
+Columbia,19,8,8,3,Yale,8,1,1,6
+Harvard,17,5,7,5,Penn,10,4,2,4
+Harvard,16,7,6,3,Yale,11,2,3,6
+Princeton,15,5,6,4,Columbia,12,4,3,5
+Air Force,15,3,5,7,Brandeis,12,6,4,2
+Johns Hopkins,15,7,6,2,Duke,12,2,3,7
+Brandeis,14,5,5,4,Duke,13,4,4,5
+Air Force,15,8,4,3,Johns Hopkins,12,1,5,6
+Air Force,14,8,6,0,Duke,13,1,3,9
+Brandeis,14,5,4,5,Johns Hopkins,13,4,5,4
+NYU,19,9,1,9,LIU,8,0,8,0
+North Carolina,15,5,6,4,Boston College,12,4,3,5
+North Carolina,23,9,6,8,LIU,4,0,3,1
+North Carolina,15,5,6,4,NYU,12,4,3,5
+Boston College,14,8,3,3,NYU,13,1,6,6
+Boston College,23,8,7,8,LIU,4,1,2,1
+Stanford,24,9,6,9,Detroit Mercy,3,0,3,0
+UC San Diego,20,9,2,9,Incarnate Word,7,0,7,0
+Ohio State,22,9,6,7,Lawrence,5,0,3,2
+Air Force,18,8,4,6,Wayne State,9,1,5,3
+Incarnate Word,16,2,8,6,Lawrence,11,7,1,3
+Air Force,24,9,8,7,Detroit Mercy,3,0,1,2
+Ohio State,14,6,5,3,UC San Diego,13,3,4,6
+Boston College,16,4,4,8,Stanford,11,5,5,1
+UC San Diego,23,9,6,8,Detroit Mercy,4,0,3,1
+Stanford,21,8,7,6,Lawrence,6,1,2,3
+Boston College,14,4,3,7,Ohio State,13,5,6,2
+Incarnate Word,13,2,6,5,Wayne State,12,7,3,2
+Boston College,24,9,8,7,Detroit Mercy,3,0,1,2
+Ohio State,22,9,7,6,Incarnate Word,5,0,2,3
+Air Force,25,9,9,7,Lawrence,2,0,0,2
+UC San Diego,19,8,4,7,Wayne State,8,1,5,2
+Boston College,17,8,4,5,Incarnate Word,10,1,5,4
+UC San Diego,25,9,8,8,Lawrence,2,0,1,1
+Stanford,14,3,6,5,Air Force,13,6,3,4
+Air Force,16,6,7,3,Boston College,11,3,2,6
+NJIT,27,9,9,9,Yeshiva,0,0,0,0
+Stevens,24,7,8,9,Hunter,3,2,1,0
+NJIT,20,8,4,8,Stevens,7,1,5,1
+Hunter,17,9,5,3,Yeshiva,10,0,4,6
+NJIT,26,8,9,9,Hunter,1,1,0,0
+Stevens,24,9,8,7,Yeshiva,3,0,1,2
+Wagner,15,3,6,6,Vassar,12,6,3,3
+Columbia,18,8,6,4,Wagner,9,1,3,5
+Columbia,18,6,5,7,Lafayette,9,3,4,2
+Columbia,18,6,7,5,Drew,9,3,2,4
+Lafayette,14,5,7,2,Drew,13,4,2,7
+Wagner,14,1,4,9,Lafayette,13,8,5,0
+Wagner,14,0,7,7,Drew,13,9,2,2
+Boston College,14,3,3,8,UC San Diego,13,6,6,1
+Air Force,19,7,5,7,Cleveland State,8,2,4,2
+Air Force,24,9,7,8,Detroit Mercy,3,0,2,1
+Boston College,17,9,4,4,Cleveland State,10,0,5,5
+UC San Diego,15,7,2,6,Wayne State,12,2,7,3
+Boston College,17,5,6,6,Notre Dame,10,4,3,3
+Air Force,17,8,3,6,Wayne State,10,1,6,3
+UC San Diego,24,9,9,6,Lawrence,3,0,0,3
+Stanford,18,9,3,6,Cleveland State,9,0,6,3
+Incarnate Word,19,6,7,6,Detroit Mercy,5,0,2,3
+Boston College,17,5,4,8,Wayne State,10,4,5,1
+Notre Dame,24,8,7,9,Lawrence,3,1,2,0
+Ohio State,16,6,5,5,Stanford,11,3,4,4
+Incarnate Word,16,3,4,9,Cleveland State,11,6,5,0
+Ohio State,22,8,7,7,Wayne State,5,1,2,2
+Notre Dame,15,5,4,6,UC San Diego,12,4,5,3
+Air Force,17,7,4,6,Lawrence,10,2,5,3
+Air Force,15,7,4,4,Lawrence,12,2,5,5
+Ohio State,24,9,7,8,Detroit Mercy,3,0,2,1
+Boston College,19,9,3,7,Lawrence,8,0,6,2
+Stanford,18,6,5,7,Wayne State,9,3,4,2
+UC San Diego,21,8,6,7,Cleveland State,6,1,3,2
+Notre Dame,22,9,5,8,Incarnate Word,5,0,4,1
+UC San Diego,24,9,8,7,Detroit Mercy,3,0,1,2
+Wayne State,15,7,5,3,Incarnate Word,12,2,4,6
+Notre Dame,17,7,5,5,Stanford,10,2,4,4
+Air Force,15,8,3,4,Incarnate Word,12,1,6,5
+Penn,16,5,4,7,St Johns,11,4,5,2
+Princeton,22,9,6,7,LIU,5,0,3,2
+Princeton,18,6,5,7,Columbia,9,3,4,2
+Penn,22,8,8,6,LIU,5,1,1,3
+Princeton,18,5,6,7,Penn,9,4,3,2
+St Johns,15,3,6,6,Columbia,12,6,3,3
+Columbia,22,9,7,6,LIU,5,0,2,3
+Princeton,18,6,7,5,St Johns,9,3,2,4
+St Johns,21,9,6,6,LIU,6,0,3,3
+NYU,14,4,8,2,Harvard,13,5,1,7
+Yale,19,7,4,8,Sacred Heart,8,2,5,1
+Yale,19,4,7,8,Vassar,8,5,2,1
+Wayne State,23,9,8,6,Detroit Mercy,4,0,1,3
+Cleveland State,16,5,7,4,Lawrence,11,4,2,5
+Notre Dame,18,8,3,7,Wayne State,9,1,6,2
+Wayne State,14,5,6,3,Cleveland State,13,4,3,6
+Cleveland State,23,9,8,6,Detroit Mercy,4,0,1,3
+Notre Dame,24,8,8,8,Lawrence,3,1,1,1
+Notre Dame,26,9,9,8,Detroit Mercy,1,0,0,1
+Wayne State,15,7,6,2,Lawrence,11,2,3,6
+Lawrence,23,9,7,7,Detroit Mercy,4,0,2,2
+Notre Dame,22,9,5,8,Cleveland State,5,0,4,1
+Boston College,16,5,5,6,Stevens,11,4,4,3
+Brandeis,14,7,5,2,NJIT,13,2,4,7
+Duke,18,6,4,8,Haverford,9,3,5,1
+MIT,27,9,9,9,Hunter,0,0,0,0
+Brandeis,14,7,2,5,Stevens,13,2,7,4
+NYU,14,3,3,8,MIT,13,6,6,1
+Duke,16,7,4,5,Boston College,11,2,5,4
+NYU,18,9,4,5,Brandeis,9,0,5,4
+MIT,19,8,5,6,Haverford,8,1,4,3
+Boston College,17,6,3,8,Haverford,10,3,6,1
+Brandeis,26,9,8,9,Hunter,1,0,1,0
+NYU,14,5,3,6,Boston College,13,4,6,3
+Brandeis,16,7,4,5,Duke,11,2,5,4
+NJIT,15,3,4,8,MIT,12,6,5,1
+Stevens,25,8,8,9,Hunter,2,1,1,0
+Boston College,26,8,9,9,Hunter,1,1,0,0
+Brandeis,19,6,6,7,Haverford,8,3,3,2
+Duke,19,5,8,6,NYU,8,4,1,3
+NJIT,14,5,4,5,Boston College,13,4,5,4
+MIT,14,4,5,5,Stevens,13,5,4,4
+Harvard,16,6,5,5,Duke,11,3,4,4
+Princeton,24,8,9,7,Wagner,3,1,0,2
+Princeton,23,8,7,8,Drew,4,1,2,1
+Penn State,16,7,4,5,NJIT,11,2,5,4
+Ohio State,15,2,8,5,NYU,12,7,1,4
+Yale,14,6,4,4,Notre Dame,13,3,5,5
+Penn,21,6,7,8,Drew,6,3,2,1
+NJIT,14,3,6,5,NYU,13,6,3,4
+Ohio State,15,4,5,6,Yale,12,5,4,3
+Notre Dame,15,4,5,6,Princeton,12,5,4,3
+Penn State,16,3,8,5,Duke,11,6,1,4
+Ohio State,15,3,7,5,Penn,12,6,2,4
+Columbia,20,8,5,7,NJIT,7,1,4,2
+Yale,14,4,5,5,Penn State,13,5,4,4
+Princeton,20,5,8,7,Duke,7,4,1,2
+Notre Dame,22,7,7,8,St Johns,5,2,2,1
+Notre Dame,14,3,5,6,Penn,13,6,4,3
+Penn State,20,7,5,8,Drew,7,2,4,1
+Columbia,15,7,3,5,NYU,12,2,6,4
+Ohio State,14,3,6,5,St Johns,13,6,3,4
+Yale,17,7,6,4,Duke,10,2,3,5
+Penn,16,4,6,6,St Johns,11,5,3,3
+Princeton,16,4,9,3,Ohio State,11,5,0,6
+Columbia,14,3,4,7,Notre Dame,13,6,5,2
+Duke,20,8,4,8,Drew,7,1,5,1
+Columbia,22,7,6,9,Drew,5,2,3,0
+Penn State,15,6,3,6,Princeton,12,3,6,3
+Yale,17,4,7,6,NJIT,10,5,2,3
+St Johns,16,4,8,4,NYU,11,5,1,5
+Princeton,15,4,6,5,Yale,12,5,3,4
+NYU,19,7,4,8,Drew,8,2,5,1
+Vassar,19,7,4,8,Hunter,8,2,5,1
+Haverford,14,6,5,3,Wagner,13,3,4,6
+North Carolina,17,6,5,6,Sacred Heart,10,3,4,3
+Duke,17,5,7,5,NJIT,10,4,2,4
+Johns Hopkins,24,8,8,8,Lafayette,3,1,1,1
+Penn,15,8,3,4,UC San Diego,12,1,6,5
+Duke,14,5,3,6,Johns Hopkins,13,4,6,3
+NYU,19,6,6,7,North Carolina,8,3,3,2
+Penn,19,7,6,6,Wagner,8,2,3,3
+NJIT,19,4,7,8,Haverford,8,5,2,1
+Duke,14,5,4,5,Penn,13,4,5,4
+North Carolina,14,7,4,3,NJIT,13,2,5,6
+NYU,14,4,5,5,UC San Diego,13,5,4,4
+Johns Hopkins,19,9,7,3,Wagner,8,0,2,6
+Sacred Heart,17,5,6,6,Lafayette,8,4,3,1
+Penn,15,5,4,6,Sacred Heart,12,4,5,3
+UC San Diego,23,7,7,9,Lafayette,4,2,2,0
+NYU,19,7,5,7,Duke,8,2,4,2
+North Carolina,23,6,8,9,Haverford,4,3,1,0
+NYU,17,4,5,8,Penn,10,5,4,1
+North Carolina,22,7,6,9,Lafayette,5,2,3,0
+Johns Hopkins,17,7,5,5,UC San Diego,10,2,4,4
+Duke,22,9,8,5,Wagner,5,0,1,4
+Penn,14,6,4,4,NJIT,13,3,5,5
+UC San Diego,18,7,5,6,Sacred Heart,9,2,4,3
+NYU,17,7,5,5,Johns Hopkins,10,2,4,4
+Haverford,18,6,6,6,Lafayette,9,3,3,3
+Penn,16,4,5,7,Haverford,11,5,4,2
+NJIT,21,6,7,8,Lafayette,6,3,2,1
+UC San Diego,19,7,7,5,Wagner,8,2,2,4
+Duke,20,7,6,7,Sacred Heart,7,2,3,2
+Columbia,15,4,5,6,St Johns,12,5,4,3
+Notre Dame,17,7,5,5,Ohio State,10,2,4,4
+Harvard,14,3,7,4,Penn State,13,6,2,5
+Ohio State,16,4,5,7,St Johns,11,5,4,2
+Notre Dame,16,4,5,7,Penn State,11,5,4,2
+Columbia,16,6,3,7,Harvard,11,3,6,2
+St Johns,14,4,5,5,Penn State,13,5,4,4
+Notre Dame,17,5,5,7,Harvard,10,4,4,2
+Columbia,19,8,3,8,Ohio State,8,1,6,1
+Notre Dame,16,6,4,6,St Johns,11,3,5,3
+Columbia,19,4,8,7,Penn State,8,5,1,2
+Ohio State,14,6,4,4,Harvard,13,3,5,5
+Harvard,16,7,6,3,St Johns,11,2,3,6
+Ohio State,14,3,5,6,Penn State,13,6,4,3
+Columbia,15,6,4,5,Notre Dame,12,3,5,4
+Princeton,18,6,8,4,UC San Diego,9,3,1,5
+Princeton,16,5,7,4,North Carolina,11,4,2,5
+UC San Diego,15,6,5,4,North Carolina,12,3,4,5
+Wayne State,19,9,7,3,Detroit Mercy,8,0,2,6
+Penn,18,6,7,5,North Carolina,9,3,2,4
+Yale,14,2,7,5,Penn State,13,7,2,4
+Penn State,23,8,8,7,Haverford,4,1,1,2
+Yale,16,6,5,5,North Carolina,11,3,4,4
+Columbia,20,7,7,6,Penn,7,2,2,3
+Penn State,16,8,3,5,North Carolina,11,1,6,4
+Yale,20,5,6,9,Penn,7,4,3,0
+Columbia,22,7,8,7,Haverford,5,2,1,2
+Penn State,14,6,5,3,Columbia,13,3,4,6
+North Carolina,18,6,5,7,Haverford,9,3,4,2
+Penn State,19,7,6,6,Penn,8,2,3,3
+Columbia,16,7,4,5,Yale,11,2,5,4
+Yale,15,5,3,7,Haverford,12,4,6,2
+Columbia,20,8,4,8,North Carolina,7,1,5,1
+Princeton,17,5,7,5,Penn State,10,4,2,4
+NYU,20,8,5,7,Vassar,7,1,4,2
+Princeton,15,5,8,2,NYU,12,4,1,7
+Penn State,19,6,7,6,NJIT,8,3,2,3
+Sacred Heart,17,7,5,5,Vassar,10,2,4,4
+Penn State,17,6,8,3,NYU,10,3,1,6
+Sacred Heart,15,4,6,5,NJIT,12,5,3,4
+Princeton,22,7,8,7,Vassar,5,2,1,2
+Princeton,22,6,8,8,Sacred Heart,5,3,1,1
+NJIT,17,5,6,6,Vassar,10,4,3,3
+Princeton,24,8,9,7,NJIT,3,1,0,2
+NYU,19,6,6,7,Sacred Heart,8,3,3,2
+Penn State,23,8,7,8,Vassar,4,1,2,1
+NYU,17,3,6,8,NJIT,10,6,3,1
+Penn State,22,8,7,7,Sacred Heart,5,1,2,2
+Brandeis,14,6,3,5,Drew,13,3,6,4
+MIT,18,9,5,4,Lawrence,9,0,4,5
+Yale,27,9,9,9,Yeshiva,0,0,0,0
+Boston College,16,7,2,7,Drew,11,2,7,2
+Brandeis,16,7,5,4,Lawrence,11,2,4,5
+St Johns,16,4,8,4,MIT,11,5,1,5
+St Johns,16,2,7,7,Brandeis,11,7,2,2
+Drew,14,7,3,4,LIU,13,2,6,5
+Yale,22,8,5,9,MIT,5,1,4,0
+Boston College,26,9,9,8,Lawrence,1,0,0,1
+Brandeis,26,9,8,9,Yeshiva,1,0,1,0
+Yale,15,4,3,8,St Johns,12,5,6,1
+Boston College,19,8,5,6,LIU,8,1,4,3
+Yale,20,8,6,6,Lawrence,7,1,3,3
+St Johns,26,9,8,9,Yeshiva,1,0,1,0
+Yale,16,6,5,5,Brandeis,11,3,4,4
+MIT,25,9,9,7,Yeshiva,2,0,0,2
+Yale,15,4,7,4,Boston College,12,5,2,5
+Drew,18,3,8,7,MIT,9,6,1,2
+St Johns,21,9,7,5,LIU,6,0,2,4
+Boston College,16,7,2,7,St Johns,11,2,7,2
+Brandeis,22,9,6,7,LIU,5,0,3,2
+Drew,18,8,7,3,Lawrence,9,1,2,6
+North Carolina,17,5,7,5,Air Force,10,4,2,4
+Duke,17,6,5,6,Stanford,10,3,4,3
+Princeton,19,8,5,6,Ohio State,8,1,4,3
+Duke,20,8,5,7,Cleveland State,7,1,4,2
+North Carolina,14,7,4,3,Stanford,13,2,5,6
+Penn,15,6,6,3,Notre Dame,12,3,3,6
+Ohio State,14,6,3,5,Air Force,13,3,6,4
+North Carolina,20,7,5,8,Cleveland State,7,2,4,1
+Notre Dame,16,4,7,5,Princeton,11,5,2,4
+Ohio State,18,6,8,4,Duke,9,3,1,5
+Penn,16,8,3,5,Stanford,11,1,6,4
+Notre Dame,21,7,7,7,Air Force,6,2,2,2
+Ohio State,14,3,6,5,Penn,13,6,3,4
+Princeton,15,5,4,6,Duke,12,4,5,3
+Stanford,23,8,8,7,Cleveland State,4,1,1,2
+Notre Dame,16,5,4,7,Ohio State,11,4,5,2
+Princeton,18,7,5,6,North Carolina,9,2,4,3
+Penn,16,5,5,6,Air Force,11,4,4,3
+Notre Dame,18,6,5,7,Duke,9,3,4,2
+Ohio State,21,9,5,7,Cleveland State,6,0,4,2
+Princeton,16,5,6,5,Air Force,11,4,3,4
+Air Force,22,8,6,8,Cleveland State,5,1,3,1
+MIT,19,8,7,4,Vassar,8,1,2,5
+Boston College,17,6,8,3,Brandeis,10,3,1,6
+MIT,15,9,2,4,Wagner,12,0,7,5
+MIT,15,6,5,4,Boston College,12,3,4,5
+Sacred Heart,15,9,4,2,Wagner,12,0,5,7
+Boston College,19,3,7,9,Vassar,8,6,2,0
+Sacred Heart,16,2,8,6,Brandeis,11,7,1,3
+Boston College,20,9,3,8,Wagner,7,0,6,1
+Brandeis,14,0,6,8,Vassar,13,9,3,1
+MIT,15,6,4,5,Sacred Heart,12,3,5,4
+Brandeis,17,9,2,6,Wagner,10,0,7,3
+Sacred Heart,16,5,5,6,Vassar,11,4,4,3
+MIT,17,6,8,3,Brandeis,10,3,1,6
+Vassar,14,9,2,3,Wagner,13,0,7,6
+Boston College,21,9,7,5,Sacred Heart,6,0,2,4
+Johns Hopkins,15,5,4,6,NJIT,12,4,5,3
+Johns Hopkins,21,7,9,5,Stevens,6,2,0,4
+Columbia,21,8,6,7,Stevens,6,1,3,2
+Columbia,21,9,5,7,NJIT,6,0,4,2
+Columbia,17,6,4,7,Johns Hopkins,10,3,5,2
+Boston College,18,8,5,5,Brandeis,9,1,4,4
+Boston College,14,3,4,7,MIT,13,6,5,2
+Harvard,14,5,7,2,Brandeis,13,4,2,7
+MIT,18,8,5,5,Brandeis,9,1,4,4
+Harvard,17,9,5,3,Boston College,10,0,4,6
+Harvard,17,6,5,6,MIT,10,3,4,3
+Johns Hopkins,17,5,5,7,Sacred Heart,10,4,4,2
+Yale,19,4,8,7,Vassar,8,5,1,2
+Drew,15,7,5,3,Wagner,12,2,4,6
+Haverford,23,8,7,8,Hunter,4,1,2,1
+Johns Hopkins,15,3,6,6,Drew,12,6,3,3
+Vassar,25,8,8,9,Hunter,2,1,1,0
+Sacred Heart,26,8,9,9,Yeshiva,1,1,0,0
+Stevens,17,5,6,6,Drew,10,4,3,3
+Yale,17,6,5,6,Wagner,10,3,4,3
+Johns Hopkins,22,8,7,7,Wagner,5,1,2,2
+Yale,18,4,7,7,Sacred Heart,9,5,2,2
+Drew,25,8,9,8,Yeshiva,2,1,0,1
+Vassar,15,7,4,4,Stevens,12,2,5,5
+Haverford,14,3,6,5,Vassar,13,6,3,4
+Johns Hopkins,22,9,4,9,Drew,5,0,5,0
+Sacred Heart,18,8,5,5,Wagner,9,1,4,4
+Yale,18,4,5,9,Lafayette,9,5,4,0
+Yeshiva,18,5,4,9,Hunter,9,4,5,0
+Yale,18,6,4,8,Stevens,9,3,5,1
+Haverford,18,8,6,4,Wagner,9,1,3,5
+Vassar,15,5,3,7,Lafayette,12,4,6,2
+Sacred Heart,26,8,9,9,Hunter,1,1,0,0
+Vassar,23,8,6,9,Yeshiva,4,1,3,0
+Yale,19,5,5,9,Johns Hopkins,8,4,4,0
+Sacred Heart,15,8,4,3,Stevens,12,1,5,6
+Haverford,14,4,4,6,Drew,13,5,5,3
+Yale,15,5,4,6,Haverford,12,4,5,3
+Johns Hopkins,20,4,8,8,Vassar,7,5,1,1
+Wagner,15,2,5,8,Lafayette,12,7,4,1
+Stevens,26,8,9,9,Yeshiva,1,1,0,0
+Sacred Heart,18,5,6,7,Drew,9,4,3,2
+Drew,27,9,9,9,Hunter,0,0,0,0
+Wagner,16,5,6,5,Stevens,11,4,3,4
+Sacred Heart,16,3,6,7,Haverford,11,6,3,2
+Yale,24,6,9,9,Hunter,3,3,0,0
+Drew,14,4,6,4,Vassar,13,5,3,5
+Harvard,22,7,8,7,Air Force,5,2,1,2
+Brandeis,19,5,6,8,North Carolina,8,4,3,1
+Ohio State,19,7,6,6,Stanford,8,2,3,3
+UC San Diego,22,9,5,8,Incarnate Word,5,0,4,1
+Ohio State,20,5,6,9,Air Force,7,4,3,0
+Harvard,20,8,7,5,North Carolina,7,1,2,4
+Stanford,17,6,5,6,Incarnate Word,10,3,4,3
+UC San Diego,14,4,7,3,Brandeis,13,5,2,6
+Air Force,22,7,7,8,Columbia,5,2,2,1
+Brandeis,16,7,3,6,Incarnate Word,11,2,6,3
+Stanford,15,6,5,4,UC San Diego,12,3,4,5
+Ohio State,19,7,6,6,North Carolina,8,2,3,3
+UC San Diego,21,6,6,9,Air Force,6,3,3,0
+Columbia,17,5,7,5,Brandeis,10,4,2,4
+North Carolina,20,8,5,7,Incarnate Word,7,1,4,2
+Stanford,16,6,6,4,Air Force,11,3,3,5
+Drew,25,7,9,9,Yeshiva,2,2,0,0
+Lafayette,14,8,4,2,LIU,13,1,5,7
+Cleveland State,20,5,7,8,Yeshiva,7,4,2,1
+Drew,20,8,5,7,LIU,7,1,4,2
+Wagner,15,4,5,6,Cleveland State,11,4,4,3
+LIU,22,6,8,8,Yeshiva,5,3,1,1
+Lafayette,15,9,5,1,Wagner,12,0,4,8
+Cleveland State,14,5,5,4,LIU,13,4,4,5
+Lafayette,15,7,4,4,Cleveland State,12,2,5,5
+Drew,19,8,7,4,Wagner,8,1,2,5
+Wagner,21,6,6,9,Yeshiva,6,3,3,0
+Drew,15,2,4,9,Lafayette,12,7,5,0
+Cleveland State,14,2,7,5,Drew,12,6,2,4
+Lafayette,24,9,7,8,Yeshiva,3,0,2,1
+Wagner,16,6,4,6,LIU,11,3,5,3
+Air Force,18,8,5,5,Incarnate Word,9,1,4,4
+Ohio State,18,4,8,6,Harvard,9,5,1,3
+Notre Dame,25,9,8,8,Stanford,2,0,1,1
+UC San Diego,19,8,5,6,North Carolina,8,1,4,3
+Air Force,17,8,7,2,Brandeis,10,1,2,7
+Columbia,21,6,7,8,North Carolina,6,3,2,1
+Notre Dame,17,6,5,6,UC San Diego,10,3,4,3
+Ohio State,20,9,5,6,Incarnate Word,7,0,4,3
+North Carolina,16,4,4,8,Air Force,11,5,5,1
+Notre Dame,16,5,8,3,Brandeis,11,4,1,6
+Columbia,18,7,3,8,Stanford,9,2,6,1
+Harvard,22,8,5,9,Incarnate Word,5,1,4,0
+Columbia,17,5,6,6,Ohio State,10,4,3,3
+North Carolina,17,4,6,7,Stanford,10,5,3,2
+Notre Dame,23,5,9,9,Air Force,4,4,0,0
+Brandeis,15,5,5,5,Stanford,12,4,4,4
+Columbia,16,6,4,6,UC San Diego,11,3,5,3
+Columbia,15,4,4,7,Air Force,12,5,5,2
+Ohio State,20,7,7,6,Brandeis,7,2,2,3
+Harvard,17,7,5,5,UC San Diego,10,2,4,4
+Notre Dame,21,8,5,8,Incarnate Word,6,1,4,1
+Columbia,24,9,6,9,Incarnate Word,3,0,3,0
+Harvard,19,7,7,5,Stanford,8,2,2,4
+Notre Dame,20,6,8,6,North Carolina,7,3,1,3
+Ohio State,18,6,5,7,UC San Diego,9,3,4,2
+Notre Dame,20,7,7,6,Harvard,7,2,2,3
+Drew,18,5,8,5,Vassar,9,4,1,4
+Stevens,14,2,5,7,Lafayette,13,7,4,2
+Stevens,24,7,8,9,Yeshiva,3,2,1,0
+NJIT,17,4,4,9,Lafayette,10,5,5,0
+Drew,17,7,6,4,Lafayette,10,2,3,5
+NJIT,27,9,9,9,Yeshiva,0,0,0,0
+Vassar,16,3,6,7,Lafayette,11,6,3,2
+Drew,27,9,9,9,Yeshiva,0,0,0,0
+NJIT,16,8,3,5,Stevens,11,1,6,4
+Vassar,22,7,7,8,Yeshiva,5,2,2,1
+Drew,17,7,4,6,Stevens,10,2,5,3
+Stevens,15,3,6,6,Vassar,12,6,3,3
+NJIT,19,7,5,7,Drew,8,2,4,2
+Lafayette,25,9,7,9,Yeshiva,2,0,2,0
+NJIT,21,7,7,7,Vassar,6,2,2,2
+NYU,27,9,9,9,Hunter,0,0,0,0
+NYU,22,9,8,5,Wagner,5,0,1,4
+Wagner,14,6,3,5,Hunter,13,3,6,4
+Johns Hopkins,21,9,7,5,Stevens,6,0,2,4
+Wayne State,17,6,9,2,Lawrence,10,3,0,7
+Haverford,24,8,9,7,Hunter,3,1,0,2
+Johns Hopkins,27,9,9,9,Hunter,0,0,0,0
+Stevens,16,2,6,8,Haverford,11,7,3,1
+Johns Hopkins,27,9,9,9,Yeshiva,0,0,0,0
+Haverford,24,9,9,6,Yeshiva,3,0,0,3
+NYU,16,4,5,7,Vassar,11,5,4,2
+Brandeis,14,5,4,5,Johns Hopkins,13,4,5,4
+Stevens,24,7,8,9,Hunter,3,2,1,0
+Hunter,17,9,5,3,Yeshiva,10,0,4,6
+Stevens,24,9,8,7,Yeshiva,3,0,1,2
+Wagner,15,3,6,6,Vassar,12,6,3,3
+Wagner,14,0,7,7,Drew,13,9,2,2
+Wayne State,15,7,6,2,Lawrence,11,2,3,6
+MIT,27,9,9,9,Hunter,0,0,0,0
+Brandeis,14,7,2,5,Stevens,13,2,7,4
+NYU,14,3,3,8,MIT,13,6,6,1
+NYU,18,9,4,5,Brandeis,9,0,5,4
+MIT,19,8,5,6,Haverford,8,1,4,3
+Brandeis,26,9,8,9,Hunter,1,0,1,0
+Stevens,25,8,8,9,Hunter,2,1,1,0
+Brandeis,19,6,6,7,Haverford,8,3,3,2
+MIT,14,4,5,5,Stevens,13,5,4,4
+NYU,19,7,4,8,Drew,8,2,5,1
+Vassar,19,7,4,8,Hunter,8,2,5,1
+Haverford,14,6,5,3,Wagner,13,3,4,6
+Johns Hopkins,19,9,7,3,Wagner,8,0,2,6
+NYU,17,7,5,5,Johns Hopkins,10,2,4,4
+NYU,20,8,5,7,Vassar,7,1,4,2
+Brandeis,14,6,3,5,Drew,13,3,6,4
+MIT,18,9,5,4,Lawrence,9,0,4,5
+Brandeis,16,7,5,4,Lawrence,11,2,4,5
+Brandeis,26,9,8,9,Yeshiva,1,0,1,0
+MIT,25,9,9,7,Yeshiva,2,0,0,2
+Drew,18,3,8,7,MIT,9,6,1,2
+Drew,18,8,7,3,Lawrence,9,1,2,6
+MIT,19,8,7,4,Vassar,8,1,2,5
+MIT,15,9,2,4,Wagner,12,0,7,5
+Brandeis,14,0,6,8,Vassar,13,9,3,1
+Brandeis,17,9,2,6,Wagner,10,0,7,3
+MIT,17,6,8,3,Brandeis,10,3,1,6
+Vassar,14,9,2,3,Wagner,13,0,7,6
+Johns Hopkins,21,7,9,5,Stevens,6,2,0,4
+MIT,18,8,5,5,Brandeis,9,1,4,4
+Drew,15,7,5,3,Wagner,12,2,4,6
+Haverford,23,8,7,8,Hunter,4,1,2,1
+Johns Hopkins,15,3,6,6,Drew,12,6,3,3
+Vassar,25,8,8,9,Hunter,2,1,1,0
+Stevens,17,5,6,6,Drew,10,4,3,3
+Johns Hopkins,22,8,7,7,Wagner,5,1,2,2
+Drew,25,8,9,8,Yeshiva,2,1,0,1
+Vassar,15,7,4,4,Stevens,12,2,5,5
+Haverford,14,3,6,5,Vassar,13,6,3,4
+Johns Hopkins,22,9,4,9,Drew,5,0,5,0
+Yeshiva,18,5,4,9,Hunter,9,4,5,0
+Haverford,18,8,6,4,Wagner,9,1,3,5
+Vassar,23,8,6,9,Yeshiva,4,1,3,0
+Haverford,14,4,4,6,Drew,13,5,5,3
+Johns Hopkins,20,4,8,8,Vassar,7,5,1,1
+Stevens,26,8,9,9,Yeshiva,1,1,0,0
+Drew,27,9,9,9,Hunter,0,0,0,0
+Wagner,16,5,6,5,Stevens,11,4,3,4
+Drew,14,4,6,4,Vassar,13,5,3,5
+Drew,25,7,9,9,Yeshiva,2,2,0,0
+Drew,19,8,7,4,Wagner,8,1,2,5
+Wagner,21,6,6,9,Yeshiva,6,3,3,0
+Drew,18,5,8,5,Vassar,9,4,1,4
+Stevens,24,7,8,9,Yeshiva,3,2,1,0
+Drew,27,9,9,9,Yeshiva,0,0,0,0
+Vassar,22,7,7,8,Yeshiva,5,2,2,1
+Drew,17,7,4,6,Stevens,10,2,5,3
+Stevens,15,3,6,6,Vassar,12,6,3,3
