@@ -21,7 +21,7 @@ const paths: {
 
 export default function Navbar(): JSX.Element {
     return (
-        <div className="sticky top-0 flex flex-row justify-between bg-background bg-opacity-20 p-6 text-2xl font-extrabold backdrop-blur-sm">
+        <div className="sticky top-0 flex flex-row justify-between bg-background p-6 text-2xl font-extrabold backdrop-blur-sm">
             <h1>
                 <span className="text-primary">nonstop</span>fencing
             </h1>
