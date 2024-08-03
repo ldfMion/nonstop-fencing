@@ -7,7 +7,7 @@ export default function FencerRow({fencer}: {fencer: FencerSummary}) {
     return (
         <div className="flex flex-row items-center justify-between px-[16px] py-[8px]">
             <div className="flex flex-row gap-1">
-                <TeamIcon src={teamIcon} alt={teamIcon} />
+                <TeamIcon src={teamIcon} alt={teamIcon} size={24} />
                 <div className="h-fit p-0">{fencer.fullName}</div>
             </div>
             <div className="flex flex-row gap-1">
