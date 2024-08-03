@@ -15,7 +15,6 @@ const paths: {
 }[] = [
     {displayName: 'Fencers', url: ''},
     {displayName: 'Universities', url: ''},
-    {displayName: 'Lastest Results', url: ''},
     {displayName: 'About', url: 'about'},
 ];
 

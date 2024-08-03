@@ -7,22 +7,22 @@ export default async function HomePage() {
     return (
         <main className="p-6">
             <div className="grid grid-cols-3 gap-5">
-                <Link href="/mens/foil">
+                <Link href="rankings/mens/foil">
                     <FencerTable title="Men's Foil" fencers={fencers.mens.foil} />
                 </Link>
-                <Link href="/mens/epee">
+                <Link href="rankings/mens/epee">
                     <FencerTable title="Men's Epee" fencers={fencers.mens.epee} />
                 </Link>
-                <Link href="/mens/saber">
+                <Link href="rankings/mens/saber">
                     <FencerTable title="Men's Saber" fencers={fencers.mens.saber} />
                 </Link>
-                <Link href="/womens/foil">
+                <Link href="rankings/womens/foil">
                     <FencerTable title="Women's Foil" fencers={fencers.womens.foil} />
                 </Link>
-                <Link href="/womens/epee">
+                <Link href="rankings/womens/epee">
                     <FencerTable title="Women's Epee" fencers={fencers.womens.epee} />
                 </Link>
-                <Link href="/womens/saber">
+                <Link href="rankings/womens/saber">
                     <FencerTable title="Women's Saber" fencers={fencers.womens.saber} />
                 </Link>
             </div>
