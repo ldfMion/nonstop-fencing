@@ -4,9 +4,17 @@ import {Card, CardContent, CardHeader, CardTitle} from './ui/card';
 import {Table, TableBody} from './ui/table';
 import {ArrowRight} from 'lucide-react';
 
-export default function FencerTable({fencers, title}: {title?: string; fencers: FencerSummary[]}) {
+export default function FencerTable({
+    fencers,
+    title,
+    className,
+}: {
+    title?: string;
+    fencers: FencerSummary[];
+    className?: string;
+}) {
     return (
-        <Card className="p-2">
+        <Card className={`p-2 ${className ?? ''}`}>
             {title && (
                 <CardHeader className="flex flex-row items-center justify-between px-[16px] py-[8px]">
                     <CardTitle className="text-xl">{title}</CardTitle>
