@@ -6,7 +6,7 @@ export default async function HomePage() {
     const fencers = await getHomePageFencers();
     return (
         <main className="p-6">
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                 <Link href="rankings/mens/foil">
                     <FencerTable title="Men's Foil" fencers={fencers.mens.foil} />
                 </Link>
