@@ -1,6 +1,7 @@
 import getFencersFromUniversity from '~/api/getFencersFromUniversity';
 import getUniversity from '~/api/getUniversity';
 import FencerTable from '~/components/fencer-table';
+import StandingsCard from '~/components/standings-card';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Team} from '~/models/FencerSummary';
@@ -21,7 +22,9 @@ export default async function TeamAndWeaponPage({params}: {params: {university: 
                     <p className="text-lg font-bold">{university?.region}</p>
                 </div>
             </Card>
-            <FencerTable fencers={fencers} title="Fencers" />
+            <StandingsCard title="Fencers">
+                <FencerTable fencers={fencers} />
+            </StandingsCard>
         </main>
     );
 }

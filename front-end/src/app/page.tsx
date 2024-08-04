@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import getHomePageFencers from '~/api/getHomePageFencers';
 import FencerTable from '~/components/fencer-table';
+import StandingsCard from '~/components/standings-card';
 
 export default async function HomePage() {
     const fencers = await getHomePageFencers();
@@ -41,11 +42,12 @@ export default async function HomePage() {
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                 {tables.map((data) => (
                     <Link href={data.url} key={data.title}>
-                        <FencerTable
+                        <StandingsCard
                             title={data.title}
-                            fencers={data.fencers}
-                            className="transition-all hover:scale-105 hover:bg-accent"
-                        />
+                            className="transition-all hover:scale-[1.03] hover:bg-accent"
+                        >
+                            <FencerTable fencers={data.fencers} />
+                        </StandingsCard>
                     </Link>
                 ))}
             </div>
