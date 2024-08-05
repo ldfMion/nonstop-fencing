@@ -23,10 +23,9 @@ export default async function MatchRow({
 }
 
 function Side({university, flip}: {university: University; flip?: boolean}): React.ReactNode {
-    const teamIcon = `/team-icons/${university.id}.png`;
     return (
         <div className={`flex w-full flex-row gap-1 ${flip && 'flex-row-reverse'}`}>
-            <TeamIcon src={teamIcon} alt={''} size={24} />
+            <TeamIcon universityId={university.id} size={24} />
             <div className={`h-fit w-full p-0 ${flip && 'text-right'}`}>
                 {university.displayNameShort}
             </div>

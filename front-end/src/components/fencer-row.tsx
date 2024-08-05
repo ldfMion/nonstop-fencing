@@ -2,11 +2,10 @@ import FencerSummary from '~/models/FencerSummary';
 import TeamIcon from './team-icon';
 
 export default function FencerRow({fencer}: {fencer: FencerSummary}) {
-    const teamIcon = `/team-icons/${fencer.universityId}.png`;
     return (
         <div className="flex flex-row items-center justify-between px-[16px] py-[8px]">
             <div className="flex flex-row gap-1">
-                <TeamIcon src={teamIcon} alt={teamIcon} size={24} />
+                <TeamIcon universityId={fencer.universityId} size={24} />
                 <div className="h-fit p-0">{fencer.fullName}</div>
             </div>
             <div className="flex flex-row gap-1">

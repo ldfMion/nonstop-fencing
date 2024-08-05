@@ -1,9 +1,14 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import {University} from '~/models/University';
 
-export default function TeamIcon({src, alt, size}: {src: string; alt: string; size: number}) {
+export default function TeamIcon({universityId, size}: {universityId: string; size: number}) {
+    const url = `/team-icons/${universityId}.png`;
     return (
-        <div className={`flex h-[${size}px] w-[${size}px] items-center justify-center p-0`}>
-            <Image src={src} alt={alt} width={size} height={size} />
-        </div>
+        <Link href={`/universities/${universityId}`} legacyBehavior>
+            <div className={`flex h-[${size}px] w-[${size}px] items-center justify-center p-0`}>
+                <Image src={url} alt={''} width={size} height={size} />
+            </div>
+        </Link>
     );
 }

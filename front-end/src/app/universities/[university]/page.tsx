@@ -19,7 +19,7 @@ export default async function TeamAndWeaponPage({params}: {params: {university: 
     return (
         <main className="flex flex-col items-stretch gap-5 p-10">
             <Card className="flex flex-row gap-6 p-6">
-                <TeamIcon src={teamIcon} alt={university.displayNameShort + ' Icon'} size={128} />
+                <TeamIcon universityId={university.id} size={128} />
                 <div>
                     <h2 className="text-4xl font-extrabold">{university.displayNameLong}</h2>
                     <p className="text-lg font-bold">{university?.region}</p>
