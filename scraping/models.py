@@ -11,7 +11,7 @@ class PartialScores:
 
 @dataclass
 class MatchSide:
-    name: str
+    university_id: str
     overall: int
     partials: PartialScores
 
@@ -22,3 +22,11 @@ class Match:
     side_B: MatchSide
     date: datetime.date
     host: str
+
+
+@dataclass
+class University:
+    id: str
+    display_name_short: str
+    display_name_long: str
+    region: str

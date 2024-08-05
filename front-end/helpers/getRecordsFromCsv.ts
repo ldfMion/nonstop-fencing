@@ -4,8 +4,15 @@ import parseTeam from 'helpers/parseTeam';
 import calculatePythagoreanWins from './calculatePythagoreanWins';
 import parseCSV from './parseCsv';
 
+let records: FencerSummary[] | null = null;
+
 export default async function getRecordsfromCsv(): Promise<FencerSummary[]> {
-    return (await parseCSV('../data/records.csv', parseRow)).sort((a, b) => b.rating - a.rating);
+    if (records == null) {
+        records = (await parseCSV('../data/records.csv', parseRow)).sort(
+            (a, b) => b.rating - a.rating,
+        );
+    }
+    return records;
 }
 
 function parseRow(row: unknown): FencerSummary {

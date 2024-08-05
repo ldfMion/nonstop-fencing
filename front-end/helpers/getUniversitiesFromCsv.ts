@@ -1,9 +1,13 @@
 import parseCSV from './parseCsv';
 import {University, University1} from '~/models/University';
 
-export default async function getRecordsfromCsv(): Promise<University[]> {
-    const data = await parseCSV('../data/universities.csv', parseRow);
-    return data;
+let universities: University[] | null = null;
+
+export default async function getUniversitiesfromCsv(): Promise<University[]> {
+    if (universities == null) {
+        universities = await parseCSV('../data/universities.csv', parseRow);
+    }
+    return universities;
 }
 
 function parseRow(row: unknown): University {
