@@ -13,6 +13,9 @@ export default class Match {
         public date: Date,
         public hostId: string,
     ) {}
+    public hasTeam(universityId: string): boolean {
+        return this.teamAId === universityId || this.teamBId === universityId;
+    }
 }
 
 // Team A,Team A Overall,Team A Foil,Team A Epee,Team A Saber,Team B,Team B Overall,Team B Foil,Team B Epee,Team B Saber,Date,Host

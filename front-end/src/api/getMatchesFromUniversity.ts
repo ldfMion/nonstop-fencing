@@ -4,5 +4,5 @@ import {Team} from '~/models/FencerSummary';
 
 export default async function getMatchesFromUniversity(id: string, team: Team): Promise<Match[]> {
     const data = await getMatchesFromCsv(team);
-    return data.filter((match) => match.teamAId === id || match.teamBId);
+    return data.filter((match) => match.hasTeam(id));
 }
