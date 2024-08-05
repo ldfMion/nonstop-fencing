@@ -1,5 +1,4 @@
 import FencerSummary from '~/models/FencerSummary';
-import {TableCell, TableRow} from './ui/table';
 import TeamIcon from './team-icon';
 
 export default function FencerRow({fencer}: {fencer: FencerSummary}) {

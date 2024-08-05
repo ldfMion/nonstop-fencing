@@ -20,15 +20,15 @@ function parseRow(row: unknown): Match {
 
     return new Match(
         anyRow['Team A'],
-        anyRow['Team A Overall'],
-        anyRow['Team A Foil'],
-        anyRow['Team A Epee'],
-        anyRow['Team A Saber'],
+        parseInt(anyRow['Team A Overall']),
+        parseInt(anyRow['Team A Foil']),
+        parseInt(anyRow['Team A Epee']),
+        parseInt(anyRow['Team A Saber']),
         anyRow['Team B'],
-        anyRow['Team B Overall'],
-        anyRow['Team B Foil'],
-        anyRow['Team B Epee'],
-        anyRow['Team B Saber'],
+        parseInt(anyRow['Team B Overall']),
+        parseInt(anyRow['Team B Foil']),
+        parseInt(anyRow['Team B Epee']),
+        parseInt(anyRow['Team B Saber']),
         new Date(anyRow['Date']),
         anyRow['Host'],
     );
