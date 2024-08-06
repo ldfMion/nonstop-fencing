@@ -16,6 +16,13 @@ export default function FiteredFencerTable({
     const [filter, setFilter] = useState<string>('All');
     let filteredFencers = fencers;
 
+    const handleChange = (value: string) => {
+        if (value == '') {
+            return;
+        }
+        setFilter(value);
+    };
+
     if (filter != 'All') {
         const weapon = parseWeapon(filter);
         filteredFencers = filteredFencers.filter((fencer) => fencer.weapon === weapon);
@@ -27,7 +34,8 @@ export default function FiteredFencerTable({
                 type="single"
                 className={className}
                 defaultValue="All"
-                onValueChange={setFilter}
+                onValueChange={handleChange}
+                value={filter}
             >
                 {options.map((value) => (
                     <ToggleGroupItem
