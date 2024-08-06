@@ -6,6 +6,6 @@ export default function calculatePythagoreanWins(fencer: FencerSummary): number 
     const winsRaised = Math.pow(wins, EXPONENT);
     const losses = fencer.record.losses;
     const lossesRaised = Math.pow(losses, EXPONENT);
-    const value = (winsRaised / (winsRaised + lossesRaised)) * (wins + losses);
+    const value = (winsRaised / (winsRaised + lossesRaised)) * (wins + losses / 2);
     return value;
 }
