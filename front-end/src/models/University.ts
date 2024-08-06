@@ -3,6 +3,7 @@ export interface University {
     displayNameShort: string;
     displayNameLong: string;
     region: string;
+    colorTheme: string | null;
 }
 
 export class University1 {
@@ -11,5 +12,6 @@ export class University1 {
         public displayNameShort: string,
         public displayNameLong: string,
         public region: string,
+        public colorTheme: string | null,
     ) {}
 }

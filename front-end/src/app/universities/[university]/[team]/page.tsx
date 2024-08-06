@@ -3,7 +3,6 @@ import Link from 'next/link';
 import getFencersFromUniversity from '~/api/getFencersFromUniversity';
 import getMatchesFromUniversity from '~/api/getMatchesFromUniversity';
 import getUniversity from '~/api/getUniversity';
-import FencerTable from '~/components/fencer-table';
 import FilteredFencerTable from '~/components/filtered-fencer-table';
 import MatchRow from '~/components/match-row';
 import StandingsCard from '~/components/standings-card';

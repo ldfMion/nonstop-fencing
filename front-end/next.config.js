@@ -9,8 +9,8 @@ const config = {
     async redirects() {
         return [
             {
-                source: '/universities/:universityId',
-                destination: '/universities/:universityId/men',
+                source: '/universities/:id',
+                destination: '/universities/:id/men',
                 permanent: true,
             },
         ];

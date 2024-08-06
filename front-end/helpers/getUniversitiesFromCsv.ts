@@ -17,5 +17,6 @@ function parseRow(row: unknown): University {
         anyRow['Display Name Short'],
         anyRow['Display Name Long'],
         anyRow['Region'],
+        anyRow['Theme Color'],
     );
 }

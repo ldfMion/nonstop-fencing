@@ -30,7 +30,12 @@ export default function FiteredFencerTable({
                 onValueChange={setFilter}
             >
                 {options.map((value) => (
-                    <ToggleGroupItem value={value} aria-label="Toggle underline">
+                    <ToggleGroupItem
+                        value={value}
+                        aria-label="Toggle underline"
+                        key={value}
+                        className="h-auto rounded-full px-4 py-1"
+                    >
                         {value}
                     </ToggleGroupItem>
                 ))}
