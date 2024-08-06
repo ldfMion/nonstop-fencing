@@ -38,7 +38,7 @@ export default async function HomePage() {
         },
     ];
     return (
-        <main className="p-6">
+        <main className="px-6">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                 {tables.map((data) => (
                     <Link href={data.url} key={data.title}>
