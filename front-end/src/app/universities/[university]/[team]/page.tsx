@@ -4,6 +4,7 @@ import getFencersFromUniversity from '~/api/getFencersFromUniversity';
 import getMatchesFromUniversity from '~/api/getMatchesFromUniversity';
 import getUniversity from '~/api/getUniversity';
 import FencerTable from '~/components/fencer-table';
+import FilteredFencerTable from '~/components/filtered-fencer-table';
 import MatchRow from '~/components/match-row';
 import StandingsCard from '~/components/standings-card';
 import {Tabs, TabsList, TabsTrigger} from '~/components/ui/tabs';
@@ -34,7 +35,10 @@ export default async function University({params}: {params: {university: string;
             </Tabs>
             <div className="flex flex-row items-start gap-5">
                 <StandingsCard title="Fencers" className="grow">
-                    <FencerTable fencers={fencers} />
+                    <FilteredFencerTable
+                        className="justify-start px-4"
+                        fencers={fencers.map((fencer) => fencer.toObject!())}
+                    />
                 </StandingsCard>
                 <StandingsCard title="Results" className="grow">
                     {matches.map((match) => (
