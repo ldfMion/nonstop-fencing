@@ -2,9 +2,11 @@ import Match from '~/models/Match';
 import parseCSV from './parseCsv';
 import {Team} from '~/models/FencerSummary';
 
-let matches: Match[] | null = null;
+let mensMatches: Match[] | null = null;
+let womensMathces: Match[] | null = null;
 
 export default async function getMatchesFromCsv(team: Team): Promise<Match[]> {
+    let matches = team == Team.MEN ? mensMatches : womensMathces;
     if (matches == null) {
         matches = await parseCSV(
             `../data/team-results-${team === Team.MEN ? 'men' : 'women'}.csv`,
