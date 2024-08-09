@@ -1,5 +1,6 @@
 import FencerSummary from '~/models/FencerSummary';
 import TeamIcon from './team-icon';
+import Record from './record';
 
 export default function FencerRow({fencer}: {fencer: FencerSummary}) {
     return (
@@ -8,14 +9,7 @@ export default function FencerRow({fencer}: {fencer: FencerSummary}) {
                 <TeamIcon universityId={fencer.universityId} size={24} />
                 <div className="h-fit p-0">{fencer.fullName}</div>
             </div>
-            <div className="flex flex-row gap-1">
-                <div className="flex h-[28px] w-[28px] items-center justify-center rounded-md bg-green-400 font-semibold leading-none text-white">
-                    {fencer.record.wins}
-                </div>
-                <div className="flex h-[28px] w-[28px] items-center justify-center rounded-md bg-red-400 font-semibold leading-none text-white">
-                    {fencer.record.losses}
-                </div>
-            </div>
+            <Record record={fencer.record} />
         </div>
     );
 }

@@ -1,5 +1,4 @@
 'use client';
-import {getDisplayName} from 'next/dist/shared/lib/utils';
 import Link from 'next/link';
 import {
     NavigationMenu,
@@ -15,12 +14,12 @@ const paths: {
 }[] = [
     {displayName: 'Fencers', url: ''},
     {displayName: 'Universities', url: ''},
-    {displayName: 'About', url: 'about'},
+    {displayName: 'About Us', url: 'about'},
 ];
 
 export default function Navbar(): JSX.Element {
     return (
-        <div className="sticky top-0 flex flex-row justify-between bg-background p-6 text-2xl font-extrabold backdrop-blur-sm">
+        <div className="sticky top-0 flex flex-row justify-between p-6 text-2xl font-extrabold backdrop-blur-md">
             <h1>
                 <span className="text-primary">nonstop</span>fencing
             </h1>
