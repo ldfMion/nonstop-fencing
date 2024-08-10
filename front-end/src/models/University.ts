@@ -6,6 +6,13 @@ export interface University {
     colorTheme: string | null;
 }
 
+export interface UniversityWithRecord extends University {
+    record: {
+        wins: number;
+        losses: number;
+    };
+}
+
 export class University1 {
     constructor(
         public id: string,

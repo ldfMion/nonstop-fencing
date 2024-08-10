@@ -2,6 +2,7 @@ import TeamIcon from './team-icon';
 import {University} from '~/models/University';
 import Match from '~/models/Match';
 import getUniversity from '~/api/getUniversity';
+import Side from './side';
 
 export default async function MatchRow({
     match,
@@ -18,17 +19,6 @@ export default async function MatchRow({
             <Side university={universityA} />
             <Score a={match.teamAOverall} b={match.teamBOverall} win={win} />
             <Side university={universityB} flip />
-        </div>
-    );
-}
-
-function Side({university, flip}: {university: University; flip?: boolean}): React.ReactNode {
-    return (
-        <div className={`flex w-full flex-row gap-1 ${flip && 'flex-row-reverse'}`}>
-            <TeamIcon universityId={university.id} size={24} />
-            <div className={`h-fit w-full p-0 ${flip && 'text-right'}`}>
-                {university.displayNameShort}
-            </div>
         </div>
     );
 }

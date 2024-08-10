@@ -1,3 +1,4 @@
+import calculatePythagoreanWins from './calculatePythagoreanWins';
 import parseCSV from './parseCsv';
 import {University, University1} from '~/models/University';
 

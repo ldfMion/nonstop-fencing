@@ -1,5 +1,6 @@
 import FencerSummary, {Team, Weapon} from '~/models/FencerSummary';
 import getRecordsFromCsv from '../../helpers/getRecordsFromCsv';
+import getTopFive from 'helpers/getTop5';
 
 export default async function getHomePageFencers(): Promise<{
     mens: {
@@ -44,9 +45,4 @@ export default async function getHomePageFencers(): Promise<{
             ),
         },
     };
-}
-
-function getTopFive(fencers: FencerSummary[]): FencerSummary[] {
-    const top = fencers.slice(0, 5);
-    return top;
 }

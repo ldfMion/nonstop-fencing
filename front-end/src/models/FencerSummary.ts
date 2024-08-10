@@ -34,7 +34,7 @@ export class FencerSummary1 implements FencerSummary {
         public team: Team,
         wins: number,
         losses: number,
-        private ratingFn: (fencer: FencerSummary) => number,
+        private ratingFn: (record: {wins: number; losses: number}) => number,
     ) {
         this.record = {
             wins: wins,
@@ -42,7 +42,7 @@ export class FencerSummary1 implements FencerSummary {
         };
     }
     get rating(): number {
-        return this.ratingFn(this);
+        return this.ratingFn(this.record);
     }
     get fullName() {
         return this.firstName ? this.firstName + ' ' + this.lastName : this.lastName;
