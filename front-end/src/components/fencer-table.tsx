@@ -1,7 +1,12 @@
 import FencerSummary from '~/models/FencerSummary';
-import FencerRow from './fencer-row';
-import StandingsCard from './standings-card';
+import RankingRow from './ranking-row';
 
 export default function FencerTable({fencers}: {fencers: FencerSummary[]}) {
-    return fencers.map((fencer) => <FencerRow fencer={fencer} key={fencer.fullName} />);
+    return fencers.map((fencer) => (
+        <RankingRow
+            name={fencer.fullName}
+            iconUniversityId={fencer.universityId}
+            record={fencer.record}
+        />
+    ));
 }

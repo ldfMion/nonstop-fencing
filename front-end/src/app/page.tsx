@@ -2,8 +2,8 @@ import Link from 'next/link';
 import {getHomePageTeams} from '~/api';
 import getHomePageFencers from '~/api/getHomePageFencers';
 import FencerTable from '~/components/fencer-table';
-import Record from '~/components/record';
-import Side from '~/components/side';
+import PageHeading from '~/components/page-heading';
+import RankingRow from '~/components/ranking-row';
 import StandingsCard from '~/components/standings-card';
 
 export default async function HomePage() {
@@ -54,7 +54,8 @@ export default async function HomePage() {
         },
     ];
     return (
-        <main className="flex flex-col gap-8 p-6">
+        <main className="flex flex-col gap-4 p-6">
+            <PageHeading>Fencers</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                 {fencerTables.map((data) => (
                     <Link href={data.url} key={data.title}>
@@ -67,6 +68,7 @@ export default async function HomePage() {
                     </Link>
                 ))}
             </div>
+            <PageHeading>Teams</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 {teamTables.map((data) => (
                     <Link href={data.url} key={data.title}>
@@ -75,10 +77,11 @@ export default async function HomePage() {
                             className="transition-all hover:scale-[1.03] hover:bg-accent"
                         >
                             {data.teams.map((team) => (
-                                <div className="flex flex-row justify-between">
-                                    <Side university={team} />
-                                    <Record record={team.record} />
-                                </div>
+                                <RankingRow
+                                    name={team.displayNameShort}
+                                    record={team.record}
+                                    iconUniversityId={team.id}
+                                />
                             ))}
                         </StandingsCard>
                     </Link>
