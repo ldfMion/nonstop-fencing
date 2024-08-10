@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {getHomePageTeams} from '~/api';
-import getHomePageFencers from '~/api/getHomePageFencers';
+import {getHomePageFencers} from '~/api';
 import FencerTable from '~/components/fencer-table';
 import PageHeading from '~/components/page-heading';
 import RankingRow from '~/components/ranking-row';
@@ -11,32 +11,32 @@ export default async function HomePage() {
     const fencerTables = [
         {
             title: "Men's Foil",
-            url: 'rankings/mens/foil',
+            url: 'fencers/mens/foil',
             fencers: fencers.mens.foil,
         },
         {
             title: "Men's Epee",
-            url: 'rankings/mens/epee',
+            url: 'fencers/mens/epee',
             fencers: fencers.mens.epee,
         },
         {
             title: "Men's Saber",
-            url: 'rankings/mens/saber',
+            url: 'fencers/mens/saber',
             fencers: fencers.mens.saber,
         },
         {
             title: "Women's Foil",
-            url: 'rankings/womens/foil',
+            url: 'fencers/womens/foil',
             fencers: fencers.womens.foil,
         },
         {
             title: "Women's Epee",
-            url: 'rankings/womens/epee',
+            url: 'fencers/womens/epee',
             fencers: fencers.womens.epee,
         },
         {
             title: "Women's Saber",
-            url: 'rankings/womens/saber',
+            url: 'fencers/womens/saber',
             fencers: fencers.womens.saber,
         },
     ];
@@ -44,12 +44,12 @@ export default async function HomePage() {
     const teamTables = [
         {
             title: "Women's",
-            url: 'rankings/womens',
+            url: 'teams/womens',
             teams: teams.womens,
         },
         {
             title: "Men's",
-            url: 'rankings/mens',
+            url: 'teams/mens',
             teams: teams.mens,
         },
     ];
