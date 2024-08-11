@@ -1,10 +1,11 @@
+import getTopFive from 'helpers/getTop5';
 import Link from 'next/link';
-import {getHomePageTeams} from '~/api';
-import {getHomePageFencers} from '~/api';
+import {getHomePageFencers, getTeams} from '~/api';
 import FencerTable from '~/components/fencer-table';
 import PageHeading from '~/components/page-heading';
 import RankingRow from '~/components/ranking-row';
 import StandingsCard from '~/components/standings-card';
+import {Team} from '~/models/FencerSummary';
 
 export default async function HomePage() {
     const fencers = await getHomePageFencers();
@@ -40,19 +41,8 @@ export default async function HomePage() {
             fencers: fencers.womens.saber,
         },
     ];
-    const teams = await getHomePageTeams();
-    const teamTables = [
-        {
-            title: "Women's",
-            url: 'teams/womens',
-            teams: teams.womens,
-        },
-        {
-            title: "Men's",
-            url: 'teams/mens',
-            teams: teams.mens,
-        },
-    ];
+    const mensTeams = getTopFive(await getTeams(Team.MEN));
+    const womensTeams = getTopFive(await getTeams(Team.WOMEN));
     return (
         <main className="flex flex-col gap-4 p-6">
             <PageHeading>Fencers</PageHeading>
@@ -70,22 +60,34 @@ export default async function HomePage() {
             </div>
             <PageHeading>Teams</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-                {teamTables.map((data) => (
-                    <Link href={data.url} key={data.title}>
-                        <StandingsCard
-                            title={data.title}
-                            className="transition-all hover:scale-[1.03] hover:bg-accent"
-                        >
-                            {data.teams.map((team) => (
-                                <RankingRow
-                                    name={team.displayNameShort}
-                                    record={team.record}
-                                    iconUniversityId={team.id}
-                                />
-                            ))}
-                        </StandingsCard>
-                    </Link>
-                ))}
+                <Link href="teams/mens">
+                    <StandingsCard
+                        title="Men's"
+                        className="transition-all hover:scale-[1.03] hover:bg-accent"
+                    >
+                        {mensTeams.map((team) => (
+                            <RankingRow
+                                name={team.displayNameShort}
+                                record={team.mens.overall}
+                                iconUniversityId={team.id}
+                            />
+                        ))}
+                    </StandingsCard>
+                </Link>
+                <Link href="teams/womens">
+                    <StandingsCard
+                        title="Women's"
+                        className="transition-all hover:scale-[1.03] hover:bg-accent"
+                    >
+                        {womensTeams.map((team) => (
+                            <RankingRow
+                                name={team.displayNameShort}
+                                record={team.womens.overall}
+                                iconUniversityId={team.id}
+                            />
+                        ))}
+                    </StandingsCard>
+                </Link>
             </div>
         </main>
     );
