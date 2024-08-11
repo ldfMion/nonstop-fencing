@@ -4,6 +4,7 @@ import parseCSV from './parseCsv';
 import {University} from '~/models/University';
 import Record from '~/models/Record';
 import {ITeam} from '~/models/Team';
+import calculatePythagoreanWins from './calculatePythagoreanWins';
 
 let universities: University[] | null = null;
 
@@ -14,7 +15,12 @@ export default async function getUniversitiesfromCsv(): Promise<University[]> {
             universitiesWithoutRecord.map(async (universityWithoutRecord) => {
                 const mens = await getUniversityRecord(universityWithoutRecord.id, Team.MEN);
                 const womens = await getUniversityRecord(universityWithoutRecord.id, Team.WOMEN);
-                return new UniversityFromCSVWithRecord(universityWithoutRecord, mens, womens);
+                return new UniversityFromCSVWithRecord(
+                    universityWithoutRecord,
+                    mens,
+                    womens,
+                    calculatePythagoreanWins,
+                );
             }),
         );
     }
@@ -55,6 +61,7 @@ class UniversityFromCSVWithRecord implements University {
         universityWithoutRecord: UniversityWithoutRecord,
         mensOverall: Record,
         womensOverall: Record,
+        ratingFn: (record: Record) => number,
     ) {
         this.id = universityWithoutRecord.id;
         this.displayNameShort = universityWithoutRecord.displayNameShort;
@@ -63,9 +70,13 @@ class UniversityFromCSVWithRecord implements University {
         this.colorTheme = universityWithoutRecord.colorTheme;
         this.mens = {
             overall: mensOverall,
+            university: this,
+            rating: ratingFn(mensOverall),
         };
         this.womens = {
             overall: womensOverall,
+            university: this,
+            rating: ratingFn(womensOverall),
         };
     }
 }

@@ -1,10 +1,13 @@
 import getUniversitiesfromCsv from 'helpers/getUniversitiesFromCsv';
 import {Team} from '~/models/FencerSummary';
-import {University} from '~/models/University';
+import {ITeam} from '~/models/Team';
 
-export default async function getTeams(team: Team): Promise<University[]> {
+export default async function getTeams(team: Team): Promise<ITeam[]> {
     const universities = await getUniversitiesfromCsv();
     const teamField = team == Team.MEN ? 'mens' : 'womens';
-    universities.sort((a, b) => b[teamField].overall.wins - a[teamField].overall.wins);
-    return universities;
+    const teams = universities.map((university) => {
+        return university[teamField];
+    });
+    teams.sort((a, b) => b.rating - a.rating);
+    return teams;
 }

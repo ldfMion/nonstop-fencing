@@ -33,7 +33,7 @@ export class FencerSummary1 implements FencerSummary {
         public team: Team,
         wins: number,
         losses: number,
-        private ratingFn: (record: {wins: number; losses: number}) => number,
+        private ratingFn: (record: Record) => number,
     ) {
         this.record = {
             wins: wins,
