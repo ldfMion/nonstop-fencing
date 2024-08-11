@@ -1,13 +1,12 @@
+import Record from './Record';
+
 export default interface FencerSummary {
     universityId: string;
     firstName?: string;
     lastName: string;
     weapon: Weapon;
     team: Team;
-    record: {
-        wins: number;
-        losses: number;
-    };
+    record: Record;
     rating: number;
     fullName: string;
     toObject?: () => FencerSummary;
