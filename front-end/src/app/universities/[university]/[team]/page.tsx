@@ -23,7 +23,7 @@ export default async function University({params}: {params: {university: string;
     const matches = await getMatchesFromUniversity(university.id, team);
     const universityRecord = await getUniversityRecord(university.id, team);
     return (
-        <main className="flex flex-col items-stretch gap-5 p-10">
+        <main className="flex flex-col items-stretch gap-5 p-6">
             <Card className="flex flex-row gap-6 p-6">
                 <TeamIcon universityId={university.id} size={100} />
                 <div className="flex flex-col justify-between">
@@ -47,7 +47,7 @@ export default async function University({params}: {params: {university: string;
                     </Link>
                 </TabsList>
             </Tabs>
-            <div className="flex flex-row items-start gap-5">
+            <div className="flex flex-col gap-5 md:flex-row md:items-start">
                 <StandingsCard title="Squad" className="grow">
                     <FilteredFencerTable
                         className="justify-start px-4"

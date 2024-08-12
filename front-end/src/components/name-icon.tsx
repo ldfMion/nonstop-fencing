@@ -1,4 +1,3 @@
-import Record from './record';
 import TeamIcon from './team-icon';
 
 export default function NameIcon({
