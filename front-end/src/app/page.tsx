@@ -1,10 +1,9 @@
 import getTopFive from 'helpers/getTop5';
-import Link from 'next/link';
 import {getHomePageFencers, getTeams} from '~/api';
 import FencerTable from '~/components/fencer-table';
 import PageHeading from '~/components/page-heading';
 import RankingRow from '~/components/ranking-row';
-import StandingsCard from '~/components/standings-card';
+import StandingsCard from '~/components/list-card';
 import {Team} from '~/models/FencerSummary';
 
 export default async function HomePage() {
@@ -62,33 +61,23 @@ export default async function HomePage() {
             <PageHeading>Fencers</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                 {fencerTables.map((data) => (
-                    <Link href={data.url} key={data.title}>
-                        <StandingsCard
-                            title={data.title}
-                            className="transition-all hover:scale-[1.03] hover:bg-accent"
-                        >
-                            <FencerTable fencers={data.fencers} />
-                        </StandingsCard>
-                    </Link>
+                    <StandingsCard title={data.title} key={data.title} titleHref={data.url}>
+                        <FencerTable fencers={data.fencers} />
+                    </StandingsCard>
                 ))}
             </div>
             <PageHeading>Teams</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 {teamTables.map((data) => (
-                    <Link href={data.url}>
-                        <StandingsCard
-                            title={data.title}
-                            className="transition-all hover:scale-[1.03] hover:bg-accent"
-                        >
-                            {data.teams.map((team) => (
-                                <RankingRow
-                                    name={team.university.displayNameShort}
-                                    record={team.overall}
-                                    iconUniversityId={team.university.id}
-                                />
-                            ))}
-                        </StandingsCard>
-                    </Link>
+                    <StandingsCard title={data.title} titleHref={data.url} key={data.title}>
+                        {data.teams.map((team) => (
+                            <RankingRow
+                                name={team.university.displayNameShort}
+                                record={team.overall}
+                                iconUniversityId={team.university.id}
+                            />
+                        ))}
+                    </StandingsCard>
                 ))}
             </div>
         </main>

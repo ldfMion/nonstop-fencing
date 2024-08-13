@@ -2,7 +2,7 @@ import getUniversitiesfromCsv from 'helpers/getUniversitiesFromCsv';
 import parseTeam from 'helpers/parseTeam';
 import {getTeams} from '~/api';
 import RankingRow from '~/components/ranking-row';
-import StandingsCard from '~/components/standings-card';
+import StandingsCard from '~/components/list-card';
 import {Team} from '~/models/FencerSummary';
 
 export default async function TeamAndWeaponPage({params}: {params: {team: string}}) {

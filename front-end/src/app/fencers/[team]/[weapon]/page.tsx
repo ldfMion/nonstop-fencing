@@ -2,7 +2,7 @@ import parseTeam from 'helpers/parseTeam';
 import parseWeapon from 'helpers/parseWeapon';
 import {getFencersFromTeamAndWeapon} from '~/api';
 import FencerTable from '~/components/fencer-table';
-import StandingsCard from '~/components/standings-card';
+import StandingsCard from '~/components/list-card';
 
 export default async function TeamAndWeaponPage({
     params,
