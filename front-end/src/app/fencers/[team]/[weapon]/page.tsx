@@ -1,5 +1,6 @@
 import parseTeam from 'helpers/parseTeam';
 import parseWeapon from 'helpers/parseWeapon';
+import toTitleCase from 'helpers/toTitleCase';
 import {getFencersFromTeamAndWeapon} from '~/api';
 import FencerTable from '~/components/fencer-table';
 import StandingsCard from '~/components/list-card';
@@ -23,13 +24,4 @@ export default async function TeamAndWeaponPage({
             </div>
         </main>
     );
-}
-
-function toTitleCase(str: string) {
-    const words: string[] = str.toLowerCase().split(' ');
-    let finalStr = '';
-    words.forEach((word) => {
-        finalStr += ' ' + word.charAt(0).toUpperCase() + word.slice(1);
-    });
-    return finalStr;
 }

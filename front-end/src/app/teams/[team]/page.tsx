@@ -3,9 +3,9 @@ import parseTeam from 'helpers/parseTeam';
 import {getTeams} from '~/api';
 import RankingRow from '~/components/ranking-row';
 import StandingsCard from '~/components/list-card';
-import {Team} from '~/models/FencerSummary';
+import toTitleCase from 'helpers/toTitleCase';
 
-export default async function TeamAndWeaponPage({params}: {params: {team: string}}) {
+export default async function TeamRankingPage({params}: {params: {team: string}}) {
     const team = parseTeam(params.team);
     const teams = await getTeams(team);
     const title = toTitleCase(`${params.team}`).replace('ns', "n's") + ' Teams';
@@ -26,13 +26,4 @@ export default async function TeamAndWeaponPage({params}: {params: {team: string
             </div>
         </main>
     );
-}
-
-function toTitleCase(str: string) {
-    const words: string[] = str.toLowerCase().split(' ');
-    let finalStr = '';
-    words.forEach((word) => {
-        finalStr += ' ' + word.charAt(0).toUpperCase() + word.slice(1);
-    });
-    return finalStr;
 }
