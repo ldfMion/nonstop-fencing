@@ -11,9 +11,9 @@ export default function RankingRow({
     record: {wins: number; losses: number};
 }) {
     return (
-        <div className="flex flex-row items-center justify-between py-[8px]">
+        <li className="flex flex-row items-center justify-between py-[8px]">
             <NameIcon iconUniversityId={iconUniversityId} name={name} />
             <Record record={record} />
-        </div>
+        </li>
     );
 }

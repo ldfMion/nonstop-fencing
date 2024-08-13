@@ -1,17 +1,11 @@
 'use client';
-import {useState} from 'react';
-import FencerSummary, {Weapon} from '~/models/FencerSummary';
-import {ToggleGroup, ToggleGroupItem} from './ui/toggle-group';
+import FencerSummary from '~/models/FencerSummary';
 import parseWeapon from 'helpers/parseWeapon';
-import FencerTable from './fencer-table';
+import FilterSelector from './filter-selector';
+import {useState} from 'react';
+import FencerRow from './fencer-row';
 
-export default function FiteredFencerTable({
-    className,
-    fencers,
-}: {
-    className?: string;
-    fencers: FencerSummary[];
-}) {
+export default function FilteredFencerTable({fencers}: {fencers: FencerSummary[]}): JSX.Element {
     const options = ['All', 'Foil', 'Epee', 'Saber'];
     const [filter, setFilter] = useState<string>('All');
     let filteredFencers = fencers;
@@ -30,25 +24,15 @@ export default function FiteredFencerTable({
 
     return (
         <>
-            <ToggleGroup
-                type="single"
-                className={className}
-                defaultValue="All"
-                onValueChange={handleChange}
-                value={filter}
-            >
-                {options.map((value) => (
-                    <ToggleGroupItem
-                        value={value}
-                        aria-label="Toggle underline"
-                        key={value}
-                        className="h-auto rounded-full px-4 py-1"
-                    >
-                        {value}
-                    </ToggleGroupItem>
-                ))}
-            </ToggleGroup>
-            <FencerTable fencers={filteredFencers} />
+            <FilterSelector
+                className="justify-start"
+                filter={filter}
+                options={options}
+                handleChange={handleChange}
+            />
+            {filteredFencers.map((fencer) => (
+                <FencerRow fencer={fencer} key={fencer.fullName} />
+            ))}
         </>
     );
 }

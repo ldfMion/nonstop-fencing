@@ -62,7 +62,13 @@ export default async function HomePage() {
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                 {fencerTables.map((data) => (
                     <StandingsCard title={data.title} key={data.title} titleHref={data.url}>
-                        <FencerTable fencers={data.fencers} />
+                        {data.fencers.map((fencer) => (
+                            <RankingRow
+                                name={fencer.fullName}
+                                iconUniversityId={fencer.universityId}
+                                record={fencer.record}
+                            />
+                        ))}
                     </StandingsCard>
                 ))}
             </div>

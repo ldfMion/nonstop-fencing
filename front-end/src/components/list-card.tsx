@@ -2,7 +2,7 @@ import {ArrowRight} from 'lucide-react';
 import {Card, CardContent, CardHeader, CardTitle} from './ui/card';
 import Link from 'next/link';
 
-export default function ListCard({
+export default function ListCard<T>({
     title,
     children,
     titleHref,
@@ -17,7 +17,9 @@ export default function ListCard({
         <ConditionalLinkWrapper href={titleHref}>
             <Card className="flex flex-col px-6 py-4">
                 <CardHeaderWrapper title={title} href={titleHref} tableHeader={tableHeader} />
-                <CardContent className="flex flex-col gap-0 p-0">{children}</CardContent>
+                <CardContent className="flex flex-col gap-0 p-0">
+                    <ul className="flex flex-col gap-0 p-0">{children}</ul>
+                </CardContent>
             </Card>
         </ConditionalLinkWrapper>
     );

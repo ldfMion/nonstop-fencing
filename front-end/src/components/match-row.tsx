@@ -34,7 +34,7 @@ function MatchUI2({
     flip: boolean;
 }) {
     return (
-        <div className="flex flex-row items-center justify-between gap-10 py-1">
+        <li className="flex flex-row items-center justify-between gap-10 py-1">
             <div className="flex flex-row gap-2">
                 <p className="font-bold">vs.</p>
                 <Side university={university} />
@@ -62,7 +62,7 @@ function MatchUI2({
                     </div>
                 </div>
             </div>
-        </div>
+        </li>
     );
 }
 
