@@ -57,7 +57,7 @@ export default async function HomePage() {
         },
     ];
     return (
-        <main className="flex flex-col gap-4 p-6">
+        <main className="flex flex-col gap-4 px-6">
             <PageHeading>Fencers</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                 {fencerTables.map((data) => (

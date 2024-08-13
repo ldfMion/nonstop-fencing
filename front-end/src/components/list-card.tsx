@@ -6,26 +6,39 @@ export default function ListCard({
     title,
     children,
     titleHref,
+    tableHeader,
 }: {
     children: React.ReactNode;
     title?: string;
     titleHref?: string;
+    tableHeader?: React.ReactNode;
 }) {
     return (
         <ConditionalLinkWrapper href={titleHref}>
-            <Card className="p-2">
-                <ConditionalCardTitle title={title} href={titleHref} />
-                <CardContent className="p-0">{children}</CardContent>
+            <Card className="flex flex-col px-6 py-4">
+                <CardHeaderWrapper title={title} href={titleHref} tableHeader={tableHeader} />
+                <CardContent className="flex flex-col gap-0 p-0">{children}</CardContent>
             </Card>
         </ConditionalLinkWrapper>
     );
 }
 
-function ConditionalCardTitle({title, href}: {title?: string; href?: string}): JSX.Element {
+function CardHeaderWrapper({
+    title,
+    href,
+    tableHeader,
+}: {
+    title?: string;
+    href?: string;
+    tableHeader?: React.ReactNode;
+}): JSX.Element {
     return title ? (
-        <CardHeader className="flex flex-row items-center justify-between px-[16px] py-[8px]">
-            <CardTitle className="text-xl">{title}</CardTitle>
-            {href && <ArrowRight className="!m-0" />}
+        <CardHeader className="m-0 gap-0 p-0">
+            <div className="flex flex-row items-center justify-between">
+                <CardTitle className="text-xl">{title}</CardTitle>
+                {href && <ArrowRight className="!m-0" />}
+            </div>
+            {tableHeader || null}
         </CardHeader>
     ) : (
         <></>

@@ -1,8 +1,9 @@
-import TeamIcon from './team-icon';
 import {University} from '~/models/University';
 import Match from '~/models/Match';
 import getUniversity from '~/api/getUniversity';
-import Side from './side';
+import NameIcon from './name-icon';
+import {HTMLAttributes} from 'react';
+import {clsx} from 'clsx';
 
 export default async function MatchRow({
     match,
@@ -33,35 +34,69 @@ function MatchUI2({
     flip: boolean;
 }) {
     return (
-        <div className="flex flex-row items-center justify-between px-4 py-2">
+        <div className="flex flex-row items-center justify-between gap-10 py-1">
             <div className="flex flex-row gap-2">
                 <p className="font-bold">vs.</p>
                 <Side university={university} />
             </div>
-            <div className="flex flex-row items-center gap-3">
+            <div className="flex flex-row items-center gap-3 text-center">
                 {win ? (
-                    <p className="font-extrabold text-green-400">W</p>
+                    <SingleScore className="font-extrabold text-green-400">W</SingleScore>
                 ) : (
-                    <p className="font-extrabold text-red-400">L</p>
+                    <SingleScore className="font-extrabold text-red-400">L</SingleScore>
                 )}
                 <div
                     className={`flex w-20 flex-col items-stretch gap-1 text-right ${flip && 'flex-col-reverse'}`}
                 >
                     <div className="flex flex-row gap-1">
-                        <p className="w-6 font-bold">{match.teamAOverall}</p>
-                        <p className="w-6">{match.teamAFoil}</p>
-                        <p className="w-6">{match.teamAEpee}</p>
-                        <p className="w-6">{match.teamASaber}</p>
+                        <SingleScore className="font-bold">{match.teamAOverall}</SingleScore>
+                        <SingleScore>{match.teamAFoil}</SingleScore>
+                        <SingleScore>{match.teamAEpee}</SingleScore>
+                        <SingleScore>{match.teamASaber}</SingleScore>
                     </div>
                     <div className="flex flex-row gap-1">
-                        <p className="w-6 font-bold">{match.teamBOverall}</p>
-                        <p className="w-6">{match.teamBFoil}</p>
-                        <p className="w-6">{match.teamBEpee}</p>
-                        <p className="w-6">{match.teamBSaber}</p>
+                        <SingleScore className="w-6 font-bold">{match.teamBOverall}</SingleScore>
+                        <SingleScore>{match.teamBFoil}</SingleScore>
+                        <SingleScore>{match.teamBEpee}</SingleScore>
+                        <SingleScore>{match.teamBSaber}</SingleScore>
                     </div>
                 </div>
             </div>
         </div>
+    );
+}
+
+function SingleScore({
+    children,
+    className,
+}: {
+    children: React.ReactNode;
+    className?: string;
+} & HTMLAttributes<HTMLParagraphElement>): JSX.Element {
+    return <p className={clsx('w-6', className)}>{children}</p>;
+}
+
+function Score({a, b, win}: {a: number; b: number; win: boolean}) {
+    const color = win ? 'bg-green-400' : 'bg-red-400';
+    return (
+        <div
+            className={`flex items-center justify-center text-nowrap rounded-md font-semibold leading-none text-white ${color} p-1`}
+        >
+            <span className="flex w-5 items-center justify-center">{a}</span>
+            <span className="flex w-5 items-center justify-center">-</span>
+            <span className="flex w-5 items-center justify-center">{b}</span>
+        </div>
+    );
+}
+
+function Side({university, flip}: {university: University; flip?: boolean}): React.ReactNode {
+    return (
+        <NameIcon
+            iconUniversityId={university.id}
+            name={university.displayNameShort}
+            flip={flip}
+            className="text-lg"
+        />
     );
 }
 
@@ -81,19 +116,6 @@ function MatchUI1({
             <Side university={universityA} />
             <Score a={match.teamAOverall} b={match.teamBOverall} win={win} />
             <Side university={universityB} flip />
-        </div>
-    );
-}
-
-function Score({a, b, win}: {a: number; b: number; win: boolean}) {
-    const color = win ? 'bg-green-400' : 'bg-red-400';
-    return (
-        <div
-            className={`flex items-center justify-center text-nowrap rounded-md font-semibold leading-none text-white ${color} p-1`}
-        >
-            <span className="flex w-5 items-center justify-center">{a}</span>
-            <span className="flex w-5 items-center justify-center">-</span>
-            <span className="flex w-5 items-center justify-center">{b}</span>
         </div>
     );
 }

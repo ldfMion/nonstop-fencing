@@ -12,6 +12,8 @@ import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Tabs, TabsList, TabsTrigger} from '~/components/ui/tabs';
 import {Team} from '~/models/FencerSummary';
+import RecordModel from '~/models/Record';
+import {University as UniversityModel} from '~/models/University';
 
 export default async function University({params}: {params: {university: string; team: string}}) {
     const university = await getUniversity(params.university);
@@ -23,38 +25,17 @@ export default async function University({params}: {params: {university: string;
     const matches = await getMatchesFromUniversity(university.id, team);
     const universityRecord = await getUniversityRecord(university.id, team);
     return (
-        <main className="flex flex-col items-stretch gap-5 p-6">
-            <Card className="flex flex-row gap-6 p-6">
-                <TeamIcon universityId={university.id} size={100} />
-                <div className="flex flex-col justify-between">
-                    <div>
-                        <h2 className="text-4xl font-extrabold">{university.displayNameLong}</h2>
-                        <p className="text-lg font-bold">{university.region}</p>
-                    </div>
-                    <Record record={universityRecord} />
-                </div>
-            </Card>
-            <Tabs
-                defaultValue={team == Team.MEN ? 'men' : 'women'}
-                className="w-[400px] self-center"
-            >
-                <TabsList className="grid w-full grid-cols-2">
-                    <Link href="./men" legacyBehavior>
-                        <TabsTrigger value="men">Men's</TabsTrigger>
-                    </Link>
-                    <Link href="./women" legacyBehavior>
-                        <TabsTrigger value="women">Women's</TabsTrigger>
-                    </Link>
-                </TabsList>
-            </Tabs>
+        <main className="flex flex-col items-stretch gap-5 px-24">
+            <UniversityHeaders university={university} record={universityRecord} />
+            <TeamTabs team={team} />
             <div className="flex flex-col gap-5 md:flex-row md:items-start [&>*]:grow">
                 <StandingsCard title="Squad">
                     <FilteredFencerTable
-                        className="justify-start px-4"
+                        className="justify-start"
                         fencers={fencers.map((fencer) => fencer.toObject!())}
                     />
                 </StandingsCard>
-                <StandingsCard title="Fixtures">
+                <StandingsCard title="Fixtures" tableHeader={<MatchTableHeader />}>
                     {matches.map((match) => (
                         <MatchRow
                             match={match}
@@ -65,5 +46,53 @@ export default async function University({params}: {params: {university: string;
                 </StandingsCard>
             </div>
         </main>
+    );
+}
+
+function MatchTableHeader(): JSX.Element {
+    return (
+        <div className="m-0 flex flex-row items-center justify-end gap-3">
+            <div className="flex w-14 flex-row items-stretch gap-1 text-right text-gray-500">
+                <p className="w-6">F</p>
+                <p className="w-6">E</p>
+                <p className="w-6">S</p>
+            </div>
+        </div>
+    );
+}
+
+function TeamTabs({team}: {team: Team}): JSX.Element {
+    return (
+        <Tabs defaultValue={team == Team.MEN ? 'men' : 'women'} className="w-[400px] self-center">
+            <TabsList className="grid w-full grid-cols-2">
+                <Link href="./men" legacyBehavior>
+                    <TabsTrigger value="men">Men's</TabsTrigger>
+                </Link>
+                <Link href="./women" legacyBehavior>
+                    <TabsTrigger value="women">Women's</TabsTrigger>
+                </Link>
+            </TabsList>
+        </Tabs>
+    );
+}
+
+function UniversityHeaders({
+    university,
+    record,
+}: {
+    university: UniversityModel;
+    record: RecordModel;
+}): JSX.Element {
+    return (
+        <Card className="flex flex-row gap-6 p-6">
+            <TeamIcon universityId={university.id} size={100} />
+            <div className="flex flex-col justify-between">
+                <div>
+                    <h2 className="text-4xl font-extrabold">{university.displayNameLong}</h2>
+                    <p className="text-lg font-bold">{university.region}</p>
+                </div>
+                <Record record={record} />
+            </div>
+        </Card>
     );
 }

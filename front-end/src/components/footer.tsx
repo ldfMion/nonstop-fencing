@@ -12,7 +12,7 @@ export default function Footer(): JSX.Element {
         {displayName: "women's saber", url: 'rankings/womens/saber'},
     ]; */
     return (
-        <div className="flex flex-col items-start border bg-accent p-6">
+        <div className="mt-8 flex flex-col items-start border bg-accent p-6">
             <p>
                 Record information is taken from each university's website. We are currently working
                 on the missing universities.
