@@ -1,6 +1,6 @@
 'use client';
-import FencerSummary, {Weapon} from '~/models/FencerSummary';
 import FilterSelector from './filter-selector';
+//! BROKEN
 
 export default function TableFilter<T>({
     className,
