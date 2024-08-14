@@ -4,9 +4,9 @@ import parseCSV from './parseCsv';
 import {University} from '~/models/University';
 import Record from '~/models/Record';
 import {ITeam} from '~/models/Team';
-import calculatePythagoreanWins from './calculatePythagoreanWins';
 import {Region} from '~/models/Region';
 import assertString from './assertString';
+import calculateWinPercentage from './calculateWinPercentage';
 
 let universities: University[] | null = null;
 
@@ -21,7 +21,7 @@ export default async function getUniversitiesfromCsv(): Promise<University[]> {
                     universityWithoutRecord,
                     mens,
                     womens,
-                    calculatePythagoreanWins,
+                    calculateWinPercentage,
                 );
             }),
         );

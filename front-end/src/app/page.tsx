@@ -64,13 +64,13 @@ export default async function HomePage() {
             items: squads.womens.foil,
         },
         {
-            title: "Women's Foil",
-            url: 'squads/womens/foil',
+            title: "Women's Epee",
+            url: 'squads/womens/epee',
             items: squads.womens.epee,
         },
         {
-            title: "Women's Foil",
-            url: 'squads/womens/foil',
+            title: "Women's Saber",
+            url: 'squads/womens/saber',
             items: squads.womens.saber,
         },
         {
@@ -79,13 +79,13 @@ export default async function HomePage() {
             items: squads.mens.foil,
         },
         {
-            title: "Men's Foil",
-            url: 'squads/mens/foil',
+            title: "Men's Epee",
+            url: 'squads/mens/epee',
             items: squads.mens.epee,
         },
         {
-            title: "Men's Foil",
-            url: 'squads/mens/foil',
+            title: "Men's Saber",
+            url: 'squads/mens/saber',
             items: squads.mens.saber,
         },
     ];

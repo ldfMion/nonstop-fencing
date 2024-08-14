@@ -25,7 +25,7 @@ export default async function University({params}: {params: {university: string;
     }
     const team = parseTeam(params.team);
     const fencers = await getFencersFromUniversity(university.id, team);
-    const universityRecord = await getUniversityRecord(university.id, team);
+    const universityRecord = await (await getUniversityRecord(university.id, team)).overall;
     return (
         <main className="flex flex-col items-stretch gap-5 px-24">
             <UniversityHeaders university={university} record={universityRecord} />
