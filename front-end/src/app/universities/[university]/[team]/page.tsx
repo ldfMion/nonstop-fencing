@@ -15,6 +15,7 @@ import FencerSummary, {Team} from '~/models/FencerSummary';
 import RecordModel from '~/models/Record';
 import {University as UniversityModel} from '~/models/University';
 import RankingRow from '~/components/ranking-row';
+import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 
 export default async function University({params}: {params: {university: string; team: string}}) {
     const university = await getUniversity(params.university);
@@ -31,7 +32,9 @@ export default async function University({params}: {params: {university: string;
             <TeamTabs team={team} />
             <div className="flex flex-col gap-5 md:flex-row md:items-start [&>*]:grow">
                 <StandingsCard title="Squad">
-                    <FilteredFencerTable fencers={fencers.map((fencer) => fencer.toObject!())} />
+                    <FilteredFencersByWeapon
+                        fencers={fencers.map((fencer) => fencer.toObject!())}
+                    />
                 </StandingsCard>
                 <StandingsCard title="Fixtures" tableHeader={<MatchTableHeader />}>
                     {matches.map((match) => (
