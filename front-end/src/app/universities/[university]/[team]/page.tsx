@@ -4,7 +4,6 @@ import Link from 'next/link';
 import getFencersFromUniversity from '~/api/getFencersFromUniversity';
 import getMatchesFromUniversity from '~/api/getMatchesFromUniversity';
 import getUniversity from '~/api/getUniversity';
-import FilteredFencerTable from '~/components/filtered-fencer-table';
 import MatchRow from '~/components/match-row';
 import Record from '~/components/record';
 import StandingsCard from '~/components/list-card';
@@ -16,6 +15,8 @@ import RecordModel from '~/models/Record';
 import {University as UniversityModel} from '~/models/University';
 import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 import {Region} from '~/models/Region';
+import Match from '~/models/Match';
+import {Separator} from '~/components/ui/separator';
 
 export default async function University({params}: {params: {university: string; team: string}}) {
     const university = await getUniversity(params.university);
@@ -24,7 +25,6 @@ export default async function University({params}: {params: {university: string;
     }
     const team = parseTeam(params.team);
     const fencers = await getFencersFromUniversity(university.id, team);
-    const matches = await getMatchesFromUniversity(university.id, team);
     const universityRecord = await getUniversityRecord(university.id, team);
     return (
         <main className="flex flex-col items-stretch gap-5 px-24">
@@ -36,24 +36,57 @@ export default async function University({params}: {params: {university: string;
                         fencers={fencers.map((fencer) => fencer.toObject!())}
                     />
                 </StandingsCard>
-                <StandingsCard title="Fixtures" tableHeader={<MatchTableHeader />}>
-                    {matches.map((match) => (
-                        <MatchRow
-                            match={match}
-                            key={match.teamAId + match.teamBId + match.date}
-                            perspective={university}
-                        />
-                    ))}
-                </StandingsCard>
+                <MatchesCard university={university} team={team} />
             </div>
         </main>
     );
 }
 
+async function MatchesCard({
+    university,
+    team,
+}: {
+    university: UniversityModel;
+    team: Team;
+}): Promise<JSX.Element> {
+    const matches = await getMatchesFromUniversity(university.id, team);
+    const matchesGroupedByDate = groupMatchesByDate(matches);
+    return (
+        <StandingsCard title="Fixtures" tableHeader={<MatchTableHeader />}>
+            {Object.keys(matchesGroupedByDate).map((date) => (
+                <>
+                    <p key={date} className="mt-2 font-semibold text-gray-500">
+                        {getRelativeDateFromISODate(date)}
+                    </p>
+                    <Separator className="" />
+                    {matchesGroupedByDate[date]!.map((match) => (
+                        <>
+                            <MatchRow
+                                match={match}
+                                key={match.teamAId + match.teamBId + match.date}
+                                perspective={university}
+                            />
+                        </>
+                    ))}
+                </>
+            ))}
+        </StandingsCard>
+    );
+}
+
+function getRelativeDateFromISODate(date: string): string {
+    const dateObj = new Date(date);
+    const formatted = new Intl.DateTimeFormat('en-US', {
+        dateStyle: 'medium',
+        timeStyle: undefined,
+    }).format(dateObj);
+    return formatted;
+}
+
 function MatchTableHeader(): JSX.Element {
     return (
-        <div className="m-0 flex flex-row items-center justify-end gap-3">
-            <div className="flex w-14 flex-row items-stretch gap-1 text-right text-gray-500">
+        <div className="!m-0 flex flex-row items-center justify-end gap-3">
+            <div className="!m-0 flex w-14 flex-row items-stretch gap-1 text-right text-gray-500">
                 <p className="w-6">F</p>
                 <p className="w-6">E</p>
                 <p className="w-6">S</p>
@@ -116,4 +149,13 @@ function getRegionName(region: Region): string {
         case Region.MIDWEST:
             return MIDWEST;
     }
+}
+
+function groupMatchesByDate(matches: Match[]): Record<string, Match[]> {
+    const record: Record<string, Match[]> = {};
+    for (const match of matches) {
+        const time = match.date.toString();
+        record[time] = record[time] === undefined ? [match] : [...record[time], match];
+    }
+    return record;
 }

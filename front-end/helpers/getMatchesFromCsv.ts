@@ -12,7 +12,6 @@ export default async function getMatchesFromCsv(team: Team): Promise<Match[]> {
             `../data/team-results-${team === Team.MEN ? 'men' : 'women'}.csv`,
             parseRow,
         );
-        matches.sort((a, b) => a.date.getTime() - b.date.getTime());
     }
     return matches;
 }
