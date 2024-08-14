@@ -1,6 +1,7 @@
 import {ArrowRight} from 'lucide-react';
 import {Card, CardContent, CardHeader, CardTitle} from './ui/card';
 import Link from 'next/link';
+import clsx from 'clsx';
 
 export default function ListCard<T>({
     title,
@@ -36,7 +37,7 @@ function CardHeaderWrapper({
 }): JSX.Element {
     return title ? (
         <CardHeader className="m-0 gap-0 p-0">
-            <div className="flex flex-row items-center justify-between">
+            <div className="flex flex-row items-center justify-between hover:underline">
                 <CardTitle className="text-xl">{title}</CardTitle>
                 {href && <ArrowRight className="!m-0" />}
             </div>

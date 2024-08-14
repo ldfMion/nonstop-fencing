@@ -114,6 +114,7 @@ export default async function HomePage() {
                                 name={team.university.displayNameShort}
                                 record={team.overall}
                                 iconUniversityId={team.university.id}
+                                href={`/universities/${team.university.id}/men`}
                             />
                         ))}
                     </StandingsCard>
@@ -128,6 +129,7 @@ export default async function HomePage() {
                                 name={squad.university.displayNameShort}
                                 record={squad.record}
                                 iconUniversityId={squad.university.id}
+                                href={`/universities/${squad.university.id}/men`}
                             />
                         ))}
                     </StandingsCard>
