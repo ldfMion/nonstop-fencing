@@ -61,8 +61,18 @@ class UniversityFromCSVWithRecord implements University {
     public womens: ITeam;
     constructor(
         universityWithoutRecord: UniversityWithoutRecord,
-        mensOverall: Record,
-        womensOverall: Record,
+        mensRecords: {
+            overall: Record;
+            foil: Record;
+            epee: Record;
+            saber: Record;
+        },
+        womensRecords: {
+            overall: Record;
+            foil: Record;
+            epee: Record;
+            saber: Record;
+        },
         ratingFn: (record: Record) => number,
     ) {
         this.id = universityWithoutRecord.id;
@@ -71,14 +81,14 @@ class UniversityFromCSVWithRecord implements University {
         this.region = universityWithoutRecord.region;
         this.colorTheme = universityWithoutRecord.colorTheme;
         this.mens = {
-            overall: mensOverall,
+            ...mensRecords,
             university: this,
-            rating: ratingFn(mensOverall),
+            rating: ratingFn(mensRecords.overall),
         };
         this.womens = {
-            overall: womensOverall,
+            ...womensRecords,
             university: this,
-            rating: ratingFn(womensOverall),
+            rating: ratingFn(womensRecords.overall),
         };
     }
 }

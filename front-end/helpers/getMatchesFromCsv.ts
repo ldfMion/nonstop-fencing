@@ -2,17 +2,30 @@ import Match from '~/models/Match';
 import parseCSV from './parseCsv';
 import {Team} from '~/models/FencerSummary';
 
-let mensMatches: Match[] | null = null;
-let womensMathces: Match[] | null = null;
+let mensMatchesPromise: Promise<Match[]> | null = null;
+let womensMatchesPromise: Promise<Match[]> | null = null;
+
+console.log('loaded the get matches from csv file');
 
 export default async function getMatchesFromCsv(team: Team): Promise<Match[]> {
-    let matches = team == Team.MEN ? mensMatches : womensMathces;
-    if (matches == null) {
-        matches = await parseCSV(
+    console.log('getting matches from csv for team: ' + team);
+    let matchesPromise = team === Team.MEN ? mensMatchesPromise : womensMatchesPromise;
+    if (matchesPromise === null) {
+        console.log('initiating CSV parsing for', team === Team.MEN ? 'men' : 'women');
+        matchesPromise = parseCSV(
             `../data/team-results-${team === Team.MEN ? 'men' : 'women'}.csv`,
             parseRow,
         );
+        if (team === Team.MEN) {
+            mensMatchesPromise = matchesPromise;
+        } else {
+            womensMatchesPromise = matchesPromise;
+        }
+    } else {
+        console.log('using existing promise for', team === Team.MEN ? 'men' : 'women');
     }
+
+    const matches = await matchesPromise;
     return matches;
 }
 

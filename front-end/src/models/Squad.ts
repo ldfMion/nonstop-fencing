@@ -1,10 +1,7 @@
 import Record from './Record';
 import {University} from './University';
-export interface ITeam {
-    overall: Record;
-    foil: Record;
-    epee: Record;
-    saber: Record;
+export interface Squad {
     university: University;
+    record: Record;
     rating: number;
 }

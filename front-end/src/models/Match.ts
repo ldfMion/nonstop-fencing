@@ -1,3 +1,5 @@
+import {Weapon} from './FencerSummary';
+
 export default class Match {
     constructor(
         public teamAId: string,
@@ -17,13 +19,28 @@ export default class Match {
         return this.teamAId === universityId || this.teamBId === universityId;
     }
     get winner() {
-        if (this.teamAOverall > this.teamBOverall) {
+        return this.getWinner(this.teamAOverall, this.teamBOverall);
+    }
+    get foilWinner() {
+        return this.getWinner(this.teamAFoil, this.teamBFoil);
+    }
+    get epeeWinner() {
+        return this.getWinner(this.teamAEpee, this.teamBEpee);
+    }
+    get saberWinner() {
+        return this.getWinner(this.teamASaber, this.teamBSaber);
+    }
+    private getWinner(teamAPartial: number, teamBPartial: number): string | null {
+        if (teamAPartial > teamBPartial) {
             return this.teamAId;
-        } else if (this.teamBOverall > this.teamAOverall) {
-            return this.teamBId;
-        } else {
-            throw Error("An NCAA Fencing Match can't be a tie");
         }
+        if (teamBPartial > teamAPartial) {
+            return this.teamBId;
+        }
+        // console.log(
+        //     `An NCAA Fencing Match can't be a tie. Match: ${this.teamAId}(${teamAPartial}) vs (${teamBPartial})${this.teamBId}`,
+        // );
+        return null;
     }
 }
 

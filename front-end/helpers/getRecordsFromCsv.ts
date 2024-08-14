@@ -11,18 +11,17 @@ let records: FencerSummary[] | null = null;
 
 export default async function getRecordsfromCsv(): Promise<FencerSummary[]> {
     console.log('Getting records from csv');
+    console.log(records == null);
     if (records == null) {
         console.log('Getting records from csv for the first time');
         const fencersWithoutRegion = await parseCSV('../data/records.csv', parseRow);
         records = await Promise.all(
             fencersWithoutRegion.map(async (fencer) => {
                 const university = await getUniversity(fencer.universityId);
-                console.log('University: ' + university);
                 const region = university.region;
                 return new FencerSummaryWithRegion(fencer, region);
             }),
         );
-        console.log('Records: ' + records);
     }
     return records;
 }
