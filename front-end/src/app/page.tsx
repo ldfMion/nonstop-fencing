@@ -1,6 +1,5 @@
 import getTopFive from 'helpers/getTop5';
 import {getHomePageFencers, getTeams} from '~/api';
-import FencerTable from '~/components/fencer-table';
 import PageHeading from '~/components/page-heading';
 import RankingRow from '~/components/ranking-row';
 import StandingsCard from '~/components/list-card';
@@ -41,9 +40,7 @@ export default async function HomePage() {
         },
     ];
     const womensTeams = getTopFive(await getTeams(Team.WOMEN));
-    console.log(womensTeams);
     const mensTeams = getTopFive(await getTeams(Team.MEN));
-    console.log(mensTeams);
     const teamTables = [
         {
             title: "Women's",

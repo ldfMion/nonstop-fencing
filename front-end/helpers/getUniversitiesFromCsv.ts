@@ -5,6 +5,8 @@ import {University} from '~/models/University';
 import Record from '~/models/Record';
 import {ITeam} from '~/models/Team';
 import calculatePythagoreanWins from './calculatePythagoreanWins';
+import {Region} from '~/models/Region';
+import assertString from './assertString';
 
 let universities: University[] | null = null;
 
@@ -37,14 +39,14 @@ class UniversityFromCSV implements UniversityWithoutRecord {
     public id: string;
     public displayNameShort: string;
     public displayNameLong: string;
-    public region: string;
+    public region: Region;
     public colorTheme: string | null = null;
     constructor(csvRow: unknown) {
         const anyRow = csvRow as any;
         this.id = anyRow['id'];
         this.displayNameShort = anyRow['Display Name Short'];
         this.displayNameLong = anyRow['Display Name Long'];
-        this.region = anyRow['Region'];
+        this.region = parseRegion(anyRow['Region']);
         this.colorTheme = anyRow['Theme Color'];
     }
 }
@@ -53,7 +55,7 @@ class UniversityFromCSVWithRecord implements University {
     public id: string;
     public displayNameShort: string;
     public displayNameLong: string;
-    public region: string;
+    public region: Region;
     public colorTheme: string | null = null;
     public mens: ITeam;
     public womens: ITeam;
@@ -78,5 +80,21 @@ class UniversityFromCSVWithRecord implements University {
             university: this,
             rating: ratingFn(womensOverall),
         };
+    }
+}
+
+function parseRegion(data: any) {
+    assertString(data);
+    switch (data.toLowerCase()) {
+        case 'northeast region':
+            return Region.NORTHEAST;
+        case 'mid-atlantic/south region':
+            return Region.MID_ATLANTIC_SOUTH;
+        case 'west region':
+            return Region.WEST;
+        case 'midwest region':
+            return Region.MIDWEST;
+        default:
+            throw new Error(`Unknown region: ${data}`);
     }
 }

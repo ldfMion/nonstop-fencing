@@ -11,11 +11,11 @@ import StandingsCard from '~/components/list-card';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Tabs, TabsList, TabsTrigger} from '~/components/ui/tabs';
-import FencerSummary, {Team} from '~/models/FencerSummary';
+import {Team} from '~/models/FencerSummary';
 import RecordModel from '~/models/Record';
 import {University as UniversityModel} from '~/models/University';
-import RankingRow from '~/components/ranking-row';
 import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
+import {Region} from '~/models/Region';
 
 export default async function University({params}: {params: {university: string; team: string}}) {
     const university = await getUniversity(params.university);
@@ -84,16 +84,36 @@ function UniversityHeaders({
     university: UniversityModel;
     record: RecordModel;
 }): JSX.Element {
+    const region = getRegionName(university.region);
     return (
         <Card className="flex flex-row gap-6 p-6">
             <TeamIcon universityId={university.id} size={100} />
             <div className="flex flex-col justify-between">
                 <div>
                     <h2 className="text-4xl font-extrabold">{university.displayNameLong}</h2>
-                    <p className="text-lg font-bold">{university.region}</p>
+                    <p className="text-lg font-bold">{region}</p>
                 </div>
                 <Record record={record} />
             </div>
         </Card>
     );
+}
+
+const NORTHEAST = 'Northeast';
+const MID_ATLANTIC_SOUTH = 'Mid-Atlantic/South';
+const WEST = 'West';
+const MIDWEST = 'Midwest';
+const ALL = 'All';
+
+function getRegionName(region: Region): string {
+    switch (region) {
+        case Region.NORTHEAST:
+            return NORTHEAST;
+        case Region.MID_ATLANTIC_SOUTH:
+            return MID_ATLANTIC_SOUTH;
+        case Region.WEST:
+            return WEST;
+        case Region.MIDWEST:
+            return MIDWEST;
+    }
 }

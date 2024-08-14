@@ -13,7 +13,6 @@ export default function FilterSelector({
 }): JSX.Element {
     const [filter, setFilter] = useState<string>(options[0] ?? '');
     const handleChange = (value: string) => {
-        console.log('inner change');
         if (value == '') {
             return;
         }

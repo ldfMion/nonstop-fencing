@@ -2,7 +2,7 @@ import parseTeam from 'helpers/parseTeam';
 import parseWeapon from 'helpers/parseWeapon';
 import toTitleCase from 'helpers/toTitleCase';
 import {getFencersFromTeamAndWeapon} from '~/api';
-import FencerTable from '~/components/fencer-table';
+import FilteredFencerTableByRegion from '~/components/filtered-fencer-table-by-region';
 import StandingsCard from '~/components/list-card';
 
 export default async function TeamAndWeaponPage({
@@ -16,10 +16,12 @@ export default async function TeamAndWeaponPage({
     const title = toTitleCase(`${params.team} ${params.weapon}`).replace('ns', "n's");
     return (
         <main className="flex flex-col items-center p-6">
-            <div className="flex w-[500px] max-w-[100%] flex-col items-stretch gap-4">
+            <div className="flex w-[600px] max-w-[100%] flex-col items-stretch gap-4">
                 <h2 className="text-3xl font-semibold">{title}</h2>
                 <StandingsCard>
-                    <FencerTable fencers={fencers} />
+                    <FilteredFencerTableByRegion
+                        fencers={fencers.map((fencer) => fencer.toObject!())}
+                    />
                 </StandingsCard>
             </div>
         </main>

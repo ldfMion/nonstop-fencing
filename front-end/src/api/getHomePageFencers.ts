@@ -15,6 +15,7 @@ export default async function getHomePageFencers(): Promise<{
     };
 }> {
     const data = await getRecordsFromCsv();
+    data.sort((a, b) => b.rating - a.rating);
     return {
         mens: {
             foil: getTopFive(
