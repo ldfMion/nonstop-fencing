@@ -68,9 +68,11 @@ export default function Navbar(): JSX.Element {
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
-                            Rankings
-                        </NavigationMenuTrigger>
+                        <Link href="/">
+                            <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
+                                Rankings
+                            </NavigationMenuTrigger>
+                        </Link>
                         <NavigationMenuContent>
                             <ul className="flex flex-row gap-4 p-6">
                                 {paths.map((path) => (
