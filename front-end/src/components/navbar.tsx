@@ -5,16 +5,58 @@ import {
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
+    NavigationMenuContent,
+    NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from '~/components/ui/navigation-menu';
 
-const paths: {
-    displayName: string;
-    url: string;
-}[] = [
-    {displayName: 'Fencers', url: ''},
-    {displayName: 'Universities', url: ''},
-    {displayName: 'About Us', url: 'about'},
+const fencerPaths = [
+    {
+        title: "Men's Foil",
+        url: 'fencers/mens/foil',
+    },
+    {
+        title: "Men's Epee",
+        url: 'fencers/mens/epee',
+    },
+    {
+        title: "Men's Saber",
+        url: 'fencers/mens/saber',
+    },
+    {
+        title: "Women's Foil",
+        url: 'fencers/womens/foil',
+    },
+    {
+        title: "Women's Epee",
+        url: 'fencers/womens/epee',
+    },
+    {
+        title: "Women's Saber",
+        url: 'fencers/womens/saber',
+    },
+];
+
+const paths: PathHeading[] = [
+    {heading: 'Fencers', subPaths: fencerPaths},
+    {
+        heading: 'Teams',
+        subPaths: [
+            {title: "Men's", url: '/teams/mens'},
+            {title: "Women's", url: '/teams/womens'},
+        ],
+    },
+    {
+        heading: 'Squads',
+        subPaths: [
+            {title: "Men's Foil", url: 'squads/mens/foil'},
+            {title: "Men's Epee", url: 'squads/mens/epee'},
+            {title: "Men's Saber", url: 'squads/mens/saber'},
+            {title: "Women's Foil", url: 'squads/womens/foil'},
+            {title: "Women's Epee", url: 'squads/womens/epee'},
+            {title: "Women's Saber", url: 'squads/womens/saber'},
+        ],
+    },
 ];
 
 export default function Navbar(): JSX.Element {
@@ -25,17 +67,70 @@ export default function Navbar(): JSX.Element {
             </h1>
             <NavigationMenu>
                 <NavigationMenuList>
-                    {paths.map((path) => (
-                        <NavigationMenuItem key={path.url}>
-                            <Link passHref legacyBehavior href={`/${path.url}`}>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    {path.displayName}
-                                </NavigationMenuLink>
-                            </Link>
-                        </NavigationMenuItem>
-                    ))}
+                    <NavigationMenuItem>
+                        <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
+                            Rankings
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                            <ul className="flex flex-row gap-4 p-6">
+                                {paths.map((path) => (
+                                    <SubPathsSection subPath={path} />
+                                ))}
+                            </ul>
+                        </NavigationMenuContent>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link href="/about">
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                About Us
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
         </div>
     );
 }
+
+function SubLinkItem({href, title}: {href: string; title: string}): JSX.Element {
+    return (
+        <li>
+            <Link href={href}>
+                <NavigationMenuLink>
+                    <p className="text-nowrap">{title}</p>
+                </NavigationMenuLink>
+            </Link>
+        </li>
+    );
+}
+
+function SubLinksHeading({children}: {children: string}): JSX.Element {
+    return (
+        <Link passHref legacyBehavior href={`/`}>
+            <p className="font-medium">{children}</p>
+        </Link>
+    );
+}
+
+function SubPathsSection({subPath}: {subPath: PathHeading}): JSX.Element {
+    return (
+        <li>
+            <SubLinksHeading>{subPath.heading}</SubLinksHeading>
+            <ul className="flex flex-col gap-0">
+                {subPath.subPaths.map((path) => (
+                    <SubLinkItem href={path.url} title={path.title} />
+                ))}
+            </ul>
+        </li>
+    );
+}
+
+type Path = {
+    title: string;
+    url: string;
+};
+
+type PathHeading = {
+    heading: string;
+    subPaths: Path[];
+};
