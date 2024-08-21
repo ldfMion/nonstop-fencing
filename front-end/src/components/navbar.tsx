@@ -9,6 +9,8 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from '~/components/ui/navigation-menu';
+import {buttonVariants} from './ui/button';
+import {cn} from '~/lib/utils';
 
 const fencerPaths = [
     {
@@ -61,7 +63,7 @@ const paths: PathHeading[] = [
 
 export default function Navbar(): JSX.Element {
     return (
-        <div className="sticky top-0 flex flex-row justify-between p-6 backdrop-blur-md">
+        <div className="sticky top-0 z-10 flex flex-row justify-between p-6 backdrop-blur-md">
             <h1 className="text-2xl font-extrabold">
                 <span className="text-primary">nonstop</span>fencing
             </h1>
@@ -96,12 +98,10 @@ export default function Navbar(): JSX.Element {
 
 function SubLinkItem({href, title}: {href: string; title: string}): JSX.Element {
     return (
-        <li>
-            <Link href={href}>
-                <NavigationMenuLink>
-                    <p className="text-nowrap">{title}</p>
-                </NavigationMenuLink>
-            </Link>
+        <li className={cn(buttonVariants({variant: 'link'}), 'h-fit w-fit text-nowrap p-0')}>
+            <NavigationMenuLink asChild>
+                <Link href={href}>{title}</Link>
+            </NavigationMenuLink>
         </li>
     );
 }
@@ -116,9 +116,9 @@ function SubLinksHeading({children}: {children: string}): JSX.Element {
 
 function SubPathsSection({subPath}: {subPath: PathHeading}): JSX.Element {
     return (
-        <li>
+        <li className="flex flex-col gap-1">
             <SubLinksHeading>{subPath.heading}</SubLinksHeading>
-            <ul className="flex flex-col gap-0">
+            <ul className="grid gap-2">
                 {subPath.subPaths.map((path) => (
                     <SubLinkItem href={path.url} title={path.title} />
                 ))}
