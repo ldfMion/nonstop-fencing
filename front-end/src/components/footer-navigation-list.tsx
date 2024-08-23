@@ -1,12 +1,5 @@
 'use client';
 import Link from 'next/link';
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    navigationMenuTriggerStyle,
-} from './ui/navigation-menu';
 import {Button} from './ui/button';
 
 export default function FooterNavigationList({

@@ -24,14 +24,15 @@ export default function RankingRow({
 }
 
 function ConditionalLinkWrapper({href, children}: {href?: string; children: React.ReactNode}) {
-    return href ? (
-        <Link
-            href={href}
-            className="cursor-pointer rounded-md transition-all hover:bg-accent hover:px-1"
-        >
-            {children}
-        </Link>
-    ) : (
-        <>{children}</>
+    return (
+        <div className="cursor-pointer rounded-md transition-all hover:bg-accent hover:px-1">
+            {href ? (
+                <Link href={href} legacyBehavior>
+                    {children}
+                </Link>
+            ) : (
+                <>{children}</>
+            )}
+        </div>
     );
 }

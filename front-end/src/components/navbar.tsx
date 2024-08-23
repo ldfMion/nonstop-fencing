@@ -70,7 +70,7 @@ export default function Navbar(): JSX.Element {
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem>
-                        <Link href="/">
+                        <Link href="/" legacyBehavior>
                             <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
                                 Rankings
                             </NavigationMenuTrigger>
@@ -84,7 +84,7 @@ export default function Navbar(): JSX.Element {
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Link href="/about">
+                        <Link href="/about" legacyBehavior>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 About Us
                             </NavigationMenuLink>
@@ -100,7 +100,9 @@ function SubLinkItem({href, title}: {href: string; title: string}): JSX.Element 
     return (
         <li className={cn(buttonVariants({variant: 'link'}), 'h-fit w-fit text-nowrap p-0')}>
             <NavigationMenuLink asChild>
-                <Link href={href}>{title}</Link>
+                <Link href={href} legacyBehavior>
+                    {title}
+                </Link>
             </NavigationMenuLink>
         </li>
     );
