@@ -92,7 +92,7 @@ function SubLinkItem({href, title}: {href: string; title: string}): JSX.Element 
         <li
             className={cn(
                 buttonVariants({variant: 'link'}),
-                'h-fit w-fit text-nowrap p-0 text-foreground underline',
+                'h-fit w-fit text-nowrap p-0 text-foreground',
             )}
         >
             <NavigationMenuLink asChild>
@@ -141,7 +141,7 @@ function MobileBaseLink({
                     <NavigationMenuLink
                         className={cn(
                             buttonVariants({variant: 'link'}),
-                            'p-0 text-lg text-foreground underline',
+                            'p-0 text-lg text-foreground',
                         )}
                     >
                         {title}
