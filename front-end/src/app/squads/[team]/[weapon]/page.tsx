@@ -26,6 +26,7 @@ export default async function TeamAndWeaponPage({
                             name={squad.university.displayNameShort}
                             record={squad.record}
                             iconUniversityId={squad.university.id}
+                            key={squad.university.id}
                         />
                     ))}
                 </StandingsCard>

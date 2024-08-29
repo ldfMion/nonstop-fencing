@@ -100,6 +100,7 @@ export default async function HomePage() {
                                 name={fencer.fullName}
                                 iconUniversityId={fencer.universityId}
                                 record={fencer.record}
+                                key={fencer.fullName}
                             />
                         ))}
                     </StandingsCard>
@@ -115,6 +116,7 @@ export default async function HomePage() {
                                 record={team.overall}
                                 iconUniversityId={team.university.id}
                                 href={`/universities/${team.university.id}/men`}
+                                key={team.university.id}
                             />
                         ))}
                     </StandingsCard>
@@ -130,6 +132,7 @@ export default async function HomePage() {
                                 record={squad.record}
                                 iconUniversityId={squad.university.id}
                                 href={`/universities/${squad.university.id}/men`}
+                                key={squad.university.id}
                             />
                         ))}
                     </StandingsCard>

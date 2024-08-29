@@ -17,6 +17,7 @@ import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapo
 import {Region} from '~/models/Region';
 import Match from '~/models/Match';
 import {Separator} from '~/components/ui/separator';
+import {Fragment} from 'react';
 
 export default async function University({params}: {params: {university: string; team: string}}) {
     const university = await getUniversity(params.university);
@@ -54,7 +55,7 @@ async function MatchesCard({
     return (
         <StandingsCard title="Fixtures" tableHeader={<MatchTableHeader />}>
             {Object.keys(matchesGroupedByDate).map((date) => (
-                <>
+                <Fragment key={date}>
                     <p key={date} className="mt-2 font-semibold text-gray-500">
                         {getRelativeDateFromISODate(date)}
                     </p>
@@ -68,7 +69,7 @@ async function MatchesCard({
                             />
                         </>
                     ))}
-                </>
+                </Fragment>
             ))}
         </StandingsCard>
     );

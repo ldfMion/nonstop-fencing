@@ -8,7 +8,7 @@ export default function FooterNavigationList({
     paths: {displayName: string; url: string}[];
 }) {
     return paths.map((path) => (
-        <Link passHref legacyBehavior href={`/${path.url}`}>
+        <Link passHref legacyBehavior href={`/${path.url}`} key={path.displayName}>
             <Button variant="link" className="p-0">
                 {path.displayName}
             </Button>
