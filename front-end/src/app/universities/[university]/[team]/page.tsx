@@ -12,21 +12,26 @@ import {University as UniversityModel} from '~/models/University';
 import {Region} from '~/models/Region';
 import MatchesCard from './matches-card';
 import SquadCard from './squad-card';
+import {ITeam} from '~/models/Team';
 
 export default async function University({params}: {params: {university: string; team: string}}) {
     const university = await getUniversity(params.university);
     if (!university) {
         return <p>University not found</p>;
     }
+    console.log(university);
     const team = parseTeam(params.team);
-    const universityRecord = (await getUniversityRecord(university.id, team)).overall;
+    const universityTeam = team == Team.MEN ? university.mens : university.womens;
+    if (!teamExists(universityTeam)) {
+        return <p>{university.displayNameLong} does not have this team</p>;
+    }
     const rosterElement = <SquadCard university={university} team={team} />;
     const matchesElement = <MatchesCard university={university} team={team} />;
     return (
         <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
             <Card className="flex flex-col p-6">
-                <UniversityHeaders university={university} record={universityRecord} />
-                <TeamTabs team={team} />
+                <UniversityHeaders university={university} record={universityTeam.overall} />
+                {showTabs(university, team) && <TeamTabs team={team} />}
             </Card>
             <div className="hidden flex-col gap-5 md:flex md:flex-row md:items-start [&>*]:grow">
                 {rosterElement}
@@ -109,4 +114,27 @@ function getRegionName(region: Region): string {
         case Region.MIDWEST:
             return MIDWEST;
     }
+}
+
+function hasMen(university: UniversityModel): boolean {
+    return teamExists(university.mens);
+}
+
+function hasWomen(university: UniversityModel): boolean {
+    return teamExists(university.womens);
+}
+
+function showTabs(university: UniversityModel, currentTeam: Team): boolean {
+    if (currentTeam === Team.MEN) {
+        return hasWomen(university);
+    }
+    if (currentTeam === Team.WOMEN) {
+        return hasMen(university);
+    } else {
+        throw Error(`${currentTeam} is not a team`);
+    }
+}
+
+function teamExists(team: ITeam) {
+    return team.overall.losses + team.overall.wins !== 0;
 }
