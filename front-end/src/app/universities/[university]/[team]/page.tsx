@@ -1,23 +1,17 @@
 import getUniversityRecord from 'helpers/getUniversityRecord';
 import parseTeam from 'helpers/parseTeam';
 import Link from 'next/link';
-import getFencersFromUniversity from '~/api/getFencersFromUniversity';
-import getMatchesFromUniversity from '~/api/getMatchesFromUniversity';
 import getUniversity from '~/api/getUniversity';
-import MatchRow from '~/components/match-row';
 import Record from '~/components/record';
-import StandingsCard from '~/components/list-card';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
-import {Tabs, TabsList, TabsTrigger} from '~/components/ui/tabs';
+import {Tabs, TabsContent, TabsList, TabsTrigger} from '~/components/ui/tabs';
 import {Team} from '~/models/FencerSummary';
 import RecordModel from '~/models/Record';
 import {University as UniversityModel} from '~/models/University';
-import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 import {Region} from '~/models/Region';
-import Match from '~/models/Match';
-import {Separator} from '~/components/ui/separator';
-import {Fragment} from 'react';
+import MatchesCard from './matches-card';
+import SquadCard from './squad-card';
 
 export default async function University({params}: {params: {university: string; team: string}}) {
     const university = await getUniversity(params.university);
@@ -25,80 +19,27 @@ export default async function University({params}: {params: {university: string;
         return <p>University not found</p>;
     }
     const team = parseTeam(params.team);
-    const fencers = await getFencersFromUniversity(university.id, team);
-    const universityRecord = await (await getUniversityRecord(university.id, team)).overall;
+    const universityRecord = (await getUniversityRecord(university.id, team)).overall;
+    const rosterElement = <SquadCard university={university} team={team} />;
+    const matchesElement = <MatchesCard university={university} team={team} />;
     return (
-        <main className="flex flex-col items-stretch gap-5 px-24">
-            <UniversityHeaders university={university} record={universityRecord} />
-            <TeamTabs team={team} />
-            <div className="flex flex-col gap-5 md:flex-row md:items-start [&>*]:grow">
-                <StandingsCard title="Squad">
-                    <FilteredFencersByWeapon
-                        fencers={fencers.map((fencer) => fencer.toObject!())}
-                    />
-                </StandingsCard>
-                <MatchesCard university={university} team={team} />
+        <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
+            <Card className="flex flex-col p-6">
+                <UniversityHeaders university={university} record={universityRecord} />
+                <TeamTabs team={team} />
+            </Card>
+            <div className="hidden flex-col gap-5 md:flex md:flex-row md:items-start [&>*]:grow">
+                {rosterElement}
+                {matchesElement}
             </div>
+            <MobileUniversityContentSelector roster={rosterElement} matches={matchesElement} />
         </main>
-    );
-}
-
-async function MatchesCard({
-    university,
-    team,
-}: {
-    university: UniversityModel;
-    team: Team;
-}): Promise<JSX.Element> {
-    const matches = await getMatchesFromUniversity(university.id, team);
-    const matchesGroupedByDate = groupMatchesByDate(matches);
-    return (
-        <StandingsCard title="Fixtures" tableHeader={<MatchTableHeader />}>
-            {Object.keys(matchesGroupedByDate).map((date) => (
-                <Fragment key={date}>
-                    <p key={date} className="mt-2 font-semibold text-gray-500">
-                        {getRelativeDateFromISODate(date)}
-                    </p>
-                    <Separator className="" />
-                    {matchesGroupedByDate[date]!.map((match) => (
-                        <>
-                            <MatchRow
-                                match={match}
-                                key={match.teamAId + match.teamBId + match.date}
-                                perspective={university}
-                            />
-                        </>
-                    ))}
-                </Fragment>
-            ))}
-        </StandingsCard>
-    );
-}
-
-function getRelativeDateFromISODate(date: string): string {
-    const dateObj = new Date(date);
-    const formatted = new Intl.DateTimeFormat('en-US', {
-        dateStyle: 'medium',
-        timeStyle: undefined,
-    }).format(dateObj);
-    return formatted;
-}
-
-function MatchTableHeader(): JSX.Element {
-    return (
-        <div className="!m-0 flex flex-row items-center justify-end gap-3">
-            <div className="!m-0 flex w-14 flex-row items-stretch gap-1 text-right text-gray-500">
-                <p className="w-6">F</p>
-                <p className="w-6">E</p>
-                <p className="w-6">S</p>
-            </div>
-        </div>
     );
 }
 
 function TeamTabs({team}: {team: Team}): JSX.Element {
     return (
-        <Tabs defaultValue={team == Team.MEN ? 'men' : 'women'} className="w-[400px] self-center">
+        <Tabs defaultValue={team == Team.MEN ? 'men' : 'women'} className="self-stretch">
             <TabsList className="grid w-full grid-cols-2">
                 <Link href="./men" legacyBehavior>
                     <TabsTrigger value="men">Men's</TabsTrigger>
@@ -107,6 +48,25 @@ function TeamTabs({team}: {team: Team}): JSX.Element {
                     <TabsTrigger value="women">Women's</TabsTrigger>
                 </Link>
             </TabsList>
+        </Tabs>
+    );
+}
+
+function MobileUniversityContentSelector({
+    roster,
+    matches,
+}: {
+    roster: JSX.Element;
+    matches: JSX.Element;
+}) {
+    return (
+        <Tabs defaultValue="matches" className="md:hidden">
+            <TabsList className="grid w-full grid-cols-2">
+                <TabsTrigger value="matches">Matches</TabsTrigger>
+                <TabsTrigger value="roster">Roster</TabsTrigger>
+            </TabsList>
+            <TabsContent value="matches">{matches}</TabsContent>
+            <TabsContent value="roster">{roster}</TabsContent>
         </Tabs>
     );
 }
@@ -120,7 +80,7 @@ function UniversityHeaders({
 }): JSX.Element {
     const region = getRegionName(university.region);
     return (
-        <Card className="flex flex-row gap-6 p-6">
+        <div className="flex flex-row gap-6">
             <TeamIcon universityId={university.id} size={100} />
             <div className="flex flex-col justify-between">
                 <div>
@@ -129,7 +89,7 @@ function UniversityHeaders({
                 </div>
                 <Record record={record} />
             </div>
-        </Card>
+        </div>
     );
 }
 
@@ -137,7 +97,6 @@ const NORTHEAST = 'Northeast';
 const MID_ATLANTIC_SOUTH = 'Mid-Atlantic/South';
 const WEST = 'West';
 const MIDWEST = 'Midwest';
-const ALL = 'All';
 
 function getRegionName(region: Region): string {
     switch (region) {
@@ -150,13 +109,4 @@ function getRegionName(region: Region): string {
         case Region.MIDWEST:
             return MIDWEST;
     }
-}
-
-function groupMatchesByDate(matches: Match[]): Record<string, Match[]> {
-    const record: Record<string, Match[]> = {};
-    for (const match of matches) {
-        const time = match.date.toString();
-        record[time] = record[time] === undefined ? [match] : [...record[time], match];
-    }
-    return record;
 }
