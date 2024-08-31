@@ -1,6 +1,6 @@
 import {ArrowRight} from 'lucide-react';
 import {Card, CardContent, CardHeader, CardTitle} from './ui/card';
-import Link from 'next/link';
+import ConditionalLinkWrapper from './conditional-link-wrapper';
 
 export default function ListCard({
     title,
@@ -14,7 +14,10 @@ export default function ListCard({
     tableHeader?: React.ReactNode;
 }) {
     return (
-        <ConditionalLinkWrapper href={titleHref}>
+        <ConditionalLinkWrapper
+            href={titleHref}
+            className="cursor-pointer transition-all hover:scale-[1.03] hover:bg-accent"
+        >
             <Card className="flex flex-col px-6 py-4">
                 <CardHeaderWrapper title={title} href={titleHref} tableHeader={tableHeader} />
                 <CardContent className="flex flex-col gap-0 p-0">
@@ -44,18 +47,5 @@ function CardHeaderWrapper({
         </CardHeader>
     ) : (
         <></>
-    );
-}
-
-function ConditionalLinkWrapper({href, children}: {href?: string; children: React.ReactNode}) {
-    return href ? (
-        <Link
-            href={href}
-            className="cursor-pointer transition-all hover:scale-[1.03] hover:bg-accent"
-        >
-            {children}
-        </Link>
-    ) : (
-        <>{children}</>
     );
 }

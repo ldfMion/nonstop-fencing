@@ -16,6 +16,7 @@ export default async function TeamRankingPage({params}: {params: {team: string}}
                     name={team.university.displayNameShort}
                     iconUniversityId={team.university.id}
                     record={team.overall}
+                    href={`/${params.team}/universities/${team.university.id}`}
                 />
             ))}
         </SingleRankingWrapper>

@@ -52,13 +52,10 @@ function TeamTabs({gender, team}: {gender: Team; team: ITeam}): JSX.Element {
     return (
         <Tabs defaultValue={gender == Team.MEN ? 'men' : 'women'} className="self-stretch">
             <TabsList className="grid w-full grid-cols-2">
-                <Link
-                    href={`${gender == Team.MEN ? 'mens' : 'womens'}/teams/${team.university.id}`}
-                    legacyBehavior
-                >
+                <Link href={`/mens/universities/${team.university.id}`} legacyBehavior>
                     <TabsTrigger value="men">Men&apos;s</TabsTrigger>
                 </Link>
-                <Link href="./women" legacyBehavior>
+                <Link href={`/womens/universities/${team.university.id}`} legacyBehavior>
                     <TabsTrigger value="women">Women&apos;s</TabsTrigger>
                 </Link>
             </TabsList>

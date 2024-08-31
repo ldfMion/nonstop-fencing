@@ -4,6 +4,7 @@ import getUniversity from '~/api/getUniversity';
 import NameIcon from './name-icon';
 import {HTMLAttributes} from 'react';
 import {clsx} from 'clsx';
+import Link from 'next/link';
 
 export default async function MatchRow({
     match,
@@ -76,7 +77,7 @@ function SingleScore({
     return <p className={clsx('w-6', className)}>{children}</p>;
 }
 
-function Score({a, b, win}: {a: number; b: number; win: boolean}) {
+/* function Score({a, b, win}: {a: number; b: number; win: boolean}) {
     const color = win ? 'bg-green-400' : 'bg-red-400';
     return (
         <div
@@ -87,7 +88,7 @@ function Score({a, b, win}: {a: number; b: number; win: boolean}) {
             <span className="flex w-5 items-center justify-center">{b}</span>
         </div>
     );
-}
+} */
 
 function Side({university, flip}: {university: University; flip?: boolean}): React.ReactNode {
     return (
@@ -96,6 +97,7 @@ function Side({university, flip}: {university: University; flip?: boolean}): Rea
             name={university.displayNameShort}
             flip={flip}
             className="text-lg"
+            href={`/mens/universities/${university.id}`}
         />
     );
 }
