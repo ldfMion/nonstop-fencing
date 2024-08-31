@@ -13,7 +13,6 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
     title: 'Top Fencers, Teams and Squads',
     description: 'Browse top NCAA Fencers, Teams, and Squads',
-    icons: [{rel: 'icon', url: '/favicon.ico'}],
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {

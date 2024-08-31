@@ -3,8 +3,27 @@ import {getTeams} from '~/api';
 import RankingRow from '~/components/ranking-row';
 import toTitleCase from 'helpers/toTitleCase';
 import SingleRankingWrapper from '../single-ranking-wrapper';
+import {Metadata} from 'next';
 
-export default async function TeamRankingPage({params}: {params: {team: string}}) {
+type Props = {
+    params: {team: string};
+};
+
+export async function generateMetadata({params}: Props): Promise<Metadata> {
+    const gender = params.team.replace('ns', "n's");
+    const title = toTitleCase(gender);
+    const description = `Check out top NCAA ${gender} teams`;
+    return {
+        title: title,
+        description: description,
+        openGraph: {
+            title: title,
+            description: description,
+        },
+    };
+}
+
+export default async function TeamRankingPage({params}: Props) {
     const team = parseTeam(params.team);
     const teams = await getTeams(team);
     const title = toTitleCase(`${params.team}`).replace('ns', "n's") + ' Teams';

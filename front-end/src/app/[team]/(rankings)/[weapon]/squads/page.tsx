@@ -1,15 +1,24 @@
 import parseTeam from 'helpers/parseTeam';
 import parseWeapon from 'helpers/parseWeapon';
 import toTitleCase from 'helpers/toTitleCase';
+import {Metadata} from 'next';
 import getSquadsFromTeamAndWeapon from '~/api/getSquadsFromTeamAndWeapon';
 import SingleRankingWrapper from '~/app/[team]/(rankings)/single-ranking-wrapper';
 import RankingRow from '~/components/ranking-row';
 
-export default async function TeamAndWeaponPage({
-    params,
-}: {
+type Props = {
     params: {team: string; weapon: string};
-}) {
+};
+
+export async function generateMetadata({params}: Props): Promise<Metadata> {
+    const teamWeapon = `${params.team} ${params.weapon}`.replace('ns', "n's");
+    return {
+        title: toTitleCase(teamWeapon),
+        description: `Check out top NCAA ${teamWeapon} squads`,
+    };
+}
+
+export default async function TeamAndWeaponPage({params}: Props) {
     const team = parseTeam(params.team);
     const weapon = parseWeapon(params.weapon);
     const squads = await getSquadsFromTeamAndWeapon(team, weapon);

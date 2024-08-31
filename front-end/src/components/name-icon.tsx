@@ -17,7 +17,7 @@ export default function NameIcon({
     return (
         <ConditionalLinkWrapper href={href}>
             <div className={`flex flex-row items-center gap-1 ${flip && 'flex-row-reverse'}`}>
-                <TeamIcon universityId={iconUniversityId} size={24} />
+                <TeamIcon universityId={iconUniversityId} size={32} />
                 <p className={`h-fit p-0 ${flip && 'text-right'} ${className}`}>{name}</p>
             </div>
         </ConditionalLinkWrapper>

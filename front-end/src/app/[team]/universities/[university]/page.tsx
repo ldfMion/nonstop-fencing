@@ -13,6 +13,26 @@ import MatchesCard from './matches-card';
 import type {ITeam} from '~/models/Team';
 import SquadCard from './squad-card';
 import {getTeams} from '~/api';
+import {Metadata} from 'next';
+import toTitleCase from 'helpers/toTitleCase';
+
+type Props = {params: {university: string; team: string}};
+
+export async function generateMetadata({params}: Props): Promise<Metadata> {
+    const gender = params.team.replace('ns', "n's");
+    const university = await getUniversity(params.university);
+    const title = `${university.displayNameShort} - Fencers, Match Results (${toTitleCase(gender)})`;
+    const description = `Check out ${university.displayNameShort}'s ${gender} fencers and past matches`;
+    return {
+        title: title,
+        description: description,
+        openGraph: {
+            images: [`/team-icons/${university.id}`],
+            title: title,
+            description: description,
+        },
+    };
+}
 
 export async function generateStaticParams({params: {team}}: {params: {team: string}}) {
     console.log(team);
@@ -24,7 +44,7 @@ export async function generateStaticParams({params: {team}}: {params: {team: str
 export const dynamicParams = false;
 export const revalidate = false;
 
-export default async function University({params}: {params: {university: string; team: string}}) {
+export default async function University({params}: Props) {
     const university = await getUniversity(params.university);
     const team = parseTeam(params.team);
     const universityTeam = team == Team.MEN ? university.mens : university.womens;

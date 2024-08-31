@@ -4,5 +4,5 @@ export default function toTitleCase(str: string) {
     words.forEach((word) => {
         finalStr += ' ' + word.charAt(0).toUpperCase() + word.slice(1);
     });
-    return finalStr;
+    return finalStr.trim();
 }
