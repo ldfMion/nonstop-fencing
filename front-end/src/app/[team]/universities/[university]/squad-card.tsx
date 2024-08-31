@@ -12,9 +12,17 @@ export default async function SquadCard({
     team: Team;
 }): Promise<JSX.Element> {
     const fencers = await getFencersFromUniversity(university.id, team);
+    const dataUnavailable = fencers.length === 0;
     return (
         <ListCard title="Squad">
-            <FilteredFencersByWeapon fencers={fencers.map((fencer) => fencer.toObject!())} />
+            {dataUnavailable ? (
+                <>
+                    <p>We currently don't this team's fencers' records.</p>
+                    <p>Contact us if you can help!</p>
+                </>
+            ) : (
+                <FilteredFencersByWeapon fencers={fencers.map((fencer) => fencer.toObject!())} />
+            )}
         </ListCard>
     );
 }
