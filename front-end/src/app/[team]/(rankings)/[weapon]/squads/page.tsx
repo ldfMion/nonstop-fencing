@@ -22,6 +22,7 @@ export default async function TeamAndWeaponPage({
                     record={squad.record}
                     iconUniversityId={squad.university.id}
                     key={squad.university.id}
+                    href={`/${params.team}/universities/${squad.university.id}`}
                 />
             ))}
         </SingleRankingWrapper>
