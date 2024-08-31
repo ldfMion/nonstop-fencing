@@ -1,4 +1,3 @@
-import getUniversityRecord from 'helpers/getUniversityRecord';
 import parseTeam from 'helpers/parseTeam';
 import Link from 'next/link';
 import getUniversity from '~/api/getUniversity';
@@ -19,7 +18,6 @@ export default async function University({params}: {params: {university: string;
     if (!university) {
         return <p>University not found</p>;
     }
-    console.log(university);
     const team = parseTeam(params.team);
     const universityTeam = team == Team.MEN ? university.mens : university.womens;
     if (!teamExists(universityTeam)) {
@@ -30,7 +28,7 @@ export default async function University({params}: {params: {university: string;
     return (
         <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
             <Card className="flex flex-col p-6">
-                <UniversityHeaders university={university} record={universityTeam.overall} />
+                <UniversityHeaders team={universityTeam} />
                 {showTabs(university, team) && <TeamTabs team={team} />}
             </Card>
             <div className="hidden flex-col gap-5 md:flex md:flex-row md:items-start [&>*]:grow">
@@ -76,24 +74,37 @@ function MobileUniversityContentSelector({
     );
 }
 
-function UniversityHeaders({
-    university,
-    record,
-}: {
-    university: UniversityModel;
-    record: RecordModel;
-}): JSX.Element {
-    const region = getRegionName(university.region);
+function UniversityHeaders({team}: {team: ITeam}): JSX.Element {
+    const region = getRegionName(team.university.region);
     return (
         <div className="flex flex-row gap-6">
-            <TeamIcon universityId={university.id} size={100} />
+            <TeamIcon universityId={team.university.id} size={100} />
             <div className="flex flex-col justify-between">
                 <div>
-                    <h2 className="text-4xl font-extrabold">{university.displayNameLong}</h2>
+                    <h2 className="text-4xl font-extrabold">{team.university.displayNameLong}</h2>
                     <p className="text-lg font-bold">{region}</p>
                 </div>
-                <Record record={record} />
+                <Record record={team.overall} />
+                <div className="flex flex-row gap-4">
+                    <PartialRecord weaponInitial="F" record={team.foil} />
+                    <PartialRecord weaponInitial="E" record={team.epee} />
+                    <PartialRecord weaponInitial="S" record={team.saber} />
+                </div>
             </div>
+        </div>
+    );
+}
+
+function PartialRecord({
+    record,
+    weaponInitial,
+}: {
+    record: RecordModel;
+    weaponInitial: 'F' | 'E' | 'S';
+}) {
+    return (
+        <div className="flex flex-row text-sm">
+            {weaponInitial}: {record.wins}-{record.losses}
         </div>
     );
 }
