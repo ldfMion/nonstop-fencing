@@ -54,24 +54,6 @@ export default async function HomePage() {
             <PageHeading>Squads</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                 <SquadList
-                    squads={squads.mens.foil}
-                    title="Men's Foil"
-                    url="/mens/foil/squads"
-                    genderPath="mens"
-                />
-                <SquadList
-                    squads={squads.mens.epee}
-                    title="Men's Epee"
-                    url="/mens/epee/squads"
-                    genderPath="mens"
-                />
-                <SquadList
-                    squads={squads.mens.saber}
-                    title="Men's Saber"
-                    url="/mens/saber/squads"
-                    genderPath="mens"
-                />
-                <SquadList
                     squads={squads.womens.foil}
                     title="Women's Foil"
                     url="/womens/foil/squads"
@@ -88,6 +70,24 @@ export default async function HomePage() {
                     title="Women's Saber"
                     url="/womens/saber/squads"
                     genderPath="womens"
+                />
+                <SquadList
+                    squads={squads.mens.foil}
+                    title="Men's Foil"
+                    url="/mens/foil/squads"
+                    genderPath="mens"
+                />
+                <SquadList
+                    squads={squads.mens.epee}
+                    title="Men's Epee"
+                    url="/mens/epee/squads"
+                    genderPath="mens"
+                />
+                <SquadList
+                    squads={squads.mens.saber}
+                    title="Men's Saber"
+                    url="/mens/saber/squads"
+                    genderPath="mens"
                 />
             </div>
         </main>
