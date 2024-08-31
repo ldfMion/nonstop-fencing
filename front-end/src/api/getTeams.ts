@@ -1,6 +1,6 @@
 import getUniversitiesfromCsv from 'helpers/getUniversitiesFromCsv';
 import {Team} from '~/models/FencerSummary';
-import {ITeam} from '~/models/Team';
+import type {ITeam} from '~/models/Team';
 
 export default async function getTeams(team: Team): Promise<ITeam[]> {
     const universities = await getUniversitiesfromCsv();

@@ -4,9 +4,9 @@ import getMatchesFromUniversity from '~/api/getMatchesFromUniversity';
 import ListCard from '~/components/list-card';
 import MatchRow from '~/components/match-row';
 import {Separator} from '~/components/ui/separator';
-import {Team} from '~/models/FencerSummary';
-import Match from '~/models/Match';
-import {University} from '~/models/University';
+import type {Team} from '~/models/FencerSummary';
+import type Match from '~/models/Match';
+import type {University} from '~/models/University';
 
 export default async function MatchesCard({
     university,
@@ -29,7 +29,7 @@ export default async function MatchesCard({
                         <>
                             <MatchRow
                                 match={match}
-                                key={match.teamAId + match.teamBId + match.date}
+                                key={match.teamAId + match.teamBId + match.date.toISOString()}
                                 perspective={university}
                             />
                         </>

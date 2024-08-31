@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {University} from '~/models/University';
 
 export default function TeamIcon({universityId, size}: {universityId: string; size: number}) {
     const url = `/team-icons/${universityId}.png`;

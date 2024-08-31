@@ -1,5 +1,3 @@
-import {Weapon} from './FencerSummary';
-
 export default class Match {
     constructor(
         public teamAId: string,

@@ -1,4 +1,4 @@
-import {Team} from '~/models/FencerSummary';
+import type {Team} from '~/models/FencerSummary';
 import getRecordsfromCsv from '../../helpers/getRecordsFromCsv';
 
 export default async function getFencersFromUniversity(universityId: string, team: Team) {

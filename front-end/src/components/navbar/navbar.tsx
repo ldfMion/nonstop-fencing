@@ -14,7 +14,8 @@ import {cn} from '~/lib/utils';
 import {Sheet, SheetContent, SheetTrigger} from '../ui/sheet';
 import {MenuIcon} from 'lucide-react';
 import {useState} from 'react';
-import {PATHS, PathHeading} from './paths';
+import {PATHS} from '../../content/paths';
+import type {PathHeading} from '../../content/paths';
 
 function DesktopNavbar(): JSX.Element {
     return (

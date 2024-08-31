@@ -1,5 +1,5 @@
-import Record from './Record';
-import {University} from './University';
+import type Record from './Record';
+import type {University} from './University';
 export interface ITeam {
     overall: Record;
     foil: Record;

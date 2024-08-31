@@ -1,13 +1,13 @@
-function Record1({record}: {record: {wins: number; losses: number}}) {
+/* function Record1({record}: {record: {wins: number; losses: number}}) {
     return (
         <div className="flex flex-row gap-1">
             <RecordNumber number={record.wins} className="bg-green-400" />
             <RecordNumber number={record.losses} className="bg-red-400" />
         </div>
     );
-}
+} */
 
-function RecordNumber({number, className}: {number: number; className?: string}) {
+/* function RecordNumber({number, className}: {number: number; className?: string}) {
     return (
         <div
             className={
@@ -18,7 +18,7 @@ function RecordNumber({number, className}: {number: number; className?: string})
             {number}
         </div>
     );
-}
+} */
 
 const showPercentage = false;
 function Record2({record}: {record: {wins: number; losses: number}}) {

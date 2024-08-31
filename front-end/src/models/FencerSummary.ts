@@ -1,5 +1,5 @@
-import Record from './Record';
-import {Region} from './Region';
+import type Record from './Record';
+import type {Region} from './Region';
 
 export default interface FencerSummary {
     universityId: string;

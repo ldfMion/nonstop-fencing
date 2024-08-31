@@ -1,6 +1,6 @@
 import assert from 'assert';
 import getUniversitiesFromCsv from 'helpers/getUniversitiesFromCsv';
-import {University} from '~/models/University';
+import type {University} from '~/models/University';
 
 export default async function getFencersFromTeamAndWeapon(
     universityId: string,

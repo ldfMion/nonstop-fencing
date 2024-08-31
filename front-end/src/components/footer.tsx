@@ -1,5 +1,3 @@
-import FooterNavigationList from './footer-navigation-list';
-
 export default function Footer(): JSX.Element {
     /*     const mens = [
         {displayName: "men's foil", url: 'rankings/mens/foil'},
@@ -14,8 +12,8 @@ export default function Footer(): JSX.Element {
     return (
         <div className="mt-8 flex flex-col items-start border bg-accent p-6">
             <p>
-                Record information is taken from each university's website. We are currently working
-                on the missing universities.
+                Record information is taken from each university&apos;s website. We are currently
+                working on the missing universities.
             </p>
             <p>
                 If you see any mistakes, have any inquiries, or think you might be able to help,

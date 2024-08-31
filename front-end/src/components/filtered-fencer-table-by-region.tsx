@@ -1,5 +1,5 @@
 'use client';
-import FencerSummary from '~/models/FencerSummary';
+import type FencerSummary from '~/models/FencerSummary';
 import FilteredFencerTable from './filtered-fencer-table';
 import {Region} from '~/models/Region';
 

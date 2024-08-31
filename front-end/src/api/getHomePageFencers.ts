@@ -1,4 +1,5 @@
-import FencerSummary, {Team, Weapon} from '~/models/FencerSummary';
+import {Team, Weapon} from '~/models/FencerSummary';
+import type FencerSummary from '~/models/FencerSummary';
 import getRecordsFromCsv from '../../helpers/getRecordsFromCsv';
 import getTopFive from 'helpers/getTop5';
 

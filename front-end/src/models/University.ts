@@ -1,5 +1,5 @@
-import {Region} from './Region';
-import {ITeam} from './Team';
+import type {Region} from './Region';
+import type {ITeam} from './Team';
 
 export interface University {
     id: string;

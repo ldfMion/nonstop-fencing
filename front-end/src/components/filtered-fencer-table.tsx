@@ -1,5 +1,5 @@
 'use client';
-import FencerSummary from '~/models/FencerSummary';
+import type FencerSummary from '~/models/FencerSummary';
 import FilterSelector from './filter-selector';
 import FencerRow from './fencer-row';
 import {useState} from 'react';

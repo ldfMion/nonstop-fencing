@@ -1,5 +1,4 @@
-import {Team, Weapon} from '~/models/FencerSummary';
-import getRecordsfromCsv from '../../helpers/getRecordsFromCsv';
+import type {Team, Weapon} from '~/models/FencerSummary';
 import getTeams from './getTeams';
 import getSquadsFromTeams from 'helpers/getSquadsFromTeams';
 

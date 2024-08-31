@@ -1,5 +1,5 @@
-import {University} from '~/models/University';
-import Match from '~/models/Match';
+import type {University} from '~/models/University';
+import type Match from '~/models/Match';
 import getUniversity from '~/api/getUniversity';
 import NameIcon from './name-icon';
 import {HTMLAttributes} from 'react';
@@ -100,7 +100,7 @@ function Side({university, flip}: {university: University; flip?: boolean}): Rea
     );
 }
 
-function MatchUI1({
+/* function MatchUI1({
     universityA,
     universityB,
     match,
@@ -119,3 +119,4 @@ function MatchUI1({
         </div>
     );
 }
+ */

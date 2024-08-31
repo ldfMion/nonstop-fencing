@@ -1,8 +1,8 @@
 import getFencersFromUniversity from '~/api/getFencersFromUniversity';
 import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 import ListCard from '~/components/list-card';
-import {Team} from '~/models/FencerSummary';
-import {University} from '~/models/University';
+import type {Team} from '~/models/FencerSummary';
+import type {University} from '~/models/University';
 
 export default async function SquadCard({
     university,

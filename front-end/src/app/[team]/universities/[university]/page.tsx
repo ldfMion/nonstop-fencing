@@ -6,18 +6,26 @@ import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '~/components/ui/tabs';
 import {Team} from '~/models/FencerSummary';
-import RecordModel from '~/models/Record';
-import {University as UniversityModel} from '~/models/University';
+import type RecordModel from '~/models/Record';
+import type {University as UniversityModel} from '~/models/University';
 import {Region} from '~/models/Region';
 import MatchesCard from './matches-card';
+import type {ITeam} from '~/models/Team';
 import SquadCard from './squad-card';
-import {ITeam} from '~/models/Team';
+import {getTeams} from '~/api';
+
+export async function generateStaticParams({params: {team}}: {params: {team: string}}) {
+    console.log(team);
+    const teamAsEnum = parseTeam(team);
+    const teams = await getTeams(teamAsEnum);
+    return teams.map((team) => team.university.id);
+}
+
+export const dynamicParams = false;
+export const revalidate = false;
 
 export default async function University({params}: {params: {university: string; team: string}}) {
     const university = await getUniversity(params.university);
-    if (!university) {
-        return <p>University not found</p>;
-    }
     const team = parseTeam(params.team);
     const universityTeam = team == Team.MEN ? university.mens : university.womens;
     if (!teamExists(universityTeam)) {
@@ -29,7 +37,7 @@ export default async function University({params}: {params: {university: string;
         <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
             <Card className="flex flex-col p-6">
                 <UniversityHeaders team={universityTeam} />
-                {showTabs(university, team) && <TeamTabs team={team} />}
+                {showTabs(university, team) && <TeamTabs gender={team} team={universityTeam} />}
             </Card>
             <div className="hidden flex-col gap-5 md:flex md:flex-row md:items-start [&>*]:grow">
                 {rosterElement}
@@ -40,15 +48,18 @@ export default async function University({params}: {params: {university: string;
     );
 }
 
-function TeamTabs({team}: {team: Team}): JSX.Element {
+function TeamTabs({gender, team}: {gender: Team; team: ITeam}): JSX.Element {
     return (
-        <Tabs defaultValue={team == Team.MEN ? 'men' : 'women'} className="self-stretch">
+        <Tabs defaultValue={gender == Team.MEN ? 'men' : 'women'} className="self-stretch">
             <TabsList className="grid w-full grid-cols-2">
-                <Link href="./men" legacyBehavior>
-                    <TabsTrigger value="men">Men's</TabsTrigger>
+                <Link
+                    href={`${gender == Team.MEN ? 'mens' : 'womens'}/teams/${team.university.id}`}
+                    legacyBehavior
+                >
+                    <TabsTrigger value="men">Men&apos;s</TabsTrigger>
                 </Link>
                 <Link href="./women" legacyBehavior>
-                    <TabsTrigger value="women">Women's</TabsTrigger>
+                    <TabsTrigger value="women">Women&apos;s</TabsTrigger>
                 </Link>
             </TabsList>
         </Tabs>
@@ -142,7 +153,7 @@ function showTabs(university: UniversityModel, currentTeam: Team): boolean {
     if (currentTeam === Team.WOMEN) {
         return hasMen(university);
     } else {
-        throw Error(`${currentTeam} is not a team`);
+        throw Error(`${currentTeam as string} is not a team`);
     }
 }
 

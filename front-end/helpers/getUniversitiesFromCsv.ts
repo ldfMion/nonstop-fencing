@@ -1,9 +1,9 @@
 import {Team} from '~/models/FencerSummary';
 import getUniversityRecord from './getUniversityRecord';
 import parseCSV from './parseCsv';
-import {University} from '~/models/University';
+import type {University} from '~/models/University';
 import Record from '~/models/Record';
-import {ITeam} from '~/models/Team';
+import type {ITeam} from '~/models/Team';
 import {Region} from '~/models/Region';
 import assertString from './assertString';
 import calculateWinPercentage from './calculateWinPercentage';

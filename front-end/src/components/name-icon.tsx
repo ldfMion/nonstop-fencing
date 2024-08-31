@@ -1,4 +1,4 @@
-import {HtmlHTMLAttributes} from 'react';
+import type {HtmlHTMLAttributes} from 'react';
 import TeamIcon from './team-icon';
 
 export default function NameIcon({

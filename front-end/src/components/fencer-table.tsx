@@ -1,4 +1,4 @@
-import FencerSummary from '~/models/FencerSummary';
+import type FencerSummary from '~/models/FencerSummary';
 import FencerRow from './fencer-row';
 
 export default function FencerTable({fencers}: {fencers: FencerSummary[]}) {
