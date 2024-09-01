@@ -69,14 +69,14 @@ const config = {
                     to: {height: '0'},
                 },
                 appear: {
-                    from: {opacity: '0'},
-                    to: {opacity: '1'},
+                    from: {opacity: '0', scale: '0.7'},
+                    to: {opacity: '1', scale: '1'},
                 },
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
-                appear: 'appear 1s ease-in-out',
+                appear: 'appear 1s ease-out',
             },
         },
     },
