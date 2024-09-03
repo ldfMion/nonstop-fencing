@@ -6,6 +6,7 @@ import parseCSV from './parseCsv';
 import Record from '~/models/Record';
 import getUniversity from '~/api/getUniversity';
 import {Region} from '~/models/Region';
+import calculateOtherRanking from './calculateOtherRanking';
 
 let records: FencerSummary[] | null = null;
 
@@ -27,7 +28,7 @@ export default async function getRecordsfromCsv(): Promise<FencerSummary[]> {
 }
 
 function parseRow(row: unknown): FencerSummaryWithoutRegion {
-    return new FencerSummaryFromCSV(row, calculatePythagoreanWins);
+    return new FencerSummaryFromCSV(row, calculateOtherRanking);
 }
 type FencerSummaryWithoutRegion = Omit<FencerSummary, 'region'>;
 

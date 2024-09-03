@@ -1,6 +1,6 @@
-import FencerSummary from '~/models/FencerSummary';
+import Record from '~/models/Record';
 
-export default function calculatePythagoreanWins(record: {wins: number; losses: number}): number {
+export default function calculatePythagoreanWins(record: Record): number {
     const EXPONENT = 2;
     const wins = record.wins;
     const winsRaised = Math.pow(wins, EXPONENT);

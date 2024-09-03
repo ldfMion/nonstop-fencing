@@ -67,7 +67,7 @@ Maxwell,Greenbaum,Men,Saber,22,24,Duke
 ,Shah,Men,Epee,22,9,Ohio State
 ,Veltrup,Men,Epee,30,20,Ohio State
 ,Weiss,Men,Epee,44,26,Ohio State
-,Aleke,Women,Saber,51,47,Ohio State
+,Alexe,Women,Saber,51,47,Ohio State
 ,Arnipalli,Women,Saber,16,20,Ohio State
 ,Larimer,Women,Saber,41,43,Ohio State
 ,Perrier,Women,Saber,20,26,Ohio State
@@ -121,47 +121,166 @@ Irene,Yeu,Women,Epee,23,16,Stanford
 Jeanette,Han,Women,Epee,0,3,Stanford
 Haley,Koo,Women,Epee,1,0,Stanford
 Joy,Yun,Women,Epee,0,1,Stanford
-Arwen,,Men's,Foil,36,10,Penn State
-Aidan,,Men's,Foil,40,16,Penn State
-Tit,Nam,Men's,Foil,19,4,Penn State
-Spencer,,Men's,Foil,22,16,Penn State
-Alessio,,Men's,Foil,17,12,Penn State
-Slava,,Men's,Foil,5,6,Penn State
-Donavyn,,Men's,Foil,2,1,Penn State
-Konner,,Men's,Foil,3,2,Penn State
-Dusan,,Men's,Foil,3,2,Penn State
-Matthew,,Men's,Foil,3,2,Penn State
-Caiden,,Men's,Foil,8,3,Penn State
-Ignacio,,Men's,Foil,0,0,Penn State
-,Ting Wei,Men's,Epee,30,20,Penn State
-Mitchel,,Men's,Epee,22,18,Penn State
-Peter,,Men's,Epee,12,15,Penn State
-Zachary,,Men's,Epee,16,10,Penn State
-Nick,,Men's,Epee,13,14,Penn State
-Vasil,,Men's,Epee,3,0,Penn State
-Sultan,,Men's,Epee,0,1,Penn State
-Kyle,,Men's,Epee,2,0,Penn State
-Jacob,,Men's,Epee,0,0,Penn State
-Neil,,Men's,Saber,43,10,Penn State
-Nicholaus,,Men's,Saber,0,0,Penn State
-Kamar,,Men's,Saber,38,23,Penn State
-Nico,,Men's,Saber,26,28,Penn State
-Jeff,,Men's,Saber,18,33,Penn State
-Fernando,,Men's,Saber,0,0,Penn State
-Sam,,Women's,Foil,18,6,Penn State
-Arianna,,Women's,Foil,51,27,Penn State
-Ariel,,Women's,Foil,21,33,Penn State
-Thea,,Women's,Foil,9,18,Penn State
-Eden,,Women's,Foil,31,25,Penn State
-Mikaela,,Women's,Foil,3,0,Penn State
-Clarisse,,Women's,Foil,2,1,Penn State
-Katya,,Women's,Epee,65,20,Penn State
-Jackie,,Women's,Epee,46,29,Penn State
-Axelle,,Women's,Epee,50,33,Penn State
-Devin,,Men's,Epee,26,17,Penn State
-Claire,,Women's,Epee,4,9,Penn State
-Eunyu,,Women's,Saber,17,16,Penn State
-Ola,,Women's,Saber,26,8,Penn State
-Aurora,,Women's,Saber,29,31,Penn State
-Amelia,,Women's,Saber,12,25,Penn State
-Mia,,Women's,Saber,26,24,Penn State
+Arwen,,Mens,Foil,36,10,Penn State
+Aidan,,Mens,Foil,40,16,Penn State
+Tit,Nam,Mens,Foil,19,4,Penn State
+Spencer,,Mens,Foil,22,16,Penn State
+Alessio,,Mens,Foil,17,12,Penn State
+Slava,,Mens,Foil,5,6,Penn State
+Donavyn,,Mens,Foil,2,1,Penn State
+Konner,,Mens,Foil,3,2,Penn State
+Dusan,,Mens,Foil,3,2,Penn State
+Matthew,,Mens,Foil,3,2,Penn State
+Caiden,,Mens,Foil,8,3,Penn State
+Ignacio,,Mens,Foil,0,0,Penn State
+,Ting Wei,Mens,Epee,30,20,Penn State
+Mitchel,,Mens,Epee,22,18,Penn State
+Peter,,Mens,Epee,12,15,Penn State
+Zachary,,Mens,Epee,16,10,Penn State
+Nick,,Mens,Epee,13,14,Penn State
+Vasil,,Mens,Epee,3,0,Penn State
+Sultan,,Mens,Epee,0,1,Penn State
+Kyle,,Mens,Epee,2,0,Penn State
+Jacob,,Mens,Epee,0,0,Penn State
+Neil,,Mens,Saber,43,10,Penn State
+Nicholaus,,Mens,Saber,0,0,Penn State
+Kamar,,Mens,Saber,38,23,Penn State
+Nico,,Mens,Saber,26,28,Penn State
+Jeff,,Mens,Saber,18,33,Penn State
+Fernando,,Mens,Saber,0,0,Penn State
+Sam,,Womens,Foil,18,6,Penn State
+Arianna,,Womens,Foil,51,27,Penn State
+Ariel,,Womens,Foil,21,33,Penn State
+Thea,,Womens,Foil,9,18,Penn State
+Eden,,Womens,Foil,31,25,Penn State
+Mikaela,,Womens,Foil,3,0,Penn State
+Clarisse,,Womens,Foil,2,1,Penn State
+Katya,,Womens,Epee,65,20,Penn State
+Jackie,,Womens,Epee,46,29,Penn State
+Axelle,,Womens,Epee,50,33,Penn State
+Devin,,Mens,Epee,26,17,Penn State
+Claire,,Womens,Epee,4,9,Penn State
+Eunyu,,Womens,Saber,17,16,Penn State
+Ola,,Womens,Saber,26,8,Penn State
+Aurora,,Womens,Saber,29,31,Penn State
+Amelia,,Womens,Saber,12,25,Penn State
+Mia,,Womens,Saber,26,24,Penn State
+Feyza,Achilova,womens,foil,19,2,Brown
+Anika,Breker,womens,foil,32,18,Brown
+Jessie,Chen,womens,foil,34,15,Brown
+Samantha,Chon,womens,foil,28,9,Brown
+Grace,Li,womens,foil,24,16,Brown
+Apoorva,Talwalkar,womens,foil,28,8,Brown
+Arianna,Baffa,womens,epee,24,37,Brown
+Amy,Mao,womens,epee,37,26,Brown
+Dasha,Smuk,womens,epee,34,36,Brown
+Sofia,Yee-Wadsworth,womens,epee,28,21,Brown
+Soph,Bililies,womens,saber,44,26,Brown
+Alyssa,Sun,womens,saber,40,27,Brown
+Alexandra,Tzou,womens,saber,57,18,Brown
+Rebecca,Whang,womens,saber,16,12,Brown
+Blodwen,Bindas,Womens,Epee,5,7,Northwestern
+Anna,Damratoski,Womens,Epee,40,23,Northwestern
+Lia,Douglas,Womens,Epee,6,4,Northwestern
+Asha,Henry,Womens,Epee,3,6,Northwestern
+Athina,Kwon,Womens,Epee,26,15,Northwestern
+Hanna,Lipthay,Womens,Epee,37,20,Northwestern
+Christina,Liu,Womens,Epee,18,20,Northwestern
+Kaylin,Nguyen,Womens,Epee,20,13,Northwestern
+Emma,Ning,Womens,Epee,27,18,Northwestern
+Ava,Wade-Currie,Womens,Epee,32,14,Northwestern
+Karen,Wang,Womens,Epee,33,23,Northwestern
+Annie,Wang,Womens,Epee,3,1,Northwestern
+Julia,Yoon,Womens,Epee,5,2,Northwestern
+Erika,Castenada,Womens,Foil,0,0,Northwestern
+Juliana,Hung,Womens,Foil,44,23,Northwestern
+Allison,Lee,Womens,Foil,38,25,Northwestern
+Yejine,Lee,Womens,Foil,30,22,Northwestern
+Rowan,Park,Womens,Foil,44,30,Northwestern
+Samantha,Serban,Womens,Foil,22,12,Northwestern
+Ophelia,Tong,Womens,Foil,28,21,Northwestern
+Karina,Vasile,Womens,Foil,18,12,Northwestern
+Adele,Bois,Womens,saber,32,24,Northwestern
+Alex,Chen,Womens,saber,18,9,Northwestern
+Levi,Hoogendoorn,Womens,saber,47,17,Northwestern
+Sumin,Liu,Womens,saber,23,12,Northwestern
+Amy,Lu,Womens,saber,29,16,Northwestern
+Sky,Miller,Womens,saber,45,13,Northwestern
+Megumi,Oishi,Womens,saber,48,15,Northwestern
+Kailing,Sathyanath,Womens,saber,19,16,Northwestern
+Esat,Adiloglu,Men,Epee,2,1,Stevens
+Jack,Corridon,Men,Epee,8,13,Stevens
+Matthew,Kemenosh,Men,Epee,4,2,Stevens
+Jose,Martinez-Ponce,Men,Epee,7,4,Stevens
+James,Morris,Men,Epee,10,9,Stevens
+Patrick,Nohilly,Men,Epee,3,1,Stevens
+Patrick,Pan,Men,Epee,21,22,Stevens
+Riley,Parker,Men,Epee,26,15,Stevens
+Caleb,Romero,Men,Epee,16,4,Stevens
+Nicholas,Smith,Men,Epee,26,32,Stevens
+Noah,Tumibay,Men,Epee,39,18,Stevens
+Yash,Yagnik,Men,Epee,11,2,Stevens
+Andrew,Yurovchak,Men,Epee,34,21,Stevens
+Thomas,Cheng,Men,Foil,4,9,Stevens
+James,Glover,Men,Foil,29,36,Stevens
+Rocco,Mathews,Men,Foil,25,51,Stevens
+Erik,Marran,Men,Foil,13,39,Stevens
+Evan,Peneiras,Men,Foil,1,4,Stevens
+Nick,Reznick,Men,Foil,33,35,Stevens
+Liam,Thomas,Men,Foil,28,15,Stevens
+Aden,Vishnevsky,Men,Foil,22,7,Stevens
+Cyrus,Erachshaw,Men,saber,29,18,Stevens
+Tyler,Kometani,Men,saber,25,3,Stevens
+Colin,Mahoney,Men,saber,36,25,Stevens
+John,Morreale,Men,saber,34,29,Stevens
+Myles,Reda,Men,saber,10,3,Stevens
+Eric,Romero,Men,saber,0,0,Stevens
+Kyle,Stamis,Men,saber,14,9,Stevens
+Christopher,Stone,Men,saber,41,18,Stevens
+Dylan,Woodward,Men,saber,31,26,Stevens
+Polly,Adler,Womens,Epee,0,4,NYU
+Polly,Adler,Womens,Foil,28,14,NYU
+Polly,Adler,Womens,Saber,3,0,NYU
+Aurora,Aschettino,Womens,Foil,30,31,NYU
+Aurora,Aschettino,Womens,Saber,2,1,NYU
+Leanne,Chan,Womens,Saber,42,38,NYU
+Sophia,Dondisch,Womens,Epee,48,54,NYU
+Hannah,Hoverman,Womens,Saber,19,27,NYU
+Claudia,Meyer,Womens,Foil,16,26,NYU
+Sharon,Ni,Womens,Saber,31,37,NYU
+Lily,Papadakis,Womens,Epee,51,28,NYU
+Annika,Santos,Womens,Foil,8,13,NYU
+Annika,Santos,Womens,Saber,0,1,NYU
+Miriam,Shoman,Womens,Saber,12,26,NYU
+Zara,Sinha,Womens,Epee,16,29,NYU
+Maria,Stamos,Womens,Foil,35,15,NYU
+Maria,Stamos,Womens,Saber,2,4,NYU
+Sarah,Tong,Womens,Epee,11,36,NYU
+Ashley,van den Bol,Womens,Saber,10,30,NYU
+Renee,Wu,Womens,Foil,34,22,NYU
+Renee,Wu,Womens,Saber,0,6,NYU
+Madelyn,Zamelis,Womens,Epee,7,17,NYU
+Madelyn,Zamelis,Womens,Foil,2,10,NYU
+Ian,Adler,Mens,Epee,22,23,NYU
+Tyler,Cho,Mens,Epee,16,33,NYU
+Farr,Dickson,Mens,Foil,41,22,NYU
+Steven,Grams,Mens,Epee,27,26,NYU
+Vincent,Hong,Mens,Saber,30,9,NYU
+Oliver,Hu,Mens,Foil,43,23,NYU
+Michael,Kang,Mens,Epee,25,36,NYU
+Ethan,Kim,Mens,Epee,1,7,NYU
+William,Lehr,Mens,Epee,1,4,NYU
+Wil,Margulies,Mens,Saber,24,4,NYU
+Bryce,McClain,Mens,Foil,35,22,NYU
+Jerry,Pan,Mens,Saber,30,12,NYU
+Joseph,Roy,Mens,Epee,3,1,NYU
+Andrew,Sledeski,Mens,Epee,2,4,NYU
+Andrew,Sledeski,Mens,Foil,13,16,NYU
+Brendan,Tang,Mens,Saber,1,3,NYU
+Nicholas,Topaz,Mens,Epee,5,3,NYU
+Adam,Wong,Mens,Foil,27,14,NYU
+Nicholas,Wong,Mens,Epee,0,1,NYU
+Darren,Yen,Mens,Saber,22,16,NYU
+Felix,Zhao,Mens,Epee,12,9,NYU
+Matthew,Zhou,Mens,Saber,31,22,NYU
+Kevin,Zu,Mens,Saber,30,14,NYU

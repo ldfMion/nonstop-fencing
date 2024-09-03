@@ -2,11 +2,10 @@ import type {Team, Weapon} from '~/models/FencerSummary';
 import getRecordsfromCsv from '../../helpers/getRecordsFromCsv';
 import type FencerSummary from '~/models/FencerSummary';
 
-export default async function getFencersFromTeamAndWeapon(
-    team: Team,
-    weapon: Weapon,
-): Promise<FencerSummary[]> {
+export default async function getFencersFromTeamAndWeapon(team: Team, weapon: Weapon): Promise<FencerSummary[]> {
     const data = await getRecordsfromCsv();
-    data.sort((a, b) => b.rating - a.rating);
-    return data.filter((fencer) => fencer.weapon === weapon && fencer.team === team);
+    const filtered = data.filter((fencer) => fencer.weapon === weapon && fencer.team === team);
+    filtered.sort((a, b) => b.rating - a.rating);
+    console.log(filtered);
+    return filtered;
 }

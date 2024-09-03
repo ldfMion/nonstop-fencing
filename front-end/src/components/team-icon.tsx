@@ -4,7 +4,7 @@ export default function TeamIcon({universityId, size}: {universityId: string; si
     const url = `/team-icons/${universityId}.png`;
     return (
         <div className={`relative flex h-[${size}px] items-center justify-center p-0`}>
-            <Image src={url} alt={''} width={size} height={size} className={`object-cover`} />
+            <Image src={url} alt={''} width={size} height={size} className={`h-[${size}px] object-contain`} />
         </div>
     );
 }
