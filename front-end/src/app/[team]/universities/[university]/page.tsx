@@ -100,7 +100,7 @@ function UniversityHeaders({team}: {team: ITeam}): JSX.Element {
     const region = getRegionName(team.university.region);
     return (
         <div className="flex flex-row gap-6">
-            <TeamIcon universityId={team.university.id} size={100} />
+            <TeamIcon universityId={team.university.id} className="h-28 w-28" />
             <div className="flex flex-col justify-between">
                 <div>
                     <h2 className="text-4xl font-extrabold">{team.university.displayNameLong}</h2>
