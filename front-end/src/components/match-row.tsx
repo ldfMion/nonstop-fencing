@@ -17,7 +17,7 @@ export default async function MatchRow({match, perspective}: {match: Match; pers
 function MatchUI2({university, match, win, flip}: {university: University; match: Match; win: boolean; flip: boolean}) {
     return (
         <li className="flex flex-row items-center justify-between gap-10 py-1">
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row items-center gap-2">
                 <p className="font-bold">vs.</p>
                 <Side university={university} />
             </div>

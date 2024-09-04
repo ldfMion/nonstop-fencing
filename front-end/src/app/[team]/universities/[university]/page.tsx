@@ -92,7 +92,9 @@ function MobileUniversityContentSelector({roster, matches}: {roster: JSX.Element
                 <TabsTrigger value="matches">Matches</TabsTrigger>
                 <TabsTrigger value="roster">Roster</TabsTrigger>
             </TabsList>
-            <TabsContent value="matches">{matches}</TabsContent>
+            <TabsContent value="matches" className="flex items-start overflow-scroll">
+                {matches}
+            </TabsContent>
             <TabsContent value="roster">{roster}</TabsContent>
         </Tabs>
     );
@@ -101,13 +103,16 @@ function MobileUniversityContentSelector({roster, matches}: {roster: JSX.Element
 function UniversityHeaders({team}: {team: ITeam}): JSX.Element {
     const region = getRegionName(team.university.region);
     return (
-        <div className="flex flex-row gap-6">
-            <TeamIcon universityId={team.university.id} className="h-28 w-28" />
-            <div className="flex flex-col justify-between">
-                <div>
-                    <h2 className="text-4xl font-extrabold">{team.university.displayNameLong}</h2>
-                    <p className="text-lg font-bold">{region}</p>
+        <div className="flex flex-col gap-4">
+            <div className="flex flex-row items-center justify-start gap-2 md:gap-6">
+                <TeamIcon universityId={team.university.id} className="h-14 w-14 md:h-28 md:w-28" />
+                <div className="flex flex-col">
+                    <h2 className="text-xl font-extrabold md:text-4xl">{team.university.displayNameLong}</h2>
+                    <p className="hidden text-lg font-bold md:flex">{region}</p>
                 </div>
+            </div>
+            <div className="">
+                <p className="flex text-sm font-bold md:hidden">{region}</p>
                 <Record record={team.overall} />
                 <div className="flex flex-row gap-4">
                     <PartialRecord weaponInitial="F" record={team.foil} />
