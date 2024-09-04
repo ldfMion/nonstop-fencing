@@ -20,11 +20,7 @@ export default function FilteredFencerTable({
 
     return (
         <>
-            <FilterSelector
-                className="justify-start"
-                options={options}
-                onFilterChange={handleChange}
-            />
+            <FilterSelector className="justify-start" options={options} onFilterChange={handleChange} />
             {filteredFencers.map((fencer) => (
                 <FencerRow fencer={fencer} key={fencer.fullName} />
             ))}
