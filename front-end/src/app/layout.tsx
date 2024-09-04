@@ -11,16 +11,13 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-    title: 'Top Fencers, Teams and Squads',
+    title: 'Collegiate Fencing Results',
     description: 'Browse top NCAA Fencers, Teams, and Squads',
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
     return (
-        <html
-            lang="en"
-            className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}
-        >
+        <html lang="en" className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
             <body className="flex h-screen flex-col justify-between">
                 <div>
                     <Navbar />
