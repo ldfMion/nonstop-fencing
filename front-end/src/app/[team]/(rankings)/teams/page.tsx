@@ -3,7 +3,7 @@ import {getTeams} from '~/api';
 import RankingRow from '~/components/ranking-row';
 import toTitleCase from 'helpers/toTitleCase';
 import SingleRankingWrapper from '../single-ranking-wrapper';
-import {Metadata} from 'next';
+import type {Metadata} from 'next';
 
 type Props = {
     params: {team: string};

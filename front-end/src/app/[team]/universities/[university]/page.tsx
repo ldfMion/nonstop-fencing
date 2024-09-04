@@ -13,7 +13,7 @@ import MatchesCard from './matches-card';
 import type {ITeam} from '~/models/Team';
 import SquadCard from './squad-card';
 import {getTeams} from '~/api';
-import {Metadata} from 'next';
+import type {Metadata} from 'next';
 import toTitleCase from 'helpers/toTitleCase';
 
 type Props = {params: {university: string; team: string}};
@@ -83,13 +83,7 @@ function TeamTabs({gender, team}: {gender: Team; team: ITeam}): JSX.Element {
     );
 }
 
-function MobileUniversityContentSelector({
-    roster,
-    matches,
-}: {
-    roster: JSX.Element;
-    matches: JSX.Element;
-}) {
+function MobileUniversityContentSelector({roster, matches}: {roster: JSX.Element; matches: JSX.Element}) {
     return (
         <Tabs defaultValue="matches" className="md:hidden">
             <TabsList className="grid w-full grid-cols-2">
@@ -123,13 +117,7 @@ function UniversityHeaders({team}: {team: ITeam}): JSX.Element {
     );
 }
 
-function PartialRecord({
-    record,
-    weaponInitial,
-}: {
-    record: RecordModel;
-    weaponInitial: 'F' | 'E' | 'S';
-}) {
+function PartialRecord({record, weaponInitial}: {record: RecordModel; weaponInitial: 'F' | 'E' | 'S'}) {
     return (
         <div className="flex flex-row text-sm">
             {weaponInitial}: {record.wins}-{record.losses}

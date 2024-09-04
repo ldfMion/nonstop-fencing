@@ -2,20 +2,11 @@ import type {University} from '~/models/University';
 import type Match from '~/models/Match';
 import getUniversity from '~/api/getUniversity';
 import NameIcon from './name-icon';
-import {HTMLAttributes} from 'react';
+import type {HTMLAttributes} from 'react';
 import {clsx} from 'clsx';
-import Link from 'next/link';
 
-export default async function MatchRow({
-    match,
-    perspective,
-}: {
-    match: Match;
-    perspective: University;
-}) {
-    const notPerspective = await getUniversity(
-        perspective.id == match.teamAId ? match.teamBId : match.teamAId,
-    );
+export default async function MatchRow({match, perspective}: {match: Match; perspective: University}) {
+    const notPerspective = await getUniversity(perspective.id == match.teamAId ? match.teamBId : match.teamAId);
     const win = perspective.id == match.winner;
     // always leave the perspective university on top
     const flip = perspective.id == match.teamBId;
@@ -23,17 +14,7 @@ export default async function MatchRow({
 }
 
 // items-center px-[16px] py-[8px]
-function MatchUI2({
-    university,
-    match,
-    win,
-    flip,
-}: {
-    university: University;
-    match: Match;
-    win: boolean;
-    flip: boolean;
-}) {
+function MatchUI2({university, match, win, flip}: {university: University; match: Match; win: boolean; flip: boolean}) {
     return (
         <li className="flex flex-row items-center justify-between gap-10 py-1">
             <div className="flex flex-row gap-2">
@@ -41,14 +22,8 @@ function MatchUI2({
                 <Side university={university} />
             </div>
             <div className="flex flex-row items-center gap-3 text-center">
-                {win ? (
-                    <SingleScore className="font-extrabold text-green-400">W</SingleScore>
-                ) : (
-                    <SingleScore className="font-extrabold text-red-400">L</SingleScore>
-                )}
-                <div
-                    className={`flex w-20 flex-col items-stretch gap-1 text-right ${flip && 'flex-col-reverse'}`}
-                >
+                {win ? <SingleScore className="font-extrabold text-green-400">W</SingleScore> : <SingleScore className="font-extrabold text-red-400">L</SingleScore>}
+                <div className={`flex w-20 flex-col items-stretch gap-1 text-right ${flip && 'flex-col-reverse'}`}>
                     <div className="flex flex-row gap-1">
                         <SingleScore className="font-bold">{match.teamAOverall}</SingleScore>
                         <SingleScore>{match.teamAFoil}</SingleScore>
@@ -91,15 +66,7 @@ function SingleScore({
 } */
 
 function Side({university, flip}: {university: University; flip?: boolean}): React.ReactNode {
-    return (
-        <NameIcon
-            iconUniversityId={university.id}
-            name={university.displayNameShort}
-            flip={flip}
-            className="text-lg"
-            href={`/mens/universities/${university.id}`}
-        />
-    );
+    return <NameIcon iconUniversityId={university.id} name={university.displayNameShort} flip={flip} className="text-lg" href={`/mens/universities/${university.id}`} />;
 }
 
 /* function MatchUI1({
