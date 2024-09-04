@@ -35,10 +35,12 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams({params: {team}}: {params: {team: string}}) {
-    console.log(team);
     const teamAsEnum = parseTeam(team);
     const teams = await getTeams(teamAsEnum);
-    return teams.map((team) => team.university.id);
+    const paths = teams.map((team) => ({
+        university: team.university.id,
+    }));
+    return paths;
 }
 
 export const dynamicParams = false;

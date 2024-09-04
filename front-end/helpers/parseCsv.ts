@@ -2,11 +2,8 @@ import path from 'path';
 import csv from 'csv-parser';
 import fs from 'fs';
 
-export default async function parseCSV<T>(
-    filePath: string,
-    parseRow: (row: unknown) => T,
-): Promise<T[]> {
-    console.log('parsing csv ' + filePath);
+export default async function parseCSV<T>(filePath: string, parseRow: (row: unknown) => T): Promise<T[]> {
+    //console.log('parsing csv ' + filePath);
     const results: unknown[] = [];
     const csvFilePath = path.join(process.cwd(), filePath);
     let formattedResults: Promise<T[]> = new Promise((resolve, reject) =>

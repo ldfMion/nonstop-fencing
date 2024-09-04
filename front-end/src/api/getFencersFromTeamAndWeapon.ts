@@ -6,6 +6,5 @@ export default async function getFencersFromTeamAndWeapon(team: Team, weapon: We
     const data = await getRecordsfromCsv();
     const filtered = data.filter((fencer) => fencer.weapon === weapon && fencer.team === team);
     filtered.sort((a, b) => b.rating - a.rating);
-    console.log(filtered);
     return filtered;
 }

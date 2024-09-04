@@ -8,21 +8,18 @@ let womensMatchesPromise: Promise<Match[]> | null = null;
 console.log('loaded the get matches from csv file');
 
 export default async function getMatchesFromCsv(team: Team): Promise<Match[]> {
-    console.log('getting matches from csv for team: ' + team);
+    //console.log('getting matches from csv for team: ' + team);
     let matchesPromise = team === Team.MEN ? mensMatchesPromise : womensMatchesPromise;
     if (matchesPromise === null) {
         console.log('initiating CSV parsing for', team === Team.MEN ? 'men' : 'women');
-        matchesPromise = parseCSV(
-            `../data/team-results-${team === Team.MEN ? 'men' : 'women'}.csv`,
-            parseRow,
-        );
+        matchesPromise = parseCSV(`../data/team-results-${team === Team.MEN ? 'men' : 'women'}.csv`, parseRow);
         if (team === Team.MEN) {
             mensMatchesPromise = matchesPromise;
         } else {
             womensMatchesPromise = matchesPromise;
         }
     } else {
-        console.log('using existing promise for', team === Team.MEN ? 'men' : 'women');
+        //console.log('using existing promise for', team === Team.MEN ? 'men' : 'women');
     }
 
     const matches = await matchesPromise;
