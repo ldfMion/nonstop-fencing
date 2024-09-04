@@ -11,16 +11,13 @@ export default function Footer(): JSX.Element {
     ]; */
     return (
         <div className="mt-8 flex flex-col items-start border bg-accent p-6">
+            <p>Record information is taken from each university&apos;s website. We are currently working on the missing universities.</p>
             <p>
-                Record information is taken from each university&apos;s website. We are currently
-                working on the missing universities.
-            </p>
-            <p>
-                If you see any mistakes, have any inquiries, or think you might be able to help,
-                shoot an email to <EmailLink>difrancescomion.1@osu.edu</EmailLink>
+                If you see any mistakes, have any inquiries, or think you might be able to help, shoot an email to <EmailLink>difrancescomion.1@osu.edu</EmailLink>
                 {' or '}
                 <EmailLink>rai.124@osu.edu</EmailLink>.
             </p>
+            <p>The order in which fencers are shown does not reflect official NCAA SPI.</p>
         </div>
     );
 }
