@@ -19,7 +19,7 @@ export default async function EventsPage() {
         <main className="flex flex-col items-center p-6">
             <div className="w-[600px] max-w-[100%]">
                 <div className="flex flex-row items-center justify-between">
-                    <h2 className="text-3xl font-semibold">Events</h2>
+                    <h2 className="px-4 text-3xl font-semibold">Events</h2>
                     <SeasonDropdown selectedSeason={new Season(2024, 2025)} />
                 </div>
                 {hasPastAndUpcoming ? <EventTabsWrapper upcoming={<EventsList events={upcoming} />} past={<EventsList events={past} />} /> : <EventsList events={events} />}
