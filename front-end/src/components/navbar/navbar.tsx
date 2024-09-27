@@ -1,14 +1,6 @@
 'use client';
 import Link from 'next/link';
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuContent,
-    NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
-} from '~/components/ui/navigation-menu';
+import {NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuContent, NavigationMenuTrigger, navigationMenuTriggerStyle} from '~/components/ui/navigation-menu';
 import {buttonVariants} from '../ui/button';
 import {cn} from '~/lib/utils';
 import {Sheet, SheetContent, SheetTrigger} from '../ui/sheet';
@@ -26,12 +18,10 @@ function DesktopNavbar(): JSX.Element {
                 </h1>
             </Link>
             <NavigationMenu>
-                <NavigationMenuList>
+                <NavigationMenuList className="flex flex-row gap-2">
                     <NavigationMenuItem>
                         <Link href="/" legacyBehavior passHref>
-                            <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
-                                Rankings
-                            </NavigationMenuTrigger>
+                            <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>Rankings</NavigationMenuTrigger>
                         </Link>
                         <NavigationMenuContent>
                             <ul className="flex flex-row gap-4 p-6">
@@ -43,9 +33,7 @@ function DesktopNavbar(): JSX.Element {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <Link href="/about" legacyBehavior passHref>
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                About Us
-                            </NavigationMenuLink>
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>About Us</NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
                 </NavigationMenuList>
@@ -71,10 +59,7 @@ function MobileNavbar(): JSX.Element {
                             <MobileBaseLink href="/about" title="About" onOpenChange={setOpen} />
                             <MobileBaseLink href="/" title="Rankings" onOpenChange={setOpen} />
                             <NavigationMenuItem>
-                                <NavigationMenuList
-                                    id="navmenulist"
-                                    className="ml-2 flex flex-col items-start gap-4"
-                                >
+                                <NavigationMenuList id="navmenulist" className="ml-2 flex flex-col items-start gap-4">
                                     {PATHS.map((path) => (
                                         <MobileLink onOpenChange={setOpen} key={path.heading}>
                                             <SubPathsSection subPath={path} />
@@ -92,12 +77,7 @@ function MobileNavbar(): JSX.Element {
 
 function SubLinkItem({href, title}: {href: string; title: string}): JSX.Element {
     return (
-        <li
-            className={cn(
-                buttonVariants({variant: 'link'}),
-                'h-fit w-fit text-nowrap p-0 text-foreground',
-            )}
-        >
+        <li className={cn(buttonVariants({variant: 'link'}), 'h-fit w-fit text-nowrap p-0 text-foreground')}>
             <NavigationMenuLink asChild>
                 <Link href={href} legacyBehavior>
                     {title}
@@ -128,40 +108,19 @@ function SubPathsSection({subPath}: {subPath: PathHeading}): JSX.Element {
     );
 }
 
-function MobileBaseLink({
-    href,
-    title,
-    onOpenChange,
-}: {
-    href: string;
-    title: string;
-    onOpenChange: (open: boolean) => void;
-}): JSX.Element {
+function MobileBaseLink({href, title, onOpenChange}: {href: string; title: string; onOpenChange: (open: boolean) => void}): JSX.Element {
     return (
         <MobileLink onOpenChange={onOpenChange}>
             <NavigationMenuItem>
                 <Link href={href} legacyBehavior passHref>
-                    <NavigationMenuLink
-                        className={cn(
-                            buttonVariants({variant: 'link'}),
-                            'p-0 text-lg text-foreground',
-                        )}
-                    >
-                        {title}
-                    </NavigationMenuLink>
+                    <NavigationMenuLink className={cn(buttonVariants({variant: 'link'}), 'p-0 text-lg text-foreground')}>{title}</NavigationMenuLink>
                 </Link>
             </NavigationMenuItem>
         </MobileLink>
     );
 }
 
-function MobileLink({
-    onOpenChange,
-    children,
-}: {
-    onOpenChange: (open: boolean) => void;
-    children: React.ReactNode;
-}) {
+function MobileLink({onOpenChange, children}: {onOpenChange: (open: boolean) => void; children: React.ReactNode}) {
     return <div onClick={() => onOpenChange(false)}>{children}</div>;
 }
 
