@@ -1,11 +1,5 @@
-import FencerSummary, {Team, Weapon} from '~/models/FencerSummary';
-import parseWeapon from 'helpers/parseWeapon';
-import parseTeam from 'helpers/parseTeam';
+import {ISeason, Season} from '~/models/Season';
 import parseCSV from './parseCsv';
-import Record from '~/models/Record';
-import getUniversity from '~/api/getUniversity';
-import {Region} from '~/models/Region';
-import calculateOtherRanking from './calculateOtherRanking';
 import {IEvent} from '~/models/Event';
 
 let events: IEvent[] | null = null;
@@ -15,13 +9,13 @@ export default async function get2024EventsFromCSV(): Promise<IEvent[]> {
     if (events == null) {
         console.log('Getting records from csv for the first time');
         events = await parseCSV('../data/24-25-schedule.csv', parseRow);
-        console.log(event);
+        console.log(events);
     }
-    return events;
+    return events.sort((a, b) => a.startDate.getTime() - b.startDate.getTime());
 }
 
 function parseRow(row: unknown): IEvent {
-    return new EventFromCSV(row);
+    return new EventFromCSV(row, new Season(2024, 2025));
 }
 
 class EventFromCSV implements IEvent {
@@ -30,12 +24,14 @@ class EventFromCSV implements IEvent {
     startDate: Date;
     endDate: Date;
     hostId: string;
-    constructor(row: unknown) {
+    season: ISeason;
+    constructor(row: unknown, season: ISeason) {
         const anyRow = row as any;
         this.displayName = anyRow['Meet name'];
-        this.hostId = anyRow['Host'];
+        this.hostId = anyRow['Host'] == '' ? null : anyRow['Host'];
         this.startDate = new Date(anyRow['Start Date']);
         this.endDate = new Date(anyRow['End Date']);
         this.id = this.displayName + this.hostId + 2425;
+        this.season = season;
     }
 }

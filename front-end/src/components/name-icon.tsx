@@ -16,7 +16,7 @@ export default function NameIcon({
 } & HtmlHTMLAttributes<HTMLParagraphElement>) {
     return (
         <ConditionalLinkWrapper href={href}>
-            <div className={`flex flex-row items-center gap-1 ${flip && 'flex-row-reverse'}`}>
+            <div className={`m-0 flex flex-row items-center gap-1 ${flip && 'flex-row-reverse'}`}>
                 <TeamIcon universityId={iconUniversityId} className="h-6 w-6 md:h-8 md:w-8" />
                 <p className={`h-fit p-0 ${flip && 'text-right'} ${className}`}>{name}</p>
             </div>

@@ -1,9 +1,10 @@
-import {University} from './University';
+import {ISeason} from './Season';
 
 export interface IEvent {
     id: string;
     displayName: string;
     startDate: Date;
     endDate: Date;
-    hostId: string;
+    hostId: string | null;
+    season: ISeason;
 }

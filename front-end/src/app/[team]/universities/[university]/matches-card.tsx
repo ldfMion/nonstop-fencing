@@ -7,31 +7,20 @@ import {Separator} from '~/components/ui/separator';
 import type {Team} from '~/models/FencerSummary';
 import type Match from '~/models/Match';
 import type {University} from '~/models/University';
+import Date from '~/components/date';
 
-export default async function MatchesCard({
-    university,
-    team,
-}: {
-    university: University;
-    team: Team;
-}): Promise<JSX.Element> {
+export default async function MatchesCard({university, team}: {university: University; team: Team}): Promise<JSX.Element> {
     const matches = await getMatchesFromUniversity(university.id, team);
     const matchesGroupedByDate = groupMatchesByDate(matches);
     return (
         <ListCard title="Fixtures" tableHeader={<MatchTableHeader />}>
             {Object.keys(matchesGroupedByDate).map((date) => (
                 <Fragment key={date}>
-                    <p key={date} className="mt-2 font-semibold text-gray-500">
-                        {getRelativeDateFromISODate(date)}
-                    </p>
+                    <Date isoDate={date} />
                     <Separator className="" />
                     {matchesGroupedByDate[date]!.map((match) => (
                         <>
-                            <MatchRow
-                                match={match}
-                                key={match.teamAId + match.teamBId + match.date.toISOString()}
-                                perspective={university}
-                            />
+                            <MatchRow match={match} key={match.teamAId + match.teamBId + match.date.toISOString()} perspective={university} />
                         </>
                     ))}
                 </Fragment>
