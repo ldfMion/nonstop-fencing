@@ -1,7 +1,7 @@
-import parseTeam from 'helpers/parseTeam';
+import parseTeam from '~/helpers/parseTeam';
 import {getTeams} from '~/api';
 import RankingRow from '~/components/ranking-row';
-import toTitleCase from 'helpers/toTitleCase';
+import toTitleCase from '~/helpers/toTitleCase';
 import SingleRankingWrapper from '../single-ranking-wrapper';
 import type {Metadata} from 'next';
 

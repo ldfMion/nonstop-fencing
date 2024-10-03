@@ -1,4 +1,4 @@
-import parseTeam from 'helpers/parseTeam';
+import parseTeam from '~/helpers/parseTeam';
 import Link from 'next/link';
 import getUniversity from '~/api/getUniversity';
 import Record from '~/components/record';
@@ -14,7 +14,7 @@ import type {ITeam} from '~/models/Team';
 import SquadCard from './squad-card';
 import {getTeams} from '~/api';
 import type {Metadata} from 'next';
-import toTitleCase from 'helpers/toTitleCase';
+import toTitleCase from '~/helpers/toTitleCase';
 
 type Props = {params: {university: string; team: string}};
 

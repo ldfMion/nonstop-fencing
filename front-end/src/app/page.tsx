@@ -1,4 +1,4 @@
-import getTopFive from 'helpers/getTop5';
+import getTopFive from '~/helpers/getTop5';
 import {getHomePageFencers, getTeams} from '~/api';
 import PageHeading from '~/components/page-heading';
 import RankingRow from '~/components/ranking-row';

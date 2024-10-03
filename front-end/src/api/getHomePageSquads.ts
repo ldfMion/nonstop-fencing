@@ -1,9 +1,9 @@
 import {Team, Weapon} from '~/models/FencerSummary';
-import getTopFive from 'helpers/getTop5';
+import getTopFive from '~/helpers/getTop5';
 import getTeams from './getTeams';
 import type {Squad} from '~/models/Squad';
 import type {ITeam} from '~/models/Team';
-import getSquadsFromTeams from 'helpers/getSquadsFromTeams';
+import getSquadsFromTeams from '~/helpers/getSquadsFromTeams';
 
 export default async function getHomePageSquads(): Promise<{
     mens: {

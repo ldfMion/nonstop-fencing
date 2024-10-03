@@ -1,4 +1,4 @@
-import get2024EventsFromCSV from 'helpers/get2425EventsFromCSV';
+import get2024EventsFromCSV from '~/helpers/get2425EventsFromCSV';
 import React from 'react';
 import getUniversity from '~/api/getUniversity';
 import DateComponent from '~/components/date';

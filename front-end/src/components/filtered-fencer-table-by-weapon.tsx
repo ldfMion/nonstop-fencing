@@ -1,17 +1,11 @@
 'use client';
 import type FencerSummary from '~/models/FencerSummary';
 import FilteredFencerTable from './filtered-fencer-table';
-import parseWeapon from 'helpers/parseWeapon';
+import parseWeapon from '~/helpers/parseWeapon';
 
-export default function FilteredFencersByWeapon({
-    fencers,
-}: {
-    fencers: FencerSummary[];
-}): JSX.Element {
+export default function FilteredFencersByWeapon({fencers}: {fencers: FencerSummary[]}): JSX.Element {
     const options = ['All', 'Foil', 'Epee', 'Saber'];
-    return (
-        <FilteredFencerTable fencers={fencers} options={options} filterFunction={filterByWeapon} />
-    );
+    return <FilteredFencerTable fencers={fencers} options={options} filterFunction={filterByWeapon} />;
 }
 
 function filterByWeapon(fencers: FencerSummary[], value: string): FencerSummary[] {

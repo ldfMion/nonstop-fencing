@@ -1,4 +1,4 @@
-import getUniversitiesfromCsv from 'helpers/getUniversitiesFromCsv';
+import getUniversitiesfromCsv from '~/helpers/getUniversitiesFromCsv';
 import {Team} from '~/models/FencerSummary';
 import type {ITeam} from '~/models/Team';
 

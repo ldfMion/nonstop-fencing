@@ -1,5 +1,5 @@
 import type {Team, Weapon} from '~/models/FencerSummary';
-import getRecordsfromCsv from '../../helpers/getRecordsFromCsv';
+import getRecordsfromCsv from '~/helpers/getRecordsFromCsv';
 import type FencerSummary from '~/models/FencerSummary';
 
 export default async function getFencersFromTeamAndWeapon(team: Team, weapon: Weapon): Promise<FencerSummary[]> {

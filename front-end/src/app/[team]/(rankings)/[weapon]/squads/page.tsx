@@ -1,6 +1,6 @@
-import parseTeam from 'helpers/parseTeam';
-import parseWeapon from 'helpers/parseWeapon';
-import toTitleCase from 'helpers/toTitleCase';
+import parseTeam from '~/helpers/parseTeam';
+import parseWeapon from '~/helpers/parseWeapon';
+import toTitleCase from '~/helpers/toTitleCase';
 import type {Metadata} from 'next';
 import getSquadsFromTeamAndWeapon from '~/api/getSquadsFromTeamAndWeapon';
 import SingleRankingWrapper from '~/app/[team]/(rankings)/single-ranking-wrapper';
