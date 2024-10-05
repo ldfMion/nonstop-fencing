@@ -2,13 +2,13 @@ import get2024EventsFromCSV from '~/helpers/get2425EventsFromCSV';
 import React from 'react';
 import getUniversity from '~/api/getUniversity';
 import DateComponent from '~/components/date';
-import NameIcon from '~/components/name-icon';
 import SeasonDropdown from '~/components/season-dropdown';
 import {Card, CardHeader, CardTitle} from '~/components/ui/card';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '~/components/ui/tabs';
 import {IEvent} from '~/models/Event';
 import {Season} from '~/models/Season';
 import {University} from '~/models/University';
+import Host from '~/components/host';
 
 export default async function EventsPage() {
     const events = await get2024EventsFromCSV();
@@ -53,20 +53,11 @@ async function EventCard({event}: {event: IEvent}) {
             <CardHeader className="flex flex-row items-center justify-between p-0 [&>*]:!m-0">
                 <div className="flex flex-row items-center gap-1">
                     <CardTitle className="!m-0 text-xl">{event.displayName}</CardTitle>
-                    {host && <Host university={host} />}
+                    {host && <Host university={host} className="text-lg" />}
                 </div>
                 <DateComponent isoDate={event.startDate.toISOString()} />
             </CardHeader>
         </Card>
-    );
-}
-
-function Host({university}: {university: University}) {
-    return (
-        <div className="!m-0 flex flex-row items-center gap-1">
-            <span className="text-md h-fit align-text-bottom font-bold">@</span>
-            <NameIcon iconUniversityId={university.id} name={university.displayNameShort} className="text-lg" />
-        </div>
     );
 }
 
