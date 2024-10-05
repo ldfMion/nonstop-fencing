@@ -1,0 +1,12 @@
+import clsx from 'clsx';
+import {HTMLAttributes} from 'react';
+
+export default function SingleScore({
+    children,
+    className,
+}: {
+    children: React.ReactNode;
+    className?: string;
+} & HTMLAttributes<HTMLParagraphElement>): JSX.Element {
+    return <p className={clsx('w-6', className)}>{children}</p>;
+}

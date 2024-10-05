@@ -1,0 +1,34 @@
+import FencerSummary, {Team, Weapon} from '~/models/FencerSummary';
+import {FencerRepository} from './FencerRepository';
+import {Fencer} from '~/models/Fencer';
+import parseWeapon from '~/helpers/parseWeapon';
+import parseTeam from '~/helpers/parseTeam';
+import {CSVRepository} from './CSVRepository';
+
+const FENCERS_FILENAME = '../../../data/fencers-24-25.csv';
+
+export class CSVFencerRepository extends CSVRepository<Fencer> implements FencerRepository {
+    protected parseRow(row: unknown): Fencer {
+        return new FencerFromCSV(row);
+    }
+    constructor(csvFilePath: string) {
+        super(csvFilePath);
+    }
+}
+
+class FencerFromCSV implements Fencer {
+    id: string;
+    name: string;
+    universityId: string;
+    weapon: Weapon;
+    gender: Team;
+    toObject?: (() => Fencer) | undefined;
+    constructor(row: unknown) {
+        const anyRow = row as any;
+        this.id = anyRow['id'];
+        this.name = anyRow['name'];
+        this.universityId = anyRow['university_id'];
+        this.weapon = parseWeapon(anyRow['weapon']);
+        this.gender = parseTeam(anyRow['gender']);
+    }
+}
