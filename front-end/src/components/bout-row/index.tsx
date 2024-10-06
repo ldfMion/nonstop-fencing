@@ -13,9 +13,9 @@ export default async function BoutRow({bout, perspective}: {bout: Bout; perspect
     const fencerB = await fencerRepository.findById(bout.fencerBId);
     const aWins = bout.scoreA > bout.scoreB;
     return (
-        <li className="grid cursor-pointer grid-cols-3 items-center justify-between py-1">
+        <li className="bout-grid py-1">
             {fencerA && <NameIcon iconUniversityId={fencerA.universityId} name={fencerA.name} />}
-            <div className="text-center">
+            <div className="w-fit text-nowrap text-center align-middle">
                 {bout.isBye() ? (
                     'BYE'
                 ) : (

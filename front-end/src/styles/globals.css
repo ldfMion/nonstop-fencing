@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.bout-grid {
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+}
+
 @layer base {
     :root {
         --background: 210 40% 98%; /* modified */

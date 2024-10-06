@@ -18,7 +18,7 @@ function MatchUI2({university, match, win, flip}: {university: University; match
     return (
         <li className="flex flex-row items-center justify-between gap-10 py-1">
             <div className="flex flex-row items-center gap-2">
-                <p className="font-bold">vs.</p>
+                <p className="md:text-md text-sm font-bold">vs.</p>
                 <Side university={university} />
             </div>
             <div className="flex flex-row items-center gap-3 text-center">

@@ -8,5 +8,5 @@ export default function SingleScore({
     children: React.ReactNode;
     className?: string;
 } & HTMLAttributes<HTMLParagraphElement>): JSX.Element {
-    return <p className={clsx('w-6', className)}>{children}</p>;
+    return <p className={clsx('w-6 text-sm md:text-lg', className)}>{children}</p>;
 }

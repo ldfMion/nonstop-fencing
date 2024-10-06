@@ -1,10 +1,10 @@
 import clsx from 'clsx';
-import {List} from 'lucide-react';
 import {Fragment} from 'react';
 import getUniversity from '~/api/getUniversity';
 import BoutRow from '~/components/bout-row/index';
 import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 import ListCard from '~/components/list-card';
+import {MobileContentSelector} from '~/components/mobile-content-selector';
 import PageHeading from '~/components/page-heading';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
@@ -26,39 +26,53 @@ export default async function MatchPage({params}: {params: {id: string}}) {
     const universityB = await getUniversity(matchData.teamBId);
     const fencers = calculateMatchRecords(await fencerService.getFromMatch(params.id), bouts);
     console.log(fencers);
+    const boutsSection = (
+        <div className="flex flex-col gap-2">
+            <PageHeading>Bouts</PageHeading>
+            <WeaponResults title="Foil" scoreA={matchData.foilA} scoreB={matchData.foilB} bouts={foil} />
+            <WeaponResults title="Epee" scoreA={matchData.epeeA} scoreB={matchData.epeeB} bouts={epee} />
+            <WeaponResults title="Saber" scoreA={matchData.saberA} scoreB={matchData.saberB} bouts={saber} />
+        </div>
+    );
+    const fencersSection = (
+        <div className="flex flex-col gap-2">
+            <PageHeading>Fencers</PageHeading>
+            <ListCard>
+                <FilteredFencersByWeapon fencers={fencers} />
+            </ListCard>
+        </div>
+    );
     return (
         <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
             <Card className="flex flex-col p-6">
                 <div className="flex flex-row items-center justify-center gap-5">
-                    <div className="flex flex-row items-center gap-8">
-                        <h2 className="text-3xl font-bold">{universityA.displayNameShort}</h2>
+                    <div className="flex flex-col-reverse items-center md:flex-row md:gap-8">
+                        <h2 className="text-center text-xl font-bold md:text-3xl">{universityA.displayNameShort}</h2>
                         <TeamIcon universityId={universityA.id} className="h-14 w-14 md:h-20 md:w-20" />
                     </div>
                     {/* <div className="grid grid-cols-3 gap-1 text-5xl font-extrabold [&>*]:text-center"> */}
-                    <div className="text-5xl font-extrabold">
+                    <div className="text-2xl font-extrabold md:text-5xl">
                         <span>{matchData.overallA}</span>
                         <span>-</span>
                         <span>{matchData.overallB}</span>
                     </div>
-                    <div className="flex flex-row items-center gap-8">
+                    <div className="flex flex-col items-center md:flex-row md:gap-8">
                         <TeamIcon universityId={universityB.id} className="h-14 w-14 md:h-20 md:w-20" />
-                        <h2 className="text-3xl font-bold">{universityB.displayNameShort}</h2>
+                        <h2 className="text-center text-xl font-bold md:text-3xl">{universityB.displayNameShort}</h2>
                     </div>
                 </div>
             </Card>
             <div className="hidden flex-col gap-5 md:flex md:flex-row md:items-start [&>*]:grow">
-                <div className="flex flex-col gap-2">
-                    <PageHeading>Bouts</PageHeading>
-                    <WeaponResults title="Foil" scoreA={matchData.foilA} scoreB={matchData.foilB} bouts={foil} />
-                    <WeaponResults title="Epee" scoreA={matchData.epeeA} scoreB={matchData.epeeB} bouts={epee} />
-                    <WeaponResults title="Saber" scoreA={matchData.saberA} scoreB={matchData.saberB} bouts={saber} />
-                </div>
-                <div>
-                    <ListCard title="Fencers">
-                        <FilteredFencersByWeapon fencers={fencers} />
-                    </ListCard>
-                </div>
+                {boutsSection}
+                {fencersSection}
             </div>
+            <MobileContentSelector
+                elements={[
+                    {title: 'Bouts', content: boutsSection},
+                    {title: 'Fencers', content: fencersSection},
+                ]}
+                defaultTitle="Bouts"
+            />
         </main>
     );
 }

@@ -15,6 +15,7 @@ import {getTeams} from '~/api';
 import type {Metadata} from 'next';
 import toTitleCase from '~/helpers/toTitleCase';
 import {Gender} from '~/models/Gender';
+import {MobileContentSelector} from '~/components/mobile-content-selector';
 
 type Props = {params: {university: string; team: string}};
 
@@ -65,7 +66,13 @@ export default async function University({params}: Props) {
                 {rosterElement}
                 {matchesElement}
             </div>
-            <MobileUniversityContentSelector roster={rosterElement} matches={matchesElement} />
+            <MobileContentSelector
+                elements={[
+                    {title: 'Roster', content: rosterElement},
+                    {title: 'Matches', content: matchesElement},
+                ]}
+                defaultTitle="Roster"
+            />
         </main>
     );
 }
@@ -81,21 +88,6 @@ function TeamTabs({gender, team}: {gender: Gender; team: ITeam}): JSX.Element {
                     <TabsTrigger value="women">Women&apos;s</TabsTrigger>
                 </Link>
             </TabsList>
-        </Tabs>
-    );
-}
-
-function MobileUniversityContentSelector({roster, matches}: {roster: JSX.Element; matches: JSX.Element}) {
-    return (
-        <Tabs defaultValue="matches" className="md:hidden">
-            <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="matches">Matches</TabsTrigger>
-                <TabsTrigger value="roster">Roster</TabsTrigger>
-            </TabsList>
-            <TabsContent value="matches" className="flex items-start overflow-scroll">
-                {matches}
-            </TabsContent>
-            <TabsContent value="roster">{roster}</TabsContent>
         </Tabs>
     );
 }
