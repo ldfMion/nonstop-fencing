@@ -17,7 +17,7 @@ export default async function HomePage() {
         <main className="flex flex-col gap-4 px-6">
             <div className="flex flex-row items-center justify-between">
                 <PageHeading>Fencers</PageHeading>
-                <SeasonDropdown selectedSeason={new Season(2023, 2024)} />
+                <SeasonDropdown selectedSeason={new Season(2023, 2024)} seasons={[new Season(2023, 2024)]} />
             </div>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
                 <FencerList fencers={fencers.mens.foil} title="Men's Foil" url="mens/foil/fencers" />

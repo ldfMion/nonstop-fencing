@@ -2,8 +2,7 @@ import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from '~/c
 import {SelectGroup} from '@radix-ui/react-select';
 import {ISeason, Season} from '~/models/Season';
 
-export default function SeasonDropdown({selectedSeason}: {selectedSeason: ISeason}): JSX.Element {
-    const seasons = [new Season(2023, 2024), new Season(2024, 2025)];
+export default function SeasonDropdown({selectedSeason, seasons}: {selectedSeason: ISeason; seasons: ISeason[]}): JSX.Element {
     return (
         <div className="flex flex-row items-center gap-2 p-2">
             <Select>

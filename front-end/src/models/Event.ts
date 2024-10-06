@@ -1,6 +1,6 @@
 import {ISeason} from './Season';
 
-export interface IEvent {
+export interface Event {
     id: string;
     displayName: string;
     startDate: Date;
