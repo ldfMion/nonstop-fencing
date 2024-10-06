@@ -4,11 +4,11 @@ import PageHeading from '~/components/page-heading';
 import RankingRow from '~/components/ranking-row';
 import StandingsCard from '~/components/list-card';
 import type FencerSummary from '~/models/FencerSummary';
-import {Team} from '~/models/FencerSummary';
 import type {Squad} from '~/models/Squad';
 import getHomePageSquads from '~/api/getHomePageSquads';
 import SeasonDropdown from '~/components/season-dropdown';
 import {Season} from '~/models/Season';
+import {Gender} from '~/models/Gender';
 
 export default async function HomePage() {
     const fencers = await getHomePageFencers();
@@ -29,8 +29,8 @@ export default async function HomePage() {
             </div>
             <PageHeading>Teams</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-                <TeamList gender={Team.MEN} />
-                <TeamList gender={Team.WOMEN} />
+                <TeamList gender={Gender.MEN} />
+                <TeamList gender={Gender.WOMEN} />
             </div>
             <PageHeading>Squads</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
@@ -45,10 +45,10 @@ export default async function HomePage() {
     );
 }
 
-async function TeamList({gender}: {gender: Team}): Promise<JSX.Element> {
+async function TeamList({gender}: {gender: Gender}): Promise<JSX.Element> {
     const teams = getTopFive(await getTeams(gender));
-    const genderPath = gender === Team.MEN ? 'mens' : 'womens';
-    const title = gender === Team.MEN ? "Men's" : "Women's";
+    const genderPath = gender === Gender.MEN ? 'mens' : 'womens';
+    const title = gender === Gender.MEN ? "Men's" : "Women's";
     const url = `/${genderPath}/teams`;
     return (
         <StandingsCard title={title} titleHref={url}>

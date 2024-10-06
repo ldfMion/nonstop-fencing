@@ -2,7 +2,7 @@
 import type FencerSummary from '~/models/FencerSummary';
 import FilterSelector from './filter-selector';
 import FencerRow from './fencer-row';
-import {useState} from 'react';
+import {Fragment, useState} from 'react';
 
 export default function FilteredFencerTable({
     fencers,
@@ -19,11 +19,11 @@ export default function FilteredFencerTable({
     };
 
     return (
-        <>
+        <Fragment>
             <FilterSelector className="justify-start" options={options} onFilterChange={handleChange} />
             {filteredFencers.map((fencer) => (
                 <FencerRow fencer={fencer} key={fencer.fullName} />
             ))}
-        </>
+        </Fragment>
     );
 }

@@ -8,7 +8,7 @@ import PageHeading from '~/components/page-heading';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Bout} from '~/models/Bout';
-import {Weapon} from '~/models/FencerSummary';
+import {Weapon} from '~/models/Weapon';
 import {boutRepository, matchRepository} from '~/repositories';
 import {fencerService} from '~/services';
 
@@ -52,6 +52,7 @@ export default async function MatchPage({params}: {params: {id: string}}) {
                     <WeaponResults title="Saber" scoreA={matchData.saberA} scoreB={matchData.saberB} bouts={saber} />
                 </div>
                 <div>
+                    <PageHeading>Fencers</PageHeading>
                     {fencers.map((fencer) => (
                         <p>{fencer.name}</p>
                     ))}

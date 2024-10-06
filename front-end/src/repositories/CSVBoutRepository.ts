@@ -1,11 +1,8 @@
-import parseTeam from '~/helpers/parseTeam';
-import {Team, Weapon} from '~/models/FencerSummary';
-import {Match2} from '~/models/Match2';
 import {CSVRepository} from './CSVRepository';
 import {Bout} from '~/models/Bout';
 import {BoutRepository} from './BoutRepository';
-import {parse} from 'path';
 import parseWeapon from '~/helpers/parseWeapon';
+import {Weapon} from '~/models/Weapon';
 
 export class CSVBoutRepository extends CSVRepository<Bout> implements BoutRepository {
     constructor(csvFilePath: string) {

@@ -1,10 +1,10 @@
-import {Weapon} from '~/models/FencerSummary';
 import type {ITeam} from '~/models/Team';
 import getTopFive from './getTop5';
 import type {Squad} from '~/models/Squad';
 import type Record from '~/models/Record';
 import type {University} from '~/models/University';
 import calculateWinPercentage from './calculateWinPercentage';
+import {Weapon} from '~/models/Weapon';
 
 export default function getSquadsFromTeams(teams: ITeam[], weapon: Weapon): Squad[] {
     return teams

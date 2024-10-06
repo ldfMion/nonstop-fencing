@@ -3,14 +3,14 @@ import getMatchesFromUniversity from '~/api/getMatchesFromUniversity';
 import ListCard from '~/components/list-card';
 import MatchRow from '~/components/match-row';
 import {Separator} from '~/components/ui/separator';
-import type {Team} from '~/models/FencerSummary';
 import type Match from '~/models/Match';
 import type {University} from '~/models/University';
 import Date from '~/components/date';
 import MatchTableHeader from '~/components/match-table-header';
+import {Gender} from '~/models/Gender';
 
-export default async function MatchesCard({university, team}: {university: University; team: Team}): Promise<JSX.Element> {
-    const matches = await getMatchesFromUniversity(university.id, team);
+export default async function MatchesCard({university, gender}: {university: University; gender: Gender}): Promise<JSX.Element> {
+    const matches = await getMatchesFromUniversity(university.id, gender);
     const matchesGroupedByDate = groupMatchesByDate(matches);
     return (
         <ListCard title="Fixtures" tableHeader={<MatchTableHeader />}>

@@ -1,4 +1,4 @@
-import FencerSummary, {Team, Weapon} from '~/models/FencerSummary';
+import FencerSummary from '~/models/FencerSummary';
 import parseWeapon from '~/helpers/parseWeapon';
 import parseTeam from '~/helpers/parseTeam';
 import calculatePythagoreanWins from './calculatePythagoreanWins';
@@ -7,6 +7,8 @@ import Record from '~/models/Record';
 import getUniversity from '~/api/getUniversity';
 import {Region} from '~/models/Region';
 import calculateOtherRanking from './calculateOtherRanking';
+import {Weapon} from '~/models/Weapon';
+import {Gender} from '~/models/Gender';
 
 let records: FencerSummary[] | null = null;
 
@@ -37,7 +39,7 @@ class FencerSummaryFromCSV implements FencerSummaryWithoutRegion {
     public lastName: string;
     public universityId: string;
     public weapon: Weapon;
-    public team: Team;
+    public team: Gender;
     public record: Record;
 
     constructor(
@@ -69,7 +71,7 @@ class FencerSummaryWithRegion implements FencerSummary {
     public fullName: string;
     public universityId: string;
     public weapon: Weapon;
-    public team: Team;
+    public team: Gender;
     public record: Record;
     public rating: number;
     public region: Region;

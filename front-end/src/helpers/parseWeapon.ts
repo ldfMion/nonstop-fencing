@@ -1,4 +1,4 @@
-import {Weapon} from '~/models/FencerSummary';
+import {Weapon} from '~/models/Weapon';
 import assertString from './assertString';
 
 export default function parseWeapon(data: any): Weapon {

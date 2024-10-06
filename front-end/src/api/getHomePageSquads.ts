@@ -1,9 +1,10 @@
-import {Team, Weapon} from '~/models/FencerSummary';
 import getTopFive from '~/helpers/getTop5';
 import getTeams from './getTeams';
 import type {Squad} from '~/models/Squad';
 import type {ITeam} from '~/models/Team';
 import getSquadsFromTeams from '~/helpers/getSquadsFromTeams';
+import {Gender} from '~/models/Gender';
+import {Weapon} from '~/models/Weapon';
 
 export default async function getHomePageSquads(): Promise<{
     mens: {
@@ -17,8 +18,8 @@ export default async function getHomePageSquads(): Promise<{
         saber: Squad[];
     };
 }> {
-    const mensTeams = await getTeams(Team.MEN);
-    const womensTeams = await getTeams(Team.WOMEN);
+    const mensTeams = await getTeams(Gender.MEN);
+    const womensTeams = await getTeams(Gender.WOMEN);
     return {
         mens: {
             foil: getSqudsFromTeamsForHomePage(mensTeams, Weapon.FOIL),

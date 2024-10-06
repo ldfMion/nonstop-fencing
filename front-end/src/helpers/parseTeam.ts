@@ -1,17 +1,17 @@
-import {Team} from '~/models/FencerSummary';
+import {Gender} from '~/models/Gender';
 import assertString from './assertString';
 
-export default function parseTeam(data: any): Team {
+export default function parseGender(data: any): Gender {
     assertString(data);
     switch (data.toLowerCase()) {
         case 'men':
         case 'mens':
         case "men's":
-            return Team.MEN;
+            return Gender.MEN;
         case 'women':
         case 'womens':
         case "women's":
-            return Team.WOMEN;
+            return Gender.WOMEN;
         default:
             throw Error(`Error parsing team ${data}`);
     }

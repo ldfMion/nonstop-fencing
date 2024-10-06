@@ -1,4 +1,4 @@
-import {Team} from './FencerSummary';
+import {Gender} from './Gender';
 
 export interface Match2 {
     id: string;
@@ -14,5 +14,5 @@ export interface Match2 {
     saberB: number;
     hostId: string;
     meetId: string;
-    gender: Team;
+    gender: Gender;
 }

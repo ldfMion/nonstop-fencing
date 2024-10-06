@@ -1,25 +1,25 @@
 import Match from '~/models/Match';
 import parseCSV from './parseCsv';
-import {Team} from '~/models/FencerSummary';
+import {Gender} from '~/models/Gender';
 
 let mensMatchesPromise: Promise<Match[]> | null = null;
 let womensMatchesPromise: Promise<Match[]> | null = null;
 
 console.log('loaded the get matches from csv file');
 
-export default async function getMatchesFromCsv(team: Team): Promise<Match[]> {
+export default async function getMatchesFromCsv(gender: Gender): Promise<Match[]> {
     //console.log('getting matches from csv for team: ' + team);
-    let matchesPromise = team === Team.MEN ? mensMatchesPromise : womensMatchesPromise;
+    let matchesPromise = gender === Gender.MEN ? mensMatchesPromise : womensMatchesPromise;
     if (matchesPromise === null) {
-        console.log('initiating CSV parsing for', team === Team.MEN ? 'men' : 'women');
-        matchesPromise = parseCSV(`../data/team-results-${team === Team.MEN ? 'men' : 'women'}.csv`, parseRow);
-        if (team === Team.MEN) {
+        console.log('initiating CSV parsing for', gender === Gender.MEN ? 'men' : 'women');
+        matchesPromise = parseCSV(`../data/team-results-${gender === Gender.MEN ? 'men' : 'women'}.csv`, parseRow);
+        if (gender === Gender.MEN) {
             mensMatchesPromise = matchesPromise;
         } else {
             womensMatchesPromise = matchesPromise;
         }
     } else {
-        //console.log('using existing promise for', team === Team.MEN ? 'men' : 'women');
+        //console.log('using existing promise for', team === Gender.MEN ? 'men' : 'women');
     }
 
     const matches = await matchesPromise;

@@ -1,8 +1,8 @@
 import parseTeam from '~/helpers/parseTeam';
-import {Team} from '~/models/FencerSummary';
 import {Match2} from '~/models/Match2';
 import {MatchRepository} from './MatchRepository';
 import {CSVRepository} from './CSVRepository';
+import {Gender} from '~/models/Gender';
 
 export class CSVMatchRepository extends CSVRepository<Match2> implements MatchRepository {
     constructor(csvFilePath: string) {
@@ -30,7 +30,7 @@ class MatchFromCSV implements Match2 {
     saberB: number;
     hostId: string;
     meetId: string;
-    gender: Team;
+    gender: Gender;
     constructor(row: unknown) {
         const anyRow = row as any;
         this.id = anyRow['id'];

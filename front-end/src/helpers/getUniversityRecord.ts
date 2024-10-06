@@ -1,12 +1,9 @@
 import Record from '~/models/Record';
-import {Team} from '~/models/FencerSummary';
 import getMatchesFromCsv from './getMatchesFromCsv';
 import Match from '~/models/Match';
+import {Gender} from '~/models/Gender';
 
-export default async function getUniversityRecord(
-    universityId: string,
-    team: Team,
-): Promise<{overall: Record; foil: Record; epee: Record; saber: Record}> {
+export default async function getUniversityRecord(universityId: string, team: Gender): Promise<{overall: Record; foil: Record; epee: Record; saber: Record}> {
     const matches = await getMatchesFromCsv(team);
     const participatingMatches = matches.filter((match) => match.hasTeam(universityId));
     const record = {

@@ -1,4 +1,3 @@
-import {Team} from '~/models/FencerSummary';
 import getUniversityRecord from './getUniversityRecord';
 import parseCSV from './parseCsv';
 import type {University} from '~/models/University';
@@ -7,6 +6,7 @@ import type {ITeam} from '~/models/Team';
 import {Region} from '~/models/Region';
 import assertString from './assertString';
 import calculateWinPercentage from './calculateWinPercentage';
+import {Gender} from '~/models/Gender';
 
 let universities: University[] | null = null;
 
@@ -15,14 +15,9 @@ export default async function getUniversitiesfromCsv(): Promise<University[]> {
         const universitiesWithoutRecord = await parseCSV('../data/universities.csv', parseRow);
         universities = await Promise.all(
             universitiesWithoutRecord.map(async (universityWithoutRecord) => {
-                const mens = await getUniversityRecord(universityWithoutRecord.id, Team.MEN);
-                const womens = await getUniversityRecord(universityWithoutRecord.id, Team.WOMEN);
-                return new UniversityFromCSVWithRecord(
-                    universityWithoutRecord,
-                    mens,
-                    womens,
-                    calculateWinPercentage,
-                );
+                const mens = await getUniversityRecord(universityWithoutRecord.id, Gender.MEN);
+                const womens = await getUniversityRecord(universityWithoutRecord.id, Gender.WOMEN);
+                return new UniversityFromCSVWithRecord(universityWithoutRecord, mens, womens, calculateWinPercentage);
             }),
         );
     }

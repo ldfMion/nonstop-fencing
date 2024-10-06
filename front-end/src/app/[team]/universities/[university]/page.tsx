@@ -5,7 +5,6 @@ import Record from '~/components/record';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '~/components/ui/tabs';
-import {Team} from '~/models/FencerSummary';
 import type RecordModel from '~/models/Record';
 import type {University as UniversityModel} from '~/models/University';
 import {Region} from '~/models/Region';
@@ -15,6 +14,7 @@ import SquadCard from './squad-card';
 import {getTeams} from '~/api';
 import type {Metadata} from 'next';
 import toTitleCase from '~/helpers/toTitleCase';
+import {Gender} from '~/models/Gender';
 
 type Props = {params: {university: string; team: string}};
 
@@ -49,12 +49,12 @@ export const revalidate = false;
 export default async function University({params}: Props) {
     const university = await getUniversity(params.university);
     const team = parseTeam(params.team);
-    const universityTeam = team == Team.MEN ? university.mens : university.womens;
+    const universityTeam = team == Gender.MEN ? university.mens : university.womens;
     if (!teamExists(universityTeam)) {
         return <p>{university.displayNameLong} does not have this team</p>;
     }
     const rosterElement = <SquadCard university={university} team={team} />;
-    const matchesElement = <MatchesCard university={university} team={team} />;
+    const matchesElement = <MatchesCard university={university} gender={team} />;
     return (
         <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
             <Card className="flex flex-col p-6">
@@ -70,9 +70,9 @@ export default async function University({params}: Props) {
     );
 }
 
-function TeamTabs({gender, team}: {gender: Team; team: ITeam}): JSX.Element {
+function TeamTabs({gender, team}: {gender: Gender; team: ITeam}): JSX.Element {
     return (
-        <Tabs defaultValue={gender == Team.MEN ? 'men' : 'women'} className="self-stretch">
+        <Tabs defaultValue={gender == Gender.MEN ? 'men' : 'women'} className="self-stretch">
             <TabsList className="grid w-full grid-cols-2">
                 <Link href={`/mens/universities/${team.university.id}`} legacyBehavior>
                     <TabsTrigger value="men">Men&apos;s</TabsTrigger>
@@ -158,11 +158,11 @@ function hasWomen(university: UniversityModel): boolean {
     return teamExists(university.womens);
 }
 
-function showTabs(university: UniversityModel, currentTeam: Team): boolean {
-    if (currentTeam === Team.MEN) {
+function showTabs(university: UniversityModel, currentTeam: Gender): boolean {
+    if (currentTeam === Gender.MEN) {
         return hasWomen(university);
     }
-    if (currentTeam === Team.WOMEN) {
+    if (currentTeam === Gender.WOMEN) {
         return hasMen(university);
     } else {
         throw Error(`${currentTeam as string} is not a team`);

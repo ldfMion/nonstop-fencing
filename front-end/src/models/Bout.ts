@@ -1,4 +1,4 @@
-import {Weapon} from './FencerSummary';
+import {Weapon} from './Weapon';
 
 export interface Bout {
     id: string;
