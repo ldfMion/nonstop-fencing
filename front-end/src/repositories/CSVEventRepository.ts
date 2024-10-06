@@ -1,21 +1,18 @@
 import {ISeason, Season} from '~/models/Season';
-import parseCSV from './parseCsv';
+import {CSVRepository} from './CSVRepository';
+import {EventRepository} from './EventRepository';
 import {Event} from '~/models/Event';
 
-let events: Event[] | null = null;
-
-export default async function get2024EventsFromCSV(): Promise<Event[]> {
-    console.log(events == null);
-    if (events == null) {
-        console.log('Getting records from csv for the first time');
-        events = await parseCSV('../data/meets_24_25.csv', parseRow);
-        console.log(events);
+export class CSVEventRepository extends CSVRepository<Event> implements EventRepository {
+    protected parseRow(row: unknown): Event {
+        return new EventFromCSV(row, new Season(2024, 2025));
     }
-    return events.sort((a, b) => a.startDate.getTime() - b.startDate.getTime());
-}
-
-function parseRow(row: unknown): Event {
-    return new EventFromCSV(row, new Season(2024, 2025));
+    constructor(csvFilePath: string) {
+        super(csvFilePath);
+    }
+    async findBySeason(season: ISeason): Promise<Event[]> {
+        return (await this.findAll()).filter((event) => event.season.displayNameShort === season.displayNameShort);
+    }
 }
 
 class EventFromCSV implements Event {

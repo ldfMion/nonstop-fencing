@@ -1,4 +1,3 @@
-import get2024EventsFromCSV from '~/helpers/get2425EventsFromCSV';
 import React from 'react';
 import getUniversity from '~/api/getUniversity';
 import DateComponent from '~/components/date';
@@ -10,9 +9,11 @@ import {Season} from '~/models/Season';
 import {University} from '~/models/University';
 import Host from '~/components/host';
 import ConditionalLinkWrapper from '~/components/conditional-link-wrapper';
+import {eventRepository} from '~/repositories';
 
 export default async function EventsPage() {
-    const events = await get2024EventsFromCSV();
+    const currentSeason = new Season(2024, 2025);
+    const events = await eventRepository.findBySeason(currentSeason);
     const past = events.filter((event) => event.startDate < new Date());
     const upcoming = events.filter((event) => event.startDate >= new Date());
     const hasPastAndUpcoming = past.length > 0 && upcoming.length > 0;
@@ -21,7 +22,7 @@ export default async function EventsPage() {
             <div className="w-[600px] max-w-[100%]">
                 <div className="flex flex-row items-center justify-between">
                     <h2 className="px-4 text-3xl font-semibold">Events</h2>
-                    <SeasonDropdown selectedSeason={new Season(2024, 2025)} seasons={[new Season(2024, 2025)]} />
+                    <SeasonDropdown selectedSeason={currentSeason} seasons={[new Season(2024, 2025)]} />
                 </div>
                 {hasPastAndUpcoming ? <EventTabsWrapper upcoming={<EventsList events={upcoming} />} past={<EventsList events={past} />} /> : <EventsList events={events} />}
             </div>
