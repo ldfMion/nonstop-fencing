@@ -1,6 +1,6 @@
-import type FencerSummary from '~/models/FencerSummary';
 import FencerRow from './fencer-row';
+import {FencerWithRecord} from '~/models/FencerWithRecord';
 
-export default function FencerTable({fencers}: {fencers: FencerSummary[]}) {
-    return fencers.map((fencer) => <FencerRow fencer={fencer} key={fencer.fullName} />);
+export default function FencerTable({fencers}: {fencers: FencerWithRecord[]}) {
+    return fencers.map((fencer) => <FencerRow fencer={fencer} key={fencer.name} />);
 }

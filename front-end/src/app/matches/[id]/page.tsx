@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import {List} from 'lucide-react';
 import {Fragment} from 'react';
 import getUniversity from '~/api/getUniversity';
 import BoutRow from '~/components/bout-row/index';
@@ -8,6 +9,7 @@ import PageHeading from '~/components/page-heading';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Bout} from '~/models/Bout';
+import {Fencer} from '~/models/Fencer';
 import {Weapon} from '~/models/Weapon';
 import {boutRepository, matchRepository} from '~/repositories';
 import {fencerService} from '~/services';
@@ -22,7 +24,7 @@ export default async function MatchPage({params}: {params: {id: string}}) {
     const saber = bouts.filter((bout) => bout.weapon === Weapon.SABER);
     const universityA = await getUniversity(matchData.teamAId);
     const universityB = await getUniversity(matchData.teamBId);
-    const fencers = await fencerService.getFromMatch(params.id);
+    const fencers = calculateMatchRecords(await fencerService.getFromMatch(params.id), bouts);
     console.log(fencers);
     return (
         <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
@@ -52,10 +54,9 @@ export default async function MatchPage({params}: {params: {id: string}}) {
                     <WeaponResults title="Saber" scoreA={matchData.saberA} scoreB={matchData.saberB} bouts={saber} />
                 </div>
                 <div>
-                    <PageHeading>Fencers</PageHeading>
-                    {fencers.map((fencer) => (
-                        <p>{fencer.name}</p>
-                    ))}
+                    <ListCard title="Fencers">
+                        <FilteredFencersByWeapon fencers={fencers} />
+                    </ListCard>
                 </div>
             </div>
         </main>
@@ -82,4 +83,19 @@ function WeaponResults({title, bouts, scoreA, scoreB}: {title: string; bouts: Bo
 
 function Score({score, win}: {score: number; win: boolean}) {
     return <span className={clsx(win ? 'text-green-400' : 'text-red-500', 'font-bold')}>{score}</span>;
+}
+
+function calculateMatchRecords(fencers: Fencer[], bouts: Bout[]) {
+    return fencers.map((fencer) => {
+        const wins = bouts.filter((bout) => bout.includes(fencer) && bout.winnerId === fencer.id).length;
+        const losses = bouts.filter((bout) => bout.includes(fencer) && bout.winnerId !== fencer.id).length;
+        return {
+            ...fencer.toObject!(),
+            record: {
+                wins: wins,
+                losses: losses,
+            },
+            rating: wins - losses,
+        };
+    });
 }

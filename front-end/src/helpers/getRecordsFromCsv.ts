@@ -1,7 +1,5 @@
 import FencerSummary from '~/models/FencerSummary';
 import parseWeapon from '~/helpers/parseWeapon';
-import parseTeam from '~/helpers/parseTeam';
-import calculatePythagoreanWins from './calculatePythagoreanWins';
 import parseCSV from './parseCsv';
 import Record from '~/models/Record';
 import getUniversity from '~/api/getUniversity';
@@ -9,6 +7,7 @@ import {Region} from '~/models/Region';
 import calculateOtherRanking from './calculateOtherRanking';
 import {Weapon} from '~/models/Weapon';
 import {Gender} from '~/models/Gender';
+import parseGender from '~/helpers/parseTeam';
 
 let records: FencerSummary[] | null = null;
 
@@ -35,68 +34,66 @@ function parseRow(row: unknown): FencerSummaryWithoutRegion {
 type FencerSummaryWithoutRegion = Omit<FencerSummary, 'region'>;
 
 class FencerSummaryFromCSV implements FencerSummaryWithoutRegion {
-    public firstName?: string | undefined;
-    public lastName: string;
+    public id: string;
+    public name: string;
     public universityId: string;
     public weapon: Weapon;
-    public team: Gender;
+    public gender: Gender;
     public record: Record;
+
+    private static idCounter: number = 0;
 
     constructor(
         row: unknown,
         private ratingFn: (record: Record) => number,
     ) {
         const anyRow = row as any;
-        (this.firstName = anyRow['First name'] === '' ? undefined : anyRow['First name']),
-            (this.lastName = anyRow['Last name']),
-            (this.universityId = (anyRow['University '] as string).toLowerCase().replace(' ', '')),
-            (this.weapon = parseWeapon(anyRow['Weapon'])),
-            (this.team = parseTeam(anyRow['Team'])),
-            (this.record = {
-                wins: parseInt(anyRow['Wins']),
-                losses: parseInt(anyRow['Losses']),
-            });
+        const firstName = anyRow['First name'] === '' ? undefined : anyRow['First name'];
+        const lastName = anyRow['Last name'];
+        this.id = (FencerSummaryFromCSV.idCounter++).toString();
+        this.name = firstName == undefined ? lastName : firstName + ' ' + lastName;
+        this.universityId = (anyRow['University '] as string).toLowerCase().replace(' ', '');
+        this.weapon = parseWeapon(anyRow['Weapon']);
+        this.gender = parseGender(anyRow['Team']);
+        this.record = {
+            wins: parseInt(anyRow['Wins']),
+            losses: parseInt(anyRow['Losses']),
+        };
     }
     get rating(): number {
         return this.ratingFn(this.record);
     }
-    get fullName() {
-        return this.firstName ? this.firstName + ' ' + this.lastName : this.lastName;
-    }
 }
 
 class FencerSummaryWithRegion implements FencerSummary {
-    public firstName?: string | undefined;
-    public lastName: string;
-    public fullName: string;
+    public name: string;
     public universityId: string;
     public weapon: Weapon;
-    public team: Gender;
+    public gender: Gender;
     public record: Record;
     public rating: number;
     public region: Region;
+    public id: string;
     constructor(fencerWithoutRegion: FencerSummaryWithoutRegion, region: Region) {
-        this.firstName = fencerWithoutRegion.firstName;
-        this.lastName = fencerWithoutRegion.lastName;
+        this.id = fencerWithoutRegion.id;
+        this.name = fencerWithoutRegion.name;
         this.universityId = fencerWithoutRegion.universityId;
         this.weapon = fencerWithoutRegion.weapon;
-        this.team = fencerWithoutRegion.team;
+        this.gender = fencerWithoutRegion.gender;
         this.record = fencerWithoutRegion.record;
         this.region = region;
         this.rating = fencerWithoutRegion.rating;
-        this.fullName = fencerWithoutRegion.fullName;
     }
 
     toObject(): FencerSummary {
         return {
-            firstName: this.firstName,
-            lastName: this.lastName,
+            id: this.id,
+            name: this.name,
             universityId: this.universityId,
             weapon: this.weapon,
-            team: this.team,
+            gender: this.gender,
             record: this.record,
             rating: this.rating,
-            fullName: this.fullName,
             region: this.region,
         };
     }

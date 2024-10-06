@@ -3,6 +3,7 @@ import {Bout} from '~/models/Bout';
 import {BoutRepository} from './BoutRepository';
 import parseWeapon from '~/helpers/parseWeapon';
 import {Weapon} from '~/models/Weapon';
+import {Fencer} from '~/models/Fencer';
 
 export class CSVBoutRepository extends CSVRepository<Bout> implements BoutRepository {
     constructor(csvFilePath: string) {
@@ -36,5 +37,14 @@ class BoutFromCSV implements Bout {
         this.scoreB = parseInt(anyRow['score_b']);
         this.ncaaStatus = anyRow['ncaa_status'] === 'TRUE';
         this.weapon = parseWeapon(anyRow['weapon']);
+    }
+    get winnerId() {
+        return this.scoreA > this.scoreB ? this.fencerAId : this.fencerBId;
+    }
+    includes(fencer: Fencer): boolean {
+        return fencer.id === this.fencerAId || fencer.id === this.fencerBId;
+    }
+    isBye(): boolean {
+        return isNaN(this.scoreA);
     }
 }

@@ -5,7 +5,7 @@ import {Weapon} from '~/models/Weapon';
 
 export default async function getFencersFromGenderAndWeapon(gender: Gender, weapon: Weapon): Promise<FencerSummary[]> {
     const data = await getRecordsfromCsv();
-    const filtered = data.filter((fencer) => fencer.weapon === weapon && fencer.team === gender);
+    const filtered = data.filter((fencer) => fencer.weapon === weapon && fencer.gender === gender);
     filtered.sort((a, b) => b.rating - a.rating);
     return filtered;
 }

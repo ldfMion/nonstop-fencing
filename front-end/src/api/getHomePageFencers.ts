@@ -20,14 +20,14 @@ export default async function getHomePageFencers(): Promise<{
     data.sort((a, b) => b.rating - a.rating);
     return {
         mens: {
-            foil: getTopFive(data.filter((fencer) => fencer.team === Gender.MEN && fencer.weapon === Weapon.FOIL)),
-            epee: getTopFive(data.filter((fencer) => fencer.team === Gender.MEN && fencer.weapon === Weapon.EPEE)),
-            saber: getTopFive(data.filter((fencer) => fencer.team === Gender.MEN && fencer.weapon === Weapon.SABER)),
+            foil: getTopFive(data.filter((fencer) => fencer.gender === Gender.MEN && fencer.weapon === Weapon.FOIL)),
+            epee: getTopFive(data.filter((fencer) => fencer.gender === Gender.MEN && fencer.weapon === Weapon.EPEE)),
+            saber: getTopFive(data.filter((fencer) => fencer.gender === Gender.MEN && fencer.weapon === Weapon.SABER)),
         },
         womens: {
-            foil: getTopFive(data.filter((fencer) => fencer.team === Gender.WOMEN && fencer.weapon === Weapon.FOIL)),
-            epee: getTopFive(data.filter((fencer) => fencer.team === Gender.WOMEN && fencer.weapon === Weapon.EPEE)),
-            saber: getTopFive(data.filter((fencer) => fencer.team === Gender.WOMEN && fencer.weapon === Weapon.SABER)),
+            foil: getTopFive(data.filter((fencer) => fencer.gender === Gender.WOMEN && fencer.weapon === Weapon.FOIL)),
+            epee: getTopFive(data.filter((fencer) => fencer.gender === Gender.WOMEN && fencer.weapon === Weapon.EPEE)),
+            saber: getTopFive(data.filter((fencer) => fencer.gender === Gender.WOMEN && fencer.weapon === Weapon.SABER)),
         },
     };
 }

@@ -13,7 +13,7 @@ export default function FilterSelector({className, options, onFilterChange}: {op
         onFilterChange(value);
     };
     return (
-        <ToggleGroup type="single" className={cn('overflow-scroll', className)} defaultValue="All" onValueChange={handleChange} value={filter}>
+        <ToggleGroup type="single" className={cn('overflow-scroll md:overflow-auto', className)} defaultValue="All" onValueChange={handleChange} value={filter}>
             {options.map((value) => (
                 <ToggleGroupItem value={value} aria-label={`Filter ${value}`} key={value} className="h-auto text-nowrap rounded-full px-4 py-1">
                     {value}

@@ -69,7 +69,7 @@ function FencerList({fencers, title, url}: {fencers: FencerSummary[]; title: str
     return (
         <StandingsCard title={title} key={title} titleHref={url}>
             {fencers.map((fencer) => (
-                <RankingRow name={fencer.fullName} iconUniversityId={fencer.universityId} record={fencer.record} key={fencer.fullName} />
+                <RankingRow name={fencer.name} iconUniversityId={fencer.universityId} record={fencer.record} key={fencer.name} />
             ))}
         </StandingsCard>
     );

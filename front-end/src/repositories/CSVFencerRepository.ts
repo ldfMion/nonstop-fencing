@@ -23,7 +23,6 @@ class FencerFromCSV implements Fencer {
     universityId: string;
     weapon: Weapon;
     gender: Gender;
-    toObject?: (() => Fencer) | undefined;
     constructor(row: unknown) {
         const anyRow = row as any;
         this.id = anyRow['id'];
@@ -31,5 +30,14 @@ class FencerFromCSV implements Fencer {
         this.universityId = anyRow['university_id'];
         this.weapon = parseWeapon(anyRow['weapon']);
         this.gender = parseTeam(anyRow['gender']);
+    }
+    toObject(): Fencer {
+        return {
+            id: this.id,
+            name: this.name,
+            universityId: this.universityId,
+            weapon: this.weapon,
+            gender: this.gender,
+        };
     }
 }

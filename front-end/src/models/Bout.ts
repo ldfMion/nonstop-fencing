@@ -1,3 +1,4 @@
+import {Fencer} from './Fencer';
 import {Weapon} from './Weapon';
 
 export interface Bout {
@@ -9,4 +10,7 @@ export interface Bout {
     scoreB: number;
     ncaaStatus: boolean;
     weapon: Weapon;
+    winnerId: string;
+    includes(fencer: Fencer): boolean;
+    isBye(): boolean;
 }

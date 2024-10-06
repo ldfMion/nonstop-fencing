@@ -3,6 +3,7 @@ import {Fencer} from '~/models/Fencer';
 import {fencerRepository} from '~/repositories';
 import NameIcon from '../name-icon';
 import clsx from 'clsx';
+import {Fragment} from 'react';
 
 export default async function BoutRow({bout, perspective}: {bout: Bout; perspective?: Fencer}) {
     if (perspective !== undefined) {
@@ -15,7 +16,13 @@ export default async function BoutRow({bout, perspective}: {bout: Bout; perspect
         <li className="grid cursor-pointer grid-cols-3 items-center justify-between py-1">
             {fencerA && <NameIcon iconUniversityId={fencerA.universityId} name={fencerA.name} />}
             <div className="text-center">
-                <Score score={bout.scoreA} win={aWins} /> <span>-</span> <Score score={bout.scoreB} win={!aWins} />
+                {bout.isBye() ? (
+                    'BYE'
+                ) : (
+                    <Fragment>
+                        <Score score={bout.scoreA} win={aWins} /> <span>-</span> <Score score={bout.scoreB} win={!aWins} />
+                    </Fragment>
+                )}
             </div>
             {fencerB && <NameIcon iconUniversityId={fencerB.universityId} name={fencerB.name} flip />}
         </li>

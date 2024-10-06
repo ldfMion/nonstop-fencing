@@ -2,6 +2,7 @@
 import type FencerSummary from '~/models/FencerSummary';
 import FilteredFencerTable from './filtered-fencer-table';
 import {Region} from '~/models/Region';
+import {FencerWithRecord} from '~/models/FencerWithRecord';
 
 const NORTHEAST = 'Northeast';
 const MID_ATLANTIC_SOUTH = 'Mid-Atlantic/South';
@@ -9,15 +10,9 @@ const WEST = 'West';
 const MIDWEST = 'Midwest';
 const ALL = 'All';
 
-export default function FilteredFencerTableByRegion({
-    fencers,
-}: {
-    fencers: FencerSummary[];
-}): JSX.Element {
+export default function FilteredFencerTableByRegion({fencers}: {fencers: FencerSummary[]}): JSX.Element {
     const options = [ALL, NORTHEAST, MID_ATLANTIC_SOUTH, WEST, MIDWEST];
-    return (
-        <FilteredFencerTable fencers={fencers} options={options} filterFunction={filterByRegion} />
-    );
+    return <FilteredFencerTable fencers={fencers} options={options} filterFunction={filterByRegion} />;
 }
 
 function filterByRegion(fencers: FencerSummary[], value: string): FencerSummary[] {
