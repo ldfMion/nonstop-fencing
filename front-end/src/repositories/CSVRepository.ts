@@ -8,8 +8,12 @@ export abstract class CSVRepository<T extends {id: string}> implements Repositor
         this.filePath = filePath;
     }
     protected abstract parseRow(row: unknown): T;
-    async findById(id: string): Promise<T | undefined> {
-        return (await this.findAll()).find((item) => item.id === id);
+    async findById(id: string): Promise<T> {
+        const value = (await this.findAll()).find((item) => item.id === id);
+        if (value == undefined) {
+            throw new Error(`Item ${id} not found.`);
+        }
+        return value;
     }
     async findAll(): Promise<T[]> {
         if (this.items == null) {

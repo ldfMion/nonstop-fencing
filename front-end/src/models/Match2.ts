@@ -1,4 +1,5 @@
 import {Gender} from './Gender';
+import {University2} from './University2';
 
 export interface Match2 {
     id: string;
@@ -15,4 +16,6 @@ export interface Match2 {
     hostId: string;
     meetId: string;
     gender: Gender;
+    isWinner(university: University2): boolean;
+    isLoser(university: University2): boolean;
 }

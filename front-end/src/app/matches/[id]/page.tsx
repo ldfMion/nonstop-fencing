@@ -4,15 +4,14 @@ import getUniversity from '~/api/getUniversity';
 import BoutRow from '~/components/bout-row/index';
 import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 import ListCard from '~/components/list-card';
-import {MobileContentSelector} from '~/components/mobile-content-selector';
+import {AdaptiveTiles} from '~/components/adaptive-tiles';
 import PageHeading from '~/components/page-heading';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Bout} from '~/models/Bout';
-import {Fencer} from '~/models/Fencer';
 import {Weapon} from '~/models/Weapon';
 import {boutRepository, matchRepository} from '~/repositories';
-import {fencerService} from '~/services';
+import {fencerService, recordService} from '~/services';
 
 export default async function MatchPage({params}: {params: {id: string}}) {
     const matchData = await matchRepository.findById(params.id);
@@ -24,7 +23,7 @@ export default async function MatchPage({params}: {params: {id: string}}) {
     const saber = bouts.filter((bout) => bout.weapon === Weapon.SABER);
     const universityA = await getUniversity(matchData.teamAId);
     const universityB = await getUniversity(matchData.teamBId);
-    const fencers = calculateMatchRecords(await fencerService.getFromMatch(params.id), bouts);
+    const fencers = recordService.calculateRecordsFromBouts(await fencerService.getFromMatch(params.id), bouts);
     console.log(fencers);
     const boutsSection = (
         <div className="flex flex-col gap-2">
@@ -62,17 +61,7 @@ export default async function MatchPage({params}: {params: {id: string}}) {
                     </div>
                 </div>
             </Card>
-            <div className="hidden flex-col gap-5 md:flex md:flex-row md:items-start [&>*]:grow">
-                {boutsSection}
-                {fencersSection}
-            </div>
-            <MobileContentSelector
-                elements={[
-                    {title: 'Bouts', content: boutsSection},
-                    {title: 'Fencers', content: fencersSection},
-                ]}
-                defaultTitle="Bouts"
-            />
+            <AdaptiveTiles elements={[[{title: 'Bouts', content: boutsSection}], [{title: 'Fencers', content: fencersSection}]]} defaultOnMobile="Bouts" />
         </main>
     );
 }
@@ -97,19 +86,4 @@ function WeaponResults({title, bouts, scoreA, scoreB}: {title: string; bouts: Bo
 
 function Score({score, win}: {score: number; win: boolean}) {
     return <span className={clsx(win ? 'text-green-400' : 'text-red-500', 'font-bold')}>{score}</span>;
-}
-
-function calculateMatchRecords(fencers: Fencer[], bouts: Bout[]) {
-    return fencers.map((fencer) => {
-        const wins = bouts.filter((bout) => bout.includes(fencer) && bout.winnerId === fencer.id).length;
-        const losses = bouts.filter((bout) => bout.includes(fencer) && bout.winnerId !== fencer.id).length;
-        return {
-            ...fencer.toObject!(),
-            record: {
-                wins: wins,
-                losses: losses,
-            },
-            rating: wins - losses,
-        };
-    });
 }

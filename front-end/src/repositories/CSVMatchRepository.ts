@@ -3,6 +3,7 @@ import {Match2} from '~/models/Match2';
 import {MatchRepository} from './MatchRepository';
 import {CSVRepository} from './CSVRepository';
 import {Gender} from '~/models/Gender';
+import {University2} from '~/models/University2';
 
 export class CSVMatchRepository extends CSVRepository<Match2> implements MatchRepository {
     constructor(csvFilePath: string) {
@@ -47,5 +48,14 @@ class MatchFromCSV implements Match2 {
         this.meetId = anyRow['meet_id'];
         this.hostId = anyRow['host_id'];
         this.gender = parseTeam(anyRow['gender']);
+    }
+    getWinnerId() {
+        return this.overallA > this.overallB ? this.teamAId : this.teamBId;
+    }
+    isWinner(university: University2): boolean {
+        return university.id === this.getWinnerId();
+    }
+    isLoser(university: University2): boolean {
+        return !this.isWinner(university);
     }
 }

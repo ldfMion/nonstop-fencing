@@ -9,8 +9,14 @@ export default async function BoutRow({bout, perspective}: {bout: Bout; perspect
     if (perspective !== undefined) {
         throw new Error('Bout with perspective not implemented');
     }
-    const fencerA = await fencerRepository.findById(bout.fencerAId);
-    const fencerB = await fencerRepository.findById(bout.fencerBId);
+    let fencerA: Fencer | null = null;
+    if (bout.fencerAId) {
+        fencerA = await fencerRepository.findById(bout.fencerAId);
+    }
+    let fencerB: Fencer | null = null;
+    if (bout.fencerBId) {
+        fencerB = await fencerRepository.findById(bout.fencerBId);
+    }
     const aWins = bout.scoreA > bout.scoreB;
     return (
         <li className="bout-grid py-1">

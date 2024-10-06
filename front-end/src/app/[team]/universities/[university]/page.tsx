@@ -15,7 +15,7 @@ import {getTeams} from '~/api';
 import type {Metadata} from 'next';
 import toTitleCase from '~/helpers/toTitleCase';
 import {Gender} from '~/models/Gender';
-import {MobileContentSelector} from '~/components/mobile-content-selector';
+import {AdaptiveTiles} from '~/components/adaptive-tiles';
 
 type Props = {params: {university: string; team: string}};
 
@@ -62,17 +62,7 @@ export default async function University({params}: Props) {
                 <UniversityHeaders team={universityTeam} />
                 {showTabs(university, team) && <TeamTabs gender={team} team={universityTeam} />}
             </Card>
-            <div className="hidden flex-col gap-5 md:flex md:flex-row md:items-start [&>*]:grow">
-                {rosterElement}
-                {matchesElement}
-            </div>
-            <MobileContentSelector
-                elements={[
-                    {title: 'Roster', content: rosterElement},
-                    {title: 'Matches', content: matchesElement},
-                ]}
-                defaultTitle="Roster"
-            />
+            <AdaptiveTiles elements={[[{title: 'Roster', content: rosterElement}], [{title: 'Matches', content: matchesElement}]]} defaultOnMobile="Roster" />
         </main>
     );
 }
