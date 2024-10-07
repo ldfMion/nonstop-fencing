@@ -24,7 +24,8 @@ const EVENT_INFO = {
 export default async function OsuOpenPage() {
     const host = await getUniversity(EVENT_INFO.hostId);
     const matches = await matchRepository.findByMeetId(EVENT_INFO.id);
-    const matchesCard = <MatchesCard matches={matches} />;
+    const womensMatches = <MatchesCard title="Women's Matches" matches={matches.filter((match) => match.gender === Gender.WOMEN)} />;
+    const mensMatches = <MatchesCard title="Men's Matches" matches={matches.filter((match) => match.gender === Gender.MEN)} />;
     const bouts: Bout[] = await boutService.getFromMeet(EVENT_INFO.id);
     const fencers = recordService.calculateRecordsFromBouts(await fencerService.getFromMeet(EVENT_INFO.id), bouts);
     const universities = await universityService.getFromMeet(EVENT_INFO.id);
@@ -36,19 +37,19 @@ export default async function OsuOpenPage() {
         universities,
         matches.filter((match) => match.gender === Gender.WOMEN),
     );
-    const teamsSection = (
-        <Fragment>
-            <ListCard title="Women's Teams">
-                {womensTeams.map((team) => (
-                    <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/womens/universities/${team.id}`} />
-                ))}
-            </ListCard>
-            <ListCard title="Men's Teams">
-                {mensTeams.map((team) => (
-                    <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/mens/universities/${team.id}`} />
-                ))}
-            </ListCard>
-        </Fragment>
+    const womensTeamsSection = (
+        <ListCard title="Women's Teams">
+            {womensTeams.map((team) => (
+                <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/womens/universities/${team.id}`} />
+            ))}
+        </ListCard>
+    );
+    const mensTeamsSection = (
+        <ListCard title="Men's Teams">
+            {mensTeams.map((team) => (
+                <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/mens/universities/${team.id}`} />
+            ))}
+        </ListCard>
     );
     const fencersSection = (
         <ListCard title="Fencers">
@@ -61,12 +62,16 @@ export default async function OsuOpenPage() {
             <AdaptiveTiles
                 elements={[
                     [
-                        {title: 'Teams', content: teamsSection},
-                        {title: 'Matches', content: matchesCard},
+                        {title: "Mens's Teams", content: mensTeamsSection},
+                        {title: "Men's Matches", content: mensMatches},
+                    ],
+                    [
+                        {title: "Womens's Teams", content: womensTeamsSection},
+                        {title: "Women's Matches", content: womensMatches},
                     ],
                     [{title: 'Fencers', content: fencersSection}],
                 ]}
-                defaultOnMobile="Matches"
+                defaultOnMobile="Women's Matches"
             />
         </main>
     );

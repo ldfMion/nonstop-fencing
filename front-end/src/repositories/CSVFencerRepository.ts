@@ -6,8 +6,6 @@ import {CSVRepository} from './CSVRepository';
 import {Weapon} from '~/models/Weapon';
 import {Gender} from '~/models/Gender';
 
-const FENCERS_FILENAME = '../../../data/fencers-24-25.csv';
-
 export class CSVFencerRepository extends CSVRepository<Fencer> implements FencerRepository {
     protected parseRow(row: unknown): Fencer {
         return new FencerFromCSV(row);
