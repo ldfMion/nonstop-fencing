@@ -1,5 +1,4 @@
-import getTopFive from '~/helpers/getTop5';
-import {getHomePageFencers, getTeams} from '~/api';
+import {getHomePageFencers, getHomePageTeams} from '~/api';
 import PageHeading from '~/components/page-heading';
 import RankingRow from '~/components/ranking-row';
 import StandingsCard from '~/components/list-card';
@@ -31,8 +30,8 @@ export default async function HomePageContent({season}: {season: ISeason}) {
             </div>
             <PageHeading>Teams</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-                <TeamList gender={Gender.MEN} />
-                <TeamList gender={Gender.WOMEN} />
+                <TeamList gender={Gender.MEN} season={season} />
+                <TeamList gender={Gender.WOMEN} season={season} />
             </div>
             <PageHeading>Squads</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
@@ -47,22 +46,26 @@ export default async function HomePageContent({season}: {season: ISeason}) {
     );
 }
 
-async function TeamList({gender}: {gender: Gender}): Promise<JSX.Element> {
-    const teams = getTopFive(await getTeams(gender));
+async function TeamList({gender, season}: {gender: Gender; season: ISeason}): Promise<JSX.Element> {
+    const teams = await getHomePageTeams(season, gender);
     const genderPath = gender === Gender.MEN ? 'mens' : 'womens';
     const title = gender === Gender.MEN ? "Men's" : "Women's";
     const url = `/${genderPath}/teams`;
     return (
         <StandingsCard title={title} titleHref={url}>
-            {teams.map((team) => (
-                <RankingRow
-                    name={team.university.displayNameShort}
-                    record={team.overall}
-                    iconUniversityId={team.university.id}
-                    href={`/${genderPath}/universities/${team.university.id}`}
-                    key={team.university.id}
-                />
-            ))}
+            {teams.map((team) =>
+                'id' in team ? (
+                    <RankingRow name={team.displayNameShort} record={team.record} iconUniversityId={team.id} href={`/${genderPath}/universities/${team.id}`} key={team.id} />
+                ) : (
+                    <RankingRow
+                        name={team.university.displayNameShort}
+                        record={team.overall}
+                        iconUniversityId={team.university.id}
+                        href={`/${genderPath}/universities/${team.university.id}`}
+                        key={team.university.id}
+                    />
+                ),
+            )}
         </StandingsCard>
     );
 }
