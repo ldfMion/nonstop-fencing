@@ -1,4 +1,3 @@
-import type FencerSummary from '~/models/FencerSummary';
 import getRecordsFromCsv from '~/helpers/getRecordsFromCsv';
 import getTopFive from '~/helpers/getTop5';
 import {Gender} from '~/models/Gender';
@@ -22,12 +21,12 @@ export default async function getHomePageFencers(season: ISeason): Promise<{
     };
 }> {
     let data;
-    if (season.displayNameShort == new Season(2024, 2025).displayNameShort) {
+    if (season.displayNameShort == new Season(2025).displayNameShort) {
         const fencers = await fencerRepository.findAll();
         const bouts = await boutRepository.findAll();
         const withRecords = recordService.calculateRecordsFromBouts(fencers, bouts);
         data = withRecords;
-    } else if (season.displayNameShort == new Season(2023, 2024).displayNameShort) {
+    } else if (season.displayNameShort == new Season(2024).displayNameShort) {
         data = await getRecordsFromCsv();
     } else {
         throw new Error(`Unknown season: ${season.displayNameLong}`);

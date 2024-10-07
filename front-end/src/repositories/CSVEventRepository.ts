@@ -5,7 +5,7 @@ import {Event} from '~/models/Event';
 
 export class CSVEventRepository extends CSVRepository<Event> implements EventRepository {
     protected parseRow(row: unknown): Event {
-        return new EventFromCSV(row, new Season(2024, 2025));
+        return new EventFromCSV(row, new Season(2025));
     }
     constructor(csvFilePath: string) {
         super(csvFilePath);

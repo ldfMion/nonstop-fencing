@@ -32,7 +32,7 @@ function DesktopNavbar(): JSX.Element {
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Link href="/events" legacyBehavior passHref>
+                        <Link href="/24-25/events" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>Events</NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
@@ -62,7 +62,7 @@ function MobileNavbar(): JSX.Element {
                     <NavigationMenu>
                         <NavigationMenuList className="flex flex-col items-start">
                             <MobileBaseLink href="/about" title="About" onOpenChange={setOpen} />
-                            <MobileBaseLink href="/events" title="Events" onOpenChange={setOpen} />
+                            <MobileBaseLink href="/25-25/events" title="Events" onOpenChange={setOpen} />
                             <MobileBaseLink href="/" title="Rankings" onOpenChange={setOpen} />
                             <NavigationMenuItem>
                                 <NavigationMenuList id="navmenulist" className="ml-2 flex flex-col items-start gap-4">

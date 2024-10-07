@@ -5,14 +5,23 @@ import {ISeason} from '~/models/Season';
 import {usePathname, useRouter, useSearchParams} from 'next/navigation';
 
 export default function SeasonDropdown({selectedSeason, seasons}: {selectedSeason: ISeason; seasons: ISeason[]}): JSX.Element {
-    const searchParams = useSearchParams();
     const pathname = usePathname();
-    const {replace} = useRouter();
+    const {push} = useRouter();
 
     function handleChoose(season: string) {
-        const params = new URLSearchParams(searchParams);
-        params.set('season', season);
-        replace(`${pathname}?${params.toString()}`);
+        let path;
+        console.log('---------------');
+        console.log(selectedSeason.displayNameShort);
+        console.log(pathname);
+        console.log(pathname.includes(selectedSeason.displayNameShort));
+        if (pathname.includes(selectedSeason.displayNameShort)) {
+            path = pathname.replace(selectedSeason.displayNameShort, season);
+        } else {
+            path = `${season}/${pathname}`;
+        }
+        console.log('pushing');
+        console.log(path);
+        push(path);
     }
     return (
         <div className="flex flex-row items-center gap-2 p-2">

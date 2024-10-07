@@ -11,8 +11,19 @@ import Host from '~/components/host';
 import ConditionalLinkWrapper from '~/components/conditional-link-wrapper';
 import {eventRepository} from '~/repositories';
 
-export default async function EventsPage() {
-    const currentSeason = new Season(2024, 2025);
+export default async function EventsPage({params}: {params: {season: string}}) {
+    let currentSeason;
+    if (params.season) {
+        if (params.season == '23-24') {
+            currentSeason = new Season(2024);
+        } else if (params.season == '24-25') {
+            currentSeason = new Season(2025);
+        } else {
+            throw new Error(`Invalid season ${params.season}`);
+        }
+    } else {
+        currentSeason = new Season(2025);
+    }
     const events = await eventRepository.findBySeason(currentSeason);
     const past = events.filter((event) => event.startDate < new Date());
     const upcoming = events.filter((event) => event.startDate >= new Date());
@@ -22,7 +33,7 @@ export default async function EventsPage() {
             <div className="w-[600px] max-w-[100%]">
                 <div className="flex flex-row items-center justify-between">
                     <h2 className="px-4 text-3xl font-semibold">Events</h2>
-                    <SeasonDropdown selectedSeason={{...currentSeason}} seasons={[{...new Season(2024, 2025)}]} />
+                    <SeasonDropdown selectedSeason={{...currentSeason}} seasons={[{...new Season(2025)}]} />
                 </div>
                 {hasPastAndUpcoming ? <EventTabsWrapper upcoming={<EventsList events={upcoming} />} past={<EventsList events={past} />} /> : <EventsList events={events} />}
             </div>

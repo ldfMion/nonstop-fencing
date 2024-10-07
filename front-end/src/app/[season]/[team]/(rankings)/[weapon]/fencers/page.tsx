@@ -3,7 +3,7 @@ import parseWeapon from '~/helpers/parseWeapon';
 import toTitleCase from '~/helpers/toTitleCase';
 import type {Metadata} from 'next';
 import {getFencersFromTeamAndWeapon} from '~/api';
-import SingleRankingWrapper from '~/app/[team]/(rankings)/single-ranking-wrapper';
+import SingleRankingWrapper from '~/app/[season]/[team]/(rankings)/single-ranking-wrapper';
 import FilteredFencerTableByRegion from '~/components/filtered-fencer-table-by-region';
 
 type Props = {
