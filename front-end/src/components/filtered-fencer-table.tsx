@@ -3,28 +3,44 @@ import FilterSelector from './filter-selector';
 import FencerRow from './fencer-row';
 import {Fragment, useState} from 'react';
 import {FencerWithRecord} from '~/models/FencerWithRecord';
+import assert from 'assert';
 
 export default function FilteredFencerTable<T extends FencerWithRecord>({
     fencers,
-    filterFunction,
     options,
 }: {
     fencers: T[];
-    filterFunction: (fencers: T[], value: string) => T[];
-    options: string[];
+    options: {
+        labels: string[];
+        filterFunction: (fencers: T[], value: string) => T[];
+    }[];
 }): JSX.Element {
-    const [filteredFencers, setFilteredFencers] = useState<FencerWithRecord[]>(fencers);
-    const handleChange = (value: string) => {
-        setFilteredFencers(() => [...filterFunction(fencers, value)]);
+    const [currentFilters, setCurrentFilters] = useState<string[]>(
+        options.map((option) => {
+            assert(option.labels[0] !== undefined);
+            return option.labels[0];
+        }),
+    );
+    const handleChange = (value: string, i: number) => {
+        const newFilters = [...currentFilters];
+        newFilters[i] = value;
+        setCurrentFilters(newFilters);
     };
+    let filteredFencers = fencers;
+    options.forEach((option, i) => {
+        assert(currentFilters[i] != undefined);
+        filteredFencers = option.filterFunction(filteredFencers, currentFilters[i]);
+    });
     filteredFencers.sort((a, b) => b.rating - a.rating);
-
     return (
-        <Fragment>
-            <FilterSelector className="justify-start" options={options} onFilterChange={handleChange} />
+        <div className="flex flex-col gap-2">
+            {options.map((option, i) => {
+                assert(currentFilters[i] !== undefined);
+                return <FilterSelector className="justify-start" labels={option.labels} currentFilter={currentFilters[i]} setFilter={(value) => handleChange(value, i)} />;
+            })}
             {filteredFencers.map((fencer) => (
                 <FencerRow fencer={fencer} key={fencer.name} />
             ))}
-        </Fragment>
+        </div>
     );
 }

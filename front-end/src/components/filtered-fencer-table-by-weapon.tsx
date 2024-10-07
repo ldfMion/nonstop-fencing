@@ -6,8 +6,14 @@ import {Fencer} from '~/models/Fencer';
 import {FencerWithRecord} from '~/models/FencerWithRecord';
 
 export default function FilteredFencersByWeapon({fencers}: {fencers: FencerWithRecord[]}): JSX.Element {
-    const options = ['All', 'Foil', 'Epee', 'Saber'];
-    return <FilteredFencerTable fencers={fencers} options={options} filterFunction={filterByWeapon} />;
+    const weaponLabels = ['All', 'Foil', 'Epee', 'Saber'];
+    const options = [
+        {
+            labels: weaponLabels,
+            filterFunction: filterByWeapon,
+        },
+    ];
+    return <FilteredFencerTable fencers={fencers} options={options} />;
 }
 
 function filterByWeapon(fencers: FencerWithRecord[], value: string): FencerWithRecord[] {

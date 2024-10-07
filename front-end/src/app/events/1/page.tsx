@@ -13,6 +13,7 @@ import {Bout} from '~/models/Bout';
 import {Gender} from '~/models/Gender';
 import RankingRow from '~/components/ranking-row';
 import {Fragment} from 'react';
+import FilteredFencersByWeaponAndGender from '~/components/filtered-fencer-table-by-weapon-and-gender';
 
 const EVENT_INFO = {
     title: 'OSU Duals',
@@ -53,7 +54,7 @@ export default async function OsuOpenPage() {
     );
     const fencersSection = (
         <ListCard title="Fencers">
-            <FilteredFencersByWeapon fencers={fencers} />
+            <FilteredFencersByWeaponAndGender fencers={fencers} />
         </ListCard>
     );
     return (
