@@ -69,5 +69,6 @@ function getSquadRecords(gender: Gender, weapon: Weapon, universities: Universit
             matches.filter((match) => match.gender === gender),
             weapon,
         )
-        .sort((a, b) => b.rating - a.rating);
+        .sort((a, b) => b.rating - a.rating)
+        .filter((squad) => squad.record.wins > 0 || squad.record.losses > 0);
 }
