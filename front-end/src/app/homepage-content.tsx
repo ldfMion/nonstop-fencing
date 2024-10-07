@@ -10,10 +10,11 @@ import {ISeason, Season} from '~/models/Season';
 import {Gender} from '~/models/Gender';
 import {Fencer} from '~/models/Fencer';
 import {WithRecord} from '~/models/WithRecord';
+import {University2} from '~/models/University2';
 
 export default async function HomePageContent({season}: {season: ISeason}) {
     const fencers = await getHomePageFencers(season);
-    const squads = await getHomePageSquads();
+    const squads = await getHomePageSquads(season);
     return (
         <main className="flex flex-col gap-4 px-6">
             <div className="flex flex-row items-center justify-between">
@@ -76,18 +77,23 @@ function FencerList({fencers, title, url}: {fencers: WithRecord<Fencer>[]; title
     );
 }
 
-function SquadList({squads, title, url, genderPath}: {squads: Squad[]; title: string; genderPath: 'mens' | 'womens'; url: string}): JSX.Element {
+function SquadList({squads, title, url, genderPath}: {squads: Squad[] | WithRecord<University2>[]; title: string; genderPath: 'mens' | 'womens'; url: string}): JSX.Element {
     return (
         <StandingsCard title={title} key={title} titleHref={url}>
-            {squads.map((squad) => (
-                <RankingRow
-                    name={squad.university.displayNameShort}
-                    record={squad.record}
-                    iconUniversityId={squad.university.id}
-                    href={`/${genderPath}/universities/${squad.university.id}`}
-                    key={squad.university.id}
-                />
-            ))}
+            {squads.map((squad) => {
+                if ('id' in squad) {
+                    return <RankingRow name={squad.displayNameShort} record={squad.record} iconUniversityId={squad.id} href={`/${genderPath}/universities/${squad.id}`} key={squad.id} />;
+                }
+                return (
+                    <RankingRow
+                        name={squad.university.displayNameShort}
+                        record={squad.record}
+                        iconUniversityId={squad.university.id}
+                        href={`/${genderPath}/universities/${squad.university.id}`}
+                        key={squad.university.id}
+                    />
+                );
+            })}
         </StandingsCard>
     );
 }

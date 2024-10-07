@@ -4,6 +4,7 @@ import {MatchRepository} from './MatchRepository';
 import {CSVRepository} from './CSVRepository';
 import {Gender} from '~/models/Gender';
 import {University2} from '~/models/University2';
+import {Weapon} from '~/models/Weapon';
 
 export class CSVMatchRepository extends CSVRepository<Match2> implements MatchRepository {
     constructor(csvFilePath: string) {
@@ -49,13 +50,28 @@ class MatchFromCSV implements Match2 {
         this.hostId = anyRow['host_id'];
         this.gender = parseTeam(anyRow['gender']);
     }
-    getWinnerId() {
-        return this.overallA > this.overallB ? this.teamAId : this.teamBId;
+    getWinnerId(weapon?: Weapon): string {
+        if (weapon == undefined) {
+            return this.overallA > this.overallB ? this.teamAId : this.teamBId;
+        }
+        if (weapon === Weapon.FOIL) {
+            return this.foilA > this.foilB ? this.teamAId : this.teamBId;
+        }
+        if (weapon === Weapon.EPEE) {
+            return this.epeeA > this.epeeB ? this.teamAId : this.teamBId;
+        }
+        if (weapon === Weapon.SABER) {
+            return this.saberA > this.saberB ? this.teamAId : this.teamBId;
+        }
+        throw new Error(`Invalid weapon ${weapon}`);
     }
-    isWinner(university: University2): boolean {
-        return university.id === this.getWinnerId();
+    private includes(university: University2): boolean {
+        return this.teamAId === university.id || this.teamBId === university.id;
     }
-    isLoser(university: University2): boolean {
-        return !this.isWinner(university);
+    isWinner(university: University2, weapon?: Weapon): boolean {
+        return this.getWinnerId(weapon) === university.id;
+    }
+    isLoser(university: University2, weapon?: Weapon): boolean {
+        return this.includes(university) && !this.isWinner(university, weapon);
     }
 }
