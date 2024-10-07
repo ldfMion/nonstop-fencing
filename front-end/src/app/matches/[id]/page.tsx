@@ -12,6 +12,9 @@ import {Bout} from '~/models/Bout';
 import {Weapon} from '~/models/Weapon';
 import {boutRepository, matchRepository} from '~/repositories';
 import {fencerService, recordService} from '~/services';
+import Side from '~/components/match-row/side';
+import {University2} from '~/models/University2';
+import {Separator} from '~/components/ui/separator';
 
 export default async function MatchPage({params}: {params: {id: string}}) {
     const matchData = await matchRepository.findById(params.id);
@@ -28,9 +31,9 @@ export default async function MatchPage({params}: {params: {id: string}}) {
     const boutsSection = (
         <div className="flex flex-col gap-2">
             <PageHeading>Bouts</PageHeading>
-            <WeaponResults title="Foil" scoreA={matchData.foilA} scoreB={matchData.foilB} bouts={foil} />
-            <WeaponResults title="Epee" scoreA={matchData.epeeA} scoreB={matchData.epeeB} bouts={epee} />
-            <WeaponResults title="Saber" scoreA={matchData.saberA} scoreB={matchData.saberB} bouts={saber} />
+            <WeaponResults title="Foil" scoreA={matchData.foilA} scoreB={matchData.foilB} bouts={foil} teamA={universityA} teamB={universityB} />
+            <WeaponResults title="Epee" scoreA={matchData.epeeA} scoreB={matchData.epeeB} bouts={epee} teamA={universityA} teamB={universityB} />
+            <WeaponResults title="Saber" scoreA={matchData.saberA} scoreB={matchData.saberB} bouts={saber} teamA={universityA} teamB={universityB} />
         </div>
     );
     const fencersSection = (
@@ -66,19 +69,26 @@ export default async function MatchPage({params}: {params: {id: string}}) {
     );
 }
 
-function WeaponResults({title, bouts, scoreA, scoreB}: {title: string; bouts: Bout[]; scoreA: number; scoreB: number}) {
+function WeaponResults({title, bouts, scoreA, scoreB, teamA, teamB}: {title: string; bouts: Bout[]; scoreA: number; scoreB: number; teamA: University2; teamB: University2}) {
     const aWins = scoreA > scoreB;
     return (
         <ListCard title={title}>
             <Fragment>
-                {bouts.map((bout) => (
-                    <BoutRow bout={bout} />
-                ))}
-                <div className="flex flex-row justify-center gap-1 text-center text-2xl font-bold">
-                    <Score win={aWins} score={scoreA} />
-                    <span>-</span>
-                    <Score win={!aWins} score={scoreB} />
+                <div className="bout-grid py-2">
+                    <Side university={teamA} />
+                    <div className="flex flex-row justify-center gap-1 text-center text-2xl font-bold">
+                        <Score win={aWins} score={scoreA} />
+                        <span>-</span>
+                        <Score win={!aWins} score={scoreB} />
+                    </div>
+                    <Side university={teamB} flip={true} />
                 </div>
+                {bouts.map((bout) => (
+                    <Fragment key={bout.id}>
+                        {/* <Separator /> */}
+                        <BoutRow bout={bout} />
+                    </Fragment>
+                ))}
             </Fragment>
         </ListCard>
     );

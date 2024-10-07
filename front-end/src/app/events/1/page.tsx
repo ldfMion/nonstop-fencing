@@ -6,13 +6,11 @@ import {University} from '~/models/University';
 import getUniversity from '~/api/getUniversity';
 import {matchRepository} from '~/repositories';
 import {boutService, fencerService, recordService, universityService} from '~/services';
-import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 import ListCard from '~/components/list-card';
 import {AdaptiveTiles} from '~/components/adaptive-tiles';
 import {Bout} from '~/models/Bout';
 import {Gender} from '~/models/Gender';
 import RankingRow from '~/components/ranking-row';
-import {Fragment} from 'react';
 import FilteredFencersByWeaponAndGender from '~/components/filtered-fencer-table-by-weapon-and-gender';
 
 const EVENT_INFO = {
@@ -41,14 +39,14 @@ export default async function OsuOpenPage() {
     const womensTeamsSection = (
         <ListCard title="Women's Teams">
             {womensTeams.map((team) => (
-                <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/womens/universities/${team.id}`} />
+                <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/24-25/womens/universities/${team.id}`} />
             ))}
         </ListCard>
     );
     const mensTeamsSection = (
         <ListCard title="Men's Teams">
             {mensTeams.map((team) => (
-                <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/mens/universities/${team.id}`} />
+                <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/24-25/mens/universities/${team.id}`} />
             ))}
         </ListCard>
     );

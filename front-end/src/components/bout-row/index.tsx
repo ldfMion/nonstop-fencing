@@ -1,7 +1,6 @@
 import {Bout} from '~/models/Bout';
 import {Fencer} from '~/models/Fencer';
 import {fencerRepository} from '~/repositories';
-import NameIcon from '../name-icon';
 import clsx from 'clsx';
 import {Fragment} from 'react';
 
@@ -19,8 +18,8 @@ export default async function BoutRow({bout, perspective}: {bout: Bout; perspect
     }
     const aWins = bout.scoreA > bout.scoreB;
     return (
-        <li className="bout-grid py-1">
-            {fencerA && <NameIcon iconUniversityId={fencerA.universityId} name={fencerA.name} />}
+        <li className="bout-grid py-2">
+            {fencerA && <p className="font-medium">{fencerA.name}</p>}
             <div className="w-fit text-nowrap text-center align-middle">
                 {bout.isBye() ? (
                     'BYE'
@@ -30,7 +29,7 @@ export default async function BoutRow({bout, perspective}: {bout: Bout; perspect
                     </Fragment>
                 )}
             </div>
-            {fencerB && <NameIcon iconUniversityId={fencerB.universityId} name={fencerB.name} flip />}
+            {fencerB && <p className="text-right font-medium">{fencerB.name}</p>}
         </li>
     );
 }

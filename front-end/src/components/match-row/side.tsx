@@ -1,6 +1,17 @@
 import NameIcon from '~/components/name-icon';
 import {University} from '~/models/University';
 
-export default function Side({university, flip}: {university: University; flip?: boolean}): React.ReactNode {
-    return <NameIcon iconUniversityId={university.id} name={university.displayNameShort} flip={flip} className="" href={`/mens/universities/${university.id}`} />;
+export default function Side({
+    university,
+    flip,
+}: {
+    university: {
+        id: string;
+        displayNameShort: string;
+        displayNameLong: string;
+        colorTheme: string | null;
+    };
+    flip?: boolean;
+}): React.ReactNode {
+    return <NameIcon iconUniversityId={university.id} name={university.displayNameShort} flip={flip} className="" href={`/24-25/mens/universities/${university.id}`} />;
 }
