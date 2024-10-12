@@ -10,8 +10,8 @@ import ListCard from '~/components/list-card';
 import {AdaptiveTiles} from '~/components/adaptive-tiles';
 import {Bout} from '~/models/Bout';
 import {Gender} from '~/models/Gender';
-import RankingRow from '~/components/ranking-row';
 import FilteredFencersByWeaponAndGender from '~/components/filtered-fencer-table-by-weapon-and-gender';
+import TeamRow from '~/components/team-row';
 
 const EVENT_INFO = {
     title: 'OSU Duals',
@@ -39,14 +39,14 @@ export default async function OsuOpenPage() {
     const womensTeamsSection = (
         <ListCard title="Women's Teams">
             {womensTeams.map((team) => (
-                <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/24-25/womens/universities/${team.id}`} />
+                <TeamRow team={team} key={team.id} genderPath="womens" />
             ))}
         </ListCard>
     );
     const mensTeamsSection = (
         <ListCard title="Men's Teams">
             {mensTeams.map((team) => (
-                <RankingRow key={team.id} name={team.displayNameShort} iconUniversityId={team.id} record={team.record} href={`/24-25/mens/universities/${team.id}`} />
+                <TeamRow team={team} key={team.id} genderPath="mens" />
             ))}
         </ListCard>
     );

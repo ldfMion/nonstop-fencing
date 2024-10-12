@@ -1,6 +1,5 @@
 import {getHomePageFencers, getHomePageTeams} from '~/api';
 import PageHeading from '~/components/page-heading';
-import RankingRow from '~/components/ranking-row';
 import StandingsCard from '~/components/list-card';
 import type {Squad} from '~/models/Squad';
 import getHomePageSquads from '~/api/getHomePageSquads';
@@ -11,6 +10,7 @@ import {Fencer} from '~/models/Fencer';
 import {University2} from '~/models/University2';
 import {HasRecord} from '~/models/HasRecord';
 import TeamRow from '~/components/team-row';
+import FencerRow from '~/components/fencer-row';
 
 export default async function HomePageContent({season}: {season: ISeason}) {
     const fencers = await getHomePageFencers(season);
@@ -65,7 +65,7 @@ function FencerList({fencers, title, url}: {fencers: (Fencer & HasRecord)[]; tit
     return (
         <StandingsCard title={title} key={title} titleHref={url}>
             {fencers.map((fencer) => (
-                <RankingRow name={fencer.name} iconUniversityId={fencer.universityId} record={fencer.record} key={fencer.name} />
+                <FencerRow fencer={fencer} key={fencer.name} />
             ))}
         </StandingsCard>
     );

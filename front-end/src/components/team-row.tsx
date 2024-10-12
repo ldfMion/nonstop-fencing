@@ -4,7 +4,7 @@ import {HasRecord} from '~/models/HasRecord';
 import {ITeam} from '~/models/Team';
 import {Squad} from '~/models/Squad';
 
-export default function TeamRowWrapper({team, genderPath}: {team: (University2 & HasRecord) | ITeam | Squad; genderPath: string}) {
+export default function TeamRowWrapper({team, genderPath}: {team: (University2 & HasRecord) | ITeam | Squad; genderPath: 'mens' | 'womens'}) {
     if ('id' in team) {
         // is a University2 & HasRecord
         return <TeamRow team={team} genderPath={genderPath} />;
