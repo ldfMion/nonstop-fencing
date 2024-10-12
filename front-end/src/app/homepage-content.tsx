@@ -22,12 +22,12 @@ export default async function HomePageContent({season}: {season: ISeason}) {
                 <SeasonDropdown selectedSeason={{...season}} seasons={[{...new Season(2024)}, {...new Season(2025)}]} />
             </div>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-                <FencerList fencers={fencers.mens.foil} title="Men's Foil" url="mens/foil/fencers" />
-                <FencerList fencers={fencers.mens.epee} title="Men's Epee" url="mens/epee/fencers" />
-                <FencerList fencers={fencers.mens.saber} title="Men's Saber" url="mens/saber/fencers" />
-                <FencerList fencers={fencers.womens.foil} title="Women's Foil" url="womens/foil/fencers" />
-                <FencerList fencers={fencers.womens.epee} title="Women's Epee" url="womens/epee/fencers" />
-                <FencerList fencers={fencers.womens.saber} title="Women's Saber" url="womens/saber/fencers" />
+                <FencerList fencers={fencers.mens.foil} title="Men's Foil" url={`${season.displayNameShort}/mens/foil/fencers`} />
+                <FencerList fencers={fencers.mens.epee} title="Men's Epee" url={`${season.displayNameShort}/mens/epee/fencers`} />
+                <FencerList fencers={fencers.mens.saber} title="Men's Saber" url={`${season.displayNameShort}/mens/saber/fencers`} />
+                <FencerList fencers={fencers.womens.foil} title="Women's Foil" url={`${season.displayNameShort}/womens/foil/fencers`} />
+                <FencerList fencers={fencers.womens.epee} title="Women's Epee" url={`${season.displayNameShort}/womens/epee/fencers`} />
+                <FencerList fencers={fencers.womens.saber} title="Women's Saber" url={`${season.displayNameShort}/womens/saber/fencers`} />
             </div>
             <PageHeading>Teams</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -36,12 +36,27 @@ export default async function HomePageContent({season}: {season: ISeason}) {
             </div>
             <PageHeading>Squads</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-                <SquadList squads={squads.womens.foil} title="Women's Foil" url="/womens/foil/squads" genderPath="womens" />
-                <SquadList squads={squads.womens.epee} title="Women's Epee" url="/womens/epee/squads" genderPath="womens" />
-                <SquadList squads={squads.womens.saber} title="Women's Saber" url="/womens/saber/squads" genderPath="womens" />
-                <SquadList squads={squads.mens.foil} title="Men's Foil" url="/mens/foil/squads" genderPath="mens" />
-                <SquadList squads={squads.mens.epee} title="Men's Epee" url="/mens/epee/squads" genderPath="mens" />
-                <SquadList squads={squads.mens.saber} title="Men's Saber" url="/mens/saber/squads" genderPath="mens" />
+                <SquadList
+                    squads={squads.womens.foil}
+                    title="Women's Foil"
+                    url={`${season.displayNameShort}/womens/foil/squads`}
+                    genderPath="womens"
+                />
+                <SquadList
+                    squads={squads.womens.epee}
+                    title="Women's Epee"
+                    url={`${season.displayNameShort}/womens/epee/squads`}
+                    genderPath="womens"
+                />
+                <SquadList
+                    squads={squads.womens.saber}
+                    title="Women's Saber"
+                    url={`${season.displayNameShort}/womens/saber/squads`}
+                    genderPath="womens"
+                />
+                <SquadList squads={squads.mens.foil} title="Men's Foil" url={`${season.displayNameShort}/mens/foil/squads`} genderPath="mens" />
+                <SquadList squads={squads.mens.epee} title="Men's Epee" url={`${season.displayNameShort}/mens/epee/squads`} genderPath="mens" />
+                <SquadList squads={squads.mens.saber} title="Men's Saber" url={`${season.displayNameShort}/mens/saber/squads`} genderPath="mens" />
             </div>
         </main>
     );
@@ -51,7 +66,7 @@ async function TeamList({gender, season}: {gender: Gender; season: ISeason}): Pr
     const teams = await getHomePageTeams(season, gender);
     const genderPath = gender === Gender.MEN ? 'mens' : 'womens';
     const title = gender === Gender.MEN ? "Men's" : "Women's";
-    const url = `/${genderPath}/teams`;
+    const url = `${season.displayNameShort}/${genderPath}/teams`;
     return (
         <StandingsCard title={title} titleHref={url}>
             {teams.map((team) => (

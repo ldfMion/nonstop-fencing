@@ -11,6 +11,7 @@ export default async function getTeams(season: ISeason, gender: Gender): Promise
     if (season.displayNameShort == new Season(2025).displayNameShort) {
         const universities = await universityService.get();
         const matches = await matchService.get({season, gender});
+        console.log(matches);
         const teamsWithRecords = recordService
             .calculateRecordsFromMatches(universities, matches)
             .filter((team) => team.record.wins > 0 || team.record.losses > 0)
