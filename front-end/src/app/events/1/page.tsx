@@ -4,8 +4,7 @@ import MatchesCard from './matches-card';
 import Host from '~/components/host';
 import {University} from '~/models/University';
 import getUniversity from '~/api/getUniversity';
-import {matchRepository} from '~/repositories';
-import {boutService, fencerService, recordService, universityService} from '~/services';
+import {boutService, fencerService, matchService, recordService, universityService} from '~/services';
 import ListCard from '~/components/list-card';
 import {AdaptiveTiles} from '~/components/adaptive-tiles';
 import {Bout} from '~/models/Bout';
@@ -22,7 +21,7 @@ const EVENT_INFO = {
 
 export default async function OsuOpenPage() {
     const host = await getUniversity(EVENT_INFO.hostId);
-    const matches = await matchRepository.findByMeetId(EVENT_INFO.id);
+    const matches = await matchService.fromMeet(EVENT_INFO.id);
     const womensMatches = <MatchesCard title="Women's Matches" matches={matches.filter((match) => match.gender === Gender.WOMEN)} />;
     const mensMatches = <MatchesCard title="Men's Matches" matches={matches.filter((match) => match.gender === Gender.MEN)} />;
     const bouts: Bout[] = await boutService.getFromMeet(EVENT_INFO.id);

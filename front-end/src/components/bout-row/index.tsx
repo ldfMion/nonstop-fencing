@@ -1,8 +1,8 @@
 import {Bout} from '~/models/Bout';
 import {Fencer} from '~/models/Fencer';
-import {fencerRepository} from '~/repositories';
 import clsx from 'clsx';
 import {Fragment} from 'react';
+import {fencerService} from '~/services';
 
 export default async function BoutRow({bout, perspective}: {bout: Bout; perspective?: Fencer}) {
     if (perspective !== undefined) {
@@ -10,11 +10,11 @@ export default async function BoutRow({bout, perspective}: {bout: Bout; perspect
     }
     let fencerA: Fencer | null = null;
     if (bout.fencerAId) {
-        fencerA = await fencerRepository.findById(bout.fencerAId);
+        fencerA = await fencerService.getById(bout.fencerAId);
     }
     let fencerB: Fencer | null = null;
     if (bout.fencerBId) {
-        fencerB = await fencerRepository.findById(bout.fencerBId);
+        fencerB = await fencerService.getById(bout.fencerBId);
     }
     const aWins = bout.scoreA > bout.scoreB;
     return (

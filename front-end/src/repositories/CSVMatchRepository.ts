@@ -5,6 +5,7 @@ import {CSVRepository} from './CSVRepository';
 import {Gender} from '~/models/Gender';
 import {University2} from '~/models/University2';
 import {Weapon} from '~/models/Weapon';
+import {Season} from '~/models/Season';
 
 export class CSVMatchRepository extends CSVRepository<Match2> implements MatchRepository {
     constructor(csvFilePath: string) {
@@ -33,6 +34,7 @@ class MatchFromCSV implements Match2 {
     hostId: string;
     meetId: string;
     gender: Gender;
+    seasonId: string;
     constructor(row: unknown) {
         const anyRow = row as any;
         this.id = anyRow['id'];
@@ -49,6 +51,7 @@ class MatchFromCSV implements Match2 {
         this.meetId = anyRow['meet_id'];
         this.hostId = anyRow['host_id'];
         this.gender = parseTeam(anyRow['gender']);
+        this.seasonId = new Season(2025).id;
     }
     getWinnerId(weapon?: Weapon): string {
         if (weapon == undefined) {

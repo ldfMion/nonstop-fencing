@@ -19,7 +19,7 @@ export default async function getFencersFromGenderAndWeapon(
         const fencersWithRegions = await fencerService.getRegionsForFencers(fencers);
         const fencersWithRegionAndRecord = recordService.calculateRecordsFromBouts(
             fencersWithRegions,
-            await boutService.get((bout) => fencersWithRegions.some((fencer) => bout.fencerAId === fencer.id || bout.fencerBId === fencer.id)),
+            await boutService.get({fencers: fencersWithRegions}),
         );
         data = fencersWithRegionAndRecord;
     } else if (season.displayNameShort == new Season(2024).displayNameShort) {

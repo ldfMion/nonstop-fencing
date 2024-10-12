@@ -3,8 +3,7 @@ import getTopFive from '~/helpers/getTop5';
 import {Gender} from '~/models/Gender';
 import {Weapon} from '~/models/Weapon';
 import {ISeason, Season} from '~/models/Season';
-import {boutRepository, fencerRepository} from '~/repositories';
-import {recordService} from '~/services';
+import {boutService, fencerService, recordService} from '~/services';
 import {Fencer} from '~/models/Fencer';
 import {HasRecord} from '~/models/HasRecord';
 
@@ -22,8 +21,8 @@ export default async function getHomePageFencers(season: ISeason): Promise<{
 }> {
     let data;
     if (season.displayNameShort == new Season(2025).displayNameShort) {
-        const fencers = await fencerRepository.findAll();
-        const bouts = await boutRepository.findAll();
+        const fencers = await fencerService.get();
+        const bouts = await boutService.get({season});
         const withRecords = recordService.calculateRecordsFromBouts(fencers, bouts);
         data = withRecords;
     } else if (season.displayNameShort == new Season(2024).displayNameShort) {

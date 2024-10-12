@@ -32,7 +32,11 @@ export default async function TeamRankingPage({params}: Props) {
     return (
         <SingleRankingWrapper title={title} season={season}>
             {teams.map((team) => (
-                <TeamRow team={team} genderPath={params.team} key={'id' in team ? team.id : team.university.id} />
+                <TeamRow
+                    team={team}
+                    genderPath={params.team.includes('mens') ? 'mens' : 'womens'}
+                    key={'id' in team ? team.id : team.university.id}
+                />
             ))}
         </SingleRankingWrapper>
     );

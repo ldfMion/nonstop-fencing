@@ -17,6 +17,7 @@ export interface Match2 {
     hostId: string;
     meetId: string;
     gender: Gender;
+    seasonId: string;
     isWinner(university: University2, weapon?: Weapon): boolean;
     isLoser(university: University2, weapon?: Weapon): boolean;
 }

@@ -5,12 +5,12 @@ import {ISeason, Season} from '~/models/Season';
 import type {ITeam} from '~/models/Team';
 import {University2} from '~/models/University2';
 import {matchRepository, universityRepository} from '~/repositories';
-import {recordService} from '~/services';
+import {matchService, recordService, universityService} from '~/services';
 
 export default async function getTeams(season: ISeason, gender: Gender): Promise<ITeam[] | (University2 & HasRecord)[]> {
     if (season.displayNameShort == new Season(2025).displayNameShort) {
-        const universities = await universityRepository.findAll();
-        const matches = (await matchRepository.findAll()).filter((match) => match.gender === gender);
+        const universities = await universityService.get();
+        const matches = await matchService.get({season, gender});
         const teamsWithRecords = recordService
             .calculateRecordsFromMatches(universities, matches)
             .filter((team) => team.record.wins > 0 || team.record.losses > 0)

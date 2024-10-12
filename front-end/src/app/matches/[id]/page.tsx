@@ -10,22 +10,20 @@ import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Bout} from '~/models/Bout';
 import {Weapon} from '~/models/Weapon';
-import {boutRepository, matchRepository} from '~/repositories';
-import {fencerService, recordService} from '~/services';
+import {boutService, fencerService, matchService, recordService, universityService} from '~/services';
 import Side from '~/components/match-row/side';
 import {University2} from '~/models/University2';
-import {Separator} from '~/components/ui/separator';
 
 export default async function MatchPage({params}: {params: {id: string}}) {
-    const matchData = await matchRepository.findById(params.id);
+    const matchData = await matchService.getById(params.id);
     if (!matchData) return <p>Match not found</p>;
 
-    const bouts = await boutRepository.findByMatchId(params.id);
+    const bouts = await boutService.getFromMatch(params.id);
     const foil = bouts.filter((bout) => bout.weapon === Weapon.FOIL);
     const epee = bouts.filter((bout) => bout.weapon === Weapon.EPEE);
     const saber = bouts.filter((bout) => bout.weapon === Weapon.SABER);
-    const universityA = await getUniversity(matchData.teamAId);
-    const universityB = await getUniversity(matchData.teamBId);
+    const universityA = await universityService.getById(matchData.teamAId);
+    const universityB = await universityService.getById(matchData.teamBId);
     const fencers = recordService.calculateRecordsFromBouts(await fencerService.getFromMatch(params.id), bouts);
     console.log(fencers);
     const boutsSection = (
@@ -64,12 +62,29 @@ export default async function MatchPage({params}: {params: {id: string}}) {
                     </div>
                 </div>
             </Card>
-            <AdaptiveTiles elements={[[{title: 'Bouts', content: boutsSection}], [{title: 'Fencers', content: fencersSection}]]} defaultOnMobile="Bouts" />
+            <AdaptiveTiles
+                elements={[[{title: 'Bouts', content: boutsSection}], [{title: 'Fencers', content: fencersSection}]]}
+                defaultOnMobile="Bouts"
+            />
         </main>
     );
 }
 
-function WeaponResults({title, bouts, scoreA, scoreB, teamA, teamB}: {title: string; bouts: Bout[]; scoreA: number; scoreB: number; teamA: University2; teamB: University2}) {
+function WeaponResults({
+    title,
+    bouts,
+    scoreA,
+    scoreB,
+    teamA,
+    teamB,
+}: {
+    title: string;
+    bouts: Bout[];
+    scoreA: number;
+    scoreB: number;
+    teamA: University2;
+    teamB: University2;
+}) {
     const aWins = scoreA > scoreB;
     return (
         <ListCard title={title}>

@@ -16,4 +16,10 @@ export class MatchService {
         }
         return matches;
     }
+    async getById(id: string): Promise<Match2> {
+        return await this.matchRepository.findById(id);
+    }
+    async fromMeet(meetId: string): Promise<Match2[]> {
+        return await this.matchRepository.findByMeetId(meetId);
+    }
 }

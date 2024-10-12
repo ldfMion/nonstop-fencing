@@ -3,8 +3,7 @@ import getTeams from './getTeams';
 import getSquadsFromTeams from '~/helpers/getSquadsFromTeams';
 import {Weapon} from '~/models/Weapon';
 import {ISeason, Season} from '~/models/Season';
-import {universityRepository} from '~/repositories';
-import {matchService, recordService} from '~/services';
+import {matchService, recordService, universityService} from '~/services';
 import {HasRecord} from '~/models/HasRecord';
 import {University2} from '~/models/University2';
 import {Squad} from '~/models/Squad';
@@ -16,7 +15,7 @@ export default async function getSquadsFromTeamAndWeapon(
     weapon: Weapon,
 ): Promise<Squad[] | (University2 & HasRecord)[]> {
     if (season.displayNameShort == new Season(2025).displayNameShort) {
-        const universities = await universityRepository.findAll();
+        const universities = await universityService.get();
         const matches = await matchService.get({season: new Season(2025), gender: gender});
         console.log(matches);
         const squads = recordService

@@ -16,6 +16,9 @@ export class FencerService {
         private boutRepository: BoutRepository,
         private universityRepository: UniversityRepository,
     ) {}
+    async get(): Promise<Fencer[]> {
+        return this.fencerRepository.findAll();
+    }
     async getFromMatch(matchId: string): Promise<Fencer[]> {
         const boutsFromMatch = await this.boutRepository.findByMatchId(matchId);
         const fencersFromMatch = await this.findFromBouts(boutsFromMatch);
@@ -44,5 +47,8 @@ export class FencerService {
                 return {...fencer, region: university.region};
             }),
         );
+    }
+    async getById(id: string): Promise<Fencer> {
+        return await this.fencerRepository.findById(id);
     }
 }

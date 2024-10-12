@@ -12,7 +12,6 @@ export class UniversityService {
         const matchesFromMeet = await this.matchRepository.findByMeetId(meetId);
         return await this.getFromMatches(matchesFromMeet);
     }
-
     private async getFromMatches(matches: Match2[]): Promise<University2[]> {
         const all = (
             await Promise.all(
@@ -25,5 +24,11 @@ export class UniversityService {
         ).flat();
         const unique = [...new Set(all)];
         return unique;
+    }
+    async getById(id: string): Promise<University2> {
+        return await this.universityRepository.findById(id);
+    }
+    async get(): Promise<University2[]> {
+        return await this.universityRepository.findAll();
     }
 }
