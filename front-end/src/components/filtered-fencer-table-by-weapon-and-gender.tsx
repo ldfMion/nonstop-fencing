@@ -2,9 +2,10 @@
 import parseGender from '~/helpers/parseTeam';
 import FilteredFencerTable from './filtered-fencer-table';
 import parseWeapon from '~/helpers/parseWeapon';
-import {FencerWithRecord} from '~/models/FencerWithRecord';
+import {HasRecord} from '~/models/HasRecord';
+import {Fencer} from '~/models/Fencer';
 
-export default function FilteredFencersByWeaponAndGender({fencers}: {fencers: FencerWithRecord[]}): JSX.Element {
+export default function FilteredFencersByWeaponAndGender({fencers}: {fencers: (Fencer & HasRecord)[]}): JSX.Element {
     const weaponOptions = ['All', 'Foil', 'Epee', 'Saber'];
     const genderOptions = ['All', "Men's", "Women's"];
     const options = [
@@ -21,7 +22,7 @@ export default function FilteredFencersByWeaponAndGender({fencers}: {fencers: Fe
     return <FilteredFencerTable fencers={fencers} options={options} />;
 }
 
-function filterByWeapon(fencers: FencerWithRecord[], value: string): FencerWithRecord[] {
+function filterByWeapon(fencers: (Fencer & HasRecord)[], value: string): (Fencer & HasRecord)[] {
     if (value !== 'All') {
         const weapon = parseWeapon(value);
         return fencers.filter((fencer) => fencer.weapon === weapon);
@@ -29,7 +30,7 @@ function filterByWeapon(fencers: FencerWithRecord[], value: string): FencerWithR
     return fencers;
 }
 
-function filterByGender(fencers: FencerWithRecord[], value: string): FencerWithRecord[] {
+function filterByGender(fencers: (Fencer & HasRecord)[], value: string): (Fencer & HasRecord)[] {
     if (value !== 'All') {
         const gender = parseGender(value);
         return fencers.filter((fencer) => fencer.gender === gender);

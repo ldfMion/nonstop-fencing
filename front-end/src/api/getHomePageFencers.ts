@@ -6,18 +6,18 @@ import {ISeason, Season} from '~/models/Season';
 import {boutRepository, fencerRepository} from '~/repositories';
 import {recordService} from '~/services';
 import {Fencer} from '~/models/Fencer';
-import {WithRecord} from '~/models/WithRecord';
+import {HasRecord} from '~/models/HasRecord';
 
 export default async function getHomePageFencers(season: ISeason): Promise<{
     mens: {
-        foil: WithRecord<Fencer>[];
-        epee: WithRecord<Fencer>[];
-        saber: WithRecord<Fencer>[];
+        foil: (Fencer & HasRecord)[];
+        epee: (Fencer & HasRecord)[];
+        saber: (Fencer & HasRecord)[];
     };
     womens: {
-        foil: WithRecord<Fencer>[];
-        epee: WithRecord<Fencer>[];
-        saber: WithRecord<Fencer>[];
+        foil: (Fencer & HasRecord)[];
+        epee: (Fencer & HasRecord)[];
+        saber: (Fencer & HasRecord)[];
     };
 }> {
     let data;

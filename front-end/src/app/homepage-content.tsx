@@ -8,8 +8,9 @@ import SeasonDropdown from '~/components/season-dropdown';
 import {ISeason, Season} from '~/models/Season';
 import {Gender} from '~/models/Gender';
 import {Fencer} from '~/models/Fencer';
-import {WithRecord} from '~/models/WithRecord';
 import {University2} from '~/models/University2';
+import {HasRecord} from '~/models/HasRecord';
+import TeamRow from '~/components/team-row';
 
 export default async function HomePageContent({season}: {season: ISeason}) {
     const fencers = await getHomePageFencers(season);
@@ -53,24 +54,14 @@ async function TeamList({gender, season}: {gender: Gender; season: ISeason}): Pr
     const url = `/${genderPath}/teams`;
     return (
         <StandingsCard title={title} titleHref={url}>
-            {teams.map((team) =>
-                'id' in team ? (
-                    <RankingRow name={team.displayNameShort} record={team.record} iconUniversityId={team.id} href={`/${genderPath}/universities/${team.id}`} key={team.id} />
-                ) : (
-                    <RankingRow
-                        name={team.university.displayNameShort}
-                        record={team.overall}
-                        iconUniversityId={team.university.id}
-                        href={`/${genderPath}/universities/${team.university.id}`}
-                        key={team.university.id}
-                    />
-                ),
-            )}
+            {teams.map((team) => (
+                <TeamRow team={team} genderPath={genderPath} key={'id' in team ? team.id : team.university.id} />
+            ))}
         </StandingsCard>
     );
 }
 
-function FencerList({fencers, title, url}: {fencers: WithRecord<Fencer>[]; title: string; url: string}): JSX.Element {
+function FencerList({fencers, title, url}: {fencers: (Fencer & HasRecord)[]; title: string; url: string}): JSX.Element {
     return (
         <StandingsCard title={title} key={title} titleHref={url}>
             {fencers.map((fencer) => (
@@ -80,23 +71,22 @@ function FencerList({fencers, title, url}: {fencers: WithRecord<Fencer>[]; title
     );
 }
 
-function SquadList({squads, title, url, genderPath}: {squads: Squad[] | WithRecord<University2>[]; title: string; genderPath: 'mens' | 'womens'; url: string}): JSX.Element {
+function SquadList({
+    squads,
+    title,
+    url,
+    genderPath,
+}: {
+    squads: Squad[] | (University2 & HasRecord)[];
+    title: string;
+    genderPath: 'mens' | 'womens';
+    url: string;
+}): JSX.Element {
     return (
         <StandingsCard title={title} key={title} titleHref={url}>
-            {squads.map((squad) => {
-                if ('id' in squad) {
-                    return <RankingRow name={squad.displayNameShort} record={squad.record} iconUniversityId={squad.id} href={`/${genderPath}/universities/${squad.id}`} key={squad.id} />;
-                }
-                return (
-                    <RankingRow
-                        name={squad.university.displayNameShort}
-                        record={squad.record}
-                        iconUniversityId={squad.university.id}
-                        href={`/${genderPath}/universities/${squad.university.id}`}
-                        key={squad.university.id}
-                    />
-                );
-            })}
+            {squads.map((squad) => (
+                <TeamRow team={squad} genderPath={genderPath} key={'id' in squad ? squad.id : squad.university.id} />
+            ))}
         </StandingsCard>
     );
 }

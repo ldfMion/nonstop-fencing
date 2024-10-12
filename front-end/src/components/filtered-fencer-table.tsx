@@ -1,11 +1,12 @@
 'use client';
 import FilterSelector from './filter-selector';
 import FencerRow from './fencer-row';
-import {Fragment, useState} from 'react';
-import {FencerWithRecord} from '~/models/FencerWithRecord';
+import {useState} from 'react';
 import assert from 'assert';
+import {HasRecord} from '~/models/HasRecord';
+import {Fencer} from '~/models/Fencer';
 
-export default function FilteredFencerTable<T extends FencerWithRecord>({
+export default function FilteredFencerTable<T extends Fencer & HasRecord>({
     fencers,
     options,
 }: {
@@ -36,7 +37,14 @@ export default function FilteredFencerTable<T extends FencerWithRecord>({
         <div className="flex flex-col gap-2">
             {options.map((option, i) => {
                 assert(currentFilters[i] !== undefined);
-                return <FilterSelector className="justify-start" labels={option.labels} currentFilter={currentFilters[i]} setFilter={(value) => handleChange(value, i)} />;
+                return (
+                    <FilterSelector
+                        className="justify-start"
+                        labels={option.labels}
+                        currentFilter={currentFilters[i]}
+                        setFilter={(value) => handleChange(value, i)}
+                    />
+                );
             })}
             {filteredFencers.map((fencer) => (
                 <FencerRow fencer={fencer} key={fencer.name} />

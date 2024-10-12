@@ -16,6 +16,7 @@ import type {Metadata} from 'next';
 import toTitleCase from '~/helpers/toTitleCase';
 import {Gender} from '~/models/Gender';
 import {AdaptiveTiles} from '~/components/adaptive-tiles';
+import {Season} from '~/models/Season';
 
 type Props = {params: {university: string; team: string}};
 
@@ -37,7 +38,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 
 export async function generateStaticParams({params: {team}}: {params: {team: string}}) {
     const teamAsEnum = parseTeam(team);
-    const teams = await getTeams(teamAsEnum);
+    const teams = (await getTeams(new Season(2024), teamAsEnum)) as ITeam[];
     const paths = teams.map((team) => ({
         university: team.university.id,
     }));
@@ -62,7 +63,10 @@ export default async function University({params}: Props) {
                 <UniversityHeaders team={universityTeam} />
                 {showTabs(university, team) && <TeamTabs gender={team} team={universityTeam} />}
             </Card>
-            <AdaptiveTiles elements={[[{title: 'Roster', content: rosterElement}], [{title: 'Matches', content: matchesElement}]]} defaultOnMobile="Roster" />
+            <AdaptiveTiles
+                elements={[[{title: 'Roster', content: rosterElement}], [{title: 'Matches', content: matchesElement}]]}
+                defaultOnMobile="Roster"
+            />
         </main>
     );
 }

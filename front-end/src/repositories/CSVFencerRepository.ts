@@ -13,6 +13,9 @@ export class CSVFencerRepository extends CSVRepository<Fencer> implements Fencer
     constructor(csvFilePath: string) {
         super(csvFilePath);
     }
+    async findByGenderAndWeapon(gender: Gender, weapon: Weapon): Promise<Fencer[]> {
+        return (await this.findAll()).filter((fencer) => fencer.gender === gender && fencer.weapon === weapon);
+    }
 }
 
 class FencerFromCSV implements Fencer {

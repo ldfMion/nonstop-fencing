@@ -1,12 +1,13 @@
 import parseTeam from '~/helpers/parseTeam';
 import {getTeams} from '~/api';
-import RankingRow from '~/components/ranking-row';
 import toTitleCase from '~/helpers/toTitleCase';
 import SingleRankingWrapper from '../single-ranking-wrapper';
 import type {Metadata} from 'next';
+import {parseSeason} from '~/helpers/parseSeason';
+import TeamRow from '~/components/team-row';
 
 type Props = {
-    params: {team: string};
+    params: {team: string; season: string};
 };
 
 export async function generateMetadata({params}: Props): Promise<Metadata> {
@@ -24,19 +25,14 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 }
 
 export default async function TeamRankingPage({params}: Props) {
+    const season = parseSeason(params.season);
     const team = parseTeam(params.team);
-    const teams = await getTeams(team);
+    const teams = await getTeams(season, team);
     const title = toTitleCase(`${params.team}`).replace('ns', "n's") + ' Teams';
     return (
-        <SingleRankingWrapper title={title}>
+        <SingleRankingWrapper title={title} season={season}>
             {teams.map((team) => (
-                <RankingRow
-                    key={team.university.id}
-                    name={team.university.displayNameShort}
-                    iconUniversityId={team.university.id}
-                    record={team.overall}
-                    href={`/${params.team}/universities/${team.university.id}`}
-                />
+                <TeamRow team={team} genderPath={params.team} key={'id' in team ? team.id : team.university.id} />
             ))}
         </SingleRankingWrapper>
     );

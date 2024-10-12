@@ -2,10 +2,10 @@
 import type FencerSummary from '~/models/FencerSummary';
 import FilteredFencerTable from './filtered-fencer-table';
 import parseWeapon from '~/helpers/parseWeapon';
+import {HasRecord} from '~/models/HasRecord';
 import {Fencer} from '~/models/Fencer';
-import {FencerWithRecord} from '~/models/FencerWithRecord';
 
-export default function FilteredFencersByWeapon({fencers}: {fencers: FencerWithRecord[]}): JSX.Element {
+export default function FilteredFencersByWeapon({fencers}: {fencers: (Fencer & HasRecord)[]}): JSX.Element {
     const weaponLabels = ['All', 'Foil', 'Epee', 'Saber'];
     const options = [
         {
@@ -16,7 +16,7 @@ export default function FilteredFencersByWeapon({fencers}: {fencers: FencerWithR
     return <FilteredFencerTable fencers={fencers} options={options} />;
 }
 
-function filterByWeapon(fencers: FencerWithRecord[], value: string): FencerWithRecord[] {
+function filterByWeapon(fencers: (Fencer & HasRecord)[], value: string): (Fencer & HasRecord)[] {
     if (value !== 'All') {
         const weapon = parseWeapon(value);
         return fencers.filter((fencer) => fencer.weapon === weapon);

@@ -1,6 +1,6 @@
 import Record from './Record';
 
-export type WithRecord<T> = T & {
+export type HasRecord = {
     record: Record;
     rating: number;
 };
