@@ -6,4 +6,6 @@ export interface University2 {
     displayNameLong: string;
     region: Region;
     colorTheme: string | null;
+    hasMen: boolean;
+    hasWomen: boolean;
 }

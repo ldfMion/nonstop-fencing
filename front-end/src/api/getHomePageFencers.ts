@@ -19,17 +19,7 @@ export default async function getHomePageFencers(season: ISeason): Promise<{
         saber: (Fencer & HasRecord)[];
     };
 }> {
-    let data;
-    if (season.displayNameShort == new Season(2025).displayNameShort) {
-        const fencers = await fencerService.get();
-        const bouts = await boutService.get({season});
-        const withRecords = recordService.calculateRecordsFromBouts(fencers, bouts);
-        data = withRecords;
-    } else if (season.displayNameShort == new Season(2024).displayNameShort) {
-        data = await getRecordsFromCsv();
-    } else {
-        throw new Error(`Unknown season: ${season.displayNameLong}`);
-    }
+    const data = await fencerService.getSeasonRecords(await fencerService.get(season, {}), season);
     data.sort((a, b) => b.rating - a.rating);
     return {
         mens: {

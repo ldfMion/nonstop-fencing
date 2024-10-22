@@ -17,6 +17,8 @@ class UniversityFromCSV implements University2 {
     public displayNameLong: string;
     public region: Region;
     public colorTheme: string | null = null;
+    public hasMen: boolean = true;
+    public hasWomen: boolean = true;
     constructor(csvRow: unknown) {
         const anyRow = csvRow as any;
         this.id = anyRow['id'];
@@ -24,6 +26,8 @@ class UniversityFromCSV implements University2 {
         this.displayNameLong = anyRow['Display Name Long'];
         this.region = parseRegion(anyRow['Region']);
         this.colorTheme = anyRow['Theme Color'];
+        this.hasMen = true;
+        this.hasWomen = true;
     }
 }
 

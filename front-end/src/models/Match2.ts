@@ -18,6 +18,8 @@ export interface Match2 {
     meetId: string;
     gender: Gender;
     seasonId: string;
+    dateFallback?: Date;
     isWinner(university: University2, weapon?: Weapon): boolean;
     isLoser(university: University2, weapon?: Weapon): boolean;
+    includes(university: University2): boolean;
 }

@@ -36,7 +36,6 @@ export default async function getHomePageSquads(season: ISeason): Promise<{
 }
 
 function getSquadRecords(gender: Gender, weapon: Weapon, universities: University2[], matches: Match2[]): (University2 & HasRecord)[] {
-    console.log(matches);
     return recordService
         .calculateSquadRecords(
             universities,

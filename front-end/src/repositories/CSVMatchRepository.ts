@@ -8,8 +8,8 @@ import {Weapon} from '~/models/Weapon';
 import {Season} from '~/models/Season';
 
 export class CSVMatchRepository extends CSVRepository<Match2> implements MatchRepository {
-    constructor(csvFilePath: string) {
-        super(csvFilePath);
+    constructor(...csvFilePaths: string[]) {
+        super(...csvFilePaths);
     }
     protected parseRow(row: unknown): Match2 {
         return new MatchFromCSV(row);
@@ -35,6 +35,7 @@ class MatchFromCSV implements Match2 {
     meetId: string;
     gender: Gender;
     seasonId: string;
+    dateFallback?: Date;
     constructor(row: unknown) {
         const anyRow = row as any;
         this.id = anyRow['id'];
@@ -51,7 +52,10 @@ class MatchFromCSV implements Match2 {
         this.meetId = anyRow['meet_id'];
         this.hostId = anyRow['host_id'];
         this.gender = parseTeam(anyRow['gender']);
-        this.seasonId = new Season(2025).id;
+        this.seasonId = new Season(parseInt(anyRow['season'])).id;
+        if (anyRow['date'] != undefined) {
+            this.dateFallback = new Date(anyRow['date']);
+        }
     }
     getWinnerId(weapon?: Weapon): string {
         if (weapon == undefined) {
@@ -68,7 +72,7 @@ class MatchFromCSV implements Match2 {
         }
         throw new Error(`Invalid weapon ${weapon}`);
     }
-    private includes(university: University2): boolean {
+    includes(university: University2): boolean {
         return this.teamAId === university.id || this.teamBId === university.id;
     }
     isWinner(university: University2, weapon?: Weapon): boolean {

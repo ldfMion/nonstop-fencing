@@ -4,14 +4,27 @@ import ListCard from '~/components/list-card';
 import MatchRow from '~/components/match-row';
 import {Separator} from '~/components/ui/separator';
 import type Match from '~/models/Match';
-import type {University} from '~/models/University';
 import Date from '~/components/date';
 import MatchTableHeader from '~/components/match-table-header';
 import {Gender} from '~/models/Gender';
+import type {University2} from '~/models/University2';
+import {matchService} from '~/services';
+import {Match2} from '~/models/Match2';
+import {eventRepository} from '~/repositories';
+import {ISeason} from '~/models/Season';
 
-export default async function MatchesCard({university, gender}: {university: University; gender: Gender}): Promise<JSX.Element> {
-    const matches = await getMatchesFromUniversity(university.id, gender);
-    const matchesGroupedByDate = groupMatchesByDate(matches);
+export default async function MatchesCard({
+    university,
+    gender,
+    season,
+}: {
+    university: University2;
+    gender: Gender;
+    season: ISeason;
+}): Promise<JSX.Element> {
+    // const matches = await getMatchesFromUniversity(university.id, gender);
+    const matches = await matchService.get({season: season, gender: gender, university: university});
+    const matchesGroupedByDate = await groupMatchesByDate(matches);
     return (
         <ListCard title="Fixtures" tableHeader={<MatchTableHeader />}>
             {Object.keys(matchesGroupedByDate).map((date) => (
@@ -19,7 +32,7 @@ export default async function MatchesCard({university, gender}: {university: Uni
                     <Date isoDate={date} />
                     <Separator className="" />
                     {matchesGroupedByDate[date]!.map((match) => (
-                        <MatchRow match={match} key={match.teamAId + match.teamBId + match.date.toISOString()} perspective={university} />
+                        <MatchRow match={match} key={match.teamAId + match.teamBId + date} perspective={university} />
                     ))}
                 </Fragment>
             ))}
@@ -27,11 +40,21 @@ export default async function MatchesCard({university, gender}: {university: Uni
     );
 }
 
-function groupMatchesByDate(matches: Match[]): Record<string, Match[]> {
-    const record: Record<string, Match[]> = {};
+async function groupMatchesByDate(matches: Match2[]): Promise<Record<string, Match2[]>> {
+    const dateMeetMap: Record<string, Match2[]> = {};
     for (const match of matches) {
-        const time = match.date.toString();
-        record[time] = record[time] === undefined ? [match] : [...record[time], match];
+        let date: Date;
+        if (match.meetId) {
+            date = (await eventRepository.findById(match.meetId)).startDate;
+        } else {
+            date = match.dateFallback!;
+        }
+        const mapEntry = dateMeetMap[date.toString()];
+        if (mapEntry == undefined) {
+            dateMeetMap[date.toString()] = [match];
+        } else {
+            dateMeetMap[date.toString()] = [...mapEntry, match];
+        }
     }
-    return record;
+    return dateMeetMap;
 }

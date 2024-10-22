@@ -3,9 +3,9 @@ import {Repository} from './Repository';
 
 export abstract class CSVRepository<T extends {id: string}> implements Repository<T> {
     items: T[] | null = null;
-    protected filePath: string;
-    constructor(filePath: string) {
-        this.filePath = filePath;
+    protected filePaths: string[];
+    constructor(...filePaths: string[]) {
+        this.filePaths = filePaths;
     }
     protected abstract parseRow(row: unknown): T;
     async findById(id: string): Promise<T> {
@@ -23,6 +23,7 @@ export abstract class CSVRepository<T extends {id: string}> implements Repositor
         return this.items;
     }
     private async loadFromCSV(): Promise<T[]> {
-        return await parseCSV(this.filePath, this.parseRow);
+        const parsedLists = await Promise.all(this.filePaths.map((file) => parseCSV(file, this.parseRow)));
+        return parsedLists.flat();
     }
 }

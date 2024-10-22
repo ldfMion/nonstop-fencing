@@ -2,11 +2,19 @@ import {Match2} from '~/models/Match2';
 import {University2} from '~/models/University2';
 import {MatchRepository} from '~/repositories/MatchRepository';
 import {UniversityRepository} from '~/repositories/UniversityRepository';
+import {RecordService} from './recordService';
+import {MatchService} from './MatchService';
+import {ISeason, Season} from '~/models/Season';
+import {Gender} from '~/models/Gender';
+import {HasRecord} from '~/models/HasRecord';
+import assert from 'assert';
 
 export class UniversityService {
     constructor(
         private universityRepository: UniversityRepository,
         private matchRepository: MatchRepository,
+        private recordService: RecordService,
+        private matchService: MatchService,
     ) {}
     async getFromMeet(meetId: string): Promise<University2[]> {
         const matchesFromMeet = await this.matchRepository.findByMeetId(meetId);
@@ -30,5 +38,12 @@ export class UniversityService {
     }
     async get(): Promise<University2[]> {
         return await this.universityRepository.findAll();
+    }
+    async getByIdWithRecord(id: string, gender: Gender, season: ISeason): Promise<University2 & HasRecord> {
+        const university = await this.universityRepository.findById(id);
+        const matches = await this.matchService.get({season: season, gender: gender, university: university});
+        const universityWithRecord = this.recordService.calculateRecordsFromMatches([university], matches)[0];
+        assert(universityWithRecord != undefined);
+        return universityWithRecord;
     }
 }

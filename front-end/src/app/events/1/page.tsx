@@ -11,6 +11,7 @@ import {Bout} from '~/models/Bout';
 import {Gender} from '~/models/Gender';
 import FilteredFencersByWeaponAndGender from '~/components/filtered-fencer-table-by-weapon-and-gender';
 import TeamRow from '~/components/team-row';
+import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
 
 const EVENT_INFO = {
     title: 'OSU Duals',
@@ -25,7 +26,7 @@ export default async function OsuOpenPage() {
     const womensMatches = <MatchesCard title="Women's Matches" matches={matches.filter((match) => match.gender === Gender.WOMEN)} />;
     const mensMatches = <MatchesCard title="Men's Matches" matches={matches.filter((match) => match.gender === Gender.MEN)} />;
     const bouts: Bout[] = await boutService.getFromMeet(EVENT_INFO.id);
-    const fencers = recordService.calculateRecordsFromBouts(await fencerService.getFromMeet(EVENT_INFO.id), bouts);
+    const fencers = mapFencerWithRecordToObject(recordService.calculateRecordsFromBouts(await fencerService.getFromMeet(EVENT_INFO.id), bouts));
     const universities = await universityService.getFromMeet(EVENT_INFO.id);
     const mensTeams = recordService.calculateRecordsFromMatches(
         universities,
@@ -50,7 +51,7 @@ export default async function OsuOpenPage() {
         </ListCard>
     );
     const fencersSection = (
-        <ListCard title="Fencers">
+        <ListCard title="Fencer Stats">
             <FilteredFencersByWeaponAndGender fencers={fencers} />
         </ListCard>
     );

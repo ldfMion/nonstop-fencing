@@ -43,6 +43,7 @@ export default function FilteredFencerTable<T extends Fencer & HasRecord>({
                         labels={option.labels}
                         currentFilter={currentFilters[i]}
                         setFilter={(value) => handleChange(value, i)}
+                        key={option.labels.flat().join(', ')}
                     />
                 );
             })}

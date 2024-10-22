@@ -14,21 +14,11 @@ export default async function getSquadsFromTeamAndWeapon(
     gender: Gender,
     weapon: Weapon,
 ): Promise<Squad[] | (University2 & HasRecord)[]> {
-    if (season.displayNameShort == new Season(2025).displayNameShort) {
-        const universities = await universityService.get();
-        const matches = await matchService.get({season: new Season(2025), gender: gender});
-        console.log(matches);
-        const squads = recordService
-            .calculateSquadRecords(universities, matches, weapon)
-            .sort((a, b) => b.rating - a.rating)
-            .filter((squad) => squad.record.wins > 0 || squad.record.losses > 0);
-        return squads;
-    }
-    if (season.displayNameShort == new Season(2024).displayNameShort) {
-        const teams = (await getTeams(new Season(2024), gender)) as ITeam[];
-        const squads = getSquadsFromTeams(teams, weapon);
-        squads.sort((a, b) => b.rating - a.rating);
-        return squads;
-    }
-    throw new Error(`Invalid season ${season.displayNameShort}`);
+    const universities = await universityService.get();
+    const matches = await matchService.get({season: season, gender: gender});
+    const squads = recordService
+        .calculateSquadRecords(universities, matches, weapon)
+        .sort((a, b) => b.rating - a.rating)
+        .filter((squad) => squad.record.wins > 0 || squad.record.losses > 0);
+    return squads;
 }

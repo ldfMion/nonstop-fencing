@@ -1,0 +1,286 @@
+First name,Last name,gender,weapon,season_wins,season_losses,University ,name,university_id,id,season_end_year
+Monica,Balakrishnan,women,epee,27,15,Duke,Monica Balakrishnan,duke,a1,2024
+Sarah,Lurye,women,epee,28,23,Duke,Sarah Lurye,duke,a2,2024
+Chloe,Beittel,women,epee,42,28,Duke,Chloe Beittel,duke,a3,2024
+Rachel,Kowalsky,women,epee,38,23,Duke,Rachel Kowalsky,duke,a4,2024
+Aretha,Gao,women,epee,5,9,Duke,Aretha Gao,duke,a5,2024
+Vanessa,Lin,women,epee,23,17,Duke,Vanessa Lin,duke,a6,2024
+Katie,Lin,women,epee,2,2,Duke,Katie Lin,duke,a7,2024
+Christina,Ferrari,women,foil,37,16,Duke,Christina Ferrari,duke,a8,2024
+Rachel,Koo,women,foil,38,12,Duke,Rachel Koo,duke,a9,2024
+Skylar,Knight,women,foil,24,14,Duke,Skylar Knight,duke,a10,2024
+Sophia,Shen,women,foil,34,13,Duke,Sophia Shen,duke,a11,2024
+Zizi,Newhard,women,foil,20,13,Duke,Zizi Newhard,duke,a12,2024
+Elisha,Tan,women,foil,10,1,Duke,Elisha Tan,duke,a13,2024
+Charlotte,Koenig,women,foil,23,5,Duke,Charlotte Koenig,duke,a14,2024
+Catherine,Flanagan,women,foil,2,1,Duke,Catherine Flanagan,duke,a15,2024
+Lulu,Tang,women,foil,3,0,Duke,Lulu Tang,duke,a16,2024
+Kavya,menke,women,saber,21,12,Duke,Kavya menke,duke,a17,2024
+Kunling,Tong,women,saber,41,24,Duke,Kunling Tong,duke,a18,2024
+Hava,Stone,women,saber,34,22,Duke,Hava Stone,duke,a19,2024
+Natalie,Olsen,women,saber,37,13,Duke,Natalie Olsen,duke,a20,2024
+Victoria,Gorman,women,saber,47,18,Duke,Victoria Gorman,duke,a21,2024
+Xavier,Ghazaleh,men,epee,8,12,Duke,Xavier Ghazaleh,duke,a22,2024
+Allen,Marakov,men,epee,34,27,Duke,Allen Marakov,duke,a23,2024
+Xander,Wilcox,men,epee,26,24,Duke,Xander Wilcox,duke,a24,2024
+Chandler,Wimmer,men,epee,14,20,Duke,Chandler Wimmer,duke,a25,2024
+Kozmo,Rhyu,men,epee,20,30,Duke,Kozmo Rhyu,duke,a26,2024
+Ethan,Nguyen,men,epee,4,11,Duke,Ethan Nguyen,duke,a27,2024
+David,Tierney,men,foil,27,29,Duke,David Tierney,duke,a28,2024
+Cam,Evans,men,foil,10,12,Duke,Cam Evans,duke,a29,2024
+Dayaal,Singh,men,foil,32,34,Duke,Dayaal Singh,duke,a30,2024
+Noah,Nager,men,foil,17,16,Duke,Noah Nager,duke,a31,2024
+Tuna,Korkmaz,men,foil,6,15,Duke,Tuna Korkmaz,duke,a32,2024
+Ryan,Pelosky,men,foil,23,14,Duke,Ryan Pelosky,duke,a33,2024
+Stephen,Kim,men,saber,45,24,Duke,Stephen Kim,duke,a34,2024
+Justin,Morrill,men,saber,23,24,Duke,Justin Morrill,duke,a35,2024
+Samir,Travers,men,saber,38,31,Duke,Samir Travers,duke,a36,2024
+Maxwell,Greenbaum,men,saber,22,24,Duke,Maxwell Greenbaum,duke,a37,2024
+,Bauer,men,saber,15,6,Ohio State, Bauer,ohiostate,a38,2024
+,Buergenthal,men,saber,9,4,Ohio State, Buergenthal,ohiostate,a39,2024
+,Fioretto,men,saber,62,20,Ohio State, Fioretto,ohiostate,a40,2024
+,Haney,men,saber,24,13,Ohio State, Haney,ohiostate,a41,2024
+,Liu,men,saber,14,25,Ohio State, Liu,ohiostate,a42,2024
+,Rai,men,saber,26,20,Ohio State, Rai,ohiostate,a43,2024
+,Rightler,men,saber,45,23,Ohio State, Rightler,ohiostate,a44,2024
+,Williams,men,saber,26,13,Ohio State, Williams,ohiostate,a45,2024
+,Ariza,men,foil,17,1,Ohio State, Ariza,ohiostate,a46,2024
+,Ayupov,men,foil,26,19,Ohio State, Ayupov,ohiostate,a47,2024
+,Cervantes,men,foil,23,16,Ohio State, Cervantes,ohiostate,a48,2024
+,Cheng,men,foil,1,2,Ohio State, Cheng,ohiostate,a49,2024
+,Freedman,men,foil,9,1,Ohio State, Freedman,ohiostate,a50,2024
+,Huth,men,foil,20,13,Ohio State, Huth,ohiostate,a51,2024
+,Li,men,foil,28,26,Ohio State, Li,ohiostate,a52,2024
+,Mion,men,foil,23,13,Ohio State, Mion,ohiostate,a53,2024
+,Ndiaye,men,foil,23,6,Ohio State, Ndiaye,ohiostate,a54,2024
+,Prassana,men,foil,5,2,Ohio State, Prassana,ohiostate,a55,2024
+,Upton,men,foil,8,2,Ohio State, Upton,ohiostate,a56,2024
+,Vogler,men,foil,31,24,Ohio State, Vogler,ohiostate,a57,2024
+,Bulau,men,epee,6,8,Ohio State, Bulau,ohiostate,a58,2024
+,Feinberg,men,epee,47,14,Ohio State, Feinberg,ohiostate,a59,2024
+,Kumar,men,epee,12,3,Ohio State, Kumar,ohiostate,a60,2024
+,Kokenge,men,epee,12,3,Ohio State, Kokenge,ohiostate,a61,2024
+,Gibson,men,epee,24,20,Ohio State, Gibson,ohiostate,a62,2024
+,Lavenstein,men,epee,9,4,Ohio State, Lavenstein,ohiostate,a63,2024
+,Lee,men,epee,5,4,Ohio State, Lee,ohiostate,a64,2024
+,Rodney,men,epee,20,12,Ohio State, Rodney,ohiostate,a65,2024
+,Shah,men,epee,22,9,Ohio State, Shah,ohiostate,a66,2024
+,Veltrup,men,epee,30,20,Ohio State, Veltrup,ohiostate,a67,2024
+,Weiss,men,epee,44,26,Ohio State, Weiss,ohiostate,a68,2024
+,Alexe,women,saber,51,47,Ohio State, Alexe,ohiostate,a69,2024
+,Arnipalli,women,saber,16,20,Ohio State, Arnipalli,ohiostate,a70,2024
+,Larimer,women,saber,41,43,Ohio State, Larimer,ohiostate,a71,2024
+,Perrier,women,saber,20,26,Ohio State, Perrier,ohiostate,a72,2024
+,Wiggers,women,saber,30,23,Ohio State, Wiggers,ohiostate,a73,2024
+,Antal,women,foil,1,0,Ohio State, Antal,ohiostate,a74,2024
+,Brush,women,foil,6,3,Ohio State, Brush,ohiostate,a75,2024
+,Galavotti,women,foil,56,37,Ohio State, Galavotti,ohiostate,a76,2024
+,Guillen,women,foil,1,0,Ohio State, Guillen,ohiostate,a77,2024
+,Heiser,women,foil,6,4,Ohio State, Heiser,ohiostate,a78,2024
+,Lee,women,foil,39,24,Ohio State, Lee,ohiostate,a79,2024
+,Moradi,women,foil,22,24,Ohio State, Moradi,ohiostate,a80,2024
+,Myroniuk,women,foil,68,24,Ohio State, Myroniuk,ohiostate,a81,2024
+,Dyner,women,epee,36,28,Ohio State, Dyner,ohiostate,a82,2024
+,Fan,women,epee,6,4,Ohio State, Fan,ohiostate,a83,2024
+,Feng,women,epee,2,4,Ohio State, Feng,ohiostate,a84,2024
+,Mazur,women,epee,55,21,Ohio State, Mazur,ohiostate,a85,2024
+,Popa,women,epee,0,3,Ohio State, Popa,ohiostate,a86,2024
+,Santos,women,epee,5,3,Ohio State, Santos,ohiostate,a87,2024
+,Semikin,women,epee,30,29,Ohio State, Semikin,ohiostate,a88,2024
+,Viveros,women,epee,19,15,Ohio State, Viveros,ohiostate,a89,2024
+,Weiss,women,epee,17,16,Ohio State, Weiss,ohiostate,a90,2024
+,Whittemore,women,epee,20,30,Ohio State, Whittemore,ohiostate,a91,2024
+,Zhou,women,epee,13,7,Ohio State, Zhou,ohiostate,a92,2024
+Jared,Hammerstrom,men,saber,24,15,Stanford,Jared Hammerstrom,stanford,a93,2024
+Max,Scherer,men,saber,11,28,Stanford,Max Scherer,stanford,a94,2024
+Nash,Young,men,saber,15,24,Stanford,Nash Young,stanford,a95,2024
+Draper,Dayton,men,foil,2,7,Stanford,Draper Dayton,stanford,a96,2024
+Joshua,Kang,men,foil,5,21,Stanford,Joshua Kang,stanford,a97,2024
+Sanjay,Kasi,men,foil,19,19,Stanford,Sanjay Kasi,stanford,a98,2024
+Luke,Park,men,foil,14,24,Stanford,Luke Park,stanford,a99,2024
+Alexander,Jeon,men,foil,3,0,Stanford,Alexander Jeon,stanford,a100,2024
+Alexander,Jeon,men,epee,15,18,Stanford,Alexander Jeon,stanford,a101,2024
+Connor,Jeong,men,epee,15,18,Stanford,Connor Jeong,stanford,a102,2024
+Kai,Rayle,men,epee,23,10,Stanford,Kai Rayle,stanford,a103,2024
+Stanley,Zhou,men,epee,5,13,Stanford,Stanley Zhou,stanford,a104,2024
+Casey,Chan,women,saber,17,10,Stanford,Casey Chan,stanford,a105,2024
+Jeanette,Han,women,saber,8,16,Stanford,Jeanette Han,stanford,a106,2024
+Charlotte,He,women,saber,5,8,Stanford,Charlotte He,stanford,a107,2024
+Shining,Xi,women,saber,7,8,Stanford,Shining Xi,stanford,a108,2024
+Erika,Yong,women,saber,10,7,Stanford,Erika Yong,stanford,a109,2024
+Joy,Yun,women,saber,24,3,Stanford,Joy Yun,stanford,a110,2024
+Arianna,Cao,women,foil,9,3,Stanford,Arianna Cao,stanford,a111,2024
+Haley,Koo,women,foil,16,11,Stanford,Haley Koo,stanford,a112,2024
+Crystal,Qian,women,foil,18,11,Stanford,Crystal Qian,stanford,a113,2024
+Sofia,Raso,women,foil,16,14,Stanford,Sofia Raso,stanford,a114,2024
+Ellen,Wang,women,foil,11,14,Stanford,Ellen Wang,stanford,a115,2024
+Lauren,McLane,women,epee,17,25,Stanford,Lauren McLane,stanford,a116,2024
+Meghana,Paturu,women,epee,1,1,Stanford,Meghana Paturu,stanford,a117,2024
+Joelle,Warden,women,epee,0,38,Stanford,Joelle Warden,stanford,a118,2024
+Irene,Yeu,women,epee,23,16,Stanford,Irene Yeu,stanford,a119,2024
+Jeanette,Han,women,epee,0,3,Stanford,Jeanette Han,stanford,a120,2024
+Haley,Koo,women,epee,1,0,Stanford,Haley Koo,stanford,a121,2024
+Joy,Yun,women,epee,0,1,Stanford,Joy Yun,stanford,a122,2024
+Arwen,,mens,foil,36,10,Penn State,Arwen ,pennstate,a123,2024
+Aidan,,mens,foil,40,16,Penn State,Aidan ,pennstate,a124,2024
+Tit,Nam,mens,foil,19,4,Penn State,Tit Nam,pennstate,a125,2024
+Spencer,,mens,foil,22,16,Penn State,Spencer ,pennstate,a126,2024
+Alessio,,mens,foil,17,12,Penn State,Alessio ,pennstate,a127,2024
+Slava,,mens,foil,5,6,Penn State,Slava ,pennstate,a128,2024
+Donavyn,,mens,foil,2,1,Penn State,Donavyn ,pennstate,a129,2024
+Konner,,mens,foil,3,2,Penn State,Konner ,pennstate,a130,2024
+Dusan,,mens,foil,3,2,Penn State,Dusan ,pennstate,a131,2024
+Matthew,,mens,foil,3,2,Penn State,Matthew ,pennstate,a132,2024
+Caiden,,mens,foil,8,3,Penn State,Caiden ,pennstate,a133,2024
+Ignacio,,mens,foil,0,0,Penn State,Ignacio ,pennstate,a134,2024
+,Ting Wei,mens,epee,30,20,Penn State, Ting Wei,pennstate,a135,2024
+Mitchel,,mens,epee,22,18,Penn State,Mitchel ,pennstate,a136,2024
+Peter,,mens,epee,12,15,Penn State,Peter ,pennstate,a137,2024
+Zachary,,mens,epee,16,10,Penn State,Zachary ,pennstate,a138,2024
+Nick,,mens,epee,13,14,Penn State,Nick ,pennstate,a139,2024
+Vasil,,mens,epee,3,0,Penn State,Vasil ,pennstate,a140,2024
+Sultan,,mens,epee,0,1,Penn State,Sultan ,pennstate,a141,2024
+Kyle,,mens,epee,2,0,Penn State,Kyle ,pennstate,a142,2024
+Jacob,,mens,epee,0,0,Penn State,Jacob ,pennstate,a143,2024
+Neil,,mens,saber,43,10,Penn State,Neil ,pennstate,a144,2024
+Nicholaus,,mens,saber,0,0,Penn State,Nicholaus ,pennstate,a145,2024
+Kamar,,mens,saber,38,23,Penn State,Kamar ,pennstate,a146,2024
+Nico,,mens,saber,26,28,Penn State,Nico ,pennstate,a147,2024
+Jeff,,mens,saber,18,33,Penn State,Jeff ,pennstate,a148,2024
+Fernando,,mens,saber,0,0,Penn State,Fernando ,pennstate,a149,2024
+Sam,,womens,foil,18,6,Penn State,Sam ,pennstate,a150,2024
+Arianna,,womens,foil,51,27,Penn State,Arianna ,pennstate,a151,2024
+Ariel,,womens,foil,21,33,Penn State,Ariel ,pennstate,a152,2024
+Thea,,womens,foil,9,18,Penn State,Thea ,pennstate,a153,2024
+Eden,,womens,foil,31,25,Penn State,Eden ,pennstate,a154,2024
+Mikaela,,womens,foil,3,0,Penn State,Mikaela ,pennstate,a155,2024
+Clarisse,,womens,foil,2,1,Penn State,Clarisse ,pennstate,a156,2024
+Katya,,womens,epee,65,20,Penn State,Katya ,pennstate,a157,2024
+Jackie,,womens,epee,46,29,Penn State,Jackie ,pennstate,a158,2024
+Axelle,,womens,epee,50,33,Penn State,Axelle ,pennstate,a159,2024
+Devin,,mens,epee,26,17,Penn State,Devin ,pennstate,a160,2024
+Claire,,womens,epee,4,9,Penn State,Claire ,pennstate,a161,2024
+Eunyu,,womens,saber,17,16,Penn State,Eunyu ,pennstate,a162,2024
+Ola,,womens,saber,26,8,Penn State,Ola ,pennstate,a163,2024
+Aurora,,womens,saber,29,31,Penn State,Aurora ,pennstate,a164,2024
+Amelia,,womens,saber,12,25,Penn State,Amelia ,pennstate,a165,2024
+Mia,,womens,saber,26,24,Penn State,Mia ,pennstate,a166,2024
+Feyza,Achilova,womens,foil,19,2,Brown,Feyza Achilova,brown,a167,2024
+Anika,Breker,womens,foil,32,18,Brown,Anika Breker,brown,a168,2024
+Jessie,Chen,womens,foil,34,15,Brown,Jessie Chen,brown,a169,2024
+Samantha,Chon,womens,foil,28,9,Brown,Samantha Chon,brown,a170,2024
+Grace,Li,womens,foil,24,16,Brown,Grace Li,brown,a171,2024
+Apoorva,Talwalkar,womens,foil,28,8,Brown,Apoorva Talwalkar,brown,a172,2024
+Arianna,Baffa,womens,epee,24,37,Brown,Arianna Baffa,brown,a173,2024
+Amy,Mao,womens,epee,37,26,Brown,Amy Mao,brown,a174,2024
+Dasha,Smuk,womens,epee,34,36,Brown,Dasha Smuk,brown,a175,2024
+Sofia,Yee-Wadsworth,womens,epee,28,21,Brown,Sofia Yee-Wadsworth,brown,a176,2024
+Soph,Bililies,womens,saber,44,26,Brown,Soph Bililies,brown,a177,2024
+Alyssa,Sun,womens,saber,40,27,Brown,Alyssa Sun,brown,a178,2024
+Alexandra,Tzou,womens,saber,57,18,Brown,Alexandra Tzou,brown,a179,2024
+Rebecca,Whang,womens,saber,16,12,Brown,Rebecca Whang,brown,a180,2024
+Blodwen,Bindas,womens,epee,5,7,Northwestern,Blodwen Bindas,northwestern,a181,2024
+Anna,Damratoski,womens,epee,40,23,Northwestern,Anna Damratoski,northwestern,a182,2024
+Lia,Douglas,womens,epee,6,4,Northwestern,Lia Douglas,northwestern,a183,2024
+Asha,Henry,womens,epee,3,6,Northwestern,Asha Henry,northwestern,a184,2024
+Athina,Kwon,womens,epee,26,15,Northwestern,Athina Kwon,northwestern,a185,2024
+Hanna,Lipthay,womens,epee,37,20,Northwestern,Hanna Lipthay,northwestern,a186,2024
+Christina,Liu,womens,epee,18,20,Northwestern,Christina Liu,northwestern,a187,2024
+Kaylin,Nguyen,womens,epee,20,13,Northwestern,Kaylin Nguyen,northwestern,a188,2024
+Emma,Ning,womens,epee,27,18,Northwestern,Emma Ning,northwestern,a189,2024
+Ava,Wade-Currie,womens,epee,32,14,Northwestern,Ava Wade-Currie,northwestern,a190,2024
+Karen,Wang,womens,epee,33,23,Northwestern,Karen Wang,northwestern,a191,2024
+Annie,Wang,womens,epee,3,1,Northwestern,Annie Wang,northwestern,a192,2024
+Julia,Yoon,womens,epee,5,2,Northwestern,Julia Yoon,northwestern,a193,2024
+Erika,Castenada,womens,foil,0,0,Northwestern,Erika Castenada,northwestern,a194,2024
+Juliana,Hung,womens,foil,44,23,Northwestern,Juliana Hung,northwestern,a195,2024
+Allison,Lee,womens,foil,38,25,Northwestern,Allison Lee,northwestern,a196,2024
+Yejine,Lee,womens,foil,30,22,Northwestern,Yejine Lee,northwestern,a197,2024
+Rowan,Park,womens,foil,44,30,Northwestern,Rowan Park,northwestern,a198,2024
+Samantha,Serban,womens,foil,22,12,Northwestern,Samantha Serban,northwestern,a199,2024
+Ophelia,Tong,womens,foil,28,21,Northwestern,Ophelia Tong,northwestern,a200,2024
+Karina,Vasile,womens,foil,18,12,Northwestern,Karina Vasile,northwestern,a201,2024
+Adele,Bois,womens,saber,32,24,Northwestern,Adele Bois,northwestern,a202,2024
+Alex,Chen,womens,saber,18,9,Northwestern,Alex Chen,northwestern,a203,2024
+Levi,Hoogendoorn,womens,saber,47,17,Northwestern,Levi Hoogendoorn,northwestern,a204,2024
+Sumin,Liu,womens,saber,23,12,Northwestern,Sumin Liu,northwestern,a205,2024
+Amy,Lu,womens,saber,29,16,Northwestern,Amy Lu,northwestern,a206,2024
+Sky,Miller,womens,saber,45,13,Northwestern,Sky Miller,northwestern,a207,2024
+Megumi,Oishi,womens,saber,48,15,Northwestern,Megumi Oishi,northwestern,a208,2024
+Kailing,Sathyanath,womens,saber,19,16,Northwestern,Kailing Sathyanath,northwestern,a209,2024
+Esat,Adiloglu,men,epee,2,1,Stevens,Esat Adiloglu,stevens,a210,2024
+Jack,Corridon,men,epee,8,13,Stevens,Jack Corridon,stevens,a211,2024
+Matthew,Kemenosh,men,epee,4,2,Stevens,Matthew Kemenosh,stevens,a212,2024
+Jose,Martinez-Ponce,men,epee,7,4,Stevens,Jose Martinez-Ponce,stevens,a213,2024
+James,Morris,men,epee,10,9,Stevens,James Morris,stevens,a214,2024
+Patrick,Nohilly,men,epee,3,1,Stevens,Patrick Nohilly,stevens,a215,2024
+Patrick,Pan,men,epee,21,22,Stevens,Patrick Pan,stevens,a216,2024
+Riley,Parker,men,epee,26,15,Stevens,Riley Parker,stevens,a217,2024
+Caleb,Romero,men,epee,16,4,Stevens,Caleb Romero,stevens,a218,2024
+Nicholas,Smith,men,epee,26,32,Stevens,Nicholas Smith,stevens,a219,2024
+Noah,Tumibay,men,epee,39,18,Stevens,Noah Tumibay,stevens,a220,2024
+Yash,Yagnik,men,epee,11,2,Stevens,Yash Yagnik,stevens,a221,2024
+Andrew,Yurovchak,men,epee,34,21,Stevens,Andrew Yurovchak,stevens,a222,2024
+Thomas,Cheng,men,foil,4,9,Stevens,Thomas Cheng,stevens,a223,2024
+James,Glover,men,foil,29,36,Stevens,James Glover,stevens,a224,2024
+Rocco,Mathews,men,foil,25,51,Stevens,Rocco Mathews,stevens,a225,2024
+Erik,Marran,men,foil,13,39,Stevens,Erik Marran,stevens,a226,2024
+Evan,Peneiras,men,foil,1,4,Stevens,Evan Peneiras,stevens,a227,2024
+Nick,Reznick,men,foil,33,35,Stevens,Nick Reznick,stevens,a228,2024
+Liam,Thomas,men,foil,28,15,Stevens,Liam Thomas,stevens,a229,2024
+Aden,Vishnevsky,men,foil,22,7,Stevens,Aden Vishnevsky,stevens,a230,2024
+Cyrus,Erachshaw,men,saber,29,18,Stevens,Cyrus Erachshaw,stevens,a231,2024
+Tyler,Kometani,men,saber,25,3,Stevens,Tyler Kometani,stevens,a232,2024
+Colin,Mahoney,men,saber,36,25,Stevens,Colin Mahoney,stevens,a233,2024
+John,Morreale,men,saber,34,29,Stevens,John Morreale,stevens,a234,2024
+Myles,Reda,men,saber,10,3,Stevens,Myles Reda,stevens,a235,2024
+Eric,Romero,men,saber,0,0,Stevens,Eric Romero,stevens,a236,2024
+Kyle,Stamis,men,saber,14,9,Stevens,Kyle Stamis,stevens,a237,2024
+Christopher,Stone,men,saber,41,18,Stevens,Christopher Stone,stevens,a238,2024
+Dylan,Woodward,men,saber,31,26,Stevens,Dylan Woodward,stevens,a239,2024
+Polly,Adler,womens,epee,0,4,NYU,Polly Adler,nyu,a240,2024
+Polly,Adler,womens,foil,28,14,NYU,Polly Adler,nyu,a241,2024
+Polly,Adler,womens,saber,3,0,NYU,Polly Adler,nyu,a242,2024
+Aurora,Aschettino,womens,foil,30,31,NYU,Aurora Aschettino,nyu,a243,2024
+Aurora,Aschettino,womens,saber,2,1,NYU,Aurora Aschettino,nyu,a244,2024
+Leanne,Chan,womens,saber,42,38,NYU,Leanne Chan,nyu,a245,2024
+Sophia,Dondisch,womens,epee,48,54,NYU,Sophia Dondisch,nyu,a246,2024
+Hannah,Hoverman,womens,saber,19,27,NYU,Hannah Hoverman,nyu,a247,2024
+Claudia,Meyer,womens,foil,16,26,NYU,Claudia Meyer,nyu,a248,2024
+Sharon,Ni,womens,saber,31,37,NYU,Sharon Ni,nyu,a249,2024
+Lily,Papadakis,womens,epee,51,28,NYU,Lily Papadakis,nyu,a250,2024
+Annika,Santos,womens,foil,8,13,NYU,Annika Santos,nyu,a251,2024
+Annika,Santos,womens,saber,0,1,NYU,Annika Santos,nyu,a252,2024
+Miriam,Shoman,womens,saber,12,26,NYU,Miriam Shoman,nyu,a253,2024
+Zara,Sinha,womens,epee,16,29,NYU,Zara Sinha,nyu,a254,2024
+Maria,Stamos,womens,foil,35,15,NYU,Maria Stamos,nyu,a255,2024
+Maria,Stamos,womens,saber,2,4,NYU,Maria Stamos,nyu,a256,2024
+Sarah,Tong,womens,epee,11,36,NYU,Sarah Tong,nyu,a257,2024
+Ashley,van den Bol,womens,saber,10,30,NYU,Ashley van den Bol,nyu,a258,2024
+Renee,Wu,womens,foil,34,22,NYU,Renee Wu,nyu,a259,2024
+Renee,Wu,womens,saber,0,6,NYU,Renee Wu,nyu,a260,2024
+Madelyn,Zamelis,womens,epee,7,17,NYU,Madelyn Zamelis,nyu,a261,2024
+Madelyn,Zamelis,womens,foil,2,10,NYU,Madelyn Zamelis,nyu,a262,2024
+Ian,Adler,mens,epee,22,23,NYU,Ian Adler,nyu,a263,2024
+Tyler,Cho,mens,epee,16,33,NYU,Tyler Cho,nyu,a264,2024
+Farr,Dickson,mens,foil,41,22,NYU,Farr Dickson,nyu,a265,2024
+Steven,Grams,mens,epee,27,26,NYU,Steven Grams,nyu,a266,2024
+Vincent,Hong,mens,saber,30,9,NYU,Vincent Hong,nyu,a267,2024
+Oliver,Hu,mens,foil,43,23,NYU,Oliver Hu,nyu,a268,2024
+Michael,Kang,mens,epee,25,36,NYU,Michael Kang,nyu,a269,2024
+Ethan,Kim,mens,epee,1,7,NYU,Ethan Kim,nyu,a270,2024
+William,Lehr,mens,epee,1,4,NYU,William Lehr,nyu,a271,2024
+Wil,Margulies,mens,saber,24,4,NYU,Wil Margulies,nyu,a272,2024
+Bryce,McClain,mens,foil,35,22,NYU,Bryce McClain,nyu,a273,2024
+Jerry,Pan,mens,saber,30,12,NYU,Jerry Pan,nyu,a274,2024
+Joseph,Roy,mens,epee,3,1,NYU,Joseph Roy,nyu,a275,2024
+Andrew,Sledeski,mens,epee,2,4,NYU,Andrew Sledeski,nyu,a276,2024
+Andrew,Sledeski,mens,foil,13,16,NYU,Andrew Sledeski,nyu,a277,2024
+Brendan,Tang,mens,saber,1,3,NYU,Brendan Tang,nyu,a278,2024
+Nicholas,Topaz,mens,epee,5,3,NYU,Nicholas Topaz,nyu,a279,2024
+Adam,Wong,mens,foil,27,14,NYU,Adam Wong,nyu,a280,2024
+Nicholas,Wong,mens,epee,0,1,NYU,Nicholas Wong,nyu,a281,2024
+Darren,Yen,mens,saber,22,16,NYU,Darren Yen,nyu,a282,2024
+Felix,Zhao,mens,epee,12,9,NYU,Felix Zhao,nyu,a283,2024
+Matthew,Zhou,mens,saber,31,22,NYU,Matthew Zhou,nyu,a284,2024
+Kevin,Zu,mens,saber,30,14,NYU,Kevin Zu,nyu,a285,2024

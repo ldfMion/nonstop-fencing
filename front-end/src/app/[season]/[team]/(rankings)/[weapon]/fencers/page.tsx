@@ -5,8 +5,9 @@ import type {Metadata} from 'next';
 import {getFencersFromTeamAndWeapon} from '~/api';
 import SingleRankingWrapper from '~/app/[season]/[team]/(rankings)/single-ranking-wrapper';
 import FilteredFencerTableByRegion from '~/components/filtered-fencer-table-by-region';
-import {Season} from '~/models/Season';
 import {parseSeason} from '~/helpers/parseSeason';
+import {mapFencerWithRecordAndRegionToObject} from '~/helpers/objectMappers';
+import {fencerService} from '~/services';
 
 type Props = {
     params: {team: string; weapon: string; season: string};
@@ -28,13 +29,16 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 
 export default async function Fencers({params}: Props) {
     const season = parseSeason(params.season);
-    const team = parseTeam(params.team);
+    const gender = parseTeam(params.team);
     const weapon = parseWeapon(params.weapon);
-    const fencers = await getFencersFromTeamAndWeapon(season, team, weapon);
+    // const fencers = await getFencersFromTeamAndWeapon(season, team, weapon);
+    const fencers = await fencerService.getRegionsForFencers(
+        await fencerService.getSeasonRecords(await fencerService.getFromGenderAndWeapon(season, gender, weapon), season),
+    );
     const title = toTitleCase(`${params.team} ${params.weapon}`).replace('ns', "n's");
     return (
         <SingleRankingWrapper title={title} season={season}>
-            <FilteredFencerTableByRegion fencers={fencers.map((fencer) => ({...fencer}))} />
+            <FilteredFencerTableByRegion fencers={mapFencerWithRecordAndRegionToObject(fencers)} />
         </SingleRankingWrapper>
     );
 }

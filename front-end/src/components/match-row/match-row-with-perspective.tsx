@@ -4,17 +4,19 @@ import getUniversity from '~/api/getUniversity';
 import Side from './side';
 import Scores from './scores';
 import SingleScore from './single-score';
+import {University2} from '~/models/University2';
+import {Match2} from '~/models/Match2';
 
-export default async function MatchRowWithPerspective({match, perspective}: {match: Match; perspective: University}) {
+export default async function MatchRowWithPerspective({match, perspective}: {match: Match2; perspective: University2}) {
     const notPerspective = await getUniversity(perspective.id == match.teamAId ? match.teamBId : match.teamAId);
-    const win = perspective.id == match.winner;
+    const win = match.isWinner(perspective);
     // always leave the perspective university on top
     const flip = perspective.id == match.teamBId;
     return <MatchUI2 university={notPerspective} match={match} win={win} flip={flip} />;
 }
 
 // items-center px-[16px] py-[8px]
-function MatchUI2({university, match, win, flip}: {university: University; match: Match; win: boolean; flip: boolean}) {
+function MatchUI2({university, match, win, flip}: {university: University; match: Match2; win: boolean; flip: boolean}) {
     return (
         <li className="flex flex-row items-center justify-between gap-10 py-1">
             <div className="flex flex-row items-center gap-2">
@@ -22,7 +24,11 @@ function MatchUI2({university, match, win, flip}: {university: University; match
                 <Side university={university} />
             </div>
             <div className="flex flex-row items-center gap-3 text-center">
-                {win ? <SingleScore className="font-extrabold text-green-400">W</SingleScore> : <SingleScore className="font-extrabold text-red-400">L</SingleScore>}
+                {win ? (
+                    <SingleScore className="font-extrabold text-green-400">W</SingleScore>
+                ) : (
+                    <SingleScore className="font-extrabold text-red-400">L</SingleScore>
+                )}
                 <Scores match={match} flip={flip} />
             </div>
         </li>

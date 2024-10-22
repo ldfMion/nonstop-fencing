@@ -1,4 +1,5 @@
 import {Gender} from './Gender';
+import {ISeason} from './Season';
 import {Weapon} from './Weapon';
 
 export interface Fencer {
@@ -7,5 +8,7 @@ export interface Fencer {
     weapon: Weapon;
     gender: Gender;
     name: string;
-    toObject?: () => Fencer;
+    seasonWins?: number;
+    seasonLosses?: number;
+    season: ISeason;
 }

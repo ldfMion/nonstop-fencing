@@ -2,11 +2,25 @@ import {Fragment} from 'react';
 import getFencersFromUniversity from '~/api/getFencersFromUniversity';
 import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 import ListCard from '~/components/list-card';
+import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
+import {Fencer} from '~/models/Fencer';
 import {Gender} from '~/models/Gender';
-import type {University} from '~/models/University';
+import {HasRecord} from '~/models/HasRecord';
+import {ISeason} from '~/models/Season';
+import type {University2} from '~/models/University2';
+import {boutService, fencerService, recordService} from '~/services';
 
-export default async function SquadCard({university, team}: {university: University; team: Gender}): Promise<JSX.Element> {
-    const fencers = await getFencersFromUniversity(university.id, team);
+export default async function SquadCard({
+    university,
+    season,
+    gender,
+}: {
+    university: University2;
+    season: ISeason;
+    gender: Gender;
+}): Promise<JSX.Element> {
+    const fencers = await fencerService.get(season, {university: university, gender: gender});
+    const withRecords = await fencerService.getSeasonRecords(fencers, season);
     const dataUnavailable = fencers.length === 0;
     return (
         <ListCard title="Squad">
@@ -16,7 +30,7 @@ export default async function SquadCard({university, team}: {university: Univers
                     <p>Contact us if you can help!</p>
                 </Fragment>
             ) : (
-                <FilteredFencersByWeapon fencers={fencers.map((fencer) => fencer.toObject!())} />
+                <FilteredFencersByWeapon fencers={mapFencerWithRecordToObject(withRecords)} />
             )}
         </ListCard>
     );
