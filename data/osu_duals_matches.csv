@@ -1,5 +1,4 @@
 index,start row,foil start,epee start,saber start,team_a_id,team_b_id,overall_a,overall_b,foil_a,foil_b,epee_a,epee_b,saber_a,saber_b,id,gender,meet_id,season
 1,2,2,11,20,ohiostate,clevelandstate,22,5,9,0,6,3,7,2,1,men,1,2025
 2,29,29,38,47,ohiostate,clevelandstate,22,5,7,2,7,2,8,1,2,women,1,2025
-3,56,56,65,74,ohiostate,denison,26,1,9,0,9,0,8,1,3,men,1,2025
 4,83,83,92,101,ohiostate,denison,20,7,8,1,7,2,5,4,4,women,1,2025

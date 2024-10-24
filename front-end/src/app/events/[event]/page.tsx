@@ -12,30 +12,26 @@ import {Gender} from '~/models/Gender';
 import FilteredFencersByWeaponAndGender from '~/components/filtered-fencer-table-by-weapon-and-gender';
 import TeamRow from '~/components/team-row';
 import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
+import {eventRepository} from '~/repositories';
 
-const EVENT_INFO = {
-    title: 'OSU Duals',
-    date: '2024-9-29',
-    id: '1',
-    hostId: 'ohiostate',
-};
-
-export default async function OsuOpenPage() {
-    const host = await getUniversity(EVENT_INFO.hostId);
-    const matches = await matchService.fromMeet(EVENT_INFO.id);
+export default async function EventPage({params}: {params: {event: string}}) {
+    const event = await eventRepository.findById(params.event);
+    const host = event.hostId ? await getUniversity(event.hostId) : null;
+    const matches = await matchService.fromMeet(event.id);
+    if (matches.length === 0) {
+        return (
+            <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
+                <EventHeader title={event.displayName} isoDate={event.startDate.toISOString()} host={host} />
+                <Card className="p-6">We currently don't have results for this event. Come back later!</Card>
+            </main>
+        );
+    }
     const womensMatches = <MatchesCard title="Women's Matches" matches={matches.filter((match) => match.gender === Gender.WOMEN)} />;
     const mensMatches = <MatchesCard title="Men's Matches" matches={matches.filter((match) => match.gender === Gender.MEN)} />;
-    const bouts: Bout[] = await boutService.getFromMeet(EVENT_INFO.id);
-    const fencers = mapFencerWithRecordToObject(recordService.calculateRecordsFromBouts(await fencerService.getFromMeet(EVENT_INFO.id), bouts));
-    const universities = await universityService.getFromMeet(EVENT_INFO.id);
-    const mensTeams = recordService.calculateRecordsFromMatches(
-        universities,
-        matches.filter((match) => match.gender === Gender.MEN),
-    );
-    const womensTeams = recordService.calculateRecordsFromMatches(
-        universities,
-        matches.filter((match) => match.gender === Gender.WOMEN),
-    );
+    const bouts: Bout[] = await boutService.getFromMeet(event.id);
+    const fencers = mapFencerWithRecordToObject(recordService.calculateRecordsFromBouts(await fencerService.getFromMeet(event.id), bouts));
+    const mensTeams = await universityService.getFromMeet(event.id, Gender.MEN);
+    const womensTeams = await universityService.getFromMeet(event.id, Gender.WOMEN);
     const womensTeamsSection = (
         <ListCard title="Women's Teams">
             {womensTeams.map((team) => (
@@ -57,7 +53,7 @@ export default async function OsuOpenPage() {
     );
     return (
         <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
-            <EventHeader title={EVENT_INFO.title} isoDate={EVENT_INFO.date} host={host} />
+            <EventHeader title={event.displayName} isoDate={event.startDate.toISOString()} host={host} />
             <AdaptiveTiles
                 elements={[
                     [
@@ -76,13 +72,13 @@ export default async function OsuOpenPage() {
     );
 }
 
-function EventHeader({title, isoDate, host}: {title: string; isoDate: string; host: University}) {
+function EventHeader({title, isoDate, host}: {title: string; isoDate: string; host: University | null}) {
     return (
         <Card className="flex flex-col p-6">
             <div className="flex flex-col gap-2">
                 <div className="flex flex-row items-center gap-4">
                     <h2 className="text-xl font-extrabold md:text-4xl">{title}</h2>
-                    <Host university={host} className="text-xl font-bold" />
+                    {host && <Host university={host} className="text-xl font-bold" />}
                 </div>
                 <Date isoDate={isoDate} />
             </div>

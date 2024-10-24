@@ -16,9 +16,11 @@ export class UniversityService {
         private recordService: RecordService,
         private matchService: MatchService,
     ) {}
-    async getFromMeet(meetId: string): Promise<University2[]> {
-        const matchesFromMeet = await this.matchRepository.findByMeetId(meetId);
-        return await this.getFromMatches(matchesFromMeet);
+    async getFromMeet(meetId: string, gender: Gender): Promise<(University2 & HasRecord)[]> {
+        const matchesFromMeet = (await this.matchRepository.findByMeetId(meetId)).filter((match) => match.gender === gender);
+        const universities = await this.getFromMatches(matchesFromMeet);
+        const withRecord = this.recordService.calculateRecordsFromMatches(universities, matchesFromMeet);
+        return withRecord;
     }
     private async getFromMatches(matches: Match2[]): Promise<University2[]> {
         const all = (
