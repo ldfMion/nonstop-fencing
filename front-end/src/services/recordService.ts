@@ -10,15 +10,15 @@ export class RecordService {
     constructor() {}
     calculateRecordsFromBouts<T extends Fencer>(fencers: T[], bouts: Bout[]): (T & {record: Record; rating: number})[] {
         return fencers.map((fencer) => {
-            const wins = bouts.filter((bout) => !bout.isBye() && bout.includes(fencer) && bout.winnerId === fencer.id).length;
-            const losses = bouts.filter((bout) => !bout.isBye() && bout.includes(fencer) && bout.winnerId !== fencer.id).length;
+            const wins = bouts.filter((bout) => !bout.isBye() && bout.includes(fencer) && bout.winnerId === fencer.id);
+            const losses = bouts.filter((bout) => !bout.isBye() && bout.includes(fencer) && bout.winnerId !== fencer.id);
             return {
                 ...fencer,
                 record: {
-                    wins: wins,
-                    losses: losses,
+                    wins: wins.length,
+                    losses: losses.length,
                 },
-                rating: wins - losses,
+                rating: wins.length * (wins.length / (wins.length + losses.length)),
             };
         });
     }

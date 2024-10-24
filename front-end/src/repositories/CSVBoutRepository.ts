@@ -14,7 +14,9 @@ export class CSVBoutRepository extends CSVRepository<Bout> implements BoutReposi
     }
 
     async findByMatchId(matchId: string): Promise<Bout[]> {
-        return (await this.findAll()).filter((bout) => bout.matchId === matchId);
+        const all = await this.findAll();
+        const fromMatch = all.filter((bout) => bout.matchId === matchId);
+        return fromMatch;
     }
 }
 

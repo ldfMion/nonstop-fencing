@@ -25,7 +25,6 @@ export default async function MatchPage({params}: {params: {id: string}}) {
     const universityA = await universityService.getById(matchData.teamAId);
     const universityB = await universityService.getById(matchData.teamBId);
     const fencers = recordService.calculateRecordsFromBouts(await fencerService.getFromMatch(params.id), bouts);
-    console.log(fencers);
     const boutsSection = (
         <div className="flex flex-col gap-2">
             <PageHeading>Bouts</PageHeading>

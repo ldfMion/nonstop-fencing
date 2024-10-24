@@ -18,7 +18,6 @@ export abstract class CSVRepository<T extends {id: string}> implements Repositor
     async findAll(): Promise<T[]> {
         if (this.items == null) {
             this.items = await this.loadFromCSV();
-            return this.items;
         }
         return this.items;
     }

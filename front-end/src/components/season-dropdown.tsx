@@ -10,17 +10,11 @@ export default function SeasonDropdown({selectedSeason, seasons}: {selectedSeaso
 
     function handleChoose(season: string) {
         let path;
-        console.log('---------------');
-        console.log(selectedSeason.displayNameShort);
-        console.log(pathname);
-        console.log(pathname.includes(selectedSeason.displayNameShort));
         if (pathname.includes(selectedSeason.displayNameShort)) {
             path = pathname.replace(selectedSeason.displayNameShort, season);
         } else {
             path = `${season}/${pathname}`;
         }
-        console.log('pushing');
-        console.log(path);
         push(path);
     }
     return (

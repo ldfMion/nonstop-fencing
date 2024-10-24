@@ -55,7 +55,6 @@ export class FencerService {
         return await fencerRepository.findById(id);
     }
     async getSeasonRecords(fencers: Fencer[], season: ISeason): Promise<(Fencer & HasRecord)[]> {
-        console.log(fencers);
         const fencersWithSeasonRecords: (Fencer & HasRecord)[] = fencers
             .filter((fencer) => fencer.seasonWins && fencer.seasonLosses)
             .map((fencer) => ({
@@ -63,7 +62,6 @@ export class FencerService {
                 record: {wins: fencer.seasonWins!, losses: fencer.seasonLosses!},
                 rating: fencer.seasonWins! - fencer.seasonLosses!,
             }));
-        console.log(fencersWithSeasonRecords);
         const fencersWithoutSeasonRecords = fencers.filter((fencer) => !fencer.seasonWins && !fencer.seasonLosses);
         let fencersWithCalculatedRecords: (Fencer & HasRecord)[] = [];
         if (fencersWithoutSeasonRecords.length > 0) {

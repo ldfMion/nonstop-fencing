@@ -9,7 +9,6 @@ import {ISeason, Season} from '~/models/Season';
 
 export class CSVFencerRepository extends CSVRepository<Fencer> implements FencerRepository {
     protected parseRow(row: unknown): Fencer {
-        console.log('parsing fencer row');
         return new FencerFromCSV(row);
     }
     constructor(...csvFilePaths: string[]) {
@@ -38,13 +37,9 @@ class FencerFromCSV implements Fencer {
         this.gender = parseTeam(anyRow['gender']);
         if (anyRow['season_wins'] != undefined) {
             this.seasonWins = parseInt(anyRow['season_wins']);
-            console.log('has season wins');
-            console.log(this.seasonWins);
         }
         if (anyRow['season_losses'] != undefined) {
             this.seasonLosses = parseInt(anyRow['season_losses']);
-            console.log('has season losses');
-            console.log(this.seasonLosses);
         }
         this.season = new Season(parseInt(anyRow['season_end_year']));
     }
