@@ -13,7 +13,7 @@ import {Weapon} from '~/models/Weapon';
 import {boutService, fencerService, matchService, recordService, universityService} from '~/services';
 import Side from '~/components/match-row/side';
 import {University2} from '~/models/University2';
-import {mapFencerWithRecordAndRegionToObject, mapFencerWithRecordToObject} from '~/helpers/objectMappers';
+import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
 
 export default async function MatchPage({params}: {params: {id: string}}) {
     const matchData = await matchService.getById(params.id);
@@ -28,7 +28,7 @@ export default async function MatchPage({params}: {params: {id: string}}) {
     const fencers = recordService.calculateRecordsFromBouts(await fencerService.getFromMatch(params.id), bouts);
     const boutsSection = (
         <div className="flex flex-col gap-2">
-            <PageHeading>Bouts</PageHeading>
+            <PageHeading>Bout Results</PageHeading>
             <WeaponResults title="Foil" scoreA={matchData.foilA} scoreB={matchData.foilB} bouts={foil} teamA={universityA} teamB={universityB} />
             <WeaponResults title="Epee" scoreA={matchData.epeeA} scoreB={matchData.epeeB} bouts={epee} teamA={universityA} teamB={universityB} />
             <WeaponResults title="Saber" scoreA={matchData.saberA} scoreB={matchData.saberB} bouts={saber} teamA={universityA} teamB={universityB} />
@@ -36,7 +36,7 @@ export default async function MatchPage({params}: {params: {id: string}}) {
     );
     const fencersSection = (
         <div className="flex flex-col gap-2">
-            <PageHeading>Fencers</PageHeading>
+            <PageHeading>Fencer Stats</PageHeading>
             <ListCard>
                 <FilteredFencersByWeapon fencers={mapFencerWithRecordToObject(fencers)} />
             </ListCard>
