@@ -12,6 +12,33 @@ import TeamRow from '~/components/team-row';
 import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
 import {eventRepository} from '~/repositories';
 import type {University2} from '~/models/University2';
+import type {Metadata} from 'next';
+
+export async function generateMetadata({params}: {params: {event: string}}): Promise<Metadata> {
+    const event = await eventRepository.findById(params.event);
+    const title = `${event.displayName} Results - NCAA Fencing`;
+    const description = `Check out results and individual stats for ${event.displayName}`;
+    return {
+        title: title,
+        description: description,
+        openGraph: {
+            images: [`/team-icons/${event.hostId}`],
+            title: title,
+            description: description,
+        },
+    };
+}
+
+export async function generateStaticParams() {
+    const events = await eventRepository.findAll();
+    const paths = events.map((event) => ({
+        event: event.id,
+    }));
+    return paths;
+}
+
+export const dynamicParams = false;
+export const revalidate = false;
 
 export default async function EventPage({params}: {params: {event: string}}) {
     const event = await eventRepository.findById(params.event);
@@ -34,14 +61,14 @@ export default async function EventPage({params}: {params: {event: string}}) {
     const womensTeamsSection = (
         <ListCard title="Women's Teams">
             {womensTeams.map((team) => (
-                <TeamRow team={team} key={team.id} genderPath="womens" />
+                <TeamRow team={team} key={team.id} gender={Gender.WOMEN} />
             ))}
         </ListCard>
     );
     const mensTeamsSection = (
         <ListCard title="Men's Teams">
             {mensTeams.map((team) => (
-                <TeamRow team={team} key={team.id} genderPath="mens" />
+                <TeamRow team={team} key={team.id} gender={Gender.MEN} />
             ))}
         </ListCard>
     );
@@ -57,10 +84,10 @@ export default async function EventPage({params}: {params: {event: string}}) {
                 elements={[
                     [
                         {title: "Mens's Teams", content: mensTeamsSection},
-                        {title: "Men's Matches", content: mensMatches},
+                        {title: "Womens's Teams", content: womensTeamsSection},
                     ],
                     [
-                        {title: "Womens's Teams", content: womensTeamsSection},
+                        {title: "Men's Matches", content: mensMatches},
                         {title: "Women's Matches", content: womensMatches},
                     ],
                     [{title: 'Fencers', content: fencersSection}],

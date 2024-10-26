@@ -11,7 +11,7 @@ export abstract class CSVRepository<T extends {id: string}> implements Repositor
     async findById(id: string): Promise<T> {
         const value = (await this.findAll()).find((item) => item.id === id);
         if (value == undefined) {
-            throw new Error(`Item ${id} not found.`);
+            throw new Error(`Item ${id} not found. ${this.constructor.name}`);
         }
         return value;
     }

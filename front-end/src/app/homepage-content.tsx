@@ -41,23 +41,23 @@ export default async function HomePageContent({season}: {season: ISeason}) {
                     squads={squads.womens.foil}
                     title="Women's Foil"
                     url={`${season.displayNameShort}/womens/foil/squads`}
-                    genderPath="womens"
+                    gender={Gender.WOMEN}
                 />
                 <SquadList
                     squads={squads.womens.epee}
                     title="Women's Epee"
                     url={`${season.displayNameShort}/womens/epee/squads`}
-                    genderPath="womens"
+                    gender={Gender.WOMEN}
                 />
                 <SquadList
                     squads={squads.womens.saber}
                     title="Women's Saber"
                     url={`${season.displayNameShort}/womens/saber/squads`}
-                    genderPath="womens"
+                    gender={Gender.WOMEN}
                 />
-                <SquadList squads={squads.mens.foil} title="Men's Foil" url={`${season.displayNameShort}/mens/foil/squads`} genderPath="mens" />
-                <SquadList squads={squads.mens.epee} title="Men's Epee" url={`${season.displayNameShort}/mens/epee/squads`} genderPath="mens" />
-                <SquadList squads={squads.mens.saber} title="Men's Saber" url={`${season.displayNameShort}/mens/saber/squads`} genderPath="mens" />
+                <SquadList squads={squads.mens.foil} title="Men's Foil" url={`${season.displayNameShort}/mens/foil/squads`} gender={Gender.MEN} />
+                <SquadList squads={squads.mens.epee} title="Men's Epee" url={`${season.displayNameShort}/mens/epee/squads`} gender={Gender.MEN} />
+                <SquadList squads={squads.mens.saber} title="Men's Saber" url={`${season.displayNameShort}/mens/saber/squads`} gender={Gender.MEN} />
             </div>
         </main>
     );
@@ -71,7 +71,7 @@ async function TeamList({gender, season}: {gender: Gender; season: ISeason}): Pr
     return (
         <StandingsCard title={title} titleHref={url}>
             {teams.map((team) => (
-                <TeamRow team={team} genderPath={genderPath} key={team.id} />
+                <TeamRow team={team} gender={gender} key={team.id} />
             ))}
         </StandingsCard>
     );
@@ -87,21 +87,11 @@ function FencerList({fencers, title, url}: {fencers: (Fencer & HasRecord)[]; tit
     );
 }
 
-function SquadList({
-    squads,
-    title,
-    url,
-    genderPath,
-}: {
-    squads: Squad[] | (University2 & HasRecord)[];
-    title: string;
-    genderPath: 'mens' | 'womens';
-    url: string;
-}): JSX.Element {
+function SquadList({squads, title, url, gender}: {squads: (University2 & HasRecord)[]; title: string; gender: Gender; url: string}): JSX.Element {
     return (
         <StandingsCard title={title} key={title} titleHref={url}>
             {squads.map((squad) => (
-                <TeamRow team={squad} genderPath={genderPath} key={'id' in squad ? squad.id : squad.university.id} />
+                <TeamRow team={squad} gender={gender} key={squad.id} />
             ))}
         </StandingsCard>
     );

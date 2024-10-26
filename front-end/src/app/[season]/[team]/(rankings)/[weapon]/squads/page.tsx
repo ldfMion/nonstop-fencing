@@ -20,15 +20,15 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 }
 
 export default async function SquadsPage({params}: Props) {
-    const team = parseTeam(params.team);
+    const gender = parseTeam(params.team);
     const weapon = parseWeapon(params.weapon);
     const season = parseSeason(params.season);
-    const squads = await getSquadsFromTeamAndWeapon(season, team, weapon);
+    const squads = await getSquadsFromTeamAndWeapon(season, gender, weapon);
     const title = toTitleCase(`${params.team} ${params.weapon} Squads`).replace('ns', "n's");
     return (
         <SingleRankingWrapper title={title} season={season}>
             {squads.map((squad) => (
-                <TeamRow team={squad} genderPath={params.team.includes('mens') ? 'mens' : 'womens'} key={squad.id} />
+                <TeamRow team={squad} gender={gender} key={squad.id} />
             ))}
         </SingleRankingWrapper>
     );

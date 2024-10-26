@@ -26,13 +26,13 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 
 export default async function TeamRankingPage({params}: Props) {
     const season = parseSeason(params.season);
-    const team = parseTeam(params.team);
-    const teams = await getTeams(season, team);
+    const gender = parseTeam(params.team);
+    const teams = await getTeams(season, gender);
     const title = toTitleCase(`${params.team}`).replace('ns', "n's") + ' Teams';
     return (
         <SingleRankingWrapper title={title} season={season}>
             {teams.map((team) => (
-                <TeamRow team={team} genderPath={params.team.includes('mens') ? 'mens' : 'womens'} key={team.id} />
+                <TeamRow team={team} gender={gender} key={team.id} />
             ))}
         </SingleRankingWrapper>
     );

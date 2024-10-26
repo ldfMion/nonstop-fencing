@@ -3,44 +3,21 @@ import RankingRow from './ranking-row';
 import type {HasRecord} from '~/models/HasRecord';
 import type {ITeam} from '~/models/Team';
 import type {Squad} from '~/models/Squad';
+import {Gender} from '~/models/Gender';
 
-export default function TeamRowWrapper({team, genderPath}: {team: (University2 & HasRecord) | ITeam | Squad; genderPath: 'mens' | 'womens'}) {
-    if ('id' in team) {
-        // is a University2 & HasRecord
-        return <TeamRow team={team} genderPath={genderPath} />;
-    }
-    if ('overall' in team) {
-        // is a ITeam
-        return (
-            <RankingRow
-                name={team.university.displayNameShort}
-                record={team.overall}
-                iconUniversityId={team.university.id}
-                href={`/${genderPath}/universities/${team.university.id}`}
-                key={team.university.id}
-            />
-        );
-    }
-    // is a squad
-    return (
-        <RankingRow
-            name={team.university.displayNameShort}
-            record={team.record}
-            iconUniversityId={team.university.id}
-            href={`/${genderPath}/universities/${team.university.id}`}
-            key={team.university.id}
-        />
-    );
+export default function TeamRowWrapper({team, gender}: {team: University2 & HasRecord; gender: Gender}) {
+    // is a University2 & HasRecord
+    return <TeamRow team={team} gender={gender} />;
 }
 
-function TeamRow({team, genderPath}: {team: University2 & HasRecord; genderPath: string}) {
+function TeamRow({team, gender}: {team: University2 & HasRecord; gender: Gender}) {
     return (
         <RankingRow
             name={team.displayNameShort}
             record={team.record}
             iconUniversityId={team.id}
             key={team.id}
-            href={`/${genderPath}/mens/universities/${team.id}`}
+            href={`/24-25/${gender == Gender.MEN ? 'mens' : 'womens'}/universities/${team.id}`}
         />
     );
 }

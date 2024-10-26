@@ -8,14 +8,14 @@ import getSquadsFromTeamAndWeapon from './getSquadsFromTeamAndWeapon';
 
 export default async function getHomePageSquads(season: ISeason): Promise<{
     mens: {
-        foil: Squad[] | (University2 & HasRecord)[];
-        epee: Squad[] | (University2 & HasRecord)[];
-        saber: Squad[] | (University2 & HasRecord)[];
+        foil: (University2 & HasRecord)[];
+        epee: (University2 & HasRecord)[];
+        saber: (University2 & HasRecord)[];
     };
     womens: {
-        foil: Squad[] | (University2 & HasRecord)[];
-        epee: Squad[] | (University2 & HasRecord)[];
-        saber: Squad[] | (University2 & HasRecord)[];
+        foil: (University2 & HasRecord)[];
+        epee: (University2 & HasRecord)[];
+        saber: (University2 & HasRecord)[];
     };
 }> {
     return {
@@ -32,7 +32,7 @@ export default async function getHomePageSquads(season: ISeason): Promise<{
     };
 }
 
-function getTopFive(list: Squad[] | (University2 & HasRecord)[]): Squad[] | (University2 & HasRecord)[] {
+function getTopFive(list: (University2 & HasRecord)[]): (University2 & HasRecord)[] {
     const top = list.slice(0, 5);
     return top;
 }

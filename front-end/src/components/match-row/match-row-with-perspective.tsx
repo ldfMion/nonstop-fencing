@@ -4,6 +4,7 @@ import SingleScore from './single-score';
 import type {University2} from '~/models/University2';
 import type {Match2} from '~/models/Match2';
 import {universityService} from '~/services';
+import ConditionalLinkWrapper from '../conditional-link-wrapper';
 
 export default async function MatchRowWithPerspective({match, perspective}: {match: Match2; perspective: University2}) {
     const notPerspective = await universityService.getById(perspective.id == match.teamAId ? match.teamBId : match.teamAId);
@@ -16,20 +17,25 @@ export default async function MatchRowWithPerspective({match, perspective}: {mat
 // items-center px-[16px] py-[8px]
 function MatchUI2({university, match, win, flip}: {university: University2; match: Match2; win: boolean; flip: boolean}) {
     return (
-        <li className="flex flex-row items-center justify-between gap-10 py-1">
-            <div className="flex flex-row items-center gap-2">
-                <p className="md:text-md text-sm font-bold">vs.</p>
-                <Side university={university} />
-            </div>
-            <div className="flex flex-row items-center gap-3 text-center">
-                {win ? (
-                    <SingleScore className="font-extrabold text-green-400">W</SingleScore>
-                ) : (
-                    <SingleScore className="font-extrabold text-red-400">L</SingleScore>
-                )}
-                <Scores match={match} flip={flip} />
-            </div>
-        </li>
+        <ConditionalLinkWrapper
+            href={match.id != '' ? `/matches/${match.id}` : undefined}
+            className="rounded-md transition-all hover:bg-accent hover:px-1"
+        >
+            <li className="flex flex-row items-center justify-between gap-10 rounded-md py-1">
+                <div className="flex flex-row items-center gap-2">
+                    <p className="md:text-md text-sm font-bold">vs.</p>
+                    <Side university={university} />
+                </div>
+                <div className="flex flex-row items-center gap-3 text-center">
+                    {win ? (
+                        <SingleScore className="font-extrabold text-green-400">W</SingleScore>
+                    ) : (
+                        <SingleScore className="font-extrabold text-red-400">L</SingleScore>
+                    )}
+                    <Scores match={match} flip={flip} />
+                </div>
+            </li>
+        </ConditionalLinkWrapper>
     );
 }
 
