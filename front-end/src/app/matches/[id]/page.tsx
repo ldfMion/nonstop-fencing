@@ -13,6 +13,7 @@ import {Weapon} from '~/models/Weapon';
 import {boutService, fencerService, matchService, recordService, universityService} from '~/services';
 import Side from '~/components/match-row/side';
 import {University2} from '~/models/University2';
+import {mapFencerWithRecordAndRegionToObject, mapFencerWithRecordToObject} from '~/helpers/objectMappers';
 
 export default async function MatchPage({params}: {params: {id: string}}) {
     const matchData = await matchService.getById(params.id);
@@ -37,7 +38,7 @@ export default async function MatchPage({params}: {params: {id: string}}) {
         <div className="flex flex-col gap-2">
             <PageHeading>Fencers</PageHeading>
             <ListCard>
-                <FilteredFencersByWeapon fencers={fencers} />
+                <FilteredFencersByWeapon fencers={mapFencerWithRecordToObject(fencers)} />
             </ListCard>
         </div>
     );

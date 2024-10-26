@@ -28,11 +28,7 @@ export default async function SquadsPage({params}: Props) {
     return (
         <SingleRankingWrapper title={title} season={season}>
             {squads.map((squad) => (
-                <TeamRow
-                    team={squad}
-                    genderPath={params.team.includes('mens') ? 'mens' : 'womens'}
-                    key={'id' in squad ? squad.id : squad.university.id}
-                />
+                <TeamRow team={squad} genderPath={params.team.includes('mens') ? 'mens' : 'womens'} key={squad.id} />
             ))}
         </SingleRankingWrapper>
     );

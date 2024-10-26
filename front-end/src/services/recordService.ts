@@ -18,7 +18,7 @@ export class RecordService {
                     wins: wins.length,
                     losses: losses.length,
                 },
-                rating: wins.length * (wins.length / (wins.length + losses.length)),
+                rating: wins.length + losses.length == 0 ? 0 : wins.length * (wins.length / (wins.length + losses.length)),
             };
         });
     }
