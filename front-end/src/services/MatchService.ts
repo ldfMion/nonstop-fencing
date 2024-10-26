@@ -11,16 +11,24 @@ export class MatchService {
     }
     async get({season, gender, university}: {season?: ISeason; gender?: Gender; university?: University2}): Promise<Match2[]> {
         let matches = await this.matchRepository.findAll();
+        console.log(matches.map((m) => m.id));
         if (gender !== undefined) {
+            console.log('filtering by gender');
             matches = matches.filter((match) => match.gender === gender);
+            console.log(matches.map((m) => m.id));
         }
-        console.log('gender filtered');
         if (season) {
+            console.log('filtering by season');
+            console.log(matches.map((m) => m.id));
+            console.log(matches.map((m) => m.seasonId));
             matches = matches.filter((match) => match.seasonId === season.id);
+            console.log(matches.map((m) => m.id));
         }
         if (university) {
             matches = matches.filter((match) => match.includes(university));
         }
+        console.log('filtered matches');
+        console.log(matches);
         return matches;
     }
     async getById(id: string): Promise<Match2> {
