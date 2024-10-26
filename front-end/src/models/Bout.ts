@@ -11,6 +11,7 @@ export interface Bout {
     ncaaStatus: boolean;
     weapon: Weapon;
     winnerId: string;
+    order: number;
     includes(fencer: Fencer): boolean;
     isBye(): boolean;
 }

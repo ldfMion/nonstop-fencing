@@ -1,8 +1,6 @@
 import {Gender} from '~/models/Gender';
 import {ISeason} from '~/models/Season';
 import getTeams from './getTeams';
-import {recordService} from '~/services';
-import {matchRepository, universityRepository} from '~/repositories';
 import {University2} from '~/models/University2';
 import {ITeam} from '~/models/Team';
 import {HasRecord} from '~/models/HasRecord';

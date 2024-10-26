@@ -86,6 +86,8 @@ function WeaponResults({
     teamB: University2;
 }) {
     const aWins = scoreA > scoreB;
+    bouts.sort((a, b) => a.order - b.order);
+    console.log(bouts);
     return (
         <ListCard title={title}>
             <Fragment>

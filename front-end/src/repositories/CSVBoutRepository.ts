@@ -29,6 +29,7 @@ class BoutFromCSV implements Bout {
     scoreB: number;
     ncaaStatus: boolean;
     weapon: Weapon;
+    order: number;
     constructor(row: unknown) {
         const anyRow = row as any;
         this.id = anyRow['id'];
@@ -39,6 +40,7 @@ class BoutFromCSV implements Bout {
         this.scoreB = parseInt(anyRow['score_b']);
         this.ncaaStatus = anyRow['ncaa_status'] === 'TRUE';
         this.weapon = parseWeapon(anyRow['weapon']);
+        this.order = parseInt(anyRow['order']);
     }
     get winnerId() {
         return this.scoreA > this.scoreB ? this.fencerAId : this.fencerBId;
