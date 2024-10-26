@@ -1,7 +1,9 @@
-import {Season} from '~/models/Season';
-
 export async function generateStaticParams() {
-    return [new Season(2023).displayNameShort, new Season(2024).displayNameShort];
+    const seasons = ['24-25', '23-24'];
+    const paths = seasons.map((season) => ({
+        season: season,
+    }));
+    return paths;
 }
 
 export const dynamicParams = false;
