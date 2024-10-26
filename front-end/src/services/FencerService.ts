@@ -1,16 +1,15 @@
-import {Bout} from '~/models/Bout';
-import {Fencer} from '~/models/Fencer';
-import {Gender} from '~/models/Gender';
-import {HasRecord} from '~/models/HasRecord';
-import {Region} from '~/models/Region';
-import {ISeason, Season} from '~/models/Season';
-import {University2} from '~/models/University2';
-import {Weapon} from '~/models/Weapon';
+import type {Bout} from '~/models/Bout';
+import type {Fencer} from '~/models/Fencer';
+import type {Gender} from '~/models/Gender';
+import type {HasRecord} from '~/models/HasRecord';
+import type {Region} from '~/models/Region';
+import type {ISeason} from '~/models/Season';
+import type {University2} from '~/models/University2';
+import type {Weapon} from '~/models/Weapon';
 import {boutRepository, fencerRepository, matchRepository, universityRepository} from '~/repositories';
 import {boutService, recordService} from '.';
 
 export class FencerService {
-    constructor() {}
     async get(season: ISeason, {university, gender}: {university?: University2; gender?: Gender}): Promise<Fencer[]> {
         let fencers = await fencerRepository.findAll();
         fencers = fencers.filter((fencer) => fencer.season.id === season.id);

@@ -1,6 +1,5 @@
-import Match from '~/models/Match';
 import SingleScore from './single-score';
-import {Match2} from '~/models/Match2';
+import type {Match2} from '~/models/Match2';
 
 export default function Scores({match, flip}: {match: Match2; flip: boolean}) {
     return (

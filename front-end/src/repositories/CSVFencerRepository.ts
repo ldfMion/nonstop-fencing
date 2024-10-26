@@ -1,14 +1,16 @@
-import {FencerRepository} from './FencerRepository';
-import {Fencer} from '~/models/Fencer';
+import type {FencerRepository} from './FencerRepository';
+import type {Fencer} from '~/models/Fencer';
 import parseWeapon from '~/helpers/parseWeapon';
 import parseTeam from '~/helpers/parseTeam';
 import {CSVRepository} from './CSVRepository';
-import {Weapon} from '~/models/Weapon';
-import {Gender} from '~/models/Gender';
-import {ISeason, Season} from '~/models/Season';
+import type {Weapon} from '~/models/Weapon';
+import type {Gender} from '~/models/Gender';
+import type {ISeason} from '~/models/Season';
+import {Season} from '~/models/Season';
+import {parseOptionalRowNumberProperty, parseRowTextProperty} from '~/helpers/csvUtils';
 
 export class CSVFencerRepository extends CSVRepository<Fencer> implements FencerRepository {
-    protected parseRow(row: unknown): Fencer {
+    protected parseRow(row: object): Fencer {
         return new FencerFromCSV(row);
     }
     constructor(...csvFilePaths: string[]) {
@@ -28,20 +30,15 @@ class FencerFromCSV implements Fencer {
     seasonWins?: number;
     seasonLosses?: number;
     season: ISeason;
-    constructor(row: unknown) {
-        const anyRow = row as any;
-        this.id = anyRow['id'];
-        this.name = anyRow['name'];
-        this.universityId = anyRow['university_id'];
-        this.weapon = parseWeapon(anyRow['weapon']);
-        this.gender = parseTeam(anyRow['gender']);
-        if (anyRow['season_wins'] != undefined) {
-            this.seasonWins = parseInt(anyRow['season_wins']);
-        }
-        if (anyRow['season_losses'] != undefined) {
-            this.seasonLosses = parseInt(anyRow['season_losses']);
-        }
-        this.season = new Season(parseInt(anyRow['season_end_year']));
+    constructor(row: object) {
+        this.id = parseRowTextProperty('id', row);
+        this.name = parseRowTextProperty('name', row);
+        this.universityId = parseRowTextProperty('university_id', row);
+        this.weapon = parseWeapon(parseRowTextProperty('weapon', row));
+        this.gender = parseTeam(parseRowTextProperty('gender', row));
+        this.seasonWins = parseOptionalRowNumberProperty('season_wins', row);
+        this.seasonLosses = parseOptionalRowNumberProperty('season_losses', row);
+        this.season = new Season(parseInt(parseRowTextProperty('season_end_year', row)));
     }
     toObject(): Fencer {
         return {

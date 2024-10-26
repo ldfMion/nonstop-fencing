@@ -1,13 +1,13 @@
-import {Match2} from '~/models/Match2';
+import type {Match2} from '~/models/Match2';
 import SingleScore from './single-score';
-import getUniversity from '~/api/getUniversity';
 import Side from './side';
 import clsx from 'clsx';
 import Link from 'next/link';
+import {universityService} from '~/services';
 
 export default async function MatchRowWithoutPerspective({match}: {match: Match2}) {
-    const universityA = await getUniversity(match.teamAId);
-    const universityB = await getUniversity(match.teamBId);
+    const universityA = await universityService.getById(match.teamAId);
+    const universityB = await universityService.getById(match.teamBId);
     const topWon = match.overallA > match.overallB;
     return (
         <Link href={`/matches/${match.id}`} legacyBehavior>

@@ -1,13 +1,14 @@
-import {BoutRepository} from './BoutRepository';
+import type {University2} from '~/models/University2';
+import type {BoutRepository} from './BoutRepository';
 import {CSVBoutRepository} from './CSVBoutRepository';
 import {CSVEventRepository} from './CSVEventRepository';
 import {CSVFencerRepository} from './CSVFencerRepository';
 import {CSVMatchRepository} from './CSVMatchRepository';
 import {CSVUniversityRepository} from './CSVUniversityRepository';
-import {EventRepository} from './EventRepository';
-import {FencerRepository} from './FencerRepository';
-import {MatchRepository} from './MatchRepository';
-import {UniversityRepository} from './UniversityRepository';
+import type {EventRepository} from './EventRepository';
+import type {FencerRepository} from './FencerRepository';
+import type {MatchRepository} from './MatchRepository';
+import type {Repository} from './Repository';
 
 const MATCHES_FILENAME_2025 = '../data/osu_duals_matches.csv';
 const MATCHES_FILENAME_2024_MEN = '../data/team-results-men.csv';
@@ -25,5 +26,5 @@ export const matchRepository = new CSVMatchRepository(
 ) as MatchRepository;
 export const boutRepository = new CSVBoutRepository(BOUTS_FILENAME) as BoutRepository;
 export const fencerRepository = new CSVFencerRepository(FENCERS_FILENAME_2024, FENCERS_FILENAME_2025) as FencerRepository;
-export const universityRepository = new CSVUniversityRepository(UNIVERSITIES_FILENAME) as UniversityRepository;
+export const universityRepository = new CSVUniversityRepository(UNIVERSITIES_FILENAME) as Repository<University2>;
 export const eventRepository = new CSVEventRepository(EVENTS_FILENAME) as EventRepository;

@@ -1,8 +1,6 @@
 import {Gender} from '~/models/Gender';
-import assertString from './assertString';
 
-export default function parseGender(data: any): Gender {
-    assertString(data);
+export default function parseGender(data: string): Gender {
     switch (data.toLowerCase()) {
         case 'men':
         case 'mens':

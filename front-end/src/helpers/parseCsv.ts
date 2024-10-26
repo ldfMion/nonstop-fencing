@@ -2,15 +2,15 @@ import path from 'path';
 import csv from 'csv-parser';
 import fs from 'fs';
 
-export default async function parseCSV<T>(filePath: string, parseRow: (row: unknown) => T): Promise<T[]> {
+export default async function parseCSV<T>(filePath: string, parseRow: (row: object) => T): Promise<T[]> {
     //console.log('parsing csv ' + filePath);
-    const results: unknown[] = [];
+    const results: object[] = [];
     const csvFilePath = path.join(process.cwd(), filePath);
-    let formattedResults: Promise<T[]> = new Promise((resolve, reject) =>
+    const formattedResults: Promise<T[]> = new Promise<T[]>((resolve) =>
         fs
             .createReadStream(csvFilePath)
             .pipe(csv())
-            .on('data', (data) => results.push(data))
+            .on('data', (data: object) => results.push(data))
             .on('end', () => {
                 const formattedResults: T[] = results.map(parseRow);
                 resolve(formattedResults);

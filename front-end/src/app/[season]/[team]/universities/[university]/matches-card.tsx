@@ -1,17 +1,15 @@
 import {Fragment} from 'react';
-import getMatchesFromUniversity from '~/api/getMatchesFromUniversity';
 import ListCard from '~/components/list-card';
 import MatchRow from '~/components/match-row';
 import {Separator} from '~/components/ui/separator';
-import type Match from '~/models/Match';
 import Date from '~/components/date';
 import MatchTableHeader from '~/components/match-table-header';
-import {Gender} from '~/models/Gender';
+import type {Gender} from '~/models/Gender';
 import type {University2} from '~/models/University2';
 import {matchService} from '~/services';
-import {Match2} from '~/models/Match2';
+import type {Match2} from '~/models/Match2';
 import {eventRepository} from '~/repositories';
-import {ISeason} from '~/models/Season';
+import type {ISeason} from '~/models/Season';
 
 export default async function MatchesCard({
     university,

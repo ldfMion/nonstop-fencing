@@ -1,11 +1,10 @@
-import getRecordsFromCsv from '~/helpers/getRecordsFromCsv';
 import getTopFive from '~/helpers/getTop5';
 import {Gender} from '~/models/Gender';
 import {Weapon} from '~/models/Weapon';
-import {ISeason, Season} from '~/models/Season';
-import {boutService, fencerService, recordService} from '~/services';
-import {Fencer} from '~/models/Fencer';
-import {HasRecord} from '~/models/HasRecord';
+import type {ISeason} from '~/models/Season';
+import {fencerService} from '~/services';
+import type {Fencer} from '~/models/Fencer';
+import type {HasRecord} from '~/models/HasRecord';
 
 export default async function getHomePageFencers(season: ISeason): Promise<{
     mens: {

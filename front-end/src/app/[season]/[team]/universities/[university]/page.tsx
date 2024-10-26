@@ -1,6 +1,5 @@
 import parseTeam from '~/helpers/parseTeam';
 import Link from 'next/link';
-import getUniversity from '~/api/getUniversity';
 import Record from '~/components/record';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
@@ -14,11 +13,12 @@ import type {Metadata} from 'next';
 import toTitleCase from '~/helpers/toTitleCase';
 import {Gender} from '~/models/Gender';
 import {AdaptiveTiles} from '~/components/adaptive-tiles';
-import {ISeason, Season} from '~/models/Season';
+import type {ISeason} from '~/models/Season';
+import {Season} from '~/models/Season';
 import SeasonDropdown from '~/components/season-dropdown';
 import {parseSeason} from '~/helpers/parseSeason';
 import {matchService, recordService, universityService} from '~/services';
-import {University2} from '~/models/University2';
+import type {University2} from '~/models/University2';
 import assert from 'assert';
 import {Weapon} from '~/models/Weapon';
 
@@ -26,7 +26,7 @@ type Props = {params: {season: string; university: string; team: string}};
 
 export async function generateMetadata({params}: Props): Promise<Metadata> {
     const gender = params.team.replace('ns', "n's");
-    const university = await getUniversity(params.university);
+    const university = await universityService.getById(params.university);
     const title = `${university.displayNameShort} - Fencers, Match Results (${toTitleCase(gender)})`;
     const description = `Check out ${university.displayNameShort}'s ${gender} fencers and past matches`;
     return {

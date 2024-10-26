@@ -1,15 +1,15 @@
 import React from 'react';
-import getUniversity from '~/api/getUniversity';
 import DateComponent from '~/components/date';
 import SeasonDropdown from '~/components/season-dropdown';
 import {Card, CardHeader, CardTitle} from '~/components/ui/card';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '~/components/ui/tabs';
-import {Event} from '~/models/Event';
+import type {Event} from '~/models/Event';
 import {Season} from '~/models/Season';
-import {University} from '~/models/University';
 import Host from '~/components/host';
 import ConditionalLinkWrapper from '~/components/conditional-link-wrapper';
 import {eventRepository} from '~/repositories';
+import {universityService} from '~/services';
+import type {University2} from '~/models/University2';
 
 export default async function EventsPage({params}: {params: {season: string}}) {
     let currentSeason;
@@ -35,7 +35,11 @@ export default async function EventsPage({params}: {params: {season: string}}) {
                     <h2 className="px-4 text-3xl font-semibold">Events</h2>
                     <SeasonDropdown selectedSeason={{...currentSeason}} seasons={[{...new Season(2025)}]} />
                 </div>
-                {hasPastAndUpcoming ? <EventTabsWrapper upcoming={<EventsList events={upcoming} />} past={<EventsList events={past} />} /> : <EventsList events={events} />}
+                {hasPastAndUpcoming ? (
+                    <EventTabsWrapper upcoming={<EventsList events={upcoming} />} past={<EventsList events={past} />} />
+                ) : (
+                    <EventsList events={events} />
+                )}
             </div>
         </main>
     );
@@ -57,9 +61,9 @@ function EventsList({events}: {events: Event[]}) {
 }
 
 async function EventCard({event}: {event: Event}) {
-    let host: University | null = null;
+    let host: University2 | null = null;
     if (event.hostId) {
-        host = await getUniversity(event.hostId);
+        host = await universityService.getById(event.hostId);
     }
     const eventUrl = `/events/${event.id}`;
     return (

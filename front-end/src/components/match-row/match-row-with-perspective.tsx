@@ -1,14 +1,12 @@
-import type {University} from '~/models/University';
-import type Match from '~/models/Match';
-import getUniversity from '~/api/getUniversity';
 import Side from './side';
 import Scores from './scores';
 import SingleScore from './single-score';
-import {University2} from '~/models/University2';
-import {Match2} from '~/models/Match2';
+import type {University2} from '~/models/University2';
+import type {Match2} from '~/models/Match2';
+import {universityService} from '~/services';
 
 export default async function MatchRowWithPerspective({match, perspective}: {match: Match2; perspective: University2}) {
-    const notPerspective = await getUniversity(perspective.id == match.teamAId ? match.teamBId : match.teamAId);
+    const notPerspective = await universityService.getById(perspective.id == match.teamAId ? match.teamBId : match.teamAId);
     const win = match.isWinner(perspective);
     // always leave the perspective university on top
     const flip = perspective.id == match.teamBId;
@@ -16,7 +14,7 @@ export default async function MatchRowWithPerspective({match, perspective}: {mat
 }
 
 // items-center px-[16px] py-[8px]
-function MatchUI2({university, match, win, flip}: {university: University; match: Match2; win: boolean; flip: boolean}) {
+function MatchUI2({university, match, win, flip}: {university: University2; match: Match2; win: boolean; flip: boolean}) {
     return (
         <li className="flex flex-row items-center justify-between gap-10 py-1">
             <div className="flex flex-row items-center gap-2">

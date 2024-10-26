@@ -1,4 +1,4 @@
-import {Region} from './Region';
+import type {Region} from './Region';
 
 export type HasRegion = {
     region: Region;

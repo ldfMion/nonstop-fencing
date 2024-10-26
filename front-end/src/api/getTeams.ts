@@ -1,9 +1,7 @@
-import getUniversitiesfromCsv from '~/helpers/getUniversitiesFromCsv';
-import {Gender} from '~/models/Gender';
-import {HasRecord} from '~/models/HasRecord';
-import {ISeason, Season} from '~/models/Season';
-import type {ITeam} from '~/models/Team';
-import {University2} from '~/models/University2';
+import type {Gender} from '~/models/Gender';
+import type {HasRecord} from '~/models/HasRecord';
+import type {ISeason} from '~/models/Season';
+import type {University2} from '~/models/University2';
 import {matchService, recordService, universityService} from '~/services';
 
 export default async function getTeams(season: ISeason, gender: Gender): Promise<(University2 & HasRecord)[]> {

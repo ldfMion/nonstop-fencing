@@ -1,17 +1,18 @@
 import parseTeam from '~/helpers/parseTeam';
-import {Match2} from '~/models/Match2';
-import {MatchRepository} from './MatchRepository';
+import type {Match2} from '~/models/Match2';
+import type {MatchRepository} from './MatchRepository';
 import {CSVRepository} from './CSVRepository';
-import {Gender} from '~/models/Gender';
-import {University2} from '~/models/University2';
+import type {Gender} from '~/models/Gender';
+import type {University2} from '~/models/University2';
 import {Weapon} from '~/models/Weapon';
 import {Season} from '~/models/Season';
+import {parseOptionalRowTextProperty, parseRowTextProperty} from '~/helpers/csvUtils';
 
 export class CSVMatchRepository extends CSVRepository<Match2> implements MatchRepository {
     constructor(...csvFilePaths: string[]) {
         super(...csvFilePaths);
     }
-    protected parseRow(row: unknown): Match2 {
+    protected parseRow(row: object): Match2 {
         return new MatchFromCSV(row);
     }
     async findByMeetId(id: string): Promise<Match2[]> {
@@ -31,30 +32,33 @@ class MatchFromCSV implements Match2 {
     epeeB: number;
     saberA: number;
     saberB: number;
-    hostId: string;
-    meetId: string;
+    hostId: string | undefined;
+    meetId: string | undefined;
     gender: Gender;
     seasonId: string;
     dateFallback?: Date;
-    constructor(row: unknown) {
-        const anyRow = row as any;
-        this.id = anyRow['id'];
-        this.teamAId = anyRow['team_a_id'];
-        this.teamBId = anyRow['team_b_id'];
-        this.overallA = parseInt(anyRow['overall_a']);
-        this.overallB = parseInt(anyRow['overall_b']);
-        this.foilA = parseInt(anyRow['foil_a']);
-        this.foilB = parseInt(anyRow['foil_b']);
-        this.epeeA = parseInt(anyRow['epee_a']);
-        this.epeeB = parseInt(anyRow['epee_b']);
-        this.saberA = parseInt(anyRow['saber_a']);
-        this.saberB = parseInt(anyRow['saber_b']);
-        this.meetId = anyRow['meet_id'];
-        this.hostId = anyRow['host_id'];
-        this.gender = parseTeam(anyRow['gender']);
-        this.seasonId = new Season(parseInt(anyRow['season'])).id;
-        if (anyRow['date'] != undefined) {
-            this.dateFallback = new Date(anyRow['date']);
+    constructor(row: object) {
+        if ('id' in row && typeof row.id == 'string') {
+            this.id = row.id;
+        } else {
+            this.id = '';
+        }
+        this.teamAId = parseRowTextProperty('team_a_id', row);
+        this.teamBId = parseRowTextProperty('team_b_id', row);
+        this.overallA = parseInt(parseRowTextProperty('overall_a', row));
+        this.overallB = parseInt(parseRowTextProperty('overall_b', row));
+        this.foilA = parseInt(parseRowTextProperty('foil_a', row));
+        this.foilB = parseInt(parseRowTextProperty('foil_b', row));
+        this.epeeA = parseInt(parseRowTextProperty('epee_a', row));
+        this.epeeB = parseInt(parseRowTextProperty('epee_b', row));
+        this.saberA = parseInt(parseRowTextProperty('saber_a', row));
+        this.saberB = parseInt(parseRowTextProperty('saber_b', row));
+        this.meetId = parseOptionalRowTextProperty('meet_id', row);
+        this.hostId = parseOptionalRowTextProperty('host_id', row);
+        this.gender = parseTeam(parseRowTextProperty('gender', row));
+        this.seasonId = new Season(parseInt(parseRowTextProperty('season', row))).id;
+        if ('date' in row && row.date != '') {
+            this.dateFallback = new Date(parseRowTextProperty('date', row));
         }
     }
     getWinnerId(weapon?: Weapon): string {
@@ -67,10 +71,7 @@ class MatchFromCSV implements Match2 {
         if (weapon === Weapon.EPEE) {
             return this.epeeA > this.epeeB ? this.teamAId : this.teamBId;
         }
-        if (weapon === Weapon.SABER) {
-            return this.saberA > this.saberB ? this.teamAId : this.teamBId;
-        }
-        throw new Error(`Invalid weapon ${weapon}`);
+        return this.saberA > this.saberB ? this.teamAId : this.teamBId;
     }
     includes(university: University2): boolean {
         return this.teamAId === university.id || this.teamBId === university.id;

@@ -1,5 +1,5 @@
-import {Bout} from '~/models/Bout';
-import {Fencer} from '~/models/Fencer';
+import type {Bout} from '~/models/Bout';
+import type {Fencer} from '~/models/Fencer';
 import clsx from 'clsx';
 import {Fragment} from 'react';
 import {fencerService} from '~/services';

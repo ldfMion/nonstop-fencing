@@ -1,6 +1,6 @@
-import {Gender} from './Gender';
-import {University2} from './University2';
-import {Weapon} from './Weapon';
+import type {Gender} from './Gender';
+import type {University2} from './University2';
+import type {Weapon} from './Weapon';
 
 export interface Match2 {
     id: string;
@@ -14,8 +14,8 @@ export interface Match2 {
     epeeB: number;
     saberA: number;
     saberB: number;
-    hostId: string;
-    meetId: string;
+    hostId: string | undefined;
+    meetId: string | undefined;
     gender: Gender;
     seasonId: string;
     dateFallback?: Date;

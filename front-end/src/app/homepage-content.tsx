@@ -4,11 +4,12 @@ import StandingsCard from '~/components/list-card';
 import type {Squad} from '~/models/Squad';
 import getHomePageSquads from '~/api/getHomePageSquads';
 import SeasonDropdown from '~/components/season-dropdown';
-import {ISeason, Season} from '~/models/Season';
+import type {ISeason} from '~/models/Season';
+import {Season} from '~/models/Season';
 import {Gender} from '~/models/Gender';
-import {Fencer} from '~/models/Fencer';
-import {University2} from '~/models/University2';
-import {HasRecord} from '~/models/HasRecord';
+import type {Fencer} from '~/models/Fencer';
+import type {University2} from '~/models/University2';
+import type {HasRecord} from '~/models/HasRecord';
 import TeamRow from '~/components/team-row';
 import FencerRow from '~/components/fencer-row';
 
@@ -70,7 +71,7 @@ async function TeamList({gender, season}: {gender: Gender; season: ISeason}): Pr
     return (
         <StandingsCard title={title} titleHref={url}>
             {teams.map((team) => (
-                <TeamRow team={team} genderPath={genderPath} key={'id' in team ? team.id : team.university.id} />
+                <TeamRow team={team} genderPath={genderPath} key={team.id} />
             ))}
         </StandingsCard>
     );

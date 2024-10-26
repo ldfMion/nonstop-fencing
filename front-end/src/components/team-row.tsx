@@ -1,8 +1,8 @@
-import {University2} from '~/models/University2';
+import type {University2} from '~/models/University2';
 import RankingRow from './ranking-row';
-import {HasRecord} from '~/models/HasRecord';
-import {ITeam} from '~/models/Team';
-import {Squad} from '~/models/Squad';
+import type {HasRecord} from '~/models/HasRecord';
+import type {ITeam} from '~/models/Team';
+import type {Squad} from '~/models/Squad';
 
 export default function TeamRowWrapper({team, genderPath}: {team: (University2 & HasRecord) | ITeam | Squad; genderPath: 'mens' | 'womens'}) {
     if ('id' in team) {

@@ -1,5 +1,5 @@
 import parseCSV from '~/helpers/parseCsv';
-import {Repository} from './Repository';
+import type {Repository} from './Repository';
 
 export abstract class CSVRepository<T extends {id: string}> implements Repository<T> {
     items: T[] | null = null;
@@ -7,7 +7,7 @@ export abstract class CSVRepository<T extends {id: string}> implements Repositor
     constructor(...filePaths: string[]) {
         this.filePaths = filePaths;
     }
-    protected abstract parseRow(row: unknown): T;
+    protected abstract parseRow(row: object): T;
     async findById(id: string): Promise<T> {
         const value = (await this.findAll()).find((item) => item.id === id);
         if (value == undefined) {
@@ -22,7 +22,7 @@ export abstract class CSVRepository<T extends {id: string}> implements Repositor
         return this.items;
     }
     private async loadFromCSV(): Promise<T[]> {
-        const parsedLists = await Promise.all(this.filePaths.map((file) => parseCSV(file, this.parseRow)));
+        const parsedLists = await Promise.all(this.filePaths.map((file) => parseCSV(file, (row: object) => this.parseRow(row))));
         return parsedLists.flat();
     }
 }

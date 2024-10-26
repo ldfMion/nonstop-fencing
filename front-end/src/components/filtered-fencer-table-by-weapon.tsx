@@ -1,9 +1,8 @@
 'use client';
-import type FencerSummary from '~/models/FencerSummary';
 import FilteredFencerTable from './filtered-fencer-table';
 import parseWeapon from '~/helpers/parseWeapon';
-import {HasRecord} from '~/models/HasRecord';
-import {Fencer} from '~/models/Fencer';
+import type {HasRecord} from '~/models/HasRecord';
+import type {Fencer} from '~/models/Fencer';
 
 export default function FilteredFencersByWeapon({fencers}: {fencers: (Fencer & HasRecord)[]}): JSX.Element {
     const weaponLabels = ['All', 'Foil', 'Epee', 'Saber'];

@@ -1,8 +1,6 @@
 import {Weapon} from '~/models/Weapon';
-import assertString from './assertString';
 
-export default function parseWeapon(data: any): Weapon {
-    assertString(data);
+export default function parseWeapon(data: string): Weapon {
     switch (data.toLowerCase()) {
         case 'foil':
             return Weapon.FOIL;

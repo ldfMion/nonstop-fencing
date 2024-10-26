@@ -1,6 +1,6 @@
-import {Gender} from './Gender';
-import {ISeason} from './Season';
-import {Weapon} from './Weapon';
+import type {Gender} from './Gender';
+import type {ISeason} from './Season';
+import type {Weapon} from './Weapon';
 
 export interface Fencer {
     id: string;

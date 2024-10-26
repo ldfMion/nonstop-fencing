@@ -1,10 +1,12 @@
-import {ISeason, Season} from '~/models/Season';
+import type {ISeason} from '~/models/Season';
+import {Season} from '~/models/Season';
 import {CSVRepository} from './CSVRepository';
-import {EventRepository} from './EventRepository';
-import {Event} from '~/models/Event';
+import type {EventRepository} from './EventRepository';
+import type {Event} from '~/models/Event';
+import {parseOptionalRowTextProperty, parseRowTextProperty} from '~/helpers/csvUtils';
 
 export class CSVEventRepository extends CSVRepository<Event> implements EventRepository {
-    protected parseRow(row: unknown): Event {
+    protected parseRow(row: object): Event {
         return new EventFromCSV(row, new Season(2025));
     }
     constructor(csvFilePath: string) {
@@ -20,15 +22,14 @@ class EventFromCSV implements Event {
     displayName: string;
     startDate: Date;
     endDate: Date;
-    hostId: string;
+    hostId?: string;
     season: ISeason;
-    constructor(row: unknown, season: ISeason) {
-        const anyRow = row as any;
-        this.displayName = anyRow['display_name'];
-        this.hostId = anyRow['host_id'] == '' ? null : anyRow['host_id'];
-        this.startDate = new Date(anyRow['start_date']);
-        this.endDate = new Date(anyRow['end_date']);
-        this.id = anyRow['id'];
+    constructor(row: object, season: ISeason) {
+        this.displayName = parseRowTextProperty('display_name', row);
+        this.hostId = parseOptionalRowTextProperty('host_id', row);
+        this.startDate = new Date(parseRowTextProperty('start_date', row));
+        this.endDate = new Date(parseRowTextProperty('end_date', row));
+        this.id = parseRowTextProperty('id', row);
         this.season = season;
     }
 }

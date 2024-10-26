@@ -1,6 +1,6 @@
-import {Fencer} from '~/models/Fencer';
-import {HasRecord} from '~/models/HasRecord';
-import {HasRegion} from '~/models/HasRegion';
+import type {Fencer} from '~/models/Fencer';
+import type {HasRecord} from '~/models/HasRecord';
+import type {HasRegion} from '~/models/HasRegion';
 
 export function mapFencerWithRecordToObject(fencers: (Fencer & HasRecord)[]) {
     return fencers.map((fencer) => ({

@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import {Fragment} from 'react';
-import getUniversity from '~/api/getUniversity';
 import BoutRow from '~/components/bout-row/index';
 import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 import ListCard from '~/components/list-card';
@@ -8,11 +7,11 @@ import {AdaptiveTiles} from '~/components/adaptive-tiles';
 import PageHeading from '~/components/page-heading';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
-import {Bout} from '~/models/Bout';
+import type {Bout} from '~/models/Bout';
 import {Weapon} from '~/models/Weapon';
 import {boutService, fencerService, matchService, recordService, universityService} from '~/services';
 import Side from '~/components/match-row/side';
-import {University2} from '~/models/University2';
+import type {University2} from '~/models/University2';
 import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
 
 export default async function MatchPage({params}: {params: {id: string}}) {

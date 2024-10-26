@@ -3,8 +3,8 @@ import FilterSelector from './filter-selector';
 import FencerRow from './fencer-row';
 import {useState} from 'react';
 import assert from 'assert';
-import {HasRecord} from '~/models/HasRecord';
-import {Fencer} from '~/models/Fencer';
+import type {HasRecord} from '~/models/HasRecord';
+import type {Fencer} from '~/models/Fencer';
 
 export default function FilteredFencerTable<T extends Fencer & HasRecord>({
     fencers,

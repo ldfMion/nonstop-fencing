@@ -1,12 +1,11 @@
-import {University} from '~/models/University';
 import {CSVRepository} from './CSVRepository';
-import {UniversityRepository} from './UniversityRepository';
-import {University2} from '~/models/University2';
+import type {University2} from '~/models/University2';
 import {Region} from '~/models/Region';
-import assertString from '~/helpers/assertString';
+import type {Repository} from './Repository';
+import {parseRowTextProperty} from '~/helpers/csvUtils';
 
-export class CSVUniversityRepository extends CSVRepository<University2> implements UniversityRepository {
-    protected parseRow(row: unknown): University2 {
+export class CSVUniversityRepository extends CSVRepository<University2> implements Repository<University2> {
+    protected parseRow(row: object): University2 {
         return new UniversityFromCSV(row);
     }
 }
@@ -17,22 +16,20 @@ class UniversityFromCSV implements University2 {
     public displayNameLong: string;
     public region: Region;
     public colorTheme: string | null = null;
-    public hasMen: boolean = true;
-    public hasWomen: boolean = true;
-    constructor(csvRow: unknown) {
-        const anyRow = csvRow as any;
-        this.id = anyRow['id'];
-        this.displayNameShort = anyRow['Display Name Short'];
-        this.displayNameLong = anyRow['Display Name Long'];
-        this.region = parseRegion(anyRow['Region']);
-        this.colorTheme = anyRow['Theme Color'];
+    public hasMen = true;
+    public hasWomen = true;
+    constructor(csvRow: object) {
+        this.id = parseRowTextProperty('id', csvRow);
+        this.displayNameShort = parseRowTextProperty('Display Name Short', csvRow);
+        this.displayNameLong = parseRowTextProperty('Display Name Long', csvRow);
+        this.region = parseRegion(parseRowTextProperty('Region', csvRow));
+        this.colorTheme = parseRowTextProperty('Theme Color', csvRow);
         this.hasMen = true;
         this.hasWomen = true;
     }
 }
 
-function parseRegion(data: any) {
-    assertString(data);
+function parseRegion(data: string) {
     switch (data.toLowerCase()) {
         case 'northeast region':
             return Region.NORTHEAST;

@@ -1,13 +1,12 @@
-import {Bout} from '~/models/Bout';
-import {Fencer} from '~/models/Fencer';
-import {Match2} from '~/models/Match2';
-import {University2} from '~/models/University2';
-import {Weapon} from '~/models/Weapon';
-import Record from '~/models/Record';
-import {HasRecord} from '~/models/HasRecord';
+import type {Bout} from '~/models/Bout';
+import type {Fencer} from '~/models/Fencer';
+import type {Match2} from '~/models/Match2';
+import type {University2} from '~/models/University2';
+import type {Weapon} from '~/models/Weapon';
+import type Record from '~/models/Record';
+import type {HasRecord} from '~/models/HasRecord';
 
 export class RecordService {
-    constructor() {}
     calculateRecordsFromBouts<T extends Fencer>(fencers: T[], bouts: Bout[]): (T & {record: Record; rating: number})[] {
         return fencers.map((fencer) => {
             const wins = bouts.filter((bout) => !bout.isBye() && bout.includes(fencer) && bout.winnerId === fencer.id);

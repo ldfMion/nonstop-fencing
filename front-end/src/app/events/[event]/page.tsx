@@ -2,27 +2,26 @@ import Date from '~/components/date';
 import {Card} from '~/components/ui/card';
 import MatchesCard from './matches-card';
 import Host from '~/components/host';
-import {University} from '~/models/University';
-import getUniversity from '~/api/getUniversity';
 import {boutService, fencerService, matchService, recordService, universityService} from '~/services';
 import ListCard from '~/components/list-card';
 import {AdaptiveTiles} from '~/components/adaptive-tiles';
-import {Bout} from '~/models/Bout';
+import type {Bout} from '~/models/Bout';
 import {Gender} from '~/models/Gender';
 import FilteredFencersByWeaponAndGender from '~/components/filtered-fencer-table-by-weapon-and-gender';
 import TeamRow from '~/components/team-row';
 import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
 import {eventRepository} from '~/repositories';
+import type {University2} from '~/models/University2';
 
 export default async function EventPage({params}: {params: {event: string}}) {
     const event = await eventRepository.findById(params.event);
-    const host = event.hostId ? await getUniversity(event.hostId) : null;
+    const host = event.hostId ? await universityService.getById(event.hostId) : null;
     const matches = await matchService.fromMeet(event.id);
     if (matches.length === 0) {
         return (
             <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
                 <EventHeader title={event.displayName} isoDate={event.startDate.toISOString()} host={host} />
-                <Card className="p-6">We currently don't have results for this event. Come back later!</Card>
+                <Card className="p-6">We currently don&apos;t have results for this event. Come back later!</Card>
             </main>
         );
     }
@@ -72,7 +71,7 @@ export default async function EventPage({params}: {params: {event: string}}) {
     );
 }
 
-function EventHeader({title, isoDate, host}: {title: string; isoDate: string; host: University | null}) {
+function EventHeader({title, isoDate, host}: {title: string; isoDate: string; host: University2 | null}) {
     return (
         <Card className="flex flex-col p-6">
             <div className="flex flex-col gap-2">

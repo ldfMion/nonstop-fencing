@@ -1,4 +1,5 @@
-import {ISeason, Season} from '~/models/Season';
+import type {ISeason} from '~/models/Season';
+import {Season} from '~/models/Season';
 
 export function parseSeason(seasonStr: string): ISeason {
     let season;

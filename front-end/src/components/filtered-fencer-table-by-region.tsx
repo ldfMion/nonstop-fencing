@@ -1,10 +1,9 @@
 'use client';
-import type FencerSummary from '~/models/FencerSummary';
 import FilteredFencerTable from './filtered-fencer-table';
 import {Region} from '~/models/Region';
-import {HasRecord} from '~/models/HasRecord';
-import {Fencer} from '~/models/Fencer';
-import {HasRegion} from '~/models/HasRegion';
+import type {HasRecord} from '~/models/HasRecord';
+import type {Fencer} from '~/models/Fencer';
+import type {HasRegion} from '~/models/HasRegion';
 
 const NORTHEAST = 'Northeast';
 const MID_ATLANTIC_SOUTH = 'Mid-Atlantic/South';

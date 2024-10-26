@@ -1,7 +1,8 @@
 import {Fragment} from 'react';
 import ListCard from '~/components/list-card';
 import SeasonDropdown from '~/components/season-dropdown';
-import {ISeason, Season} from '~/models/Season';
+import type {ISeason} from '~/models/Season';
+import {Season} from '~/models/Season';
 export default function SingleRankingWrapper({title, children, season}: {title: string; children: React.ReactNode; season: ISeason}) {
     return (
         <Fragment>

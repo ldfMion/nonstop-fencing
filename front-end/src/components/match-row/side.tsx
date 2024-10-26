@@ -1,5 +1,4 @@
 import NameIcon from '~/components/name-icon';
-import {University} from '~/models/University';
 
 export default function Side({
     university,
@@ -13,5 +12,13 @@ export default function Side({
     };
     flip?: boolean;
 }): React.ReactNode {
-    return <NameIcon iconUniversityId={university.id} name={university.displayNameShort} flip={flip} className="" href={`/24-25/mens/universities/${university.id}`} />;
+    return (
+        <NameIcon
+            iconUniversityId={university.id}
+            name={university.displayNameShort}
+            flip={flip}
+            className=""
+            href={`/24-25/mens/universities/${university.id}`}
+        />
+    );
 }

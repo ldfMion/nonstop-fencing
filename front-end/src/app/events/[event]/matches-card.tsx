@@ -1,7 +1,7 @@
 import ListCard from '~/components/list-card';
 import MatchRowWithoutPerspective from '~/components/match-row/match-row-without-perspective';
 import MatchTableHeader from '~/components/match-table-header';
-import {Match2} from '~/models/Match2';
+import type {Match2} from '~/models/Match2';
 
 export default function MatchesCard({matches, title}: {matches: Match2[]; title: string}) {
     return (

@@ -1,14 +1,11 @@
 import {Fragment} from 'react';
-import getFencersFromUniversity from '~/api/getFencersFromUniversity';
 import FilteredFencersByWeapon from '~/components/filtered-fencer-table-by-weapon';
 import ListCard from '~/components/list-card';
 import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
-import {Fencer} from '~/models/Fencer';
-import {Gender} from '~/models/Gender';
-import {HasRecord} from '~/models/HasRecord';
-import {ISeason} from '~/models/Season';
+import type {Gender} from '~/models/Gender';
+import type {ISeason} from '~/models/Season';
 import type {University2} from '~/models/University2';
-import {boutService, fencerService, recordService} from '~/services';
+import {fencerService} from '~/services';
 
 export default async function SquadCard({
     university,

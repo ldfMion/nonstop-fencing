@@ -1,16 +1,15 @@
-import {Gender} from '~/models/Gender';
-import {Match2} from '~/models/Match2';
-import {ISeason} from '~/models/Season';
-import {University2} from '~/models/University2';
-import {MatchRepository} from '~/repositories/MatchRepository';
+import type {Gender} from '~/models/Gender';
+import type {Match2} from '~/models/Match2';
+import type {ISeason} from '~/models/Season';
+import type {University2} from '~/models/University2';
+import {matchRepository} from '~/repositories';
 
 export class MatchService {
-    constructor(private matchRepository: MatchRepository) {}
     async getFromSeason(season: ISeason): Promise<Match2[]> {
-        return await this.matchRepository.findAll();
+        return (await matchRepository.findAll()).filter((match) => match.seasonId === season.id);
     }
     async get({season, gender, university}: {season?: ISeason; gender?: Gender; university?: University2}): Promise<Match2[]> {
-        let matches = await this.matchRepository.findAll();
+        let matches = await matchRepository.findAll();
         console.log(matches.map((m) => m.id));
         if (gender !== undefined) {
             console.log('filtering by gender');
@@ -32,9 +31,9 @@ export class MatchService {
         return matches;
     }
     async getById(id: string): Promise<Match2> {
-        return await this.matchRepository.findById(id);
+        return await matchRepository.findById(id);
     }
     async fromMeet(meetId: string): Promise<Match2[]> {
-        return await this.matchRepository.findByMeetId(meetId);
+        return await matchRepository.findByMeetId(meetId);
     }
 }

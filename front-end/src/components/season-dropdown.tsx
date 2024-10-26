@@ -1,22 +1,22 @@
 'use client';
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from '~/components/ui/select';
 import {SelectGroup} from '@radix-ui/react-select';
-import {ISeason} from '~/models/Season';
+import type {ISeason} from '~/models/Season';
 import {usePathname, useRouter} from 'next/navigation';
 
 export default function SeasonDropdown({selectedSeason, seasons}: {selectedSeason: ISeason; seasons: ISeason[]}): JSX.Element {
     const pathname = usePathname();
-    const {push} = useRouter();
+    const router = useRouter();
 
-    function handleChoose(season: string) {
+    const handleChoose = (season: string) => {
         let path;
         if (pathname.includes(selectedSeason.displayNameShort)) {
             path = pathname.replace(selectedSeason.displayNameShort, season);
         } else {
             path = `${season}/${pathname}`;
         }
-        push(path);
-    }
+        router.push(path);
+    };
     return (
         <div className="flex flex-row items-center gap-2 p-2">
             <Select onValueChange={handleChoose}>

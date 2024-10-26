@@ -1,4 +1,3 @@
-import {Season} from '~/models/Season';
 import HomePageContent from '../homepage-content';
 import {parseSeason} from '~/helpers/parseSeason';
 
