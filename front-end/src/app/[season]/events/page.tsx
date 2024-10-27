@@ -69,7 +69,7 @@ async function EventCard({event}: {event: Event}) {
     return (
         <ConditionalLinkWrapper href={eventUrl} className="cursor-pointer transition-all hover:scale-[1.03] hover:bg-accent">
             <Card className="px-6 py-4">
-                <CardHeader className="flex flex-row items-center justify-between p-0 [&>*]:!m-0">
+                <CardHeader className="flex flex-col items-start justify-between p-0 lg:flex-row lg:items-center [&>*]:!m-0">
                     <div className="flex flex-row items-center gap-1">
                         <CardTitle className="!m-0 text-xl">{event.displayName}</CardTitle>
                         {host && <Host university={host} className="text-lg" />}

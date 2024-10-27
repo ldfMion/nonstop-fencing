@@ -1,6 +1,14 @@
 'use client';
 import Link from 'next/link';
-import {NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuContent, NavigationMenuTrigger, navigationMenuTriggerStyle} from '~/components/ui/navigation-menu';
+import {
+    NavigationMenu,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuContent,
+    NavigationMenuTrigger,
+    navigationMenuTriggerStyle,
+} from '~/components/ui/navigation-menu';
 import {buttonVariants} from '../ui/button';
 import {cn} from '~/lib/utils';
 import {Sheet, SheetContent, SheetTrigger} from '../ui/sheet';
@@ -62,7 +70,7 @@ function MobileNavbar(): JSX.Element {
                     <NavigationMenu>
                         <NavigationMenuList className="flex flex-col items-start">
                             <MobileBaseLink href="/about" title="About" onOpenChange={setOpen} />
-                            <MobileBaseLink href="/25-25/events" title="Events" onOpenChange={setOpen} />
+                            <MobileBaseLink href="/24-25/events" title="Events" onOpenChange={setOpen} />
                             <MobileBaseLink href="/" title="Rankings" onOpenChange={setOpen} />
                             <NavigationMenuItem>
                                 <NavigationMenuList id="navmenulist" className="ml-2 flex flex-col items-start gap-4">
