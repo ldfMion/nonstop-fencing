@@ -14,8 +14,8 @@ export async function EventCard({event}: {event: Event}) {
     }
     const eventUrl = event.hasResults ? `/events/${event.id}` : undefined;
     return (
-        <ConditionalLinkWrapper href={eventUrl} className="cursor-pointer transition-all">
-            <Card className="flex h-full flex-col px-6 py-4">
+        <ConditionalLinkWrapper href={eventUrl} className="h-full cursor-pointer transition-all">
+            <Card className="flex h-full flex-col justify-between px-6 py-4">
                 <div className="flex flex-row items-center justify-between">
                     <CardHeader className="col flex flex-col items-start justify-between gap-2 p-0 [&>*]:!m-0">
                         <CardTitle className="!m-0 text-xl">{event.displayName}</CardTitle>

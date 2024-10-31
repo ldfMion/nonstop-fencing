@@ -14,15 +14,22 @@ import FencerRow from '~/components/fencer-row';
 import {eventRepository} from '~/repositories';
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from '~/components/ui/carousel';
 import {EventCard} from '~/components/event-card';
+import {Button} from '~/components/ui/button';
+import Link from 'next/link';
 
 export default async function HomePageContent({season}: {season: ISeason}) {
     const fencers = await getHomePageFencers(season);
     const squads = await getHomePageSquads(season);
     return (
-        <main className="flex flex-col gap-4 px-6">
+        <main className="flex flex-col gap-2 px-6">
             {season.endYear == 2025 && (
                 <>
-                    <PageHeading>Events</PageHeading>
+                    <div className="flex flex-row items-center justify-between">
+                        <PageHeading>Events</PageHeading>
+                        <Button variant="link" className="text-foreground">
+                            <Link href="24-25/events">See All Events</Link>
+                        </Button>
+                    </div>
                     <EventCarousel season={season} />
                 </>
             )}
@@ -117,8 +124,8 @@ async function EventCarousel({season}: {season: ISeason}): Promise<JSX.Element> 
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 -translate-x-1/2" />
-                <CarouselNext className="absolute right-0 translate-x-1/2" />
+                <CarouselPrevious className="absolute left-0 -translate-x-1/2 bg-white" />
+                <CarouselNext className="absolute right-0 translate-x-1/2 bg-white" />
             </Carousel>
         </div>
     );

@@ -19,7 +19,7 @@ export default function SeasonDropdown({selectedSeason, seasons}: {selectedSeaso
         router.push(path);
     };
     return (
-        <div className="flex flex-row items-center gap-2 p-2">
+        <div className="flex flex-row items-center gap-2">
             <Select onValueChange={handleChoose}>
                 <SelectTrigger className="w-fit !rounded-custom bg-white">
                     <SelectValue placeholder={selectedSeason.displayNameLong} />
