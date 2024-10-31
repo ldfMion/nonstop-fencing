@@ -16,20 +16,20 @@ export default async function BoutRow({bout, perspective}: {bout: Bout; perspect
     if (bout.fencerBId) {
         fencerB = await fencerService.getById(bout.fencerBId);
     }
-    const aWins = bout.scoreA > bout.scoreB;
     return (
         <li className="bout-grid py-2">
-            {fencerA && <p className="font-medium">{fencerA.name}</p>}
+            {fencerA ? <p className="font-medium">{fencerA.name}</p> : <div></div>}
             <div className="w-fit text-nowrap text-center align-middle">
-                {bout.isBye() ? (
+                {!bout.isNotBye() ? (
                     'BYE'
                 ) : (
                     <Fragment>
-                        <Score score={bout.scoreA} win={aWins} /> <span>-</span> <Score score={bout.scoreB} win={!aWins} />
+                        <Score score={bout.score.a} win={bout.winnerId === bout.fencerAId} /> <span>-</span>{' '}
+                        <Score score={bout.score.b} win={bout.winnerId === bout.fencerBId} />
                     </Fragment>
                 )}
             </div>
-            {fencerB && <p className="text-right font-medium">{fencerB.name}</p>}
+            {fencerB ? <p className="text-right font-medium">{fencerB.name}</p> : <div></div>}
         </li>
     );
 }

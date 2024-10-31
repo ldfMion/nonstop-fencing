@@ -4,14 +4,16 @@ import type {Weapon} from './Weapon';
 export interface Bout {
     id: string;
     matchId: string;
-    fencerAId: string;
-    fencerBId: string;
-    scoreA: number;
-    scoreB: number;
+    fencerAId?: string;
+    fencerBId?: string;
     ncaaStatus: boolean;
+    score?: {
+        a: number;
+        b: number;
+    };
     weapon: Weapon;
-    winnerId: string;
+    winnerId?: string;
     order: number;
     includes(fencer: Fencer): boolean;
-    isBye(): boolean;
+    isNotBye(): this is {fencerAId: string; fencerBId: string; score: {a: number; b: number}; winnerId: string};
 }

@@ -1,109 +1,109 @@
-gender,weapon,team_a_id,team_b_id,fencer_a_name,score_a,fencer_b_name,score_b,order,ncaa_status,fencer_a_id,fencer_b_id,id,match_id,index
-men,foil,ohiostate,clevelandstate,Mitchell Huth,5,W. Drew Walker,3,1,TRUE,157,136,1,1,1
-men,foil,ohiostate,clevelandstate,Ilya Ayupov,5,Sal Sorrentino,2,2,TRUE,141,134,2,1,2
-men,foil,ohiostate,clevelandstate,Nathan Cheng,5,Jack Miller (epee),2,3,TRUE,146,129,3,1,3
-men,foil,ohiostate,clevelandstate,Ilya Ayupov,5,W. Drew Walker,2,4,TRUE,141,136,4,1,4
-men,foil,ohiostate,clevelandstate,Mitchell Huth,5,Jack Miller (epee),2,5,TRUE,157,129,5,1,5
-men,foil,ohiostate,clevelandstate,Nathan Cheng,5,Sal Sorrentino,0,6,TRUE,146,134,6,1,6
-men,foil,ohiostate,clevelandstate,Isaac Ariza,5,Jack Miller (epee),1,7,TRUE,139,129,7,1,7
-men,foil,ohiostate,clevelandstate,Samuel Freedman,5,W. Drew Walker,2,8,TRUE,151,136,8,1,8
-men,foil,ohiostate,clevelandstate,Mitchell Huth,5,Sal Sorrentino,0,9,TRUE,157,134,9,1,9
-men,epee,ohiostate,clevelandstate,Kinley Lavenstein,5,Nolan Giovagnoli,3,1,TRUE,161,128,10,1,10
-men,epee,ohiostate,clevelandstate,Viktor Kulcsar,5,De'Mario Steele,3,2,TRUE,159,135,11,1,11
-men,epee,ohiostate,clevelandstate,Max Rodney,5,Merik Pohl,3,3,TRUE,175,132,12,1,12
-men,epee,ohiostate,clevelandstate,Viktor Kulcsar,3,Nolan Giovagnoli,5,4,TRUE,159,128,13,1,13
-men,epee,ohiostate,clevelandstate,Kinley Lavenstein,5,Merik Pohl,1,5,TRUE,161,132,14,1,14
-men,epee,ohiostate,clevelandstate,Max Rodney,3,De'Mario Steele,5,6,TRUE,175,135,15,1,15
-men,epee,ohiostate,clevelandstate,Viktor Kulcsar,5,Merik Pohl,1,7,TRUE,159,132,16,1,16
-men,epee,ohiostate,clevelandstate,Ayush Shah,5,Nolan Giovagnoli,1,8,TRUE,179,128,17,1,17
-men,epee,ohiostate,clevelandstate,Nowell Gibson,4,De'Mario Steele,5,9,TRUE,153,135,18,1,18
-men,saber,ohiostate,clevelandstate,Eddie Maklin,5,Conner Bailey,0,1,TRUE,166,126,19,1,19
-men,saber,ohiostate,clevelandstate,James Schardine,4,Simon Caisse,5,2,TRUE,177,127,20,1,20
-men,saber,ohiostate,clevelandstate,Kelly Liu,5,Matthew Seljan,0,3,TRUE,165,133,21,1,21
-men,saber,ohiostate,clevelandstate,James Schardine,5,Conner Bailey,1,4,TRUE,177,126,22,1,22
-men,saber,ohiostate,clevelandstate,Eddie Maklin,5,Matthew Seljan,0,5,TRUE,166,133,23,1,23
-men,saber,ohiostate,clevelandstate,Kelly Liu,4,Simon Caisse,5,6,TRUE,165,127,24,1,24
-men,saber,ohiostate,clevelandstate,James Schardine,5,Matthew Seljan,0,7,TRUE,177,133,25,1,25
-men,saber,ohiostate,clevelandstate,Kelly Liu,5,Conner Bailey,1,8,TRUE,165,126,26,1,26
-men,saber,ohiostate,clevelandstate,Eddie Maklin,5,Simon Caisse,1,9,TRUE,166,127,27,1,27
-women,foil,ohiostate,clevelandstate,Raiyan Moradi-Bidhendi,5,Evelyn Malvestuto,0,1,TRUE,170,116,28,2,28
-women,foil,ohiostate,clevelandstate,Miranda Freedman,5,Anna Quinn,1,2,TRUE,150,121,29,2,29
-women,foil,ohiostate,clevelandstate,Anna Heiser,,,,3,TRUE,155,,30,2,30
-women,foil,ohiostate,clevelandstate,Claire Teresa Galavotti,5,Evelyn Malvestuto,0,4,TRUE,152,116,31,2,31
-women,foil,ohiostate,clevelandstate,Raiyan Moradi-Bidhendi,,,,5,TRUE,170,,32,2,32
-women,foil,ohiostate,clevelandstate,Anna Heiser,2,Anna Quinn,5,6,TRUE,155,121,33,2,33
-women,foil,ohiostate,clevelandstate,Claire Teresa Galavotti,,,,7,TRUE,152,,34,2,34
-women,foil,ohiostate,clevelandstate,Anna Heiser,5,Evelyn Malvestuto,2,8,TRUE,155,116,35,2,35
-women,foil,ohiostate,clevelandstate,Raiyan Moradi-Bidhendi,3,Anna Quinn,5,9,TRUE,170,121,36,2,36
-women,epee,ohiostate,clevelandstate,Erika Gumagay,5,Rayllen Prafil Capaccio,4,1,TRUE,154,120,37,2,37
-women,epee,ohiostate,clevelandstate,Talia Weiss,5,Maia Taylor Casamayor,3,2,TRUE,182,122,38,2,38
-women,epee,ohiostate,clevelandstate,Catherine Popa,5,Gwen Nelson,2,3,TRUE,172,119,39,2,39
-women,epee,ohiostate,clevelandstate,Talia Weiss,3,Rayllen Prafil Capaccio,5,4,TRUE,182,120,40,2,40
-women,epee,ohiostate,clevelandstate,Erika Gumagay,5,Gwen Nelson,2,5,TRUE,154,119,41,2,41
-women,epee,ohiostate,clevelandstate,Catherine Popa,5,Maia Taylor Casamayor,2,6,TRUE,172,122,42,2,42
-women,epee,ohiostate,clevelandstate,Talia Weiss,5,Maggie Mihill,0,7,TRUE,182,118,43,2,43
-women,epee,ohiostate,clevelandstate,Catherine Popa,5,Rayllen Prafil Capaccio,4,8,TRUE,172,120,44,2,44
-women,epee,ohiostate,clevelandstate,Erika Gumagay,4,Maia Taylor Casamayor,5,9,TRUE,154,122,45,2,45
-women,saber,ohiostate,clevelandstate,Grace Fan,,,,1,TRUE,147,,46,2,46
-women,saber,ohiostate,clevelandstate,Katherine Larimer,5,Aubrey Testroet,2,2,TRUE,160,123,47,2,47
-women,saber,ohiostate,clevelandstate,Hamsika Arnipalli,5,Samantha Way,4,3,TRUE,140,124,48,2,48
-women,saber,ohiostate,clevelandstate,Katherine Larimer,,,,4,TRUE,160,,49,2,49
-women,saber,ohiostate,clevelandstate,Grace Fan,3,Samantha Way,5,5,TRUE,147,124,50,2,50
-women,saber,ohiostate,clevelandstate,Hamsika Arnipalli,5,Aubrey Testroet,1,6,TRUE,140,123,51,2,51
-women,saber,ohiostate,clevelandstate,Katherine Larimer,5,Samantha Way,4,7,TRUE,160,124,52,2,52
-women,saber,ohiostate,clevelandstate,Hamsika Arnipalli,,,,8,TRUE,140,,53,2,53
-women,saber,ohiostate,clevelandstate,Grace Fan,5,Aubrey Testroet,1,9,TRUE,147,123,54,2,54
-women,foil,ohiostate,denison,Raiyan Moradi-Bidhendi,5,Lal Ertun,3,1,TRUE,170,192,82,3,55
-women,foil,ohiostate,denison,Claire Teresa Galavotti,5,Velma Hall,2,2,TRUE,152,193,83,3,56
-women,foil,ohiostate,denison,Miranda Freedman,5,Bella Musto,0,3,TRUE,150,198,84,3,57
-women,foil,ohiostate,denison,Claire Teresa Galavotti,5,Lal Ertun,3,4,TRUE,152,192,85,3,58
-women,foil,ohiostate,denison,Raiyan Moradi-Bidhendi,5,Bella Musto,2,5,TRUE,170,198,86,3,59
-women,foil,ohiostate,denison,Miranda Freedman,5,Velma Hall,0,6,TRUE,150,193,87,3,60
-women,foil,ohiostate,denison,Claire Teresa Galavotti,5,Alaina Cabalu,0,7,TRUE,152,190,88,3,61
-women,foil,ohiostate,denison,Anna Heiser,5,Lal Ertun,4,8,TRUE,155,192,89,3,62
-women,foil,ohiostate,denison,Raiyan Moradi-Bidhendi,4,Velma Hall,5,9,TRUE,170,193,90,3,63
-women,epee,ohiostate,denison,Julia Semikin,5,Nicole Krumholz,2,1,TRUE,178,196,91,3,64
-women,epee,ohiostate,denison,Lucy Whittemore,1,Claire Anderson,5,2,TRUE,183,188,92,3,65
-women,epee,ohiostate,denison,Sally Fan,5,Chi Chi Agu,1,3,TRUE,148,187,93,3,66
-women,epee,ohiostate,denison,Lucy Whittemore,5,Nicole Krumholz,3,4,TRUE,183,196,94,3,67
-women,epee,ohiostate,denison,Julia Semikin,5,Chi Chi Agu,2,5,TRUE,178,187,95,3,68
-women,epee,ohiostate,denison,Sally Fan,5,Claire Anderson,4,6,TRUE,148,188,96,3,69
-women,epee,ohiostate,denison,Lucy Whittemore,5,Chi Chi Agu,3,7,TRUE,183,187,97,3,70
-women,epee,ohiostate,denison,Catherine Popa,4,Nicole Krumholz,5,8,TRUE,172,196,98,3,71
-women,epee,ohiostate,denison,Erika Gumagay,5,Claire Anderson,2,9,TRUE,154,188,99,3,72
-women,saber,ohiostate,denison,Grace Fan,5,Corvus Endo,0,1,TRUE,147,191,100,3,73
-women,saber,ohiostate,denison,Maria Alexe,2,Natalie Isberg,5,2,TRUE,138,194,101,3,74
-women,saber,ohiostate,denison,Katherine Larimer,5,Joyce Yu,1,3,TRUE,160,203,102,3,75
-women,saber,ohiostate,denison,Maria Alexe,2,Corvus Endo,5,4,TRUE,138,191,103,3,76
-women,saber,ohiostate,denison,Grace Fan,5,Joyce Yu,4,5,TRUE,147,203,104,3,77
-women,saber,ohiostate,denison,Katherine Larimer,2,Natalie Isberg,5,6,TRUE,160,194,105,3,78
-women,saber,ohiostate,denison,Maria Alexe,5,Joyce Yu,2,7,TRUE,138,203,106,3,79
-women,saber,ohiostate,denison,Katherine Larimer,3,Corvus Endo,5,8,TRUE,160,191,107,3,80
-women,saber,ohiostate,denison,Grace Fan,5,Natalie Isberg,1,9,TRUE,147,194,108,3,81
-women,epee,clevelandstate,denison,Rayllen Prafil Capaccio,5,Chi Chi Agu,0,1,TRUE,120,187,109,4,82
-women,epee,clevelandstate,denison,Maggie Mihill,4,Claire Anderson,5,2,TRUE,118,188,110,4,83
-women,epee,clevelandstate,denison,Maia Taylor Casamayor,3,Nicole Krumholz,5,3,TRUE,122,196,111,4,84
-women,epee,clevelandstate,denison,Maggie Mihill,4,Chi Chi Agu,5,4,TRUE,118,187,112,4,85
-women,epee,clevelandstate,denison,Rayllen Prafil Capaccio,3,Nicole Krumholz,2,5,TRUE,120,196,113,4,86
-women,epee,clevelandstate,denison,Maia Taylor Casamayor,5,Claire Anderson,2,6,TRUE,122,188,114,4,87
-women,epee,clevelandstate,denison,Maggie Mihill,4,Nicole Krumholz,5,7,TRUE,118,196,115,4,88
-women,epee,clevelandstate,denison,Maia Taylor Casamayor,4,Chi Chi Agu,5,8,TRUE,122,187,116,4,89
-women,epee,clevelandstate,denison,Rayllen Prafil Capaccio,4,Claire Anderson,5,9,TRUE,120,188,117,4,90
-women,saber,clevelandstate,denison,,,Corvus Endo,,1,TRUE,,191,118,4,91
-women,saber,clevelandstate,denison,Aubrey Testroet,5,Joyce Yu,3,2,TRUE,123,203,119,4,92
-women,saber,clevelandstate,denison,Samantha Way,1,Natalie Isberg,5,3,TRUE,124,194,120,4,93
-women,saber,clevelandstate,denison,Aubrey Testroet,4,Corvus Endo,5,4,TRUE,123,191,121,4,94
-women,saber,clevelandstate,denison,,,Natalie Isberg,,5,TRUE,,194,122,4,95
-women,saber,clevelandstate,denison,Samantha Way,2,Joyce Yu,5,6,TRUE,124,203,123,4,96
-women,saber,clevelandstate,denison,Aubrey Testroet,5,Natalie Isberg,3,7,TRUE,123,194,124,4,97
-women,saber,clevelandstate,denison,Samantha Way,2,Corvus Endo,5,8,TRUE,124,191,125,4,98
-women,saber,clevelandstate,denison,,,Joyce Yu,,9,TRUE,,203,126,4,99
-women,foil,clevelandstate,denison,Anna Quinn,,Lal Ertun,,1,TRUE,121,192,127,4,100
-women,foil,clevelandstate,denison,,,Velma Hall,,2,TRUE,,193,128,4,101
-women,foil,clevelandstate,denison,Evelyn Malvestuto,,Bella Musto,,3,TRUE,116,198,129,4,102
-women,foil,clevelandstate,denison,Anna Quinn,,Lal Ertun,,4,TRUE,121,192,130,4,103
-women,foil,clevelandstate,denison,,,Alaina Cabalu,,5,TRUE,,190,131,4,104
-women,foil,clevelandstate,denison,Evelyn Malvestuto,,Velma Hall,,6,TRUE,116,193,132,4,105
-women,foil,clevelandstate,denison,,,Bella Musto,,7,TRUE,,198,133,4,106
-women,foil,clevelandstate,denison,Evelyn Malvestuto,,Lal Ertun,,8,TRUE,116,192,134,4,107
-women,foil,clevelandstate,denison,Anna Quinn,,Velma Hall,,9,TRUE,121,193,135,4,108
+gender,weapon,team_a_id,team_b_id,fencer_a_name,score_a,fencer_b_name,score_b,order,ncaa_status,fencer_a_id,fencer_b_id,id,match_id,index,
+men,foil,ohiostate,clevelandstate,Mitchell Huth,5,W. Drew Walker,3,1,TRUE,157,136,1,1,1,
+men,foil,ohiostate,clevelandstate,Ilya Ayupov,5,Sal Sorrentino,2,2,TRUE,141,134,2,1,2,
+men,foil,ohiostate,clevelandstate,Nathan Cheng,5,Jack Miller (epee),2,3,TRUE,146,129,3,1,3,
+men,foil,ohiostate,clevelandstate,Ilya Ayupov,5,W. Drew Walker,2,4,TRUE,141,136,4,1,4,
+men,foil,ohiostate,clevelandstate,Mitchell Huth,5,Jack Miller (epee),2,5,TRUE,157,129,5,1,5,
+men,foil,ohiostate,clevelandstate,Nathan Cheng,5,Sal Sorrentino,0,6,TRUE,146,134,6,1,6,
+men,foil,ohiostate,clevelandstate,Isaac Ariza,5,Jack Miller (epee),1,7,TRUE,139,129,7,1,7,
+men,foil,ohiostate,clevelandstate,Samuel Freedman,5,W. Drew Walker,2,8,TRUE,151,136,8,1,8,
+men,foil,ohiostate,clevelandstate,Mitchell Huth,5,Sal Sorrentino,0,9,TRUE,157,134,9,1,9,
+men,epee,ohiostate,clevelandstate,Kinley Lavenstein,5,Nolan Giovagnoli,3,1,TRUE,161,128,10,1,10,
+men,epee,ohiostate,clevelandstate,Viktor Kulcsar,5,De'Mario Steele,3,2,TRUE,159,135,11,1,11,
+men,epee,ohiostate,clevelandstate,Max Rodney,5,Merik Pohl,3,3,TRUE,175,132,12,1,12,
+men,epee,ohiostate,clevelandstate,Viktor Kulcsar,3,Nolan Giovagnoli,5,4,TRUE,159,128,13,1,13,
+men,epee,ohiostate,clevelandstate,Kinley Lavenstein,5,Merik Pohl,1,5,TRUE,161,132,14,1,14,
+men,epee,ohiostate,clevelandstate,Max Rodney,3,De'Mario Steele,5,6,TRUE,175,135,15,1,15,
+men,epee,ohiostate,clevelandstate,Viktor Kulcsar,5,Merik Pohl,1,7,TRUE,159,132,16,1,16,
+men,epee,ohiostate,clevelandstate,Ayush Shah,5,Nolan Giovagnoli,1,8,TRUE,179,128,17,1,17,17
+men,epee,ohiostate,clevelandstate,Nowell Gibson,4,De'Mario Steele,5,9,TRUE,153,135,18,1,18,
+men,saber,ohiostate,clevelandstate,Eddie Maklin,5,Conner Bailey,0,1,TRUE,166,126,19,1,19,
+men,saber,ohiostate,clevelandstate,James Schardine,4,Simon Caisse,5,2,TRUE,177,127,20,1,20,
+men,saber,ohiostate,clevelandstate,Kelly Liu,5,Matthew Seljan,0,3,TRUE,165,133,21,1,21,
+men,saber,ohiostate,clevelandstate,James Schardine,5,Conner Bailey,1,4,TRUE,177,126,22,1,22,
+men,saber,ohiostate,clevelandstate,Eddie Maklin,5,Matthew Seljan,0,5,TRUE,166,133,23,1,23,
+men,saber,ohiostate,clevelandstate,Kelly Liu,4,Simon Caisse,5,6,TRUE,165,127,24,1,24,
+men,saber,ohiostate,clevelandstate,James Schardine,5,Matthew Seljan,0,7,TRUE,177,133,25,1,25,
+men,saber,ohiostate,clevelandstate,Kelly Liu,5,Conner Bailey,1,8,TRUE,165,126,26,1,26,
+men,saber,ohiostate,clevelandstate,Eddie Maklin,5,Simon Caisse,1,9,TRUE,166,127,27,1,27,
+women,foil,ohiostate,clevelandstate,Raiyan Moradi-Bidhendi,5,Evelyn Malvestuto,0,1,TRUE,170,116,28,2,28,
+women,foil,ohiostate,clevelandstate,Miranda Freedman,5,Anna Quinn,1,2,TRUE,150,121,29,2,29,
+women,foil,ohiostate,clevelandstate,Anna Heiser,,,,3,TRUE,155,,30,2,30,
+women,foil,ohiostate,clevelandstate,Claire Teresa Galavotti,5,Evelyn Malvestuto,0,4,TRUE,152,116,31,2,31,
+women,foil,ohiostate,clevelandstate,Raiyan Moradi-Bidhendi,,,,5,TRUE,170,,32,2,32,
+women,foil,ohiostate,clevelandstate,Anna Heiser,2,Anna Quinn,5,6,TRUE,155,121,33,2,33,
+women,foil,ohiostate,clevelandstate,Claire Teresa Galavotti,,,,7,TRUE,152,,34,2,34,
+women,foil,ohiostate,clevelandstate,Anna Heiser,5,Evelyn Malvestuto,2,8,TRUE,155,116,35,2,35,
+women,foil,ohiostate,clevelandstate,Raiyan Moradi-Bidhendi,3,Anna Quinn,5,9,TRUE,170,121,36,2,36,
+women,epee,ohiostate,clevelandstate,Erika Gumagay,5,Rayllen Prafil Capaccio,4,1,TRUE,154,120,37,2,37,
+women,epee,ohiostate,clevelandstate,Talia Weiss,5,Maia Taylor Casamayor,3,2,TRUE,182,122,38,2,38,
+women,epee,ohiostate,clevelandstate,Catherine Popa,5,Gwen Nelson,2,3,TRUE,172,119,39,2,39,
+women,epee,ohiostate,clevelandstate,Talia Weiss,3,Rayllen Prafil Capaccio,5,4,TRUE,182,120,40,2,40,
+women,epee,ohiostate,clevelandstate,Erika Gumagay,5,Gwen Nelson,2,5,TRUE,154,119,41,2,41,
+women,epee,ohiostate,clevelandstate,Catherine Popa,5,Maia Taylor Casamayor,2,6,TRUE,172,122,42,2,42,
+women,epee,ohiostate,clevelandstate,Talia Weiss,5,Maggie Mihill,0,7,TRUE,182,118,43,2,43,
+women,epee,ohiostate,clevelandstate,Catherine Popa,5,Rayllen Prafil Capaccio,4,8,TRUE,172,120,44,2,44,
+women,epee,ohiostate,clevelandstate,Erika Gumagay,4,Maia Taylor Casamayor,5,9,TRUE,154,122,45,2,45,
+women,saber,ohiostate,clevelandstate,Grace Fan,,,,1,TRUE,147,,46,2,46,
+women,saber,ohiostate,clevelandstate,Katherine Larimer,5,Aubrey Testroet,2,2,TRUE,160,123,47,2,47,
+women,saber,ohiostate,clevelandstate,Hamsika Arnipalli,5,Samantha Way,4,3,TRUE,140,124,48,2,48,
+women,saber,ohiostate,clevelandstate,Katherine Larimer,,,,4,TRUE,160,,49,2,49,
+women,saber,ohiostate,clevelandstate,Grace Fan,3,Samantha Way,5,5,TRUE,147,124,50,2,50,
+women,saber,ohiostate,clevelandstate,Hamsika Arnipalli,5,Aubrey Testroet,1,6,TRUE,140,123,51,2,51,
+women,saber,ohiostate,clevelandstate,Katherine Larimer,5,Samantha Way,4,7,TRUE,160,124,52,2,52,
+women,saber,ohiostate,clevelandstate,Hamsika Arnipalli,,,,8,TRUE,140,,53,2,53,
+women,saber,ohiostate,clevelandstate,Grace Fan,5,Aubrey Testroet,1,9,TRUE,147,123,54,2,54,
+women,foil,ohiostate,denison,Raiyan Moradi-Bidhendi,5,Lal Ertun,3,1,TRUE,170,192,55,3,55,
+women,foil,ohiostate,denison,Claire Teresa Galavotti,5,Velma Hall,2,2,TRUE,152,193,56,3,56,
+women,foil,ohiostate,denison,Miranda Freedman,5,Bella Musto,0,3,TRUE,150,198,57,3,57,
+women,foil,ohiostate,denison,Claire Teresa Galavotti,5,Lal Ertun,3,4,TRUE,152,192,58,3,58,
+women,foil,ohiostate,denison,Raiyan Moradi-Bidhendi,5,Bella Musto,2,5,TRUE,170,198,59,3,59,
+women,foil,ohiostate,denison,Miranda Freedman,5,Velma Hall,0,6,TRUE,150,193,60,3,60,
+women,foil,ohiostate,denison,Claire Teresa Galavotti,5,Alaina Cabalu,0,7,TRUE,152,190,61,3,61,
+women,foil,ohiostate,denison,Anna Heiser,5,Lal Ertun,4,8,TRUE,155,192,62,3,62,
+women,foil,ohiostate,denison,Raiyan Moradi-Bidhendi,4,Velma Hall,5,9,TRUE,170,193,63,3,63,
+women,epee,ohiostate,denison,Julia Semikin,5,Nicole Krumholz,2,1,TRUE,178,196,64,3,64,
+women,epee,ohiostate,denison,Lucy Whittemore,1,Claire Anderson,5,2,TRUE,183,188,65,3,65,
+women,epee,ohiostate,denison,Sally Fan,5,Chi Chi Agu,1,3,TRUE,148,187,66,3,66,
+women,epee,ohiostate,denison,Lucy Whittemore,5,Nicole Krumholz,3,4,TRUE,183,196,67,3,67,
+women,epee,ohiostate,denison,Julia Semikin,5,Chi Chi Agu,2,5,TRUE,178,187,68,3,68,
+women,epee,ohiostate,denison,Sally Fan,5,Claire Anderson,4,6,TRUE,148,188,69,3,69,
+women,epee,ohiostate,denison,Lucy Whittemore,5,Chi Chi Agu,3,7,TRUE,183,187,70,3,70,
+women,epee,ohiostate,denison,Catherine Popa,4,Nicole Krumholz,5,8,TRUE,172,196,71,3,71,
+women,epee,ohiostate,denison,Erika Gumagay,5,Claire Anderson,2,9,TRUE,154,188,72,3,72,
+women,saber,ohiostate,denison,Grace Fan,5,Corvus Endo,0,1,TRUE,147,191,73,3,73,
+women,saber,ohiostate,denison,Maria Alexe,2,Natalie Isberg,5,2,TRUE,138,194,74,3,74,
+women,saber,ohiostate,denison,Katherine Larimer,5,Joyce Yu,1,3,TRUE,160,203,75,3,75,
+women,saber,ohiostate,denison,Maria Alexe,2,Corvus Endo,5,4,TRUE,138,191,76,3,76,
+women,saber,ohiostate,denison,Grace Fan,5,Joyce Yu,4,5,TRUE,147,203,77,3,77,
+women,saber,ohiostate,denison,Katherine Larimer,2,Natalie Isberg,5,6,TRUE,160,194,78,3,78,
+women,saber,ohiostate,denison,Maria Alexe,5,Joyce Yu,2,7,TRUE,138,203,79,3,79,
+women,saber,ohiostate,denison,Katherine Larimer,3,Corvus Endo,5,8,TRUE,160,191,80,3,80,
+women,saber,ohiostate,denison,Grace Fan,5,Natalie Isberg,1,9,TRUE,147,194,81,3,81,
+women,foil,clevelandstate,denison,Anna Quinn,2,Lal Ertun,5,1,TRUE,121,192,82,4,82,
+women,foil,clevelandstate,denison,,,Velma Hall,,2,TRUE,,193,83,4,83,
+women,foil,clevelandstate,denison,Evelyn Malvestuto,5,Bella Musto,4,3,TRUE,116,198,84,4,84,
+women,foil,clevelandstate,denison,,,Lal Ertun,,4,TRUE,,192,85,4,85,
+women,foil,clevelandstate,denison,Anna Quinn,2,Alaina Cabalu,5,5,TRUE,121,190,86,4,86,
+women,foil,clevelandstate,denison,Evelyn Malvestuto,0,Velma Hall,5,6,TRUE,116,193,87,4,87,
+women,foil,clevelandstate,denison,,,Bella Musto,,7,TRUE,,198,88,4,88,
+women,foil,clevelandstate,denison,Evelyn Malvestuto,1,Lal Ertun,5,8,TRUE,116,192,89,4,89,
+women,foil,clevelandstate,denison,Anna Quinn,5,Velma Hall,4,9,TRUE,121,193,90,4,90,
+women,epee,clevelandstate,denison,Rayllen Prafil Capaccio,5,Chi Chi Agu,0,1,TRUE,120,187,91,4,91,
+women,epee,clevelandstate,denison,Maggie Mihill,4,Claire Anderson,5,2,TRUE,118,188,92,4,92,
+women,epee,clevelandstate,denison,Maia Taylor Casamayor,3,Nicole Krumholz,5,3,TRUE,122,196,93,4,93,
+women,epee,clevelandstate,denison,Maggie Mihill,4,Chi Chi Agu,5,4,TRUE,118,187,94,4,94,
+women,epee,clevelandstate,denison,Rayllen Prafil Capaccio,3,Nicole Krumholz,2,5,TRUE,120,196,95,4,95,
+women,epee,clevelandstate,denison,Maia Taylor Casamayor,5,Claire Anderson,2,6,TRUE,122,188,96,4,96,
+women,epee,clevelandstate,denison,Maggie Mihill,4,Nicole Krumholz,5,7,TRUE,118,196,97,4,97,
+women,epee,clevelandstate,denison,Maia Taylor Casamayor,4,Chi Chi Agu,5,8,TRUE,122,187,98,4,98,
+women,epee,clevelandstate,denison,Rayllen Prafil Capaccio,4,Claire Anderson,5,9,TRUE,120,188,99,4,99,
+women,saber,clevelandstate,denison,,,Corvus Endo,,1,TRUE,,191,100,4,100,
+women,saber,clevelandstate,denison,Aubrey Testroet,5,Joyce Yu,3,2,TRUE,123,203,101,4,101,
+women,saber,clevelandstate,denison,Samantha Way,1,Natalie Isberg,5,3,TRUE,124,194,102,4,102,
+women,saber,clevelandstate,denison,Aubrey Testroet,4,Corvus Endo,5,4,TRUE,123,191,103,4,103,
+women,saber,clevelandstate,denison,,,Natalie Isberg,,5,TRUE,,194,104,4,104,
+women,saber,clevelandstate,denison,Samantha Way,2,Joyce Yu,5,6,TRUE,124,203,105,4,105,
+women,saber,clevelandstate,denison,Aubrey Testroet,5,Natalie Isberg,3,7,TRUE,123,194,106,4,106,
+women,saber,clevelandstate,denison,Samantha Way,2,Corvus Endo,5,8,TRUE,124,191,107,4,107,
+women,saber,clevelandstate,denison,,,Joyce Yu,,9,TRUE,,203,108,4,108,
