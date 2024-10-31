@@ -59,9 +59,11 @@ function MobileNavbar(): JSX.Element {
     const [open, setOpen] = useState(false);
     return (
         <div className="flex flex-row items-center justify-between py-4 md:hidden">
-            <h1 className="text-xl font-extrabold">
-                <span className="text-primary">nonstop</span>fencing
-            </h1>
+            <Link href="/">
+                <h1 className="text-xl font-extrabold">
+                    <span className="text-primary">nonstop</span>fencing
+                </h1>
+            </Link>
             <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger asChild>
                     <MenuIcon />
