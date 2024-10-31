@@ -13,6 +13,7 @@ import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
 import {eventRepository} from '~/repositories';
 import type {University2} from '~/models/University2';
 import type {Metadata} from 'next';
+import type {Event} from '~/models/Event';
 
 export async function generateMetadata({params}: {params: {event: string}}): Promise<Metadata> {
     const event = await eventRepository.findById(params.event);
@@ -43,15 +44,14 @@ export const revalidate = false;
 export default async function EventPage({params}: {params: {event: string}}) {
     const event = await eventRepository.findById(params.event);
     const host = event.hostId ? await universityService.getById(event.hostId) : null;
+    if (event.hasResults === false) {
+        return <NoResultsFallback event={event} host={host} />;
+    }
     const matches = await matchService.fromMeet(event.id);
     if (matches.length === 0) {
-        return (
-            <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
-                <EventHeader title={event.displayName} isoDate={event.startDate.toISOString()} host={host} />
-                <Card className="p-6">We currently don&apos;t have results for this event. Come back later!</Card>
-            </main>
-        );
+        return <NoResultsFallback event={event} host={host} />;
     }
+
     const womensMatches = <MatchesCard title="Women's Matches" matches={matches.filter((match) => match.gender === Gender.WOMEN)} />;
     const mensMatches = <MatchesCard title="Men's Matches" matches={matches.filter((match) => match.gender === Gender.MEN)} />;
     const bouts: Bout[] = await boutService.getFromMeet(event.id);
@@ -109,5 +109,14 @@ function EventHeader({title, isoDate, host}: {title: string; isoDate: string; ho
                 <Date isoDate={isoDate} />
             </div>
         </Card>
+    );
+}
+
+function NoResultsFallback({event, host}: {event: Event; host: University2 | null}) {
+    return (
+        <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
+            <EventHeader title={event.displayName} isoDate={event.startDate.toISOString()} host={host} />
+            <Card className="p-6">We currently don&apos;t have results for this event. Come back later!</Card>
+        </main>
     );
 }

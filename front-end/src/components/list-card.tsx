@@ -3,9 +3,19 @@ import {Card, CardContent, CardHeader, CardTitle} from './ui/card';
 import ConditionalLinkWrapper from './conditional-link-wrapper';
 import {Fragment} from 'react';
 
-export default function ListCard({title, children, titleHref, tableHeader}: {children: React.ReactNode; title?: string; titleHref?: string; tableHeader?: React.ReactNode}) {
+export default function ListCard({
+    title,
+    children,
+    titleHref,
+    tableHeader,
+}: {
+    children: React.ReactNode;
+    title?: string;
+    titleHref?: string;
+    tableHeader?: React.ReactNode;
+}) {
     return (
-        <ConditionalLinkWrapper href={titleHref} className="cursor-pointer transition-all hover:scale-[1.03] hover:bg-accent">
+        <ConditionalLinkWrapper href={titleHref} className="cursor-pointer transition-all hover:scale-[1.03]">
             <Card className="flex flex-col px-6 py-4">
                 <CardHeaderWrapper title={title} href={titleHref} tableHeader={tableHeader} />
                 <CardContent className="flex flex-col gap-0 p-0">

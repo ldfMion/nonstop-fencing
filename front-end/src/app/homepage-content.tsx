@@ -1,7 +1,6 @@
 import {getHomePageFencers, getHomePageTeams} from '~/api';
 import PageHeading from '~/components/page-heading';
 import StandingsCard from '~/components/list-card';
-import type {Squad} from '~/models/Squad';
 import getHomePageSquads from '~/api/getHomePageSquads';
 import SeasonDropdown from '~/components/season-dropdown';
 import type {ISeason} from '~/models/Season';
@@ -12,12 +11,21 @@ import type {University2} from '~/models/University2';
 import type {HasRecord} from '~/models/HasRecord';
 import TeamRow from '~/components/team-row';
 import FencerRow from '~/components/fencer-row';
+import {eventRepository} from '~/repositories';
+import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from '~/components/ui/carousel';
+import {EventCard} from '~/components/event-card';
 
 export default async function HomePageContent({season}: {season: ISeason}) {
     const fencers = await getHomePageFencers(season);
     const squads = await getHomePageSquads(season);
     return (
         <main className="flex flex-col gap-4 px-6">
+            {season.endYear == 2025 && (
+                <>
+                    <PageHeading>Events</PageHeading>
+                    <EventCarousel season={season} />
+                </>
+            )}
             <div className="flex flex-row items-center justify-between">
                 <PageHeading>Fencers</PageHeading>
                 <SeasonDropdown selectedSeason={{...season}} seasons={[{...new Season(2024)}, {...new Season(2025)}]} />
@@ -94,5 +102,24 @@ function SquadList({squads, title, url, gender}: {squads: (University2 & HasReco
                 <TeamRow team={squad} gender={gender} key={squad.id} />
             ))}
         </StandingsCard>
+    );
+}
+
+async function EventCarousel({season}: {season: ISeason}): Promise<JSX.Element> {
+    const events = (await eventRepository.findBySeason(season)).sort((a, b) => a.startDate.getTime() - b.startDate.getTime());
+    return (
+        <div className="w-full">
+            <Carousel className="">
+                <CarouselContent className="flex flex-row items-stretch">
+                    {events.map((event) => (
+                        <CarouselItem key={event.id} className="md:basis-1/2 lg:basis-1/3">
+                            <EventCard event={event} />
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+                <CarouselPrevious className="absolute left-0 -translate-x-1/2" />
+                <CarouselNext className="absolute right-0 translate-x-1/2" />
+            </Carousel>
+        </div>
     );
 }

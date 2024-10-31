@@ -24,6 +24,7 @@ class EventFromCSV implements Event {
     endDate: Date;
     hostId?: string;
     season: ISeason;
+    hasResults: boolean;
     constructor(row: object, season: ISeason) {
         this.displayName = parseRowTextProperty('display_name', row);
         this.hostId = parseOptionalRowTextProperty('host_id', row);
@@ -31,5 +32,6 @@ class EventFromCSV implements Event {
         this.endDate = new Date(parseRowTextProperty('end_date', row));
         this.id = parseRowTextProperty('id', row);
         this.season = season;
+        this.hasResults = parseRowTextProperty('results', row) === 'TRUE';
     }
 }

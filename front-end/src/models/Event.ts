@@ -7,4 +7,5 @@ export interface Event {
     endDate: Date;
     hostId?: string;
     season: ISeason;
+    hasResults: boolean;
 }

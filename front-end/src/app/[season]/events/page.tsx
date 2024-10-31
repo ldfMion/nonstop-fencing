@@ -1,7 +1,7 @@
 import React from 'react';
 import DateComponent from '~/components/date';
 import SeasonDropdown from '~/components/season-dropdown';
-import {Card, CardHeader, CardTitle} from '~/components/ui/card';
+import {Card, CardContent, CardFooter, CardHeader, CardTitle} from '~/components/ui/card';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '~/components/ui/tabs';
 import type {Event} from '~/models/Event';
 import {Season} from '~/models/Season';
@@ -10,6 +10,8 @@ import ConditionalLinkWrapper from '~/components/conditional-link-wrapper';
 import {eventRepository} from '~/repositories';
 import {universityService} from '~/services';
 import type {University2} from '~/models/University2';
+import {Button} from '~/components/ui/button';
+import {EventCard} from '~/components/event-card';
 
 export default async function EventsPage({params}: {params: {season: string}}) {
     let currentSeason;
@@ -24,7 +26,7 @@ export default async function EventsPage({params}: {params: {season: string}}) {
     } else {
         currentSeason = new Season(2025);
     }
-    const events = await eventRepository.findBySeason(currentSeason);
+    const events = (await eventRepository.findBySeason(currentSeason)).sort((a, b) => a.startDate.getTime() - b.startDate.getTime());
     const past = events.filter((event) => event.startDate < new Date());
     const upcoming = events.filter((event) => event.startDate >= new Date());
     const hasPastAndUpcoming = past.length > 0 && upcoming.length > 0;
@@ -57,27 +59,6 @@ function EventsList({events}: {events: Event[]}) {
                 </li>
             ))}
         </ol>
-    );
-}
-
-async function EventCard({event}: {event: Event}) {
-    let host: University2 | null = null;
-    if (event.hostId) {
-        host = await universityService.getById(event.hostId);
-    }
-    const eventUrl = `/events/${event.id}`;
-    return (
-        <ConditionalLinkWrapper href={eventUrl} className="cursor-pointer transition-all hover:scale-[1.03] hover:bg-accent">
-            <Card className="px-6 py-4">
-                <CardHeader className="flex flex-col items-start justify-between p-0 lg:flex-row lg:items-center [&>*]:!m-0">
-                    <div className="flex flex-row items-center gap-1">
-                        <CardTitle className="!m-0 text-xl">{event.displayName}</CardTitle>
-                        {host && <Host university={host} className="text-lg" />}
-                    </div>
-                    <DateComponent isoDate={event.startDate.toISOString()} />
-                </CardHeader>
-            </Card>
-        </ConditionalLinkWrapper>
     );
 }
 
