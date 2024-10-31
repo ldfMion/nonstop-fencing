@@ -6,7 +6,6 @@ import type {Squad} from '~/models/Squad';
 import {Gender} from '~/models/Gender';
 
 export default function TeamRowWrapper({team, gender}: {team: University2 & HasRecord; gender: Gender}) {
-    // is a University2 & HasRecord
     return <TeamRow team={team} gender={gender} />;
 }
 
