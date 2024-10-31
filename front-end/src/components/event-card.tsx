@@ -1,6 +1,6 @@
-import {Event} from '~/models/Event';
+import type {Event} from '~/models/Event';
 import DateComponent from '~/components/date';
-import {University2} from '~/models/University2';
+import type {University2} from '~/models/University2';
 import {universityService} from '~/services';
 import ConditionalLinkWrapper from './conditional-link-wrapper';
 import {Card, CardContent, CardFooter, CardHeader, CardTitle} from './ui/card';
