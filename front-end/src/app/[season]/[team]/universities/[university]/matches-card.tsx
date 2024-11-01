@@ -24,7 +24,7 @@ export default async function MatchesCard({
     const matches = await matchService.get({season: season, gender: gender, university: university});
     const matchesGroupedByDate = await groupMatchesByDate(matches);
     return (
-        <ListCard title="Fixtures" tableHeader={<MatchTableHeader />}>
+        <ListCard title="Matches" tableHeader={<MatchTableHeader />}>
             {Object.keys(matchesGroupedByDate).map((date) => (
                 <Fragment key={date}>
                     <Date isoDate={date} />

@@ -20,7 +20,7 @@ export default async function SquadCard({
     const withRecords = await fencerService.getSeasonRecords(fencers, season);
     const dataUnavailable = fencers.length === 0;
     return (
-        <ListCard title="Squad">
+        <ListCard title="Roster">
             {dataUnavailable ? (
                 <Fragment>
                     <p>We currently don&apos;t have this team&apos;s fencers&apos; records.</p>
