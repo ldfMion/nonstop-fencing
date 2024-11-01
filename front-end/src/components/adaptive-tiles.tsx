@@ -2,7 +2,15 @@ import {Fragment} from 'react';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from './ui/tabs';
 import clsx from 'clsx';
 
-export function AdaptiveTiles({elements, defaultOnMobile, className}: {elements: {title: string; content: JSX.Element}[][]; defaultOnMobile: string; className?: string}) {
+export function AdaptiveTiles({
+    elements,
+    defaultOnMobile,
+    className,
+}: {
+    elements: {title: string; content: JSX.Element}[][];
+    defaultOnMobile: string;
+    className?: string;
+}) {
     return (
         <Fragment>
             <div className={clsx(`hidden gap-5 lg:grid [&>*]:grow grid-cols-${elements.length}`, className)}>
@@ -22,7 +30,7 @@ export function AdaptiveTiles({elements, defaultOnMobile, className}: {elements:
 function MobileContentSelector({elements, defaultTitle}: {defaultTitle: string; elements: {title: string; content: JSX.Element}[]}) {
     return (
         <Tabs defaultValue={defaultTitle} className="lg:hidden [&>*]:mt-0">
-            <TabsList className="grid w-full grid-flow-col justify-stretch overflow-scroll">
+            <TabsList className="grid w-full grid-flow-col justify-stretch overflow-y-hidden overflow-x-scroll">
                 {elements.map((element) => (
                     <TabsTrigger value={element.title} key={element.title}>
                         {element.title}
