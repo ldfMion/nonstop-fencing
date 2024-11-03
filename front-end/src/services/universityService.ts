@@ -11,7 +11,7 @@ export class UniversityService {
     async getFromMeet(meetId: string, gender: Gender): Promise<(University2 & HasRecord)[]> {
         const matchesFromMeet = (await matchRepository.findByMeetId(meetId)).filter((match) => match.gender === gender);
         const universities = await this.getFromMatches(matchesFromMeet);
-        const withRecord = recordService.calculateRecordsFromMatches(universities, matchesFromMeet);
+        const withRecord = recordService.calculateRecordsFromMatches(universities, matchesFromMeet).sort((a, b) => b.rating - a.rating);
         return withRecord;
     }
     private async getFromMatches(matches: Match2[]): Promise<University2[]> {

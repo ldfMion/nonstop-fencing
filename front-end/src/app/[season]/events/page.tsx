@@ -1,16 +1,9 @@
 import React from 'react';
-import DateComponent from '~/components/date';
 import SeasonDropdown from '~/components/season-dropdown';
-import {Card, CardContent, CardFooter, CardHeader, CardTitle} from '~/components/ui/card';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '~/components/ui/tabs';
 import type {Event} from '~/models/Event';
 import {Season} from '~/models/Season';
-import Host from '~/components/host';
-import ConditionalLinkWrapper from '~/components/conditional-link-wrapper';
 import {eventRepository} from '~/repositories';
-import {universityService} from '~/services';
-import type {University2} from '~/models/University2';
-import {Button} from '~/components/ui/button';
 import {EventCard} from '~/components/event-card';
 
 export default async function EventsPage({params}: {params: {season: string}}) {

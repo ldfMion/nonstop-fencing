@@ -113,7 +113,9 @@ function SquadList({squads, title, url, gender}: {squads: (University2 & HasReco
 }
 
 async function EventCarousel({season}: {season: ISeason}): Promise<JSX.Element> {
-    const events = (await eventRepository.findBySeason(season)).sort((a, b) => a.startDate.getTime() - b.startDate.getTime());
+    const events = (await eventRepository.findBySeason(season))
+        .filter((event) => event.hasResults)
+        .sort((a, b) => b.startDate.getTime() - a.startDate.getTime());
     return (
         <div className="w-full">
             <Carousel className="">
