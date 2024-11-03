@@ -17,23 +17,27 @@ export default async function BoutRow({bout, perspective}: {bout: Bout; perspect
         fencerB = await fencerService.getById(bout.fencerBId);
     }
     return (
-        <li className="bout-grid py-2">
+        <BoutWrapper>
             {fencerA ? <p className="font-medium">{fencerA.name}</p> : <div></div>}
-            <div className="w-fit text-nowrap text-center align-middle">
-                {!bout.isNotBye() ? (
-                    'BYE'
-                ) : (
-                    <Fragment>
-                        <Score score={bout.score.a} win={bout.winnerId === bout.fencerAId} /> <span>-</span>{' '}
-                        <Score score={bout.score.b} win={bout.winnerId === bout.fencerBId} />
-                    </Fragment>
-                )}
-            </div>
+            <div className="w-fit text-nowrap text-center align-middle">{!bout.isCompleted() ? 'BYE' : <Scores bout={bout} />}</div>
             {fencerB ? <p className="text-right font-medium">{fencerB.name}</p> : <div></div>}
-        </li>
+        </BoutWrapper>
     );
 }
 
-function Score({score, win}: {score: number; win: boolean}) {
-    return <span className={clsx(win ? 'text-green-400' : 'text-red-500', 'font-bold')}>{score}</span>;
+function BoutWrapper({children}: {children: React.ReactNode}) {
+    return <li className="bout-grid py-2">{children}</li>;
+}
+
+function Scores({bout}: {bout: Bout}): JSX.Element {
+    return (
+        <Fragment>
+            <Score score={bout.hasScore() ? bout.score.a : undefined} win={bout.winnerId === bout.fencerAId} /> <span>-</span>{' '}
+            <Score score={bout.hasScore() ? bout.score.b : undefined} win={bout.winnerId === bout.fencerBId} />
+        </Fragment>
+    );
+}
+
+function Score({score, win}: {score?: number; win: boolean}) {
+    return <span className={clsx(win ? 'text-green-400' : 'text-red-500', 'font-bold')}>{score ?? (win ? 'W' : 'L')}</span>;
 }

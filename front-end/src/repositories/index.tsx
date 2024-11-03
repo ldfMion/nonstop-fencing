@@ -10,21 +10,24 @@ import type {FencerRepository} from './FencerRepository';
 import type {MatchRepository} from './MatchRepository';
 import type {Repository} from './Repository';
 
-const MATCHES_FILENAME_2025 = '../data/osu_duals_matches.csv';
+const OSU_DUALS_MATCHES_25 = '../data/osu_duals_matches.csv';
+const LIU_INVITATIONAL_MATCHES = '../data/liu_invitational_matches.csv';
 const MATCHES_FILENAME_2024_MEN = '../data/team-results-men.csv';
 const MATCHES_FILENAME_2024_WOMEN = '../data/team-results-women.csv';
-const BOUTS_FILENAME = '../data/osu_duals_bouts.csv';
+const OSU_DUALS_BOUTS = '../data/osu_duals_bouts.csv';
+const LIU_INVITATIONAL_BOUTS = '../data/liu_invitational_bouts.csv';
 const FENCERS_FILENAME_2025 = '../data/fencers_24_25.csv';
 const FENCERS_FILENAME_2024 = '../data/fencers_23_24.csv';
 const UNIVERSITIES_FILENAME = '../data/universities.csv';
 const EVENTS_FILENAME = '../data/meets_24_25.csv';
 
 export const matchRepository = new CSVMatchRepository(
-    MATCHES_FILENAME_2025,
+    OSU_DUALS_MATCHES_25,
     MATCHES_FILENAME_2024_MEN,
     MATCHES_FILENAME_2024_WOMEN,
+    LIU_INVITATIONAL_MATCHES,
 ) as MatchRepository;
-export const boutRepository = new CSVBoutRepository(BOUTS_FILENAME) as BoutRepository;
+export const boutRepository = new CSVBoutRepository(OSU_DUALS_BOUTS, LIU_INVITATIONAL_BOUTS) as BoutRepository;
 export const fencerRepository = new CSVFencerRepository(FENCERS_FILENAME_2024, FENCERS_FILENAME_2025) as FencerRepository;
 export const universityRepository = new CSVUniversityRepository(UNIVERSITIES_FILENAME) as Repository<University2>;
 export const eventRepository = new CSVEventRepository(EVENTS_FILENAME) as EventRepository;

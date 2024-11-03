@@ -1,0 +1,11 @@
+index,start row,team_a_id,team_b_id,id,gender,meet_id,season,meet_id.1,overall_a,overall_b,foil_a,foil_b,epee_a,epee_b,saber_a,saber_b
+1,2,liu,drew,1b,women,b,2025,b,14,13,6,3,3,6,5,4
+2,29,njit,wellesley,2b,women,b,2025,b,15,12,7,2,5,4,3,6
+3,56,wellesley,stevens ,3b,women,b,2025,b,20,7,5,4,7,2,8,1
+4,83,liu,njit,4b,women,b,2025,b,15,12,6,3,6,3,3,6
+5,110,liu,wellesley,5b,women,b,2025,b,12,15,3,6,5,4,4,5
+6,137,drew,stevens ,6b,women,b,2025,b,15,12,5,4,6,3,4,5
+7,164,drew,wellesley,7b,women,b,2025,b,9,18,2,7,4,5,3,6
+8,191,njit,stevens ,8b,women,b,2025,b,16,10,4,5,5,4,7,1
+9,218,drew,njit,9b,women,b,2025,b,17,10,5,4,5,4,7,2
+10,245,liu,stevens ,10b,women,b,2025,b,17,10,8,1,6,3,3,6

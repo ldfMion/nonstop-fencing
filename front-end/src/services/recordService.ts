@@ -9,8 +9,8 @@ import type {HasRecord} from '~/models/HasRecord';
 export class RecordService {
     calculateRecordsFromBouts<T extends Fencer>(fencers: T[], bouts: Bout[]): (T & {record: Record; rating: number})[] {
         return fencers.map((fencer) => {
-            const wins = bouts.filter((bout) => bout.isNotBye() && bout.includes(fencer) && bout.winnerId === fencer.id);
-            const losses = bouts.filter((bout) => bout.isNotBye() && bout.includes(fencer) && bout.winnerId !== fencer.id);
+            const wins = bouts.filter((bout) => bout.isCompleted() && bout.includes(fencer) && bout.winnerId === fencer.id);
+            const losses = bouts.filter((bout) => bout.isCompleted() && bout.includes(fencer) && bout.winnerId !== fencer.id);
             return {
                 ...fencer,
                 record: {

@@ -1,0 +1,271 @@
+gender,weapon,team_a_id,team_b_id,fencer_a_name,score_a,fencer_b_name,score_b,winner,order,ncaa_status,fencer_a_id,fencer_b_id,id,match_id,index,meet_id,tie
+women,foil,liu,drew,Anna Szántay,5,Bella Hatzoglu,0,,1,TRUE,245,305,1,1b,1,b,FALSE
+women,foil,liu,drew ,Daniela Perez Leal,4,Filiz Erdogan,5,,2,TRUE,241,299,2,1b,2,b,FALSE
+women,foil,liu,drew ,Abigail Hunt,3,Assata Mutakabbir,5,,3,TRUE,237,310,3,1b,3,b,FALSE
+women,foil,liu,drew ,Daniela Perez Leal,5,Bella Hatzoglu,2,,4,TRUE,241,305,4,1b,4,b,FALSE
+women,foil,liu,drew ,Anna Szántay,5,Assata Mutakabbir,2,,5,TRUE,245,310,5,1b,5,b,FALSE
+women,foil,liu,drew ,Abigail Hunt,5,Filiz Erdogan,2,,6,TRUE,237,299,6,1b,6,b,FALSE
+women,foil,liu,drew ,Daniela Perez Leal,5,Assata Mutakabbir,4,,7,TRUE,241,310,7,1b,7,b,FALSE
+women,foil,liu,drew ,Abigail Hunt,1,Bella Hatzoglu,5,,8,TRUE,237,305,8,1b,8,b,FALSE
+women,foil,liu,drew ,Anna Szántay,5,Filiz Erdogan,3,,9,TRUE,245,299,9,1b,9,b,FALSE
+women,epee,liu,drew ,Sarah Ellis,3,Izzy Anderson,5,,1,TRUE,232,294,10,1b,10,b,FALSE
+women,epee,liu,drew ,Costanza Greggi,3,Amira Mutakabbir,5,,2,TRUE,236,309,11,1b,11,b,FALSE
+women,epee,liu,drew ,Angela Wandmacher,2,Brenna Behensky,5,,3,TRUE,389,295,12,1b,12,b,FALSE
+women,epee,liu,drew ,Costanza Greggi,5,Izzy Anderson,3,,4,TRUE,236,294,13,1b,13,b,FALSE
+women,epee,liu,drew ,Sarah Ellis,3,Brenna Behensky,5,,5,TRUE,232,295,14,1b,14,b,FALSE
+women,epee,liu,drew ,Angela Wandmacher,4,Amira Mutakabbir,5,,6,TRUE,389,309,15,1b,15,b,FALSE
+women,epee,liu,drew ,Costanza Greggi,5,Brenna Behensky,1,,7,TRUE,236,295,16,1b,16,b,FALSE
+women,epee,liu,drew ,Angela Wandmacher,5,Izzy Anderson,3,,8,TRUE,389,294,17,1b,17,b,FALSE
+women,epee,liu,drew ,Sarah Ellis,3,Amira Mutakabbir,5,,9,TRUE,232,309,18,1b,18,b,FALSE
+women,saber,liu,drew ,Chejsa-Kaili Seck,5,Nzingha Mutakabbir,0,,1,TRUE,244,311,19,1b,19,b,FALSE
+women,saber,liu,drew ,Yeh,0,Sophie Gajowskyj,5,,2,TRUE,389,302,20,1b,20,b,FALSE
+women,saber,liu,drew ,Kitty Feketics,0,Jay Cusson,5,,3,TRUE,234,298,21,1b,21,b,FALSE
+women,saber,liu,drew ,Yeh,5,Nzingha Mutakabbir,4,,4,TRUE,389,311,22,1b,22,b,FALSE
+women,saber,liu,drew ,Chejsa-Kaili Seck,5,Jay Cusson,1,,5,TRUE,244,298,23,1b,23,b,FALSE
+women,saber,liu,drew ,Kitty Feketics,1,Sophie Gajowskyj,5,,6,TRUE,234,302,24,1b,24,b,FALSE
+women,saber,liu,drew ,Yeh,5,Jay Cusson,2,,7,TRUE,389,298,25,1b,25,b,FALSE
+women,saber,liu,drew ,Kitty Feketics,0,Nzingha Mutakabbir,5,,8,TRUE,234,311,26,1b,26,b,FALSE
+women,saber,liu,drew ,Chejsa-Kaili Seck,5,Sophie Gajowskyj,2,,9,TRUE,244,302,27,1b,27,b,FALSE
+women,foil,njit,wellesley,Stella Frias,4,Daisy Wiseman,3,,1,TRUE,208,330,28,2b,28,b,FALSE
+women,foil,njit,wellesley,,,Gina Huang,,,2,TRUE,BYE,321,29,2b,29,b,FALSE
+women,foil,njit,wellesley,Elena Fernandez Negron,5,Phoebe Li,1,,3,TRUE,207,324,30,2b,30,b,FALSE
+women,foil,njit,wellesley,,,Daisy Wiseman,,,4,TRUE,BYE,330,31,2b,31,b,FALSE
+women,foil,njit,wellesley,Stella Frias,3,Lauren Khoo,5,,5,TRUE,208,322,32,2b,32,b,FALSE
+women,foil,njit,wellesley,Elena Fernandez Negron,5,Gina Huang,3,,6,TRUE,207,321,33,2b,33,b,FALSE
+women,foil,njit,wellesley,,,Lauren Khoo,,,7,TRUE,BYE,322,34,2b,34,b,FALSE
+women,foil,njit,wellesley,Elena Fernandez Negron,4,Daisy Wiseman,3,,8,TRUE,207,330,35,2b,35,b,FALSE
+women,foil,njit,wellesley,Stella Frias,2,Gina Huang,5,,9,TRUE,208,321,36,2b,36,b,FALSE
+women,epee,njit,wellesley,Gala Krsmanovic,5,Alisha Li,4,,1,TRUE,210,323,37,2b,37,b,FALSE
+women,epee,njit,wellesley,Megan Hillyer,3,Grace Xu,5,,2,TRUE,209,331,38,2b,38,b,FALSE
+women,epee,njit,wellesley,Margaret Meschia,5,Renee Sun,0,,3,TRUE,212,326,39,2b,39,b,FALSE
+women,epee,njit,wellesley,Megan Hillyer,1,Alisha Li,5,,4,TRUE,209,323,40,2b,40,b,FALSE
+women,epee,njit,wellesley,Gala Krsmanovic,3,Renee Sun,5,,5,TRUE,210,326,41,2b,41,b,FALSE
+women,epee,njit,wellesley,Margaret Meschia,5,Grace Xu,1,,6,TRUE,212,331,42,2b,42,b,FALSE
+women,epee,njit,wellesley,Megan Hillyer,4,Sissi Zou,2,,7,TRUE,209,333,43,2b,43,b,FALSE
+women,epee,njit,wellesley,Margaret Meschia,4,Alisha Li,3,,8,TRUE,212,323,44,2b,44,b,FALSE
+women,epee,njit,wellesley,Gala Krsmanovic,1,Grace Xu,3,,9,TRUE,210,331,45,2b,45,b,FALSE
+women,saber,njit,wellesley,Zoey Wen,,Makana Burch,,a,1,TRUE,215,316,46,2b,46,b,TRUE
+women,saber,njit,wellesley,Randa Shalabi,,Rebecca Hsieh (saber),,b,2,TRUE,213,320,47,2b,47,b,TRUE
+women,saber,njit,wellesley,Anastasiia Volynska,,Emily Zhao,,b,3,TRUE,214,332,48,2b,48,b,TRUE
+women,saber,njit,wellesley,Kaydine Gonzalez,,Makana Burch,,b,4,TRUE,205,316,49,2b,49,b,TRUE
+women,saber,njit,wellesley,Zoey Wen,,Emily Zhao,,b,5,TRUE,215,332,50,2b,50,b,TRUE
+women,saber,njit,wellesley,Anastasiia Volynska,,Rebecca Hsieh (saber),,b,6,TRUE,214,320,51,2b,51,b,TRUE
+women,saber,njit,wellesley,Kaydine Gonzalez,,Emily Zhao,,b,7,TRUE,205,332,52,2b,52,b,TRUE
+women,saber,njit,wellesley,Anastasiia Volynska,,Naomi Wang,,a,8,TRUE,214,328,53,2b,53,b,TRUE
+women,saber,njit,wellesley,Zoey Wen,,Rebecca Hsieh (saber),,a,9,TRUE,215,320,54,2b,54,b,TRUE
+women,foil,wellesley,stevens ,Lauren Khoo,5,Elizabeth MacDonald,0,,1,TRUE,322,379,82,3b,55,b,FALSE
+women,foil,wellesley,stevens ,Leena Hobson,1,Emily Zgombic,5,,2,TRUE,318,389,83,3b,56,b,FALSE
+women,foil,wellesley,stevens ,Gina Huang,5,Akemi Rodriguez,3,,3,TRUE,321,384,84,3b,57,b,FALSE
+women,foil,wellesley,stevens ,Leena Hobson,3,Elizabeth MacDonald,5,,4,TRUE,318,379,85,3b,58,b,FALSE
+women,foil,wellesley,stevens ,Lauren Khoo,5,Akemi Rodriguez,2,,5,TRUE,322,384,86,3b,59,b,FALSE
+women,foil,wellesley,stevens ,Gina Huang,5,Emily Zgombic,2,,6,TRUE,321,389,87,3b,60,b,FALSE
+women,foil,wellesley,stevens ,Leena Hobson,1,Akemi Rodriguez,5,,7,TRUE,318,384,88,3b,61,b,FALSE
+women,foil,wellesley,stevens ,Gina Huang,3,Julia DiPaolo,5,,8,TRUE,321,373,89,3b,62,b,FALSE
+women,foil,wellesley,stevens ,Lauren Khoo,5,Emily Zgombic,3,,9,TRUE,322,389,90,3b,63,b,FALSE
+women,saber,wellesley,stevens ,Makana Burch,5,Alyssa Ip,2,,1,TRUE,316,376,91,3b,64,b,FALSE
+women,saber,wellesley,stevens ,Emily Zhao,5,Ashlyn Leung,3,,2,TRUE,332,378,92,3b,65,b,FALSE
+women,saber,wellesley,stevens ,Rebecca Hsieh (saber),5,Rachel Naomi Quedding,1,,3,TRUE,320,383,93,3b,66,b,FALSE
+women,saber,wellesley,stevens ,Emily Zhao,5,Alyssa Ip,4,,4,TRUE,332,376,94,3b,67,b,FALSE
+women,saber,wellesley,stevens ,Makana Burch,5,Rachel Naomi Quedding,3,,5,TRUE,316,383,95,3b,68,b,FALSE
+women,saber,wellesley,stevens ,Rebecca Hsieh (saber),5,Ashlyn Leung,4,,6,TRUE,320,378,96,3b,69,b,FALSE
+women,saber,wellesley,stevens ,Emily Zhao,5,Rachel Naomi Quedding,2,,7,TRUE,332,383,97,3b,70,b,FALSE
+women,saber,wellesley,stevens ,Rebecca Hsieh (saber),5,Alyssa Ip,0,,8,TRUE,320,376,98,3b,71,b,FALSE
+women,saber,wellesley,stevens ,Naomi Wang,4,Ashlyn Leung,5,,9,TRUE,328,378,99,3b,72,b,FALSE
+women,epee,wellesley,stevens ,Grace Xu,5,Renny Victoria,1,,1,TRUE,331,388,100,3b,73,b,FALSE
+women,epee,wellesley,stevens ,Renee Sun,5,Grace Hicks,3,,2,TRUE,326,375,101,3b,74,b,FALSE
+women,epee,wellesley,stevens ,Alisha Li,5,Emily Miller,2,,3,TRUE,323,380,102,3b,75,b,FALSE
+women,epee,wellesley,stevens ,Renee Sun,5,Renny Victoria,3,,4,TRUE,326,388,103,3b,76,b,FALSE
+women,epee,wellesley,stevens ,Grace Xu,3,Emily Miller,5,,5,TRUE,331,380,104,3b,77,b,FALSE
+women,epee,wellesley,stevens ,Alisha Li,2,Grace Hicks,3,,6,TRUE,323,375,105,3b,78,b,FALSE
+women,epee,wellesley,stevens ,Elena Vona,5,Emily Miller,3,,7,TRUE,327,380,106,3b,79,b,FALSE
+women,epee,wellesley,stevens ,Julia Peeler,5,Renny Victoria,3,,8,TRUE,325,388,107,3b,80,b,FALSE
+women,epee,wellesley,stevens ,Grace Xu,5,Grace Hicks,2,,9,TRUE,331,375,108,3b,81,b,FALSE
+women,foil,liu,njit,Anna Szántay,5,Stella Frias,1,,1,TRUE,245,208,109,4b,82,b,FALSE
+women,foil,liu,njit,Daniela Perez Leal,5,Elena Fernandez Negron,2,,2,TRUE,241,207,110,4b,83,b,FALSE
+women,foil,liu,njit,Abigail Hunt,,,,,3,TRUE,237,BYE,111,4b,84,b,FALSE
+women,foil,liu,njit,Daniela Perez Leal,1,Stella Frias,5,,4,TRUE,241,208,112,4b,85,b,FALSE
+women,foil,liu,njit,Anna Szántay,,,,,5,TRUE,245,BYE,113,4b,86,b,FALSE
+women,foil,liu,njit,Abigail Hunt,1,Elena Fernandez Negron,5,,6,TRUE,237,207,114,4b,87,b,FALSE
+women,foil,liu,njit,Daniela Perez Leal,,,,,7,TRUE,241,BYE,115,4b,88,b,FALSE
+women,foil,liu,njit,Abigail Hunt,3,Stella Frias,5,,8,TRUE,237,208,116,4b,89,b,FALSE
+women,foil,liu,njit,Anna Szántay,5,Elena Fernandez Negron,2,,9,TRUE,245,207,117,4b,90,b,FALSE
+women,epee,liu,njit,Costanza Greggi,3,Margaret Meschia,2,,1,TRUE,236,212,118,4b,91,b,FALSE
+women,epee,liu,njit,Francesca Perez,5,Gala Krsmanovic,1,,2,TRUE,240,210,119,4b,92,b,FALSE
+women,epee,liu,njit,Angela Wandmacher,5,Megan Hillyer,0,,3,TRUE,389,209,120,4b,93,b,FALSE
+women,epee,liu,njit,Francesca Perez,4,Margaret Meschia,3,,4,TRUE,240,212,121,4b,94,b,FALSE
+women,epee,liu,njit,Sarah Ellis,1,Megan Hillyer,5,,5,TRUE,232,209,122,4b,95,b,FALSE
+women,epee,liu,njit,Angela Wandmacher,5,Gala Krsmanovic,0,,6,TRUE,389,210,123,4b,96,b,FALSE
+women,epee,liu,njit,Francesca Perez,3,Megan Hillyer,4,,7,TRUE,240,209,124,4b,97,b,FALSE
+women,epee,liu,njit,Angela Wandmacher,5,Margaret Meschia,2,,8,TRUE,389,212,125,4b,98,b,FALSE
+women,epee,liu,njit,Catherine Felix,3,Gala Krsmanovic,5,,9,TRUE,235,210,126,4b,99,b,FALSE
+women,saber,liu,njit,Chejsa-Kaili Seck,5,Anastasiia Volynska,2,,1,TRUE,244,214,127,4b,100,b,FALSE
+women,saber,liu,njit,Marisa Mohan,3,Zoey Wen,5,,2,TRUE,238,215,128,4b,101,b,FALSE
+women,saber,liu,njit,Jana Saleh,4,Kaydine Gonzalez,5,,3,TRUE,242,205,129,4b,102,b,FALSE
+women,saber,liu,njit,Marisa Mohan,2,Anastasiia Volynska,5,,4,TRUE,238,214,130,4b,103,b,FALSE
+women,saber,liu,njit,Chejsa-Kaili Seck,5,Randa Shalabi,0,,5,TRUE,244,213,131,4b,104,b,FALSE
+women,saber,liu,njit,Jana Saleh,4,Zoey Wen,5,,6,TRUE,242,215,132,4b,105,b,FALSE
+women,saber,liu,njit,Marisa Mohan,3,Randa Shalabi,5,,7,TRUE,238,213,133,4b,106,b,FALSE
+women,saber,liu,njit,Jana Saleh,4,Anastasiia Volynska,5,,8,TRUE,242,214,134,4b,107,b,FALSE
+women,saber,liu,njit,Chejsa-Kaili Seck,5,Zoey Wen,0,,9,TRUE,244,215,135,4b,108,b,FALSE
+women,epee,liu,wellesley,Costanza Greggi,5,Alisha Li,1,,1,TRUE,236,323,109,5b,109,b,FALSE
+women,epee,liu,wellesley,Daniela Perez Leal,5,Grace Xu,4,,2,TRUE,241,331,110,5b,110,b,FALSE
+women,epee,liu,wellesley,Angela Wandmacher,5,Renee Sun,4,,3,TRUE,389,326,111,5b,111,b,FALSE
+women,epee,liu,wellesley,Daniela Perez Leal,2,Alisha Li,5,,4,TRUE,241,323,112,5b,112,b,FALSE
+women,epee,liu,wellesley,Costanza Greggi,5,Renee Sun,2,,5,TRUE,236,326,113,5b,113,b,FALSE
+women,epee,liu,wellesley,Angela Wandmacher,3,Grace Xu,5,,6,TRUE,389,331,114,5b,114,b,FALSE
+women,epee,liu,wellesley,Sherpa,4,Renee Sun,5,,7,TRUE,389,326,115,5b,115,b,FALSE
+women,epee,liu,wellesley,Angela Wandmacher,3,Alisha Li,5,,8,TRUE,389,323,116,5b,116,b,FALSE
+women,epee,liu,wellesley,Costanza Greggi,5,Grace Xu,3,,9,TRUE,236,331,117,5b,117,b,FALSE
+women,foil,liu,wellesley,Anna Szántay,5,Daisy Wiseman,0,,1,TRUE,245,330,118,5b,118,b,FALSE
+women,foil,liu,wellesley,Daniela Perez Leal,1,Lauren Khoo,5,,2,TRUE,241,322,119,5b,119,b,FALSE
+women,foil,liu,wellesley,Abigail Hunt,0,Gina Huang,5,,3,TRUE,237,321,120,5b,120,b,FALSE
+women,foil,liu,wellesley,Daniela Perez Leal,0,Phoebe Li,5,,4,TRUE,241,324,121,5b,121,b,FALSE
+women,foil,liu,wellesley,Anna Szántay,5,Gina Huang,1,,5,TRUE,245,321,122,5b,122,b,FALSE
+women,foil,liu,wellesley,Abigail Hunt,2,Lauren Khoo,5,,6,TRUE,237,322,123,5b,123,b,FALSE
+women,foil,liu,wellesley,Daniela Perez Leal,3,Gina Huang,5,,7,TRUE,241,321,124,5b,124,b,FALSE
+women,foil,liu,wellesley,Abigail Hunt,0,Daisy Wiseman,5,,8,TRUE,237,330,125,5b,125,b,FALSE
+women,foil,liu,wellesley,Anna Szántay,5,Lauren Khoo,1,,9,TRUE,245,322,126,5b,126,b,FALSE
+women,saber,liu,wellesley,Chejsa-Kaili Seck,5,Rebecca Hsieh (saber),2,,1,TRUE,244,320,127,5b,127,b,FALSE
+women,saber,liu,wellesley,Jana Saleh,1,Makana Burch,5,,2,TRUE,242,316,128,5b,128,b,FALSE
+women,saber,liu,wellesley,Yeh,0,Emily Zhao,5,,3,TRUE,389,332,129,5b,129,b,FALSE
+women,saber,liu,wellesley,Jana Saleh,1,Rebecca Hsieh (saber),5,,4,TRUE,242,320,130,5b,130,b,FALSE
+women,saber,liu,wellesley,Chejsa-Kaili Seck,5,Emily Zhao,2,,5,TRUE,244,332,131,5b,131,b,FALSE
+women,saber,liu,wellesley,Yeh,0,Makana Burch,5,,6,TRUE,389,316,132,5b,132,b,FALSE
+women,saber,liu,wellesley,Jana Saleh,0,Emily Zhao,5,,7,TRUE,242,332,133,5b,133,b,FALSE
+women,saber,liu,wellesley,Yeh,5,Naomi Wang,4,,8,TRUE,389,328,134,5b,134,b,FALSE
+women,saber,liu,wellesley,Chejsa-Kaili Seck,5,Makana Burch,1,,9,TRUE,244,316,135,5b,135,b,FALSE
+women,foil,drew,stevens ,Filiz Erdogan,4,Elizabeth MacDonald,5,,1,TRUE,299,379,136,6b,136,b,FALSE
+women,foil,drew,stevens ,Bella Hatzoglu,5,Julia DiPaolo,0,,2,TRUE,305,373,137,6b,137,b,FALSE
+women,foil,drew,stevens ,Assata Mutakabbir,5,Akemi Rodriguez,1,,3,TRUE,310,384,138,6b,138,b,FALSE
+women,foil,drew,stevens ,Bella Hatzoglu,3,Elizabeth MacDonald,5,,4,TRUE,305,379,139,6b,139,b,FALSE
+women,foil,drew,stevens ,Filiz Erdogan,5,Akemi Rodriguez,3,,5,TRUE,299,384,140,6b,140,b,FALSE
+women,foil,drew,stevens ,Assata Mutakabbir,2,Julia DiPaolo,4,,6,TRUE,310,373,141,6b,141,b,FALSE
+women,foil,drew,stevens ,Bella Hatzoglu,5,Akemi Rodriguez,1,,7,TRUE,305,384,142,6b,142,b,FALSE
+women,foil,drew,stevens ,Assata Mutakabbir,1,Elizabeth MacDonald,5,,8,TRUE,310,379,143,6b,143,b,FALSE
+women,foil,drew,stevens ,Filiz Erdogan,5,Julia DiPaolo,4,,9,TRUE,299,373,144,6b,144,b,FALSE
+women,epee,drew,stevens ,Amira Mutakabbir,5,Renny Victoria,3,,1,TRUE,309,388,145,6b,145,b,FALSE
+women,epee,drew,stevens ,Brenna Behensky,0,Grace Hicks,6,,2,TRUE,295,375,146,6b,146,b,FALSE
+women,epee,drew,stevens ,Izzy Anderson,1,Emily Miller,5,,3,TRUE,294,380,147,6b,147,b,FALSE
+women,epee,drew,stevens ,Brenna Behensky,5,Renny Victoria,0,,4,TRUE,295,388,148,6b,148,b,FALSE
+women,epee,drew,stevens ,Amira Mutakabbir,5,Emily Miller,1,,5,TRUE,309,380,149,6b,149,b,FALSE
+women,epee,drew,stevens ,Izzy Anderson,3,Grace Hicks,5,,6,TRUE,294,375,150,6b,150,b,FALSE
+women,epee,drew,stevens ,Brenna Behensky,5,Emily Miller,3,,7,TRUE,295,380,151,6b,151,b,FALSE
+women,epee,drew,stevens ,Izzy Anderson,5,Renny Victoria,2,,8,TRUE,294,388,152,6b,152,b,FALSE
+women,epee,drew,stevens ,Amira Mutakabbir,5,Grace Hicks,0,,9,TRUE,309,375,153,6b,153,b,FALSE
+women,saber,drew,stevens ,Sophie Gajowskyj,5,Alyssa Ip,4,,1,TRUE,302,376,154,6b,154,b,FALSE
+women,saber,drew,stevens ,Serena Mancuso,2,Alexandra Craine,2,b,2,TRUE,307,368,155,6b,155,b,TRUE
+women,saber,drew,stevens ,Eva Esqueda,0,Ashlyn Leung,5,,3,TRUE,300,378,156,6b,156,b,FALSE
+women,saber,drew,stevens ,Serena Mancuso,5,Alyssa Ip,4,,4,TRUE,307,376,157,6b,157,b,FALSE
+women,saber,drew,stevens ,Sophie Gajowskyj,5,Ashlyn Leung,2,,5,TRUE,302,378,158,6b,158,b,FALSE
+women,saber,drew,stevens ,Eva Esqueda,0,Alexandra Craine,5,,6,TRUE,300,368,159,6b,159,b,FALSE
+women,saber,drew,stevens ,Serena Mancuso,1,Ashlyn Leung,5,,7,TRUE,307,378,160,6b,160,b,FALSE
+women,saber,drew,stevens ,Eva Esqueda,5,Alyssa Ip,4,,8,TRUE,300,376,161,6b,161,b,FALSE
+women,saber,drew,stevens ,Sophie Gajowskyj,4,Alexandra Craine,5,,9,TRUE,302,368,162,6b,162,b,FALSE
+women,saber,drew,wellesley,Sophie Gajowskyj,5,Makana Burch,2,,1,TRUE,302,316,163,7b,163,b,FALSE
+women,saber,drew,wellesley,Jay Cusson,3,Emily Zhao,5,,2,TRUE,298,332,164,7b,164,b,FALSE
+women,saber,drew,wellesley,Nzingha Mutakabbir,2,Rebecca Hsieh (saber),5,,3,TRUE,311,320,165,7b,165,b,FALSE
+women,saber,drew,wellesley,Jay Cusson,2,Makana Burch,5,,4,TRUE,298,316,166,7b,166,b,FALSE
+women,saber,drew,wellesley,Sophie Gajowskyj,5,Rebecca Hsieh (saber),4,,5,TRUE,302,320,167,7b,167,b,FALSE
+women,saber,drew,wellesley,Nzingha Mutakabbir,4,Emily Zhao,5,,6,TRUE,311,332,168,7b,168,b,FALSE
+women,saber,drew,wellesley,Jay Cusson,5,Rebecca Hsieh (saber),4,,7,TRUE,298,320,169,7b,169,b,FALSE
+women,saber,drew,wellesley,Nzingha Mutakabbir,4,Makana Burch,5,,8,TRUE,311,316,170,7b,170,b,FALSE
+women,saber,drew,wellesley,Sophie Gajowskyj,1,Emily Zhao,5,,9,TRUE,302,332,171,7b,171,b,FALSE
+women,foil,drew,wellesley,Bella Hatzoglu,0,Daisy Wiseman,5,,1,TRUE,305,330,172,7b,172,b,FALSE
+women,foil,drew,wellesley,Filiz Erdogan,3,Lauren Khoo,4,,2,TRUE,299,322,173,7b,173,b,FALSE
+women,foil,drew,wellesley,Assata Mutakabbir,1,Gina Huang,5,,3,TRUE,310,321,174,7b,174,b,FALSE
+women,foil,drew,wellesley,Filiz Erdogan,5,Daisy Wiseman,3,,4,TRUE,299,330,175,7b,175,b,FALSE
+women,foil,drew,wellesley,Bella Hatzoglu,1,Gina Huang,5,,5,TRUE,305,321,176,7b,176,b,FALSE
+women,foil,drew,wellesley,Assata Mutakabbir,1,Lauren Khoo,5,,6,TRUE,310,322,177,7b,177,b,FALSE
+women,foil,drew,wellesley,Filiz Erdogan,2,Gina Huang,5,,7,TRUE,299,321,178,7b,178,b,FALSE
+women,foil,drew,wellesley,Assata Mutakabbir,5,Daisy Wiseman,3,,8,TRUE,310,330,179,7b,179,b,FALSE
+women,foil,drew,wellesley,Bella Hatzoglu,1,Lauren Khoo,5,,9,TRUE,305,322,180,7b,180,b,FALSE
+women,epee,drew,wellesley,Amira Mutakabbir,2,Alisha Li,5,,1,TRUE,309,323,181,7b,181,b,FALSE
+women,epee,drew,wellesley,Brenna Behensky,4,Grace Xu,5,,2,TRUE,295,331,182,7b,182,b,FALSE
+women,epee,drew,wellesley,Izzy Anderson,4,Elena Vona,5,,3,TRUE,294,327,183,7b,183,b,FALSE
+women,epee,drew,wellesley,Brenna Behensky,5,Julia Peeler,2,,4,TRUE,295,325,184,7b,184,b,FALSE
+women,epee,drew,wellesley,Amira Mutakabbir,5,Elena Vona,3,,5,TRUE,309,327,185,7b,185,b,FALSE
+women,epee,drew,wellesley,Izzy Anderson,5,Sissi Zou,1,,6,TRUE,294,333,186,7b,186,b,FALSE
+women,epee,drew,wellesley,Brenna Behensky,5,Riley Weed,2,,7,TRUE,295,329,187,7b,187,b,FALSE
+women,epee,drew,wellesley,Izzy Anderson,4,Julia Peeler,5,,8,TRUE,294,325,188,7b,188,b,FALSE
+women,epee,drew,wellesley,Amira Mutakabbir,4,Sissi Zou,5,,9,TRUE,309,333,189,7b,189,b,FALSE
+women,saber,njit,stevens ,Elena Fernandez Negron,1,Julia DiPaolo,5,,1,TRUE,207,373,190,8b,190,b,FALSE
+women,saber,njit,stevens ,,,Emily Zgombic,,,2,TRUE,BYE,389,191,8b,191,b,FALSE
+women,saber,njit,stevens ,Stella Frias,5,Elizabeth MacDonald,1,,3,TRUE,208,379,192,8b,192,b,FALSE
+women,saber,njit,stevens ,,,Julia DiPaolo,,,4,TRUE,BYE,373,193,8b,193,b,FALSE
+women,saber,njit,stevens ,Elena Fernandez Negron,5,Elizabeth MacDonald,1,,5,TRUE,207,379,194,8b,194,b,FALSE
+women,saber,njit,stevens ,Stella Frias,5,Emily Zgombic,0,,6,TRUE,208,389,195,8b,195,b,FALSE
+women,saber,njit,stevens ,,,,,,7,TRUE,BYE,BYE,196,8b,196,b,FALSE
+women,saber,njit,stevens ,Stella Frias,5,Julia DiPaolo,2,,8,TRUE,208,373,197,8b,197,b,FALSE
+women,saber,njit,stevens ,Elena Fernandez Negron,5,Sofia Savchuk,4,,9,TRUE,207,385,198,8b,198,b,FALSE
+women,epee,njit,stevens ,Megan Hillyer,5,Renny Victoria,3,,1,TRUE,209,388,199,8b,199,b,FALSE
+women,epee,njit,stevens ,Margaret Meschia,4,Grace Hicks,5,,2,TRUE,212,375,200,8b,200,b,FALSE
+women,epee,njit,stevens ,Gala Krsmanovic,5,Emily Miller,0,,3,TRUE,210,380,201,8b,201,b,FALSE
+women,epee,njit,stevens ,Margaret Meschia,2,Renny Victoria,5,,4,TRUE,212,388,202,8b,202,b,FALSE
+women,epee,njit,stevens ,Megan Hillyer,5,Emily Miller,1,,5,TRUE,209,380,203,8b,203,b,FALSE
+women,epee,njit,stevens ,Gala Krsmanovic,5,Grace Hicks,2,,6,TRUE,210,375,204,8b,204,b,FALSE
+women,epee,njit,stevens ,Margaret Meschia,5,Emily Miller,2,,7,TRUE,212,380,205,8b,205,b,FALSE
+women,epee,njit,stevens ,Gala Krsmanovic,4,Renny Victoria,5,,8,TRUE,210,388,206,8b,206,b,FALSE
+women,epee,njit,stevens ,Megan Hillyer,1,Grace Hicks,5,,9,TRUE,209,375,207,8b,207,b,FALSE
+women,foil,njit,stevens ,Zoey Wen,5,Alyssa Ip,2,,1,TRUE,215,376,208,8b,208,b,FALSE
+women,foil,njit,stevens ,Randa Shalabi,0,Alexandra Craine,5,,2,TRUE,213,368,209,8b,209,b,FALSE
+women,foil,njit,stevens ,Anastasiia Volynska,0,Ashlyn Leung,5,,3,TRUE,214,378,210,8b,210,b,FALSE
+women,foil,njit,stevens ,Kaydine Gonzalez,4,Alyssa Ip,5,,4,TRUE,205,376,211,8b,211,b,FALSE
+women,foil,njit,stevens ,Zoey Wen,4,Ashlyn Leung,5,,5,TRUE,215,378,212,8b,212,b,FALSE
+women,foil,njit,stevens ,Anastasiia Volynska,2,Alexandra Craine,5,,6,TRUE,214,368,213,8b,213,b,FALSE
+women,foil,njit,stevens ,Yenni Gonzalez-Chacon,5,Rachel Naomi Quedding,1,,7,TRUE,304,383,214,8b,214,b,FALSE
+women,foil,njit,stevens ,Anastasiia Volynska,5,Alyssa Ip,2,,8,TRUE,214,376,215,8b,215,b,FALSE
+women,foil,njit,stevens ,Zoey Wen,5,Alexandra Craine,0,,9,TRUE,215,368,216,8b,216,b,FALSE
+women,foil,drew,njit,Bella Hatzoglu,1,Stella Frias,5,,1,TRUE,305,208,217,9b,217,b,FALSE
+women,foil,drew,njit,Filiz Erdogan,4,Elena Fernandez Negron,3,,2,TRUE,299,207,218,9b,218,b,FALSE
+women,foil,drew,njit,Assata Mutakabbir,,,,,3,TRUE,310,BYE,219,9b,219,b,FALSE
+women,foil,drew,njit,Filiz Erdogan,5,Stella Frias,1,,4,TRUE,299,208,220,9b,220,b,FALSE
+women,foil,drew,njit,Bella Hatzoglu,,,,,5,TRUE,305,BYE,221,9b,221,b,FALSE
+women,foil,drew,njit,Assata Mutakabbir,3,Elena Fernandez Negron,5,,6,TRUE,310,207,222,9b,222,b,FALSE
+women,foil,drew,njit,Filiz Erdogan,,,,,7,TRUE,299,BYE,223,9b,223,b,FALSE
+women,foil,drew,njit,Assata Mutakabbir,1,Stella Frias,5,,8,TRUE,310,208,224,9b,224,b,FALSE
+women,foil,drew,njit,Bella Hatzoglu,0,Elena Fernandez Negron,5,,9,TRUE,305,207,225,9b,225,b,FALSE
+women,epee,drew,njit,Amira Mutakabbir,5,Gala Krsmanovic,2,,1,TRUE,309,210,226,9b,226,b,FALSE
+women,epee,drew,njit,Brenna Behensky,5,Margaret Meschia,3,,2,TRUE,295,212,227,9b,227,b,FALSE
+women,epee,drew,njit,Izzy Anderson,2,Megan Hillyer,5,,3,TRUE,294,209,228,9b,228,b,FALSE
+women,epee,drew,njit,Brenna Behensky,4,Gala Krsmanovic,5,,4,TRUE,295,210,229,9b,229,b,FALSE
+women,epee,drew,njit,Amira Mutakabbir,5,Megan Hillyer,3,,5,TRUE,309,209,230,9b,230,b,FALSE
+women,epee,drew,njit,Izzy Anderson,5,Margaret Meschia,4,,6,TRUE,294,212,231,9b,231,b,FALSE
+women,epee,drew,njit,Brenna Behensky,3,Megan Hillyer,5,,7,TRUE,295,209,232,9b,232,b,FALSE
+women,epee,drew,njit,Izzy Anderson,2,Gala Krsmanovic,5,,8,TRUE,294,210,233,9b,233,b,FALSE
+women,epee,drew,njit,Amira Mutakabbir,5,Margaret Meschia,2,,9,TRUE,309,212,234,9b,234,b,FALSE
+women,saber,drew,njit,Sophie Gajowskyj,5,Anastasiia Volynska,1,,1,TRUE,302,214,235,9b,235,b,FALSE
+women,saber,drew,njit,Jay Cusson,5,Zoey Wen,3,,2,TRUE,298,215,236,9b,236,b,FALSE
+women,saber,drew,njit,Eva Esqueda,5,Randa Shalabi,0,,3,TRUE,300,213,237,9b,237,b,FALSE
+women,saber,drew,njit,Jay Cusson,5,Anastasiia Volynska,3,,4,TRUE,298,214,238,9b,238,b,FALSE
+women,saber,drew,njit,Sophie Gajowskyj,5,Kaydine Gonzalez,1,,5,TRUE,302,205,239,9b,239,b,FALSE
+women,saber,drew,njit,Eva Esqueda,0,Zoey Wen,5,,6,TRUE,300,215,240,9b,240,b,FALSE
+women,saber,drew,njit,Jay Cusson,5,Kaydine Gonzalez,2,,7,TRUE,298,205,241,9b,241,b,FALSE
+women,saber,drew,njit,Eva Esqueda,5,Anastasiia Volynska,4,,8,TRUE,300,214,242,9b,242,b,FALSE
+women,saber,drew,njit,Sophie Gajowskyj,4,Zoey Wen,5,,9,TRUE,302,215,243,9b,243,b,FALSE
+women,foil,liu,stevens ,Anna Szántay,5,Elizabeth MacDonald,1,,1,TRUE,245,379,244,10b,244,b,FALSE
+women,foil,liu,stevens ,Daniela Perez Leal,5,Julia DiPaolo,3,,2,TRUE,241,373,245,10b,245,b,FALSE
+women,foil,liu,stevens ,Abigail Hunt,5,Sofia Savchuk,1,,3,TRUE,237,385,246,10b,246,b,FALSE
+women,foil,liu,stevens ,Daniela Perez Leal,1,Elizabeth MacDonald,5,,4,TRUE,241,379,247,10b,247,b,FALSE
+women,foil,liu,stevens ,Anna Szántay,5,Sofia Savchuk,0,,5,TRUE,245,385,248,10b,248,b,FALSE
+women,foil,liu,stevens ,Abigail Hunt,5,Julia DiPaolo,1,,6,TRUE,237,373,249,10b,249,b,FALSE
+women,foil,liu,stevens ,Daniela Perez Leal,5,Sofia Savchuk,2,,7,TRUE,241,385,250,10b,250,b,FALSE
+women,foil,liu,stevens ,Abigail Hunt,5,Elizabeth MacDonald,1,,8,TRUE,237,379,251,10b,251,b,FALSE
+women,foil,liu,stevens ,Anna Szántay,5,Julia DiPaolo,0,,9,TRUE,245,373,252,10b,252,b,FALSE
+women,saber,liu,stevens ,Chejsa-Kaili Seck,5,Alyssa Ip,0,,1,TRUE,244,376,253,10b,253,b,FALSE
+women,saber,liu,stevens ,Marisa Mohan,4,Alexandra Craine,5,,2,TRUE,238,368,254,10b,254,b,FALSE
+women,saber,liu,stevens ,Kitty Feketics,1,Ashlyn Leung,5,,3,TRUE,234,378,255,10b,255,b,FALSE
+women,saber,liu,stevens ,Marisa Mohan,0,Alyssa Ip,5,,4,TRUE,238,376,256,10b,256,b,FALSE
+women,saber,liu,stevens ,Chejsa-Kaili Seck,5,Ashlyn Leung,1,,5,TRUE,244,378,257,10b,257,b,FALSE
+women,saber,liu,stevens ,Kitty Feketics,0,Alexandra Craine,5,,6,TRUE,234,368,258,10b,258,b,FALSE
+women,saber,liu,stevens ,Marisa Mohan,1,Ashlyn Leung,5,,7,TRUE,238,378,259,10b,259,b,FALSE
+women,saber,liu,stevens ,Kitty Feketics,2,Alyssa Ip,5,,8,TRUE,234,376,260,10b,260,b,FALSE
+women,saber,liu,stevens ,Chejsa-Kaili Seck,5,Alexandra Craine,3,,9,TRUE,244,368,261,10b,261,b,FALSE
+women,epee,liu,stevens ,Costanza Greggi,5,Renny Victoria,1,,1,TRUE,236,388,262,10b,262,b,FALSE
+women,epee,liu,stevens ,Sarah Ellis,2,Grace Hicks,5,,2,TRUE,232,375,263,10b,263,b,FALSE
+women,epee,liu,stevens ,Francesca Perez,5,Emily Miller,1,,3,TRUE,240,380,264,10b,264,b,FALSE
+women,epee,liu,stevens ,Sarah Ellis,5,Renny Victoria,1,,4,TRUE,232,388,265,10b,265,b,FALSE
+women,epee,liu,stevens ,Costanza Greggi,5,Emily Miller,0,,5,TRUE,236,380,266,10b,266,b,FALSE
+women,epee,liu,stevens ,Sherpa,4,Grace Hicks,5,,6,TRUE,389,375,267,10b,267,b,FALSE
+women,epee,liu,stevens ,Sarah Ellis,5,Emily Miller,4,,7,TRUE,232,380,268,10b,268,b,FALSE
+women,epee,liu,stevens ,Catherine Felix,5,Renny Victoria,4,,8,TRUE,235,388,269,10b,269,b,FALSE
+women,epee,liu,stevens ,Angela Wandmacher,3,Grace Hicks,5,,9,TRUE,389,375,270,10b,270,b,FALSE

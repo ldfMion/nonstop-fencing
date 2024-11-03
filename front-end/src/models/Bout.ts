@@ -7,13 +7,20 @@ export interface Bout {
     fencerAId?: string;
     fencerBId?: string;
     ncaaStatus: boolean;
-    score?: {
-        a: number;
-        b: number;
-    };
     weapon: Weapon;
     winnerId?: string;
     order: number;
     includes(fencer: Fencer): boolean;
-    isNotBye(): this is {fencerAId: string; fencerBId: string; score: {a: number; b: number}; winnerId: string};
+    isCompleted(): this is CompletedBout;
+    hasScore(): this is ScoredBout;
+}
+
+export interface CompletedBout extends Bout {
+    fencerAId: string;
+    fencerBId: string;
+    winnerId: string;
+}
+
+export interface ScoredBout extends CompletedBout {
+    score: {a: number; b: number};
 }
