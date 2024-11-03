@@ -102,7 +102,7 @@ async function UniversityHeaders({team, season, gender}: {team: University2; sea
     assert(saber !== undefined);
     return (
         <div className="flex flex-col gap-4">
-            <div className="flex flex-row items-start justify-between">
+            <div className="flex flex-col items-end justify-between md:flex-row md:items-start">
                 <div className="flex flex-row items-center justify-start gap-2 md:gap-6">
                     <TeamIcon universityId={team.id} className="h-14 w-14 md:h-28 md:w-28" />
                     <div className="flex flex-col">
