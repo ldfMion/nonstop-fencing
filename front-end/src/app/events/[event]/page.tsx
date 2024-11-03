@@ -51,27 +51,30 @@ export default async function EventPage({params}: {params: {event: string}}) {
     if (matches.length === 0) {
         return <NoResultsFallback event={event} host={host} />;
     }
-
-    const womensMatches = <MatchesCard title="Women's Matches" matches={matches.filter((match) => match.gender === Gender.WOMEN)} />;
-    const mensMatches = <MatchesCard title="Men's Matches" matches={matches.filter((match) => match.gender === Gender.MEN)} />;
+    const womensMatches = matches.filter((match) => match.gender === Gender.WOMEN);
+    const womensMatchesSection = womensMatches.length > 0 ? <MatchesCard title="Women's Matches" matches={womensMatches} /> : null;
+    const mensMatches = matches.filter((match) => match.gender === Gender.MEN);
+    const mensMatchesSection = mensMatches.length > 0 ? <MatchesCard title="Men's Matches" matches={mensMatches} /> : null;
     const bouts: Bout[] = await boutService.getFromMeet(event.id);
     const fencers = mapFencerWithRecordToObject(recordService.calculateRecordsFromBouts(await fencerService.getFromMeet(event.id), bouts));
     const mensTeams = await universityService.getFromMeet(event.id, Gender.MEN);
     const womensTeams = await universityService.getFromMeet(event.id, Gender.WOMEN);
-    const womensTeamsSection = (
-        <ListCard title="Women's Teams">
-            {womensTeams.map((team) => (
-                <TeamRow team={team} key={team.id} gender={Gender.WOMEN} />
-            ))}
-        </ListCard>
-    );
-    const mensTeamsSection = (
-        <ListCard title="Men's Teams">
-            {mensTeams.map((team) => (
-                <TeamRow team={team} key={team.id} gender={Gender.MEN} />
-            ))}
-        </ListCard>
-    );
+    const womensTeamsSection =
+        womensTeams.length > 0 ? (
+            <ListCard title="Women's Teams">
+                {womensTeams.map((team) => (
+                    <TeamRow team={team} key={team.id} gender={Gender.WOMEN} />
+                ))}
+            </ListCard>
+        ) : null;
+    const mensTeamsSection =
+        mensTeams.length > 0 ? (
+            <ListCard title="Men's Teams">
+                {mensTeams.map((team) => (
+                    <TeamRow team={team} key={team.id} gender={Gender.MEN} />
+                ))}
+            </ListCard>
+        ) : null;
     const fencersSection = (
         <ListCard title="Fencer Stats">
             <FilteredFencersByWeaponAndGender fencers={fencers} />
@@ -87,8 +90,8 @@ export default async function EventPage({params}: {params: {event: string}}) {
                         {title: "Womens's Teams", content: womensTeamsSection},
                     ],
                     [
-                        {title: "Men's Matches", content: mensMatches},
-                        {title: "Women's Matches", content: womensMatches},
+                        {title: "Men's Matches", content: mensMatchesSection},
+                        {title: "Women's Matches", content: womensMatchesSection},
                     ],
                     [{title: 'Fencers', content: fencersSection}],
                 ]}

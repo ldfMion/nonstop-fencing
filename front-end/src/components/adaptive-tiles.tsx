@@ -7,7 +7,7 @@ export function AdaptiveTiles({
     defaultOnMobile,
     className,
 }: {
-    elements: {title: string; content: JSX.Element}[][];
+    elements: {title: string; content: React.ReactNode}[][];
     defaultOnMobile: string;
     className?: string;
 }) {
@@ -27,7 +27,7 @@ export function AdaptiveTiles({
     );
 }
 
-function MobileContentSelector({elements, defaultTitle}: {defaultTitle: string; elements: {title: string; content: JSX.Element}[]}) {
+function MobileContentSelector({elements, defaultTitle}: {defaultTitle: string; elements: {title: string; content: React.ReactNode}[]}) {
     return (
         <Tabs defaultValue={defaultTitle} className="lg:hidden [&>*]:mt-0">
             <TabsList className="grid w-full grid-flow-col justify-stretch overflow-y-hidden overflow-x-scroll">

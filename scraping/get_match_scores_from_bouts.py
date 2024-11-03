@@ -17,11 +17,15 @@ def __main__():
 
 def get_bout_winner(bout):
     if pd.isna(bout["score_a"]) and pd.isna(bout["score_b"]):
+        print("getting bye")
+        print(bout)
         if is_bye(bout["fencer_a_id"]) and is_bye(bout["fencer_b_id"]):
             return DOUBLE_BYE
         elif is_bye(bout["fencer_a_id"]):
-            return A
+            print(B)
+            return B
         elif is_bye(bout["fencer_b_id"]):
+            print(B)
             return A
         else:
             if pd.isna(bout["winner"]):
@@ -92,16 +96,6 @@ def calculate_match_scores(bouts_df, matches_df):
         for weapon in ["foil", "epee", "saber"]:
             weapon_bouts = match_bouts[match_bouts["weapon"] == weapon]
             # Count wins for team A and B
-            print(
-                weapon_bouts[
-                    weapon_bouts.apply(lambda bout: get_bout_winner(bout) == A, axis=1)
-                ]
-            )
-            print(
-                weapon_bouts[
-                    weapon_bouts.apply(lambda bout: get_bout_winner(bout) == B, axis=1)
-                ]
-            )
             team_a_wins = len(
                 weapon_bouts[
                     weapon_bouts.apply(lambda bout: get_bout_winner(bout) == A, axis=1)
