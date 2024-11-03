@@ -80,23 +80,36 @@ export default async function EventPage({params}: {params: {event: string}}) {
             <FilteredFencersByWeaponAndGender fencers={fencers} />
         </ListCard>
     );
+    const matchesRow = [];
+    if (mensMatches.length > 0) {
+        matchesRow.push({
+            title: "Men's Matches",
+            content: mensMatchesSection,
+        });
+    }
+    if (womensMatches.length > 0) {
+        matchesRow.push({
+            title: "Women's Matches",
+            content: womensMatchesSection,
+        });
+    }
+    const teamsRow = [];
+    if (mensTeams.length > 0) {
+        teamsRow.push({
+            title: "Men's Teams",
+            content: mensTeamsSection,
+        });
+    }
+    if (womensTeams.length > 0) {
+        teamsRow.push({
+            title: "Women's Teams",
+            content: womensTeamsSection,
+        });
+    }
     return (
         <main className="flex flex-col items-stretch gap-5 px-6 md:px-24">
             <EventHeader title={event.displayName} isoDate={event.startDate.toISOString()} host={host} />
-            <AdaptiveTiles
-                elements={[
-                    [
-                        {title: "Mens's Teams", content: mensTeamsSection},
-                        {title: "Womens's Teams", content: womensTeamsSection},
-                    ],
-                    [
-                        {title: "Men's Matches", content: mensMatchesSection},
-                        {title: "Women's Matches", content: womensMatchesSection},
-                    ],
-                    [{title: 'Fencers', content: fencersSection}],
-                ]}
-                defaultOnMobile="Women's Matches"
-            />
+            <AdaptiveTiles elements={[matchesRow, teamsRow, [{title: 'Fencers', content: fencersSection}]]} defaultOnMobile="Women's Matches" />
         </main>
     );
 }
