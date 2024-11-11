@@ -10,11 +10,14 @@ export abstract class CSVRepository<T extends {id: string}> implements Repositor
     }
     protected abstract parseRow(row: object): T;
     async findById(id: string): Promise<T> {
-        const value = (await this.findAll()).find((item) => item.id === id);
-        if (value == undefined) {
+        const value = (await this.findAll()).filter((item) => item.id === id);
+        if (value.length === 0) {
             throw new Error(`Item ${id} not found. ${this.constructor.name}`);
         }
-        return value;
+        if (value.length > 1) {
+            throw new Error(`Item ${id} not unique. ${this.constructor.name}`);
+        }
+        return value[0]!;
     }
     async findAll(): Promise<T[]> {
         if (this.items == null) {

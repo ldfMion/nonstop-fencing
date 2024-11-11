@@ -5,7 +5,7 @@ export interface University2 {
     displayNameShort: string;
     displayNameLong: string;
     region: Region;
-    colorTheme: string | null;
+    colorTheme?: string;
     hasMen: boolean;
     hasWomen: boolean;
 }

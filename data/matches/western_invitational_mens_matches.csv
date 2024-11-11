@@ -1,0 +1,21 @@
+index,start row,team_a_id,team_b_id,id,meet_id,overall_a,overall_b,foil_a,foil_b,epee_a,epee_b,saber_a,saber_b,gender,season
+1,2,incarnateword,airforce,m1western-invitational-24-25,western-invitational-24-25,6,21,2,7,1,8,3,6,men,2025
+2,29,ucsd,ohiostate,m2western-invitational-24-25,western-invitational-24-25,15,12,5,4,5,4,5,4,men,2025
+3,56,incarnateword,harvard,m3western-invitational-24-25,western-invitational-24-25,7,20,3,6,4,5,0,9,men,2025
+4,83,ohiostate,airforce,m4western-invitational-24-25,western-invitational-24-25,16,11,3,6,6,3,7,2,men,2025
+5,110,stanford,brandeis,m5western-invitational-24-25,western-invitational-24-25,12,15,6,3,3,6,3,6,men,2025
+6,137,incarnateword,ucsd,m6western-invitational-24-25,western-invitational-24-25,6,21,1,8,3,6,2,7,men,2025
+7,164,airforce,harvard,m7western-invitational-24-25,western-invitational-24-25,9,18,4,5,2,7,3,6,men,2025
+8,191,ucsd,brandeis,m8western-invitational-24-25,western-invitational-24-25,14,13,5,4,6,3,3,6,men,2025
+9,218,stanford,ohiostate,m9western-invitational-24-25,western-invitational-24-25,11,16,5,4,0,9,6,3,men,2025
+10,245,ohiostate,incarnateword,m10western-invitational-24-25,western-invitational-24-25,18,9,6,3,5,4,7,2,men,2025
+11,272,harvard,ucsd,m11western-invitational-24-25,western-invitational-24-25,14,13,3,6,5,4,6,3,men,2025
+12,299,incarnateword,stanford,m12western-invitational-24-25,western-invitational-24-25,3,24,0,9,2,7,1,8,men,2025
+13,326,ohiostate,harvard,m13western-invitational-24-25,western-invitational-24-25,20,7,7,2,7,2,6,3,men,2025
+14,353,ucsd,airforce,m14western-invitational-24-25,western-invitational-24-25,15,12,6,3,6,3,3,6,men,2025
+15,380,brandeis,incarnateword,m15western-invitational-24-25,western-invitational-24-25,19,8,5,4,7,2,7,2,men,2025
+16,407,stanford,harvard,m16western-invitational-24-25,western-invitational-24-25,15,12,7,2,6,3,2,7,men,2025
+17,434,brandeis,ohiostate,m17western-invitational-24-25,western-invitational-24-25,9,18,3,6,2,7,4,5,men,2025
+18,461,stanford,ucsd,m18western-invitational-24-25,western-invitational-24-25,15,12,8,1,4,5,3,6,men,2025
+19,488,airforce,stanford,m19western-invitational-24-25,western-invitational-24-25,12,15,1,8,6,3,5,4,men,2025
+20,515,brandeis,harvard,m20western-invitational-24-25,western-invitational-24-25,11,16,2,7,4,5,5,4,men,2025

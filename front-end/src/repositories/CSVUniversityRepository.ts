@@ -2,7 +2,7 @@ import {CSVRepository} from './CSVRepository';
 import type {University2} from '~/models/University2';
 import {Region} from '~/models/Region';
 import type {Repository} from './Repository';
-import {parseRowTextProperty} from '~/helpers/csvUtils';
+import {parseOptionalRowTextProperty, parseRowTextProperty} from '~/helpers/csvUtils';
 
 export class CSVUniversityRepository extends CSVRepository<University2> implements Repository<University2> {
     protected parseRow(row: object): University2 {
@@ -15,7 +15,7 @@ class UniversityFromCSV implements University2 {
     public displayNameShort: string;
     public displayNameLong: string;
     public region: Region;
-    public colorTheme: string | null = null;
+    public colorTheme?: string;
     public hasMen = true;
     public hasWomen = true;
     constructor(csvRow: object) {
@@ -23,7 +23,7 @@ class UniversityFromCSV implements University2 {
         this.displayNameShort = parseRowTextProperty('Display Name Short', csvRow);
         this.displayNameLong = parseRowTextProperty('Display Name Long', csvRow);
         this.region = parseRegion(parseRowTextProperty('Region', csvRow));
-        this.colorTheme = parseRowTextProperty('Theme Color', csvRow);
+        this.colorTheme = parseOptionalRowTextProperty('Theme Color', csvRow);
         this.hasMen = true;
         this.hasWomen = true;
     }

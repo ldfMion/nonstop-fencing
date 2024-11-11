@@ -8,7 +8,6 @@ export default function Side({
         id: string;
         displayNameShort: string;
         displayNameLong: string;
-        colorTheme: string | null;
     };
     flip?: boolean;
 }): React.ReactNode {

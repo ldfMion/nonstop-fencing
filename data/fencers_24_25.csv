@@ -1,390 +1,629 @@
-name,weapon,Year,Height,Hometown,university_id,gender,High School,id,,season_end_year
-Kate Apelian,foil,Junior,5-3,"Boonton Township, NJ",notredame,women,Stanford Online HS,1,,2025
-Ethan Augustine,foil,Junior,5-11,"Upper Saddle River, NJ",notredame,men,Northern Highlands Regional HS,2,,2025
-Kevin Bae,foil,Sophomore,5-9,"Allendale, NJ",notredame,men,Northern Highlands Regional HS,3,,2025
-Liam Bas,foil,Freshman,5-10,"Fair Lawn, NJ",notredame,men,Fair Lawn HS,4,,2025
-Nick Candela,epee,Junior,6-0,"Las Vegas, NV",notredame,men,Bishop Gorman HS,5,,2025
-Rebeca Candescu,foil,Senior,5-6,"Metuchen, NJ",notredame,women,Metuchen HS,6,,2025
-Matthew Chan,saber,Freshman,5-8,"Basking Ridge, NJ",notredame,men,Ridge HS,7,,2025
-Emily Chang,saber,Senior,5-6,"Yorktown, VA",notredame,women,Tabb HS,8,,2025
-Ashley Chen,saber,Freshman,5-7,"Markham, Ontario",notredame,women,Pierre Elliott Trudeau HS,9,,2025
-James Chen,foil,Junior,6-0,"Shenyang, China",notredame,men,The Drew School (CA),10,,2025
-Sia Chin,foil,Freshman,5-8,"Incheon, Republic of Korea",notredame,women,Ivy Collegiate School,11,,2025
-Christopher Chong,epee,Freshman,6-3,"Oakton, VA",notredame,men,James Madison HS,12,,2025
-Josephina Conway,foil,Junior,5-11,"Mishawaka, IN",notredame,women,John Adams HS,13,,2025
-Chelsea Delsoin,saber,Sophomore,5-8,"Jersey City, NJ",notredame,women,Saint Dominic Academy,14,,2025
-Lex Denner,saber,Sophomore,6-3,"Greenwich, CT",notredame,men,The Hackney School,15,,2025
-Grant Dodrill,saber,Junior,6-2,"Boca Raton, FL",notredame,men,North Broward Preparatory School,16,,2025
-Chase Emmer,foil,Sophomore,6-0,"Morristown, NJ",notredame,men,Morristown HS,17,,2025
-Kyle Fallon,epee,Freshman,5-10,"Greenwich, CT",notredame,men,Links Academy,18,,2025
-Rodrigo Fernandez,saber,Sophomore,5-8,"Atlanta, GA",notredame,men,Midtown HS,19,,2025
-Fred Fogelson,foil,Freshman,6-3,"New York, NY",notredame,men,Dwight-Englewood School,20,,2025
-Sedna Gandhi,epee,Junior,5-7,"Mamaronek, NY",notredame,women,Scarsdale HS,21,,2025
-Stavrina Garyfallou,foil,Freshman,5-8,"Athens, Greece",notredame,women,Ekapideutiria Lampiri,22,,2025
-Ian Goldfine,epee,Freshman,5-10,"Roslyn, NY",notredame,men,Roslyn HS,23,,2025
-Ian Greenbaum,saber,Freshman,5-11,"Atlanta, GA",notredame,men,Ben Franklin Academy,24,,2025
-Ella Greenbaum,saber,Sophomore,5-4,"Atlanta, GA",notredame,women,Ben Franklin Academy,25,,2025
-Atara Greenbaum,saber,Senior,5-9,"Boca Raton, FL",notredame,women,Katz Yeshiva HS,26,,2025
-Emma Griffin,foil,Freshman,5-8,"Sugar Land, TX",notredame,women,St. Agnes Academy,27,,2025
-Jonathan Hamilton-Meikle,epee,Junior,6-2,"Budapest, Hungary",notredame,men,Baár–Madas Reformataus Gimnazium,28,,2025
-Ahmed Hesham,saber,Freshman,6-3,"Cairo, Egypt",notredame,men,Royal House Language School,29,,2025
-Dylan Hooshi,foil,Sophomore,6-0,"Old Westbury, NY",notredame,men,Jericho Senior HS,30,,2025
-Siena Hua,saber,Sophomore,,Hong Kong,notredame,women,Hong Kong International School,31,,2025
-Kaitlyn Hulseburg,saber,Sophomore,5-7,"Farmingdale, NJ",notredame,women,Howell HS,32,,2025
-Kent Iyoki,epee,Freshman,5-8,"Camas, WA",notredame,men,Washington Connections Academy,33,,2025
-Anthony Jiang,saber,Freshman,6-1,"San Diego, CA",notredame,men,Cathedral Catholic HS,34,,2025
-Dominic Joseph,foil,Sophomore,5-10,"Plymouth Meeting, PA",notredame,men,Wissahickon HS,35,,2025
-Michaela Joyce,epee,Junior,5-11,"Sterling, VA",notredame,women,The Madeira School,36,,2025
-Philip Kang,epee,Freshman,6-1,"Houston, TX",notredame,men,Clear Lake HS,37,,2025
-Alexandre Lacaze,saber,Senior,6-0,"Sainte-Mandé, France",notredame,men,Lycée Charles Péguy,38,,2025
-Ryanne Leslie,foil,Sophomore,5-11,"Philadelphia, PA",notredame,women,Springside Chestnut Hill Academy,39,,2025
-Luke Linder,saber,Grad Student,6-2,"Chandler, AZ",notredame,men,Chandler Online Academy/Hamilton HS,40,,2025
-Yiyang Louise Liu,foil,Freshman,5-6,"Beijing, China",notredame,women,Beijing National Day School,41,,2025
-Paulo Morais,foil,Junior,5-10,"São Paulo, Brazil",notredame,men,Graded School of São Paulo,42,,2025
-Maria Mozhaeva,saber,Sophomore,5-8,"San Diego, CA",notredame,women,Canyon Crest Academy,43,,2025
-Eszter Muhari,epee,Junior,6-0,"Budapest, Hungary",notredame,women,Spanish-Hungarian Bilingual High School Mikaly Karolyi of Kispet,44,,2025
-Henry Nadile,saber,Senior,6-1,"Tarrytown, NY",notredame,men,Hackley HS,45,,2025
-Mariam Namgalauri,foil,Freshman,5-7,"Riverwoods, IL",notredame,women,Deerfield HS,46,,2025
-Radu Nitu,saber,Sophomore,6-4,"Bucharest, Romania",notredame,men,Liceu Teoretic “Jean Monnet”,47,,2025
-Maruan Osman-Touson,epee,Junior,6-3,"Budapest, Hungary",notredame,men,Kolcsey Ferenc HS,48,,2025
-Jack Oursler,foil,Junior,6-0,"New York, NY",notredame,men,Friends Seminary,49,,2025
-Meredith Palmer,foil,Freshman,5-10,"South Bend, IN",notredame,women,Indiana University Online HS,50,,2025
-Victoria Pevzner,foil,Freshman,5-5,"South Orange, NJ",notredame,women,Newark Academy,51,,2025
-Lola Possick,saber,Freshman,5-11,"Weehawken, NJ",notredame,women,Kent Place School,52,,2025
-Ankith Prasad,epee,Freshman,6-0,"San Antonio, TX",notredame,men,Texas Connections Academy,53,,2025
-Riley Robinson,epee,Junior,5-10,"Las Vegas, NV",notredame,men,Odyssey Charter HS,54,,2025
-Renato Saliba,saber,Sophomore,6-0,"São Paulo, Brazil",notredame,men,St. Paul's School,55,,2025
-Felicity Sebastian,epee,Freshman,5-8,"Spring Lake, TX",notredame,women,The John Cooper School,56,,2025
-James Sennewald,epee,Freshman,6-3,"Houston, TX",notredame,men,St. Francis Episcopal School,57,,2025
-Noah Silvers,epee,Junior,6-2,"Chicago, IL",notredame,men,Rochelle Zell Jewish HS,58,,2025
-Kaylin Sin Yan Hsieh,epee,Senior,5-7,Hong Kong,notredame,women,ESF Sha Tin College,59,,2025
-Magda Skarbonkiewicz,saber,Freshman,5-8,"Portland, OR",notredame,women,Jesuit HS,60,,2025
-Mason Stanley,foil,Sophomore,6-0,"Hanover, VA",notredame,men,St. Christopher's School,61,,2025
-Siobhan Sullivan,saber,Freshman,6-0,"Tigard, OR",notredame,women,Jesuit HS,62,,2025
-Daena Talavera,foil,Junior,5-5,"St. Louis, MO",notredame,women,Clayton HS,63,,2025
-Ariadna Tucker,foil,Junior,5-5,"Mishawaka, IN",notredame,women,John Adams HS,64,,2025
-Jadeyn Williams,saber,Senior,5-8,"Metuchen, NJ",notredame,women,Union Catholic Regional HS,65,,2025
-Isaac Zhang,foil,Freshman,5-6,"Newmarket, Ontario",notredame,men,Newmarket HS,66,,2025
-Jason Zhao,foil,Junior,6-0,"Cincinnati, OH",notredame,men,St. Xavier HS,67,,2025
-Sophie Zhao,foil,Freshman,5-8,"Cincinnati, OH",notredame,women,Ursuline Academy,68,,2025
-Janet Chen,epee,So.,,"Shanghai, China / Mulgrave School (Vancouver, Canada)",columbia,women,,69,,2025
-Evelyn Cheng,foil,Jr.,,"Lexington, Mass. / Palo Alto (Calif.)",columbia,women,,70,,2025
-Audrey Chu,epee,Sr.,,"Palo Alto, Calif. / Palo Alto Senior",columbia,women,,71,,2025
-Charlotte Depew,saber,Sr.,,"Bernardsville, N.J. / Bernards",columbia,women,,72,,2025
-Chiara Di Perna,saber,Sr.,,"Sacramento, Calif. / Rio Americana",columbia,women,,73,,2025
-Nika Filippov,epee,Sr.,,"Houston, Texas / Duchesne Academy of the Sacred Heart",columbia,women,,74,,2025
-Madison Four-Garcia,saber,Jr.,,"Cliffside Park, N.J. / Horace Mann School (N.Y.)",columbia,women,,75,,2025
-Janna Freedman,saber,FY,,"Los Angeles, Calif. / Palos Verdes Peninsula",columbia,women,,76,,2025
-Sofia Gaydos,foil,Jr.,,"New York, N.Y. / H.S. for Mathematics, Science & Engineering at City College",columbia,women,,77,,2025
-Tamar Gordon,saber,Jr.,,"Richmond, British Columbia, Canada / McMath Secondary School",columbia,women,,78,,2025
-Chloe Gouhin,saber,Sr.,,"Blacklick, Ohio / Columbus Academy",columbia,women,,79,,2025
-Sophia Jakel,epee,FY,,"Bethesda, Md. / Walt Whitman",columbia,women,,80,,2025
-Alexandra Jing,foil,Jr.,,"Boston, Mass. / Boston Latin School",columbia,women,,81,,2025
-Rachael Kim,foil,So.,,"Paramus, N.J. / Paramus Catholic",columbia,women,,82,,2025
-Christelle Ko,foil,Sr.,,Hong Kong / Kellett School,columbia,women,,83,,2025
-Olive Lee,epee,Sr.,,"Teaneck, N.J. / Academy of the Holy Angels",columbia,women,,84,,2025
-Sumin Lee,epee,FY,,"Las Vegas, Nev. / West Career & Technical Academy",columbia,women,,85,,2025
-Pilar Maldonado,epee,Jr.,,"San Antonio, Texas / School of the Americas",columbia,women,,86,,2025
-Veronica Mika,saber,FY,,"Basking Ridge, N.J. / Ridge",columbia,women,,87,,2025
-Tierna Oxenreider,epee,Jr.,,"Reynoldsburg, Ohio / Metro Early College",columbia,women,,88,,2025
-Zander Rhodes,foil,Jr.,,"South Orange, N.J. / Columbia H.S.",columbia,women,,89,,2025
-Carolina Stutchbury,foil,FY,,"Atlanta, Ga. / Stanford Online High School",columbia,women,,90,,2025
-Chloe Szeto,saber,So.,,"Weston, Mass. / Weston",columbia,women,,91,,2025
-Claire Wang,epee,FY,,"Beijing, China / Dulwich College",columbia,women,,92,,2025
-Juliana Weber,saber,Sr.,,"East Northport, N.Y. / Elwood-John H. Glenn",columbia,women,,93,,2025
-Alanna Xue,foil,Jr.,,"Boston, Mass. / Noble and Greenough School",columbia,women,,94,,2025
-Mina Yamanaka,epee,Sr.,,"Little Neck, N.Y. / Bronx High School of Science",columbia,women,,95,,2025
-Meagan Yao Co Say,saber,FY,,"Quezon City, Philippines / Everest Academy",columbia,women,,96,,2025
-Vivian Zheng,foil,Sr.,,"Williamsville, N.Y. / Williamsville South",columbia,women,,97,,2025
-Zachary Binder,foil,Sr.,,"Armonk, N.Y. / Byram Hills",columbia,men,,98,,2025
-Jaden Callahan,saber,So.,,"San Diego, Calif. / The Grauer School",columbia,men,,99,,2025
-Justin Haddad,epee,Sr.,,"Bethesda, Md. / Montgomery Blair",columbia,men,,100,,2025
-Bogdan Hamilton,foil,Jr.,,"St. Louis, Mo. / Mary Institute Country Day School",columbia,men,,101,,2025
-Colby Harley,saber,Jr.,,"Alpharetta, Ga. / Woodward Academy",columbia,men,,102,,2025
-Nick Harvey,saber,Jr.,,"College Park, Ga. / The Westminster Schools",columbia,men,,103,,2025
-Sam Kumbla,foil,So.,,"San Jose, Calif. / Valley Christian",columbia,men,,104,,2025
-Ethan Kushnerik,epee,Sr.,,"New York City, N.Y. / York Prep",columbia,men,,105,,2025
-Ethan Leung,foil,So.,,Hong Kong / The Lawrenceville School (N.J.),columbia,men,,106,,2025
-Timothy Lim,epee,Sr.,,Hong Kong / Harrow International School,columbia,men,,107,,2025
-Skyler Liverant,epee,Jr.,,"Brooklyn, N.Y. / Prospect Charter School",columbia,men,,108,,2025
-Luka Loncar,epee,FY,,"Belmont, Mass. / Boston University Academy",columbia,men,,109,,2025
-Jackson McBride,saber,Sr.,,"Gilbert, Ariz. / Gilbert Classical Academy",columbia,men,,110,,2025
-Will Morrill,saber,FY,,"New York, N.Y. / High School for Math Science & Engineering",columbia,men,,111,,2025
-Marsel Nagimov,foil,So.,,"San Jose, Calif. / Leigh",columbia,men,,112,,2025
-Enoch Xiao,foil,So.,,"Birmingham, Ala. / Indian Springs School",columbia,men,,113,,2025
-Ethan Xiao,foil,So.,,"Birmingham, Ala. / Indian Springs School",columbia,men,,114,,2025
-Zachary Zusin,foil,Sr.,,"Norwood, N.J. / Dwight-Englewood School",columbia,men,,115,,2025
-Evelyn Malvestuto,foil,Fr.,,"Homewood, IL / Homewood Flossmoor HS",clevelandstate,women,,116,,2025
-Adeline Mantoan,saber,Sr.,,"Hammonton, N.J. / Homeschool",clevelandstate,women,,117,,2025
-Maggie Mihill,epee,Fr.,,"Marietta, GA / Lassiter HS",clevelandstate,women,,118,,2025
-Gwen Nelson,epee,Gr.,,"Minneapolis, Minn. / Washburn",clevelandstate,women,,119,,2025
-Rayllen Prafil Capaccio,epee,So.,,"Buenos Aires, Argentina / University of Buenos Aires",clevelandstate,women,,120,,2025
-Anna Quinn,foil,Fr.,,"Corvallis, OR / Ida B. Wells Barnett HS",clevelandstate,women,,121,,2025
-Maia Taylor Casamayor,epee,Jr.,,"Pittsford, N.Y. / Pittsford Sutherland",clevelandstate,women,,122,,2025
-Aubrey Testroet,saber,Fr.,,"Homewood, IL / Homewood Flossmoor HS",clevelandstate,women,,123,,2025
-Samantha Way,saber,Fr.,,"Clinton, CT / The Morgan School",clevelandstate,women,,124,,2025
-Connor Arata,foil,Fr.,,"Libertyville, IL / Libertyville HS",clevelandstate,men,,125,,2025
-Conner Bailey,saber,Jr.,,"Beecher, Ill. / Marian Catholic",clevelandstate,men,,126,,2025
-Simon Caisse,saber,So.,,"Cameron Park, CA / Charter University Prep",clevelandstate,men,,127,,2025
-Nolan Giovagnoli,epee,Fr.,,"San Francisco, CA / Boulder HS",clevelandstate,men,,128,,2025
-Jack Miller (epee),epee,Fr.,,"Charleston, SC / James Island Charter HS",clevelandstate,men,,129,,2025
-Jack Miller (foil),foil,Fr.,,"Charleston, SC / James Island Charter HS",clevelandstate,men,,130,,2025
-Jesse Ndjeka,epee,Gr.,,"Pretoria, South Africa / Pretoria",clevelandstate,men,,131,,2025
-Merik Pohl,epee,Sr.,,"Walnut Creek, Calif. / Las Lomas",clevelandstate,men,,132,,2025
-Matthew Seljan,foil,So.,,"Bay Village, OH /",clevelandstate,men,,133,,2025
-Sal Sorrentino,foil,So.,,"Dyer, IN / Marian Catholic",clevelandstate,men,,134,,2025
-De'Mario Steele,epee,Gr.,,"Miami Gardens, Fla. / Somerset Academy - Central Miramar",clevelandstate,men,,135,,2025
-W. Drew Walker,epee,Sr.,,"Roswell, Ga. / Centennial",clevelandstate,men,,136,,2025
-Evran Walter,foil,Sr.,,"Fairfax, Va. / Oakton",clevelandstate,men,,137,,2025
-Maria Alexe,saber,So.,,"Bucharest, Romania",ohiostate,women,‘Central School’ National College,138,,2025
-Isaac Ariza,foil,Sr.,,"Miami Gardens, Fla.",ohiostate,men,Florida Virtual School,139,,2025
-Hamsika Arnipalli,saber,Jr.,,"New Albany, Ohio",ohiostate,women,New Albany High School,140,,2025
-Ilya Ayupov,foil,Sr.,,"West Hills, Calif.",ohiostate,men,,141,,2025
-Hank Bauer,saber,Jr.,,"Los Angeles, Calif.",ohiostate,men,The Episcopal School of Los Angeles,142,,2025
-Natalia Botello,saber,So.,,,ohiostate,women,,143,,2025
-Matthew Bülau,epee,Jr.,,"Heidenheim, Germany",ohiostate,men,Max-Planck Gymnasium,144,,2025
-Astrid Meklit Chapman-Layland,saber,Fr.,,"Columbus, Ohio",ohiostate,women,,145,,2025
-Nathan Cheng,foil,So.,,,ohiostate,men,,146,,2025
-Grace Fan,saber,Fr.,,"Dublin, Ohio",ohiostate,women,,147,,2025
-Sally Fan,epee,Jr.,,,ohiostate,women,,148,,2025
-Gabriel Feinberg,epee,Sr.,,"Lincoln, Mass.",ohiostate,men,Lincoln Sudbury Regional High School,149,,2025
-Miranda Freedman,foil,Sr.,,"Grosse Pointe Park, Mich.",ohiostate,women,Grosse Point South High School,150,,2025
-Samuel Freedman,foil,So.,,"Grosse Pointe Park, Mich.",ohiostate,men,Grosse Pointe South High School,151,,2025
-Claire Teresa Galavotti,foil,Sr.,,"Oak Park, Ill.",ohiostate,women,Saint Ignatius College Prep,152,,2025
-Nowell Gibson,epee,Jr.,,"Armonk, N.Y.",ohiostate,men,Byram Hills High School,153,,2025
-Erika Gumagay,epee,Fr.,,"Vienna, Va.",ohiostate,women,,154,,2025
-Anna Heiser,foil,Sr.,,"Canton, Ohio",ohiostate,women,The Hun School of Princeton,155,,2025
-Melany Hernandez,foil,Fr.,,"Cape Coral, Fla.",ohiostate,women,,156,,2025
-Mitchell Huth,foil,So.,,"Raleigh, N.C.",ohiostate,men,Heritage Christian Homeschool,157,,2025
-Gloria Klughardt,epee,Jr.,,"Cracow, Poland",ohiostate,women,Silesian Academy,158,,2025
-Viktor Kulcsar,epee,Fr.,,Hungary,ohiostate,men,,159,,2025
-Katherine Larimer,saber,Sr.,,"Colleyville, Texas",ohiostate,women,Colleyville Heritage High School,160,,2025
-Kinley Lavenstein,epee,Sr.,,"Cranston, R.I.",ohiostate,men,Providence Country Day School,161,,2025
-Alina Lee,foil,Sr.,,"Dublin, Calif.",ohiostate,women,Dublin High School,162,,2025
-Wesley Lee,epee,Sr.,,"Vancouver, British Columbia",ohiostate,men,Sentinel Secondary School,163,,2025
-Solin Li,foil,Jr.,,"Beijing, China",ohiostate,men,Beijing National Day School,164,,2025
-Kelly Liu,saber,Jr.,,"Stony Brook, N.Y.",ohiostate,men,Ward Melville,165,,2025
-Eddie Maklin,saber,Fr.,,"Newton, Mass.",ohiostate,men,,166,,2025
-Yeva Mazur,epee,Sr.,,"Khmelnitsky, Ukraine",ohiostate,women,Gymnasium 1,167,,2025
-Marie-Frederique Millette,epee,Fr.,,Canada,ohiostate,women,,168,,2025
-Lorenzo Mion,foil,Jr.,,"São Paulo, Brazil",ohiostate,men,Colégio Dante Alighieri,169,,2025
-Raiyan Moradi-Bidhendi,foil,So.,,"San Diego, Calif.",ohiostate,women,River Valley Charter School,170,,2025
-Dasha Myroniuk,foil,Jr.,,"Kiev, Ukraine",ohiostate,women,Gymnasium 178,171,,2025
-Catherine Popa,epee,So.,,"North Royalton, Ohio",ohiostate,women,North Royalton High School,172,,2025
-Avin Rai,saber,Jr.,,"Brookeline, Mass.",ohiostate,men,Brookline High School,173,,2025
-Samuel Rightler,saber,So.,,"Plain City, Ohio",ohiostate,men,Homeschool,174,,2025
-Max Rodney,epee,Gr.,,"Houston, Texas",ohiostate,men,Memorial High School,175,,2025
-Cara Santos,epee,Jr.,,"Grand Rapids, Mich.",ohiostate,women,East Grand Rapids High School,176,,2025
-James Schardine,saber,So.,,"Cincinnati, Ohio",ohiostate,men,,177,,2025
-Julia Semikin,epee,Jr.,,"Columbus, Ohio",ohiostate,women,Worthington Kilbourne High Shcool,178,,2025
-Ayush Shah,epee,So.,,"Dublin, Ohio",ohiostate,men,Dublin Coffman High School,179,,2025
-Justin Vogler,foil,Sr.,,"Portland, Ore.",ohiostate,men,Westview High School,180,,2025
-Miles Weiss,epee,Sr.,,"Houston, Texas",ohiostate,men,Bellaire High School,181,,2025
-Talia Weiss,epee,Sr.,,"Houston, Texas",ohiostate,women,Bellaire High School,182,,2025
-Lucy Whittemore,epee,Sr.,,"Chicago, Ill.",ohiostate,women,British International School of Chicago,183,,2025
-Arlow Wiggers,saber,So.,,"Atlanta, Ga.",ohiostate,women,Ben Franklin Academy,184,,2025
-Nolan Williams,saber,5th,,"Watchung, N.J.",ohiostate,men,St. Benedict's Prep,185,,2025
-Catherine Zhou,epee,Jr.,,Hometown / High School,ohiostate,women,Shenzhen Foreign Language School,186,,2025
-Chi Chi Agu,epee,Fr.,,"Altoona, Iowa / Southeast Polk",denison,women,,187,,2025
-Claire Anderson,epee,Fr.,,"Englewood, Colo. / Kent Denver School",denison,women,,188,,2025
-Delaney Brown,saber,Jr.,,"West Milford, N.J. / West Milford",denison,women,,189,,2025
-Alaina Cabalu,foil,So.,,"Anaheim, Calif. / Esperanza",denison,women,,190,,2025
-Corvus Endo,saber,So.,,"Frisco, Texas / Hebron",denison,women,,191,,2025
-Lal Ertun,foil,So.,,"Istanbul, Turkey / Sisli Terakki",denison,women,,192,,2025
-Velma Hall,foil,Jr.,,"Dublin, Ohio / Dublin Coffman",denison,women,,193,,2025
-Natalie Isberg,saber,Jr.,,"Libertyville, Ill. / Libertyville",denison,women,,194,,2025
-Elly Kennedy,foil,Fr.,,"Granville, Ohio / Granville",denison,women,,195,,2025
-Nicole Krumholz,epee,Fr.,,"Oyster Bay, N.Y. / Oyster Bay",denison,women,,196,,2025
-Grace Lukens,epee,Jr.,,"Wadsworth, Ohio / Highland",denison,women,,197,,2025
-Bella Musto,foil,Jr.,,"North Andover, Mass. / Middlesex School",denison,women,,198,,2025
-Joanna Passalaris,saber,Jr.,,"Skillman, N.J. / Montgomery",denison,women,,199,,2025
-Evie Rhody,epee,Jr.,,"Maplewoord, N.J. / Columbia",denison,women,,200,,2025
-Olivia Sultana-Hole,foil,So.,,"Manhattan, N.Y. / Avenues The World School",denison,women,,201,,2025
-Abigail Yasuzawa,foil,Sr.,,"Centennial, Colo. / Cherry Creek",denison,women,,202,,2025
-Joyce Yu,saber,So.,,"Shanghai, China / Shanghai High School International Division",denison,women,,203,,2025
-Maggie Zhu,epee,Jr.,,"Beijing, China / Beijing Etown Academy",denison,women,,204,,2025
-Kaydine Gonzalez,saber,Fr.,,"Parsippany, NJ / The Academy for Math, Science, and Engineering / Morris Hills",njit,women,,205,,2025
-Sherlyn Arzola Silva,foil,Jr.,,"Paterson, NJ / Diana C. Lobosco STEM Academy",njit,women,,206,,2025
-Elena Fernandez Negron,foil,Sr.,,"Madrid, Spain / Colegio Paraíso Sagrados Corazones",njit,women,,207,,2025
-Stella Frias,foil,So.,,"Sao Paulo, Brazil / Colegio Bandeirantes",njit,women,,208,,2025
-Megan Hillyer,epee,Jr.,,"Scotch Plains, NJ / Scotch Plains-Fanwood",njit,women,,209,,2025
-Gala Krsmanovic,epee,Jr.,,"Novi Sad, Serbia / Gimnazija Jovan Jovanovic Zmaj",njit,women,,210,,2025
-Alisa Maloku,foil,Sr.,,"Butler, NJ / Butler",njit,women,,211,,2025
-Margaret Meschia,epee,Jr.,,"Denver, Colorado / St. Mary's Academy",njit,women,,212,,2025
-Randa Shalabi,saber,So.,,"Paterson, NJ / Passaic County Technical Institute",njit,women,,213,,2025
-Anastasiia Volynska,saber,So.,,"Bucha, Ukraine / Pennridge High School (Perkasie, PA)",njit,women,,214,,2025
-Zoey Wen,saber,Fr.,,"Mahwah, NJ / Bergen County Academies",njit,women,,215,,2025
-Armaan Chawla,epee,Fr.,,"Kingsville, MD / Eastern Technical",njit,men,,216,,2025
-Matthew Choi,epee,Jr.,,"Seoul, Korea / Hanyoung Foreign Language",njit,men,,217,,2025
-Scott Connelly,epee,Sr.,,"Rockaway, NJ / Morris Hills",njit,men,,218,,2025
-Christopher Cortez,saber,Sr.,,"Morristown, NJ / Morris Catholic",njit,men,,219,,2025
-Aidan Doctor,foil,Fr.,,"Huntington, NY / Harborfields",njit,men,,220,,2025
-Gonzalo Fernandez,saber,So.,,"Madrid, Spain / Fomento Fundacion",njit,men,,221,,2025
-Adrian Figueredo,saber,Jr.,,"Guayama, Puerto Rico / Eugenio Guerra Cruz Salinas",njit,men,,222,,2025
-Ummi Green,epee,Jr.,,"Berkeley, CA / Homeschooled",njit,men,,223,,2025
-Carlos Grodman,foil,So.,,"Maplewood, NJ / Columbia High School",njit,men,,224,,2025
-Brandon Howe,saber,Fr.,,"Morris Plains, NJ / The Academy for Math, Science, and Engineering",njit,men,,225,,2025
-Daniel Jeun,epee,Jr.,,"Alcobendas, Madrid, Spain / Greenwich School",njit,men,,226,,2025
-Niels Roubailo,epee,Jr.,,"Walchwil, Switzerland / International School of Zug and Luzern",njit,men,,227,,2025
-Robert Rountree,foil,Jr.,,"Richmond, VA / Douglas S. Freeman",njit,men,,228,,2025
-Josh Schaefer,foil,Sr.,,"Cockeysville, MD / Dulaney",njit,men,,229,,2025
-Ryan Scharf,epee,Fr.,,"Decatur, GA / Decatur",njit,men,,230,,2025
-Jayson Zelaya,saber,Jr.,,"Tegucigalpa, Honduras / Passaic County Technical Institute",njit,men,,231,,2025
-Sarah Ellis,epee,Jr.,5-8,"Brooklyn, N.Y. / Midwood",liu,women,,232,,2025
-Laura Fekete,epee,Sr.,5-9,"Budapest, Hungary / Budapesti Kolping",liu,women,,233,,2025
-Kitty Feketics,saber,So.,5-4,"Marosvásárhely, Romania / Brooklyn Technical",liu,women,,234,,2025
-Catherine Felix,epee,So.,5-2,"Bloomingdale, N.J. / Passaic County Technical Institute",liu,women,,235,,2025
-Costanza Greggi,epee,So.,5-4,"Rome, Italy / American Overseas School of Rome",liu,women,,236,,2025
-Abigail Hunt,foil,Fr.,5-4,"Miller Place, N.Y. / Shoreham-Wading River",liu,women,,237,,2025
-Marisa Mohan,epee,So.,5-1,"Valley Stream, N.Y. / Valley Stream North",liu,women,,238,,2025
-Nicole Nicou,epee,Sr.,5-3,"Dix Hills, N.Y. / Commack",liu,women,,239,,2025
-Francesca Perez,epee,Fr.,5-4,"Hollis, Queens, N.Y. / Benjamin N. Cardozo",liu,women,,240,,2025
-Daniela Perez Leal,foil,Jr.,5-1,"Valencia, Venezuela / Olga Bayone de Rodríguez",liu,women,,241,,2025
-Jana Saleh,saber,Fr.,5-5,"Alexandria, Egypt / Kaumeya Language School",liu,women,,242,,2025
-Khrystyna Sarkisian,foil,Sr.,5-6,"Kyiv, Ukraine / Dzherelo",liu,women,,243,,2025
-Chejsa-Kaili Seck,saber,Sr.,5-7,"Brooklyn, N.Y. / Institute For Collaborative Education",liu,women,,244,,2025
-Anna Szántay,foil,Sr.,5-8,"Gyömro, Hungary / Monori József Attila",liu,women,,245,,2025
-Nevaeh Ulibarri,saber,So.,5-11,"Tempe, Ariz. / Corona del Sol",liu,women,,246,,2025
-Jocelyn Velasquez,saber,Fr.,5-2,"Brentwood, N.Y. / Brentwood",liu,women,,247,,2025
-Yasmeen Walker,saber,Gr.,5-2,"Baltimore, Md. / Institute of Notre Dame",liu,women,,248,,2025
-Munir Aldabagh,saber,So.,5-6,"Hama, Syria / Coral International School",liu,men,,249,,2025
-Caleb Brutus,saber,Fr.,5-9,"Chicago, Ill. / Homewood-Flossmoor",liu,men,,250,,2025
-Carlos Carrasco,foil,So.,5-9,"Valencia, Carabobo, Venezuela / I.E Juan XXIII",liu,men,,251,,2025
-Baron Chang,epee,R-Jr.,5-11,"Toayuan, Taiwan / Hwa Hsia University of Technology",liu,men,,252,,2025
-Richard Chen,saber,So.,5-10,"Syosset, N.Y. / Syosset",liu,men,,253,,2025
-Eduardo Duarte,saber,So.,5-6,"Lisbon, Portugal / Instituto dos Pupilos do Exército",liu,men,,254,,2025
-Marawan Elrashidy,epee,So.,6-5,"Staten Island, N.Y. / Staten Island Technical",liu,men,,255,,2025
-Mo Elsayed,epee,So.,6-5,"Tanta, Gharbeya, Egypt / Elnasr Language School",liu,men,,256,,2025
-Tai Flot,saber,Fr.,6-0,"Jersey City, N.J. / Saint Peter’s Prep",liu,men,,257,,2025
-Andrew Gefell,saber,So.,5-10,"Farmington, N.Y. / Victor Senior",liu,men,,258,,2025
-Jabreel Green,epee,Fr.,5-8,"Berkeley, Calif. / The Ark",liu,men,,259,,2025
-Christopher Hadchity,foil,So.,5-8,"Staten Island, N.Y. / Susan E Wagner",liu,men,,260,,2025
-Brahim Khalyat,epee,So.,6-2,"Brooklyn, N.Y. / Brooklyn Technical",liu,men,,261,,2025
-Padick Loyola,epee,Fr.,5-11,"Naples, Italy / Hoboken",liu,men,,262,,2025
-Philip Manitt,epee,Fr.,6-1,"East Setauket, N.Y. / Ward Melville",liu,men,,263,,2025
-Adem Mcharek,saber,So.,5-11,"Zarzis, Tunisia / Medenine Pioneer",liu,men,,264,,2025
-Xavier Mullen,saber,Fr.,5-9,"Bay Shore, N.Y. / Brentwood",liu,men,,265,,2025
-Youssof Saleh,saber,So.,6-0,"Alexandra, Egypt / Kaumeya Language School",liu,men,,266,,2025
-Ryan Stewart (eppe),epee,Fr.,6-1,"Christchurch, New Zealand / St Andrew’s College",liu,men,,267,,2025
-Ryan Stewart (foil),foil,Fr.,6-1,"Christchurch, New Zealand / St Andrew’s College",liu,men,,268,,2025
-Jason Ahlman,saber,Fr.,-,"Swedesboro, N.J. / Kingsway Regional",drew,men,,269,,2025
-Bryan Cipriano-Goines,saber,Fr.,6-1,"Bayonne, N.J. / Bayonne",drew,men,,270,,2025
-Charles Daum,foil,5th,5-9,"Long Valley, N.J. / West Morris Central",drew,men,,271,,2025
-Henri Degremont,foil,Jr.,5-9,"Wakefield, R.I. / South Kingstown",drew,men,,272,,2025
-Aidan DeSola,foil,Sr.,5-9,"Flemington, N.J. / Hunterdon Central Regional",drew,men,,273,,2025
-JP Emmert,epee,Fr.,5-9,"Austin, Texas / Lake Travis",drew,men,,274,,2025
-Max Gayevsky,saber,Jr.,6-0,/,drew,men,,275,,2025
-Paul Greenleaf,foil,Fr.,5-10,"Guilford, Conn. / Guilford",drew,men,,276,,2025
-Jack Henderson,saber,Fr.,-,"Chicago, Ill. / Lycee Francais De Chicago",drew,men,,277,,2025
-Jackson Howard,epee,Fr.,5-11,"Guilford, Conn. / Guilford",drew,men,,278,,2025
-Logan Kleva,saber,So.,-,"Lindenhurst, N.Y. / Lidenhurst",drew,men,,279,,2025
-Andrew Klyczek,foil,Fr.,-,"Chesapeake, Va. / Western Branch",drew,men,,280,,2025
-Nicholas Kmosko,epee,Fr.,-,"Flemington, N.J. / North Hunterdon",drew,men,,281,,2025
-Gabriel Leone,epee,Jr.,5-8,"Amsterdam, N.Y. / Broadalbin-Perth",drew,men,,282,,2025
-Nicholas Machado,epee,Fr.,-,"Hillside, N.J. / Saint Benedict's Prep",drew,men,,283,,2025
-Eddie Matto,epee,Jr.,5-11,"Whitehouse Station, N.J. / Hunterdon Central",drew,men,,284,,2025
-Aidan Montalbine,foil,Sr.,5-11,"Sayville, N.Y. / Sayville",drew,men,,285,,2025
-William Morton,epee,Jr.,6-0,"Owego, N.Y. / Owego Free Academy",drew,men,,286,,2025
-Michael Niechwadowicz,foil,Jr.,5-9,"West Milford, N.J. / Morris Catholic",drew,men,,287,,2025
-Ernesto Ospina,saber,So.,5-6,"Elizabeth, N.J. / Elizabeth",drew,men,,288,,2025
-Peter Ross,foil,Fr.,-,"Morristown, N.J. / Morris Catholic",drew,men,,289,,2025
-Tristan Santulli,foil,Sr.,6-1,"Boston, Mass. / Boston Latin Academy",drew,men,,290,,2025
-Jason Sobon,foil,Fr.,6-0,"Holmdel, N.J. / Holmdel",drew,men,,291,,2025
-Danny Stevens,epee,Sr.,6-1,"Fairfax, Va. / Fairfax",drew,men,,292,,2025
-Zack Zukofsky,epee,Sr.,6-0,"Sayville, N.Y. / Sayville",drew,men,,293,,2025
-Izzy Anderson,epee,Jr.,5-3,"Denville, N.J. / Morris Knolls",drew,women,,294,,2025
-Brenna Behensky,epee,Sr.,5-6,"Tampa, Fla. / Tarpon Springs",drew,women,,295,,2025
-Alisha Bourhill-Tumser,epee,Fr.,5-7,"Wanaque, N.J. / Lakeland Regional",drew,women,,296,,2025
-Natalie Bovair,saber,Fr.,-,"Stanhope, N.J. / Lenape Valley",drew,women,,297,,2025
-Jay Cusson,saber,Fr.,5-3,"Clinton, Conn. / Hopkins School",drew,women,,298,,2025
-Filiz Erdogan,foil,Fr.,5-7,"Kadikoy, Turkey / Uskudar American Academy",drew,women,,299,,2025
-Eva Esqueda,saber,Jr.,5-3,"Simi Valley, Calif. / Simi Valley",drew,women,,300,,2025
-Nix Feeley,foil,Jr.,5-6,"Winthrop, Mass. / Winthrop",drew,women,,301,,2025
-Sophie Gajowskyj,saber,Sr.,5-4,"Portland, Ore. / Sunset",drew,women,,302,,2025
-Alexa Gavenas,foil,So.,-,"Randolph, N.J. / Randolph",drew,women,,303,,2025
-Yenni Gonzalez-Chacon,epee,So.,5-5,"Summit, N.J. / Summit",drew,women,,304,,2025
-Bella Hatzoglu,foil,Jr.,5-1,"Wayne, N.J. / Wayne Hills",drew,women,,305,,2025
-Elysa Jordan,saber,Sr.,5-5,"Chatham, N.J. / Chatham",drew,women,,306,,2025
-Serena Mancuso,saber,Sr.,5-7,"Manhasset, N.Y. / Manhasset",drew,women,,307,,2025
-Morgan Mildner,foil,So.,-,"Pompton Lakes, N.J. / Pompton Lakes",drew,women,,308,,2025
-Amira Mutakabbir,epee,Sr.,5-8,"Montclair, N.J. / Montclair",drew,women,,309,,2025
-Assata Mutakabbir,foil,Sr.,4-11,"Montclair, N.J. / Montclair",drew,women,,310,,2025
-Nzingha Mutakabbir,saber,Sr.,5-2,"Montclair, N.J. / Montclair",drew,women,,311,,2025
-Gianna Olson,saber,Jr.,-,/,drew,women,,312,,2025
-Tala Varoqua,foil,Fr.,5-7,"Wayne, N.J. / Wayne Hills",drew,women,,313,,2025
-Faith Yap,epee,Fr.,-,"Denville, N.J. / Morris County School of Technology",drew,women,,314,,2025
-Judy Bang,saber,2028,5-5,"Seoul, South Korea / BCC",wellesley,women,,315,,2025
-Makana Burch,saber,2025,5-6,"Portland, Ore. / Oregon Episcopal School",wellesley,women,,316,,2025
-Mia Chao,saber,2025,5-8,"Washington, D.C. / Washington International School",wellesley,women,,317,,2025
-Leena Hobson,foil,2025,5-6,"Oakland, Calif. / Bentley",wellesley,women,,318,,2025
-Rebecca Hsieh (foil),foil,2027,5-2,"Annandale, Va. / Thomas Jefferson Science and Technology",wellesley,women,,319,,2025
-Rebecca Hsieh (saber),saber,2027,5-2,"Annandale, Va. / Thomas Jefferson Science and Technology",wellesley,women,,320,,2025
-Gina Huang,foil,2026,5-3,"Taipei, Taiwan / Kang Chiao International School",wellesley,women,,321,,2025
-Lauren Khoo,foil,2027,5-4,"San Francisco, Calif. / Lowell",wellesley,women,,322,,2025
-Alisha Li,epee,2027,5-6,"Warren, N.J. / Watchung Hills",wellesley,women,,323,,2025
-Phoebe Li,foil,2027,5-5,"Palo Alto, Calif. / Henry M. Gunn",wellesley,women,,324,,2025
-Julia Peeler,epee,2028,5-8,"Fairfax, Va. / Woodson",wellesley,women,,325,,2025
-Renee Sun,epee,2028,5-8,"Houston, Texas / Woodlands",wellesley,women,,326,,2025
-Elena Vona,epee,2025,5-4,"Millstone, N.J. / Culver Academies",wellesley,women,,327,,2025
-Naomi Wang,saber,2026,5-4,"Boston, Mass. / Buckingham Browne & Nichols",wellesley,women,,328,,2025
-Riley Weed,epee,2027,5-5,"Guilford, Conn. / Guilford",wellesley,women,,329,,2025
-Daisy Wiseman,foil,2028,5-7,"Austin, Texas / McCallum",wellesley,women,,330,,2025
-Grace Xu,epee,2026,5-9,"Toronto, Ontario / Holy Trinity School",wellesley,women,,331,,2025
-Emily Zhao,saber,2028,5-7,"Yorktown, Va. / Tabb/Governor's School for the Science and Technology",wellesley,women,,332,,2025
-Sissi Zou,epee,2028,5-6,"Shanghai, China / YK Pao School",wellesley,women,,333,,2025
-Esat Adiloglu,epee,Jr.,6-1,"Hackettstown, N.J. / Hackettstown",stevens,men,,334,,2025
-Dev Badlani,foil,Fy.,5-7,"Chatham, N.J. / Chatham High School",stevens,men,,335,,2025
-Thomas Cheng,foil,Sr.,5-5,"Brookline, Mass. / Brookline",stevens,men,,336,,2025
-Spencer Depew,saber,Fy.,-,/,stevens,men,,337,,2025
-Cyrus Erachshaw,saber,So.,5-10,"Colonia, N.J. / St. Thomas Aquinas",stevens,men,,338,,2025
-Yuval Fussman,epee,Fy.,-,/,stevens,men,,339,,2025
-James Glover,foil,Jr.,6-1,"Red Bank, N.J. / Culver Military Academy",stevens,men,,340,,2025
-Alan Hu,foil,Fy.,5-11,"Roseland, N.J. / West Essex High School",stevens,men,,341,,2025
-Rishi Kandagadla,foil,Fy.,6-0,"Orlando, Fl. / Lake Buena Vista Highschool",stevens,men,,342,,2025
-Matthew Kemenosh,epee,Jr.,6-1,"Egg Harbor Township, N.J. / St. Augustine Prep",stevens,men,,343,,2025
-Tyler Kometani,saber,So.,5-7,"Long Valley, N.J. / West Morris Central",stevens,men,,344,,2025
-Siddharth Kumar,foil,Fy.,-,/,stevens,men,,345,,2025
-Colin Mahoney,saber,Sr.,5-11,"Holliston, Mass. / Holliston",stevens,men,,346,,2025
-Erik Marran,foil,Gr.,6-0,"Oldwick, N.J. / Voorhees",stevens,men,,347,,2025
-Jose Martinez-Ponce,epee,Sr.,5-10,"Red Bank, N.J. / Christian Brothers Academy",stevens,men,,348,,2025
-Rocco Mathews,foil,Sr.,6-1,"Ringoes, N.J. / Hun School",stevens,men,,349,,2025
-John Morreale,saber,Sr.,5-9,"Wall, N.J. / Christian Brothers Academy",stevens,men,,350,,2025
-James Morris,epee,Gr.,6-4,"Rockaway, N.J. / Morris Hills",stevens,men,,351,,2025
-Chinli Ong,saber,Fy.,5-7,Jersey City / McNair Academic,stevens,men,,352,,2025
-Riley Parker,epee,So.,5-10,"Austin, Texas / Liberal Arts & Science Academy",stevens,men,,353,,2025
-Ethan Pena,epee,Fy.,-,/,stevens,men,,354,,2025
-Evan Peneiras,foil,Sr.,5-10,"Freehold, N.J. / Academy of Allied Health and Science",stevens,men,,355,,2025
-Ricardo Pires,foil,Fy.,5-7,"Lisbon, Portugal / Colegio Pedro Arrupe",stevens,men,,356,,2025
-Myles Reda,saber,Sr.,6-3,"Glen Ridge, N.J. / Glen Ridge",stevens,men,,357,,2025
-Nick Reznick,foil,Jr.,5-9,"Marlboro, N.J. / Biotechnology",stevens,men,,358,,2025
-Eric Romero,saber,Jr.,5-10,"Newark, N.J. / St. Benedict's Prep",stevens,men,,359,,2025
-Graham Shambarger,foil,Fy.,-,/,stevens,men,,360,,2025
-Nicholas Smith,epee,Sr.,5-10,"Martinsville, N.J. / Bridgewater Raritan",stevens,men,,361,,2025
-Liam Thomas,foil,So.,6-2,"Wanaque, N.J. / Lakeland Regional",stevens,men,,362,,2025
-David Trubetski,foil,Fy.,5-7,"Newtown, Pa. / Council Rock North High School",stevens,men,,363,,2025
-Noah Tumibay,epee,So.,5-7,"Airmont, N.Y. / Don Bosco Prep",stevens,men,,364,,2025
-Aden Vishnevsky,foil,Jr.,5-7,"Livingston, N.J. / Livingston",stevens,men,,365,,2025
-Yash Yagnik,epee,Jr.,5-7,Mount Laurel. N.J. / Lenape,stevens,men,,366,,2025
-Andrew Yurovchak,epee,Jr.,6-2,"Nashua, N.H. / Academy for Science & Design",stevens,men,,367,,2025
-Alexandra Craine,saber,Fy.,-,/,stevens,women,,368,,2025
-Sasha Craine,saber,Fy.,-,"North Caldwell, N.J. / West Essex Regional",stevens,women,,369,,2025
-Annabelle Crescenzo,foil,Sr.,5-0,"Medford, N.J. / Moorestown Friends School",stevens,women,,370,,2025
-Arianna Daringa,saber,Sr.,5-8,5-8,stevens,women,,371,,2025
-Faith Delassalas,saber,So.,5-2,/,stevens,women,,372,,2025
-Julia DiPaolo,foil,Fy.,5-7,"Long Valley, N.J. / West Morris Central",stevens,women,,373,,2025
-Zoya Duarte-Garcia,epee,So.,5-2,"Miami, Fl. / Carrollton School of The Sacred Heart",stevens,women,,374,,2025
-Grace Hicks,epee,So.,5-4,/,stevens,women,,375,,2025
-Alyssa Ip,saber,Sr.,5-4,/,stevens,women,,376,,2025
-Eren Kokes,foil,Fy.,-,/,stevens,women,,377,,2025
-Ashlyn Leung,saber,Fy.,-,/,stevens,women,,378,,2025
-Elizabeth MacDonald,foil,Sr.,5-5,"Staten Island, N.Y. / Staten Island Technical High School",stevens,women,,379,,2025
-Emily Miller,epee,Jr.,5-7,"Staten Island, N.Y. / Staten Island Technical High School",stevens,women,,380,,2025
-Anastasia Mose,foil,Jr.,5-2,/,stevens,women,,381,,2025
-Amber Muzones,foil,Jr.,4-10,/,stevens,women,,382,,2025
-Rachel Naomi Quedding,saber,Fy.,5-0,San Pablo City. Phillipines / Morris Hills,stevens,women,,383,,2025
-Akemi Rodriguez,foil,So.,5-5,"Miami, Fl. / Mater Academy Charter High",stevens,women,,384,,2025
-Sofia Savchuk,foil,Sr.,5-9,/,stevens,women,,385,,2025
-Paris Sepulveda,foil,So.,5-4,"Ponce, Puerto Rico / Centro Residencial de Oportunidades Educativas en Mayagüez(CROEM)",stevens,women,,386,,2025
-Sofia Stoeckel,epee,So.,5-6,/,stevens,women,,387,,2025
-Renny Victoria,epee,Sr.,5-3,"Cranbury, N.J. / West Windsor - Plainsboro High School South",stevens,women,,388,,2025
-Emily Zgombic,foil,Jr.,5-7,"Neshanic Station, N.J. / Somerville High School",stevens,women,,389,,2025
+name,weapon,Year,Hometown,university_id,High School,Height,gender,id,,season_end_year,review in roster
+Kate Apelian,foil,Junior,"Boonton Township, NJ",notredame,Stanford Online HS,5-3,women,1,,2025,
+Ethan Augustine,foil,Junior,"Upper Saddle River, NJ",notredame,Northern Highlands Regional HS,5-11,men,2,,2025,
+Kevin Bae,foil,Sophomore,"Allendale, NJ",notredame,Northern Highlands Regional HS,5-9,men,3,,2025,
+Liam Bas,foil,Freshman,"Fair Lawn, NJ",notredame,Fair Lawn HS,5-10,men,4,,2025,
+Nick Candela,epee,Junior,"Las Vegas, NV",notredame,Bishop Gorman HS,6-0,men,5,,2025,
+Rebeca Candescu,foil,Senior,"Metuchen, NJ",notredame,Metuchen HS,5-6,women,6,,2025,
+Matthew Chan,saber,Freshman,"Basking Ridge, NJ",notredame,Ridge HS,5-8,men,7,,2025,
+Emily Chang,saber,Senior,"Yorktown, VA",notredame,Tabb HS,5-6,women,8,,2025,
+Ashley Chen,saber,Freshman,"Markham, Ontario",notredame,Pierre Elliott Trudeau HS,5-7,women,9,,2025,
+James Chen,foil,Junior,"Shenyang, China",notredame,The Drew School (CA),6-0,men,10,,2025,
+Sia Chin,foil,Freshman,"Incheon, Republic of Korea",notredame,Ivy Collegiate School,5-8,women,11,,2025,
+Christopher Chong,epee,Freshman,"Oakton, VA",notredame,James Madison HS,6-3,men,12,,2025,
+Josephina Conway,foil,Junior,"Mishawaka, IN",notredame,John Adams HS,5-11,women,13,,2025,
+Chelsea Delsoin,saber,Sophomore,"Jersey City, NJ",notredame,Saint Dominic Academy,5-8,women,14,,2025,
+Lex Denner,saber,Sophomore,"Greenwich, CT",notredame,The Hackney School,6-3,men,15,,2025,
+Grant Dodrill,saber,Junior,"Boca Raton, FL",notredame,North Broward Preparatory School,6-2,men,16,,2025,
+Chase Emmer,foil,Sophomore,"Morristown, NJ",notredame,Morristown HS,6-0,men,17,,2025,
+Kyle Fallon,epee,Freshman,"Greenwich, CT",notredame,Links Academy,5-10,men,18,,2025,
+Rodrigo Fernandez,saber,Sophomore,"Atlanta, GA",notredame,Midtown HS,5-8,men,19,,2025,
+Fred Fogelson,foil,Freshman,"New York, NY",notredame,Dwight-Englewood School,6-3,men,20,,2025,
+Sedna Gandhi,epee,Junior,"Mamaronek, NY",notredame,Scarsdale HS,5-7,women,21,,2025,
+Stavrina Garyfallou,foil,Freshman,"Athens, Greece",notredame,Ekapideutiria Lampiri,5-8,women,22,,2025,
+Ian Goldfine,epee,Freshman,"Roslyn, NY",notredame,Roslyn HS,5-10,men,23,,2025,
+Ian Greenbaum,saber,Freshman,"Atlanta, GA",notredame,Ben Franklin Academy,5-11,men,24,,2025,
+Ella Greenbaum,saber,Sophomore,"Atlanta, GA",notredame,Ben Franklin Academy,5-4,women,25,,2025,
+Atara Greenbaum,saber,Senior,"Boca Raton, FL",notredame,Katz Yeshiva HS,5-9,women,26,,2025,
+Emma Griffin,foil,Freshman,"Sugar Land, TX",notredame,St. Agnes Academy,5-8,women,27,,2025,
+Jonathan Hamilton-Meikle,epee,Junior,"Budapest, Hungary",notredame,Baár–Madas Reformataus Gimnazium,6-2,men,28,,2025,
+Ahmed Hesham,saber,Freshman,"Cairo, Egypt",notredame,Royal House Language School,6-3,men,29,,2025,
+Dylan Hooshi,foil,Sophomore,"Old Westbury, NY",notredame,Jericho Senior HS,6-0,men,30,,2025,
+Siena Hua,saber,Sophomore,Hong Kong,notredame,Hong Kong International School,,women,31,,2025,
+Kaitlyn Hulseburg,saber,Sophomore,"Farmingdale, NJ",notredame,Howell HS,5-7,women,32,,2025,
+Kent Iyoki,epee,Freshman,"Camas, WA",notredame,Washington Connections Academy,5-8,men,33,,2025,
+Anthony Jiang,saber,Freshman,"San Diego, CA",notredame,Cathedral Catholic HS,6-1,men,34,,2025,
+Dominic Joseph,foil,Sophomore,"Plymouth Meeting, PA",notredame,Wissahickon HS,5-10,men,35,,2025,
+Michaela Joyce,epee,Junior,"Sterling, VA",notredame,The Madeira School,5-11,women,36,,2025,
+Philip Kang,epee,Freshman,"Houston, TX",notredame,Clear Lake HS,6-1,men,37,,2025,
+Alexandre Lacaze,saber,Senior,"Sainte-Mandé, France",notredame,Lycée Charles Péguy,6-0,men,38,,2025,
+Ryanne Leslie,foil,Sophomore,"Philadelphia, PA",notredame,Springside Chestnut Hill Academy,5-11,women,39,,2025,
+Luke Linder,saber,Grad Student,"Chandler, AZ",notredame,Chandler Online Academy/Hamilton HS,6-2,men,40,,2025,
+Yiyang Louise Liu,foil,Freshman,"Beijing, China",notredame,Beijing National Day School,5-6,women,41,,2025,
+Paulo Morais,foil,Junior,"São Paulo, Brazil",notredame,Graded School of São Paulo,5-10,men,42,,2025,
+Maria Mozhaeva,saber,Sophomore,"San Diego, CA",notredame,Canyon Crest Academy,5-8,women,43,,2025,
+Eszter Muhari,epee,Junior,"Budapest, Hungary",notredame,Spanish-Hungarian Bilingual High School Mikaly Karolyi of Kispet,6-0,women,44,,2025,
+Henry Nadile,saber,Senior,"Tarrytown, NY",notredame,Hackley HS,6-1,men,45,,2025,
+Mariam Namgalauri,foil,Freshman,"Riverwoods, IL",notredame,Deerfield HS,5-7,women,46,,2025,
+Radu Nitu,saber,Sophomore,"Bucharest, Romania",notredame,Liceu Teoretic “Jean Monnet”,6-4,men,47,,2025,
+Maruan Osman-Touson,epee,Junior,"Budapest, Hungary",notredame,Kolcsey Ferenc HS,6-3,men,48,,2025,
+Jack Oursler,foil,Junior,"New York, NY",notredame,Friends Seminary,6-0,men,49,,2025,
+Meredith Palmer,foil,Freshman,"South Bend, IN",notredame,Indiana University Online HS,5-10,women,50,,2025,
+Victoria Pevzner,foil,Freshman,"South Orange, NJ",notredame,Newark Academy,5-5,women,51,,2025,
+Lola Possick,saber,Freshman,"Weehawken, NJ",notredame,Kent Place School,5-11,women,52,,2025,
+Ankith Prasad,epee,Freshman,"San Antonio, TX",notredame,Texas Connections Academy,6-0,men,53,,2025,
+Riley Robinson,epee,Junior,"Las Vegas, NV",notredame,Odyssey Charter HS,5-10,men,54,,2025,
+Renato Saliba,saber,Sophomore,"São Paulo, Brazil",notredame,St. Paul's School,6-0,men,55,,2025,
+Felicity Sebastian,epee,Freshman,"Spring Lake, TX",notredame,The John Cooper School,5-8,women,56,,2025,
+James Sennewald,epee,Freshman,"Houston, TX",notredame,St. Francis Episcopal School,6-3,men,57,,2025,
+Noah Silvers,epee,Junior,"Chicago, IL",notredame,Rochelle Zell Jewish HS,6-2,men,58,,2025,
+Kaylin Sin Yan Hsieh,epee,Senior,Hong Kong,notredame,ESF Sha Tin College,5-7,women,59,,2025,
+Magda Skarbonkiewicz,saber,Freshman,"Portland, OR",notredame,Jesuit HS,5-8,women,60,,2025,
+Mason Stanley,foil,Sophomore,"Hanover, VA",notredame,St. Christopher's School,6-0,men,61,,2025,
+Siobhan Sullivan,saber,Freshman,"Tigard, OR",notredame,Jesuit HS,6-0,women,62,,2025,
+Daena Talavera,foil,Junior,"St. Louis, MO",notredame,Clayton HS,5-5,women,63,,2025,
+Ariadna Tucker,foil,Junior,"Mishawaka, IN",notredame,John Adams HS,5-5,women,64,,2025,
+Jadeyn Williams,saber,Senior,"Metuchen, NJ",notredame,Union Catholic Regional HS,5-8,women,65,,2025,
+Isaac Zhang,foil,Freshman,"Newmarket, Ontario",notredame,Newmarket HS,5-6,men,66,,2025,
+Jason Zhao,foil,Junior,"Cincinnati, OH",notredame,St. Xavier HS,6-0,men,67,,2025,
+Sophie Zhao,foil,Freshman,"Cincinnati, OH",notredame,Ursuline Academy,5-8,women,68,,2025,
+Janet Chen,epee,So.,"Shanghai, China / Mulgrave School (Vancouver, Canada)",columbia,,,women,69,,2025,
+Evelyn Cheng,foil,Jr.,"Lexington, Mass. / Palo Alto (Calif.)",columbia,,,women,70,,2025,
+Audrey Chu,epee,Sr.,"Palo Alto, Calif. / Palo Alto Senior",columbia,,,women,71,,2025,
+Charlotte Depew,saber,Sr.,"Bernardsville, N.J. / Bernards",columbia,,,women,72,,2025,
+Chiara Di Perna,saber,Sr.,"Sacramento, Calif. / Rio Americana",columbia,,,women,73,,2025,
+Nika Filippov,epee,Sr.,"Houston, Texas / Duchesne Academy of the Sacred Heart",columbia,,,women,74,,2025,
+Madison Four-Garcia,saber,Jr.,"Cliffside Park, N.J. / Horace Mann School (N.Y.)",columbia,,,women,75,,2025,
+Janna Freedman,saber,FY,"Los Angeles, Calif. / Palos Verdes Peninsula",columbia,,,women,76,,2025,
+Sofia Gaydos,foil,Jr.,"New York, N.Y. / H.S. for Mathematics, Science & Engineering at City College",columbia,,,women,77,,2025,
+Tamar Gordon,saber,Jr.,"Richmond, British Columbia, Canada / McMath Secondary School",columbia,,,women,78,,2025,
+Chloe Gouhin,saber,Sr.,"Blacklick, Ohio / Columbus Academy",columbia,,,women,79,,2025,
+Sophia Jakel,epee,FY,"Bethesda, Md. / Walt Whitman",columbia,,,women,80,,2025,
+Alexandra Jing,foil,Jr.,"Boston, Mass. / Boston Latin School",columbia,,,women,81,,2025,
+Rachael Kim,foil,So.,"Paramus, N.J. / Paramus Catholic",columbia,,,women,82,,2025,
+Christelle Ko,foil,Sr.,Hong Kong / Kellett School,columbia,,,women,83,,2025,
+Olive Lee,epee,Sr.,"Teaneck, N.J. / Academy of the Holy Angels",columbia,,,women,84,,2025,
+Sumin Lee,epee,FY,"Las Vegas, Nev. / West Career & Technical Academy",columbia,,,women,85,,2025,
+Pilar Maldonado,epee,Jr.,"San Antonio, Texas / School of the Americas",columbia,,,women,86,,2025,
+Veronica Mika,saber,FY,"Basking Ridge, N.J. / Ridge",columbia,,,women,87,,2025,
+Tierna Oxenreider,epee,Jr.,"Reynoldsburg, Ohio / Metro Early College",columbia,,,women,88,,2025,
+Zander Rhodes,foil,Jr.,"South Orange, N.J. / Columbia H.S.",columbia,,,women,89,,2025,
+Carolina Stutchbury,foil,FY,"Atlanta, Ga. / Stanford Online High School",columbia,,,women,90,,2025,
+Chloe Szeto,saber,So.,"Weston, Mass. / Weston",columbia,,,women,91,,2025,
+Claire Wang,epee,FY,"Beijing, China / Dulwich College",columbia,,,women,92,,2025,
+Juliana Weber,saber,Sr.,"East Northport, N.Y. / Elwood-John H. Glenn",columbia,,,women,93,,2025,
+Alanna Xue,foil,Jr.,"Boston, Mass. / Noble and Greenough School",columbia,,,women,94,,2025,
+Mina Yamanaka,epee,Sr.,"Little Neck, N.Y. / Bronx High School of Science",columbia,,,women,95,,2025,
+Meagan Yao Co Say,saber,FY,"Quezon City, Philippines / Everest Academy",columbia,,,women,96,,2025,
+Vivian Zheng,foil,Sr.,"Williamsville, N.Y. / Williamsville South",columbia,,,women,97,,2025,
+Zachary Binder,foil,Sr.,"Armonk, N.Y. / Byram Hills",columbia,,,men,98,,2025,
+Jaden Callahan,saber,So.,"San Diego, Calif. / The Grauer School",columbia,,,men,99,,2025,
+Justin Haddad,epee,Sr.,"Bethesda, Md. / Montgomery Blair",columbia,,,men,100,,2025,
+Bogdan Hamilton,foil,Jr.,"St. Louis, Mo. / Mary Institute Country Day School",columbia,,,men,101,,2025,
+Colby Harley,saber,Jr.,"Alpharetta, Ga. / Woodward Academy",columbia,,,men,102,,2025,
+Nick Harvey,saber,Jr.,"College Park, Ga. / The Westminster Schools",columbia,,,men,103,,2025,
+Sam Kumbla,foil,So.,"San Jose, Calif. / Valley Christian",columbia,,,men,104,,2025,
+Ethan Kushnerik,epee,Sr.,"New York City, N.Y. / York Prep",columbia,,,men,105,,2025,
+Ethan Leung,foil,So.,Hong Kong / The Lawrenceville School (N.J.),columbia,,,men,106,,2025,
+Timothy Lim,epee,Sr.,Hong Kong / Harrow International School,columbia,,,men,107,,2025,
+Skyler Liverant,epee,Jr.,"Brooklyn, N.Y. / Prospect Charter School",columbia,,,men,108,,2025,
+Luka Loncar,epee,FY,"Belmont, Mass. / Boston University Academy",columbia,,,men,109,,2025,
+Jackson McBride,saber,Sr.,"Gilbert, Ariz. / Gilbert Classical Academy",columbia,,,men,110,,2025,
+Will Morrill,saber,FY,"New York, N.Y. / High School for Math Science & Engineering",columbia,,,men,111,,2025,
+Marsel Nagimov,foil,So.,"San Jose, Calif. / Leigh",columbia,,,men,112,,2025,
+Enoch Xiao,foil,So.,"Birmingham, Ala. / Indian Springs School",columbia,,,men,113,,2025,
+Ethan Xiao,foil,So.,"Birmingham, Ala. / Indian Springs School",columbia,,,men,114,,2025,
+Zachary Zusin,foil,Sr.,"Norwood, N.J. / Dwight-Englewood School",columbia,,,men,115,,2025,
+Evelyn Malvestuto,foil,Fr.,"Homewood, IL / Homewood Flossmoor HS",clevelandstate,,,women,116,,2025,
+Adeline Mantoan,saber,Sr.,"Hammonton, N.J. / Homeschool",clevelandstate,,,women,117,,2025,
+Maggie Mihill,epee,Fr.,"Marietta, GA / Lassiter HS",clevelandstate,,,women,118,,2025,
+Gwen Nelson,epee,Gr.,"Minneapolis, Minn. / Washburn",clevelandstate,,,women,119,,2025,
+Rayllen Prafil Capaccio,epee,So.,"Buenos Aires, Argentina / University of Buenos Aires",clevelandstate,,,women,120,,2025,
+Anna Quinn,foil,Fr.,"Corvallis, OR / Ida B. Wells Barnett HS",clevelandstate,,,women,121,,2025,
+Maia Taylor Casamayor,epee,Jr.,"Pittsford, N.Y. / Pittsford Sutherland",clevelandstate,,,women,122,,2025,
+Aubrey Testroet,saber,Fr.,"Homewood, IL / Homewood Flossmoor HS",clevelandstate,,,women,123,,2025,
+Samantha Way,saber,Fr.,"Clinton, CT / The Morgan School",clevelandstate,,,women,124,,2025,
+Connor Arata,foil,Fr.,"Libertyville, IL / Libertyville HS",clevelandstate,,,men,125,,2025,
+Conner Bailey,saber,Jr.,"Beecher, Ill. / Marian Catholic",clevelandstate,,,men,126,,2025,
+Simon Caisse,saber,So.,"Cameron Park, CA / Charter University Prep",clevelandstate,,,men,127,,2025,
+Nolan Giovagnoli,epee,Fr.,"San Francisco, CA / Boulder HS",clevelandstate,,,men,128,,2025,
+Jack Miller (epee),epee,Fr.,"Charleston, SC / James Island Charter HS",clevelandstate,,,men,129,,2025,
+Jack Miller (foil),foil,Fr.,"Charleston, SC / James Island Charter HS",clevelandstate,,,men,130,,2025,
+Jesse Ndjeka,epee,Gr.,"Pretoria, South Africa / Pretoria",clevelandstate,,,men,131,,2025,
+Merik Pohl,epee,Sr.,"Walnut Creek, Calif. / Las Lomas",clevelandstate,,,men,132,,2025,
+Matthew Seljan,foil,So.,"Bay Village, OH /",clevelandstate,,,men,133,,2025,
+Sal Sorrentino,foil,So.,"Dyer, IN / Marian Catholic",clevelandstate,,,men,134,,2025,
+De'Mario Steele,epee,Gr.,"Miami Gardens, Fla. / Somerset Academy - Central Miramar",clevelandstate,,,men,135,,2025,
+W. Drew Walker,epee,Sr.,"Roswell, Ga. / Centennial",clevelandstate,,,men,136,,2025,
+Evran Walter,foil,Sr.,"Fairfax, Va. / Oakton",clevelandstate,,,men,137,,2025,
+Maria Alexe,saber,So.,"Bucharest, Romania",ohiostate,‘Central School’ National College,,women,138,,2025,
+Isaac Ariza,foil,Sr.,"Miami Gardens, Fla.",ohiostate,Florida Virtual School,,men,139,,2025,
+Hamsika Arnipalli,saber,Jr.,"New Albany, Ohio",ohiostate,New Albany High School,,women,140,,2025,
+Ilya Ayupov,foil,Sr.,"West Hills, Calif.",ohiostate,,,men,141,,2025,
+Hank Bauer,saber,Jr.,"Los Angeles, Calif.",ohiostate,The Episcopal School of Los Angeles,,men,142,,2025,
+Natalia Botello,saber,So.,,ohiostate,,,women,143,,2025,
+Matthew Bülau,epee,Jr.,"Heidenheim, Germany",ohiostate,Max-Planck Gymnasium,,men,144,,2025,
+Astrid Meklit Chapman-Layland,saber,Fr.,"Columbus, Ohio",ohiostate,,,women,145,,2025,
+Nathan Cheng,foil,So.,,ohiostate,,,men,146,,2025,
+Grace Fan,saber,Fr.,"Dublin, Ohio",ohiostate,,,women,147,,2025,
+Sally Fan,epee,Jr.,,ohiostate,,,women,148,,2025,
+Gabriel Feinberg,epee,Sr.,"Lincoln, Mass.",ohiostate,Lincoln Sudbury Regional High School,,men,149,,2025,
+Miranda Freedman,foil,Sr.,"Grosse Pointe Park, Mich.",ohiostate,Grosse Point South High School,,women,150,,2025,
+Samuel Freedman,foil,So.,"Grosse Pointe Park, Mich.",ohiostate,Grosse Pointe South High School,,men,151,,2025,
+Claire Teresa Galavotti,foil,Sr.,"Oak Park, Ill.",ohiostate,Saint Ignatius College Prep,,women,152,,2025,
+Nowell Gibson,epee,Jr.,"Armonk, N.Y.",ohiostate,Byram Hills High School,,men,153,,2025,
+Erika Gumagay,epee,Fr.,"Vienna, Va.",ohiostate,,,women,154,,2025,
+Anna Heiser,foil,Sr.,"Canton, Ohio",ohiostate,The Hun School of Princeton,,women,155,,2025,
+Melany Hernandez,foil,Fr.,"Cape Coral, Fla.",ohiostate,,,women,156,,2025,
+Mitchell Huth,foil,So.,"Raleigh, N.C.",ohiostate,Heritage Christian Homeschool,,men,157,,2025,
+Gloria Klughardt,epee,Jr.,"Cracow, Poland",ohiostate,Silesian Academy,,women,158,,2025,
+Viktor Kulcsar,epee,Fr.,Hungary,ohiostate,,,men,159,,2025,
+Katherine Larimer,saber,Sr.,"Colleyville, Texas",ohiostate,Colleyville Heritage High School,,women,160,,2025,
+Kinley Lavenstein,epee,Sr.,"Cranston, R.I.",ohiostate,Providence Country Day School,,men,161,,2025,
+Alina Lee,foil,Sr.,"Dublin, Calif.",ohiostate,Dublin High School,,women,162,,2025,
+Wesley Lee,epee,Sr.,"Vancouver, British Columbia",ohiostate,Sentinel Secondary School,,men,163,,2025,
+Solin Li,foil,Jr.,"Beijing, China",ohiostate,Beijing National Day School,,men,164,,2025,
+Kelly Liu,saber,Jr.,"Stony Brook, N.Y.",ohiostate,Ward Melville,,men,165,,2025,
+Eddie Maklin,saber,Fr.,"Newton, Mass.",ohiostate,,,men,166,,2025,
+Yeva Mazur,epee,Sr.,"Khmelnitsky, Ukraine",ohiostate,Gymnasium 1,,women,167,,2025,
+Marie-Frederique Millette,epee,Fr.,Canada,ohiostate,,,women,168,,2025,
+Lorenzo Mion,foil,Jr.,"São Paulo, Brazil",ohiostate,Colégio Dante Alighieri,,men,169,,2025,
+Raiyan Moradi-Bidhendi,foil,So.,"San Diego, Calif.",ohiostate,River Valley Charter School,,women,170,,2025,
+Dasha Myroniuk,foil,Jr.,"Kiev, Ukraine",ohiostate,Gymnasium 178,,women,171,,2025,
+Catherine Popa,epee,So.,"North Royalton, Ohio",ohiostate,North Royalton High School,,women,172,,2025,
+Avin Rai,saber,Jr.,"Brookeline, Mass.",ohiostate,Brookline High School,,men,173,,2025,
+Samuel Rightler,saber,So.,"Plain City, Ohio",ohiostate,Homeschool,,men,174,,2025,
+Max Rodney,epee,Gr.,"Houston, Texas",ohiostate,Memorial High School,,men,175,,2025,
+Cara Santos,epee,Jr.,"Grand Rapids, Mich.",ohiostate,East Grand Rapids High School,,women,176,,2025,
+James Schardine,saber,So.,"Cincinnati, Ohio",ohiostate,,,men,177,,2025,
+Julia Semikin,epee,Jr.,"Columbus, Ohio",ohiostate,Worthington Kilbourne High Shcool,,women,178,,2025,
+Ayush Shah,epee,So.,"Dublin, Ohio",ohiostate,Dublin Coffman High School,,men,179,,2025,
+Justin Vogler,foil,Sr.,"Portland, Ore.",ohiostate,Westview High School,,men,180,,2025,
+Miles Weiss,epee,Sr.,"Houston, Texas",ohiostate,Bellaire High School,,men,181,,2025,
+Talia Weiss,epee,Sr.,"Houston, Texas",ohiostate,Bellaire High School,,women,182,,2025,
+Lucy Whittemore,epee,Sr.,"Chicago, Ill.",ohiostate,British International School of Chicago,,women,183,,2025,
+Arlow Wiggers,saber,So.,"Atlanta, Ga.",ohiostate,Ben Franklin Academy,,women,184,,2025,
+Nolan Williams,saber,5th,"Watchung, N.J.",ohiostate,St. Benedict's Prep,,men,185,,2025,
+Catherine Zhou,epee,Jr.,Hometown / High School,ohiostate,Shenzhen Foreign Language School,,women,186,,2025,
+Chi Chi Agu,epee,Fr.,"Altoona, Iowa / Southeast Polk",denison,,,women,187,,2025,
+Claire Anderson,epee,Fr.,"Englewood, Colo. / Kent Denver School",denison,,,women,188,,2025,
+Delaney Brown,saber,Jr.,"West Milford, N.J. / West Milford",denison,,,women,189,,2025,
+Alaina Cabalu,foil,So.,"Anaheim, Calif. / Esperanza",denison,,,women,190,,2025,
+Corvus Endo,saber,So.,"Frisco, Texas / Hebron",denison,,,women,191,,2025,
+Lal Ertun,foil,So.,"Istanbul, Turkey / Sisli Terakki",denison,,,women,192,,2025,
+Velma Hall,foil,Jr.,"Dublin, Ohio / Dublin Coffman",denison,,,women,193,,2025,
+Natalie Isberg,saber,Jr.,"Libertyville, Ill. / Libertyville",denison,,,women,194,,2025,
+Elly Kennedy,foil,Fr.,"Granville, Ohio / Granville",denison,,,women,195,,2025,
+Nicole Krumholz,epee,Fr.,"Oyster Bay, N.Y. / Oyster Bay",denison,,,women,196,,2025,
+Grace Lukens,epee,Jr.,"Wadsworth, Ohio / Highland",denison,,,women,197,,2025,
+Bella Musto,foil,Jr.,"North Andover, Mass. / Middlesex School",denison,,,women,198,,2025,
+Joanna Passalaris,saber,Jr.,"Skillman, N.J. / Montgomery",denison,,,women,199,,2025,
+Evie Rhody,epee,Jr.,"Maplewoord, N.J. / Columbia",denison,,,women,200,,2025,
+Olivia Sultana-Hole,foil,So.,"Manhattan, N.Y. / Avenues The World School",denison,,,women,201,,2025,
+Abigail Yasuzawa,foil,Sr.,"Centennial, Colo. / Cherry Creek",denison,,,women,202,,2025,
+Joyce Yu,saber,So.,"Shanghai, China / Shanghai High School International Division",denison,,,women,203,,2025,
+Maggie Zhu,epee,Jr.,"Beijing, China / Beijing Etown Academy",denison,,,women,204,,2025,
+Kaydine Gonzalez,saber,Fr.,"Parsippany, NJ / The Academy for Math, Science, and Engineering / Morris Hills",njit,,,women,205,,2025,
+Sherlyn Arzola Silva,foil,Jr.,"Paterson, NJ / Diana C. Lobosco STEM Academy",njit,,,women,206,,2025,
+Elena Fernandez Negron,foil,Sr.,"Madrid, Spain / Colegio Paraíso Sagrados Corazones",njit,,,women,207,,2025,
+Stella Frias,foil,So.,"Sao Paulo, Brazil / Colegio Bandeirantes",njit,,,women,208,,2025,
+Megan Hillyer,epee,Jr.,"Scotch Plains, NJ / Scotch Plains-Fanwood",njit,,,women,209,,2025,
+Gala Krsmanovic,epee,Jr.,"Novi Sad, Serbia / Gimnazija Jovan Jovanovic Zmaj",njit,,,women,210,,2025,
+Alisa Maloku,foil,Sr.,"Butler, NJ / Butler",njit,,,women,211,,2025,
+Margaret Meschia,epee,Jr.,"Denver, Colorado / St. Mary's Academy",njit,,,women,212,,2025,
+Randa Shalabi,saber,So.,"Paterson, NJ / Passaic County Technical Institute",njit,,,women,213,,2025,
+Anastasiia Volynska,saber,So.,"Bucha, Ukraine / Pennridge High School (Perkasie, PA)",njit,,,women,214,,2025,
+Zoey Wen,saber,Fr.,"Mahwah, NJ / Bergen County Academies",njit,,,women,215,,2025,
+Armaan Chawla,epee,Fr.,"Kingsville, MD / Eastern Technical",njit,,,men,216,,2025,
+Matthew Choi,epee,Jr.,"Seoul, Korea / Hanyoung Foreign Language",njit,,,men,217,,2025,
+Scott Connelly,epee,Sr.,"Rockaway, NJ / Morris Hills",njit,,,men,218,,2025,
+Christopher Cortez,saber,Sr.,"Morristown, NJ / Morris Catholic",njit,,,men,219,,2025,
+Aidan Doctor,foil,Fr.,"Huntington, NY / Harborfields",njit,,,men,220,,2025,
+Gonzalo Fernandez,saber,So.,"Madrid, Spain / Fomento Fundacion",njit,,,men,221,,2025,
+Adrian Figueredo,saber,Jr.,"Guayama, Puerto Rico / Eugenio Guerra Cruz Salinas",njit,,,men,222,,2025,
+Ummi Green,epee,Jr.,"Berkeley, CA / Homeschooled",njit,,,men,223,,2025,
+Carlos Grodman,foil,So.,"Maplewood, NJ / Columbia High School",njit,,,men,224,,2025,
+Brandon Howe,saber,Fr.,"Morris Plains, NJ / The Academy for Math, Science, and Engineering",njit,,,men,225,,2025,
+Daniel Jeun,epee,Jr.,"Alcobendas, Madrid, Spain / Greenwich School",njit,,,men,226,,2025,
+Niels Roubailo,epee,Jr.,"Walchwil, Switzerland / International School of Zug and Luzern",njit,,,men,227,,2025,
+Robert Rountree,foil,Jr.,"Richmond, VA / Douglas S. Freeman",njit,,,men,228,,2025,
+Josh Schaefer,foil,Sr.,"Cockeysville, MD / Dulaney",njit,,,men,229,,2025,
+Ryan Scharf,epee,Fr.,"Decatur, GA / Decatur",njit,,,men,230,,2025,
+Jayson Zelaya,saber,Jr.,"Tegucigalpa, Honduras / Passaic County Technical Institute",njit,,,men,231,,2025,
+Sarah Ellis,epee,Jr.,"Brooklyn, N.Y. / Midwood",liu,,5-8,women,232,,2025,
+Laura Fekete,epee,Sr.,"Budapest, Hungary / Budapesti Kolping",liu,,5-9,women,233,,2025,
+Kitty Feketics,saber,So.,"Marosvásárhely, Romania / Brooklyn Technical",liu,,5-4,women,234,,2025,
+Catherine Felix,epee,So.,"Bloomingdale, N.J. / Passaic County Technical Institute",liu,,5-2,women,235,,2025,
+Costanza Greggi,epee,So.,"Rome, Italy / American Overseas School of Rome",liu,,5-4,women,236,,2025,
+Abigail Hunt,foil,Fr.,"Miller Place, N.Y. / Shoreham-Wading River",liu,,5-4,women,237,,2025,
+Marisa Mohan,epee,So.,"Valley Stream, N.Y. / Valley Stream North",liu,,5-1,women,238,,2025,
+Nicole Nicou,epee,Sr.,"Dix Hills, N.Y. / Commack",liu,,5-3,women,239,,2025,
+Francesca Perez,epee,Fr.,"Hollis, Queens, N.Y. / Benjamin N. Cardozo",liu,,5-4,women,240,,2025,
+Daniela Perez Leal,foil,Jr.,"Valencia, Venezuela / Olga Bayone de Rodríguez",liu,,5-1,women,241,,2025,
+Jana Saleh,saber,Fr.,"Alexandria, Egypt / Kaumeya Language School",liu,,5-5,women,242,,2025,
+Khrystyna Sarkisian,foil,Sr.,"Kyiv, Ukraine / Dzherelo",liu,,5-6,women,243,,2025,
+Chejsa-Kaili Seck,saber,Sr.,"Brooklyn, N.Y. / Institute For Collaborative Education",liu,,5-7,women,244,,2025,
+Anna Szántay,foil,Sr.,"Gyömro, Hungary / Monori József Attila",liu,,5-8,women,245,,2025,
+Nevaeh Ulibarri,saber,So.,"Tempe, Ariz. / Corona del Sol",liu,,5-11,women,246,,2025,
+Jocelyn Velasquez,saber,Fr.,"Brentwood, N.Y. / Brentwood",liu,,5-2,women,247,,2025,
+Yasmeen Walker,saber,Gr.,"Baltimore, Md. / Institute of Notre Dame",liu,,5-2,women,248,,2025,
+Munir Aldabagh,saber,So.,"Hama, Syria / Coral International School",liu,,5-6,men,249,,2025,
+Caleb Brutus,saber,Fr.,"Chicago, Ill. / Homewood-Flossmoor",liu,,5-9,men,250,,2025,
+Carlos Carrasco,foil,So.,"Valencia, Carabobo, Venezuela / I.E Juan XXIII",liu,,5-9,men,251,,2025,
+Baron Chang,epee,R-Jr.,"Toayuan, Taiwan / Hwa Hsia University of Technology",liu,,5-11,men,252,,2025,
+Richard Chen,saber,So.,"Syosset, N.Y. / Syosset",liu,,5-10,men,253,,2025,
+Eduardo Duarte,saber,So.,"Lisbon, Portugal / Instituto dos Pupilos do Exército",liu,,5-6,men,254,,2025,
+Marawan Elrashidy,epee,So.,"Staten Island, N.Y. / Staten Island Technical",liu,,6-5,men,255,,2025,
+Mo Elsayed,epee,So.,"Tanta, Gharbeya, Egypt / Elnasr Language School",liu,,6-5,men,256,,2025,
+Tai Flot,saber,Fr.,"Jersey City, N.J. / Saint Peter’s Prep",liu,,6-0,men,257,,2025,
+Andrew Gefell,saber,So.,"Farmington, N.Y. / Victor Senior",liu,,5-10,men,258,,2025,
+Jabreel Green,epee,Fr.,"Berkeley, Calif. / The Ark",liu,,5-8,men,259,,2025,
+Christopher Hadchity,foil,So.,"Staten Island, N.Y. / Susan E Wagner",liu,,5-8,men,260,,2025,
+Brahim Khalyat,epee,So.,"Brooklyn, N.Y. / Brooklyn Technical",liu,,6-2,men,261,,2025,
+Padick Loyola,epee,Fr.,"Naples, Italy / Hoboken",liu,,5-11,men,262,,2025,
+Philip Manitt,epee,Fr.,"East Setauket, N.Y. / Ward Melville",liu,,6-1,men,263,,2025,
+Adem Mcharek,saber,So.,"Zarzis, Tunisia / Medenine Pioneer",liu,,5-11,men,264,,2025,
+Xavier Mullen,saber,Fr.,"Bay Shore, N.Y. / Brentwood",liu,,5-9,men,265,,2025,
+Youssof Saleh,saber,So.,"Alexandra, Egypt / Kaumeya Language School",liu,,6-0,men,266,,2025,
+Ryan Stewart (eppe),epee,Fr.,"Christchurch, New Zealand / St Andrew’s College",liu,,6-1,men,267,,2025,
+Ryan Stewart (foil),foil,Fr.,"Christchurch, New Zealand / St Andrew’s College",liu,,6-1,men,268,,2025,
+Jason Ahlman,saber,Fr.,"Swedesboro, N.J. / Kingsway Regional",drew,,-,men,269,,2025,
+Bryan Cipriano-Goines,saber,Fr.,"Bayonne, N.J. / Bayonne",drew,,6-1,men,270,,2025,
+Charles Daum,foil,5th,"Long Valley, N.J. / West Morris Central",drew,,5-9,men,271,,2025,
+Henri Degremont,foil,Jr.,"Wakefield, R.I. / South Kingstown",drew,,5-9,men,272,,2025,
+Aidan DeSola,foil,Sr.,"Flemington, N.J. / Hunterdon Central Regional",drew,,5-9,men,273,,2025,
+JP Emmert,epee,Fr.,"Austin, Texas / Lake Travis",drew,,5-9,men,274,,2025,
+Max Gayevsky,saber,Jr.,/,drew,,6-0,men,275,,2025,
+Paul Greenleaf,foil,Fr.,"Guilford, Conn. / Guilford",drew,,5-10,men,276,,2025,
+Jack Henderson,saber,Fr.,"Chicago, Ill. / Lycee Francais De Chicago",drew,,-,men,277,,2025,
+Jackson Howard,epee,Fr.,"Guilford, Conn. / Guilford",drew,,5-11,men,278,,2025,
+Logan Kleva,saber,So.,"Lindenhurst, N.Y. / Lidenhurst",drew,,-,men,279,,2025,
+Andrew Klyczek,foil,Fr.,"Chesapeake, Va. / Western Branch",drew,,-,men,280,,2025,
+Nicholas Kmosko,epee,Fr.,"Flemington, N.J. / North Hunterdon",drew,,-,men,281,,2025,
+Gabriel Leone,epee,Jr.,"Amsterdam, N.Y. / Broadalbin-Perth",drew,,5-8,men,282,,2025,
+Nicholas Machado,epee,Fr.,"Hillside, N.J. / Saint Benedict's Prep",drew,,-,men,283,,2025,
+Eddie Matto,epee,Jr.,"Whitehouse Station, N.J. / Hunterdon Central",drew,,5-11,men,284,,2025,
+Aidan Montalbine,foil,Sr.,"Sayville, N.Y. / Sayville",drew,,5-11,men,285,,2025,
+William Morton,epee,Jr.,"Owego, N.Y. / Owego Free Academy",drew,,6-0,men,286,,2025,
+Michael Niechwadowicz,foil,Jr.,"West Milford, N.J. / Morris Catholic",drew,,5-9,men,287,,2025,
+Ernesto Ospina,saber,So.,"Elizabeth, N.J. / Elizabeth",drew,,5-6,men,288,,2025,
+Peter Ross,foil,Fr.,"Morristown, N.J. / Morris Catholic",drew,,-,men,289,,2025,
+Tristan Santulli,foil,Sr.,"Boston, Mass. / Boston Latin Academy",drew,,6-1,men,290,,2025,
+Jason Sobon,foil,Fr.,"Holmdel, N.J. / Holmdel",drew,,6-0,men,291,,2025,
+Danny Stevens,epee,Sr.,"Fairfax, Va. / Fairfax",drew,,6-1,men,292,,2025,
+Zack Zukofsky,epee,Sr.,"Sayville, N.Y. / Sayville",drew,,6-0,men,293,,2025,
+Izzy Anderson,epee,Jr.,"Denville, N.J. / Morris Knolls",drew,,5-3,women,294,,2025,
+Brenna Behensky,epee,Sr.,"Tampa, Fla. / Tarpon Springs",drew,,5-6,women,295,,2025,
+Alisha Bourhill-Tumser,epee,Fr.,"Wanaque, N.J. / Lakeland Regional",drew,,5-7,women,296,,2025,
+Natalie Bovair,saber,Fr.,"Stanhope, N.J. / Lenape Valley",drew,,-,women,297,,2025,
+Jay Cusson,saber,Fr.,"Clinton, Conn. / Hopkins School",drew,,5-3,women,298,,2025,
+Filiz Erdogan,foil,Fr.,"Kadikoy, Turkey / Uskudar American Academy",drew,,5-7,women,299,,2025,
+Eva Esqueda,saber,Jr.,"Simi Valley, Calif. / Simi Valley",drew,,5-3,women,300,,2025,
+Nix Feeley,foil,Jr.,"Winthrop, Mass. / Winthrop",drew,,5-6,women,301,,2025,
+Sophie Gajowskyj,saber,Sr.,"Portland, Ore. / Sunset",drew,,5-4,women,302,,2025,
+Alexa Gavenas,foil,So.,"Randolph, N.J. / Randolph",drew,,-,women,303,,2025,
+Yenni Gonzalez-Chacon,epee,So.,"Summit, N.J. / Summit",drew,,5-5,women,304,,2025,
+Bella Hatzoglu,foil,Jr.,"Wayne, N.J. / Wayne Hills",drew,,5-1,women,305,,2025,
+Elysa Jordan,saber,Sr.,"Chatham, N.J. / Chatham",drew,,5-5,women,306,,2025,
+Serena Mancuso,saber,Sr.,"Manhasset, N.Y. / Manhasset",drew,,5-7,women,307,,2025,
+Morgan Mildner,foil,So.,"Pompton Lakes, N.J. / Pompton Lakes",drew,,-,women,308,,2025,
+Amira Mutakabbir,epee,Sr.,"Montclair, N.J. / Montclair",drew,,5-8,women,309,,2025,
+Assata Mutakabbir,foil,Sr.,"Montclair, N.J. / Montclair",drew,,4-11,women,310,,2025,
+Nzingha Mutakabbir,saber,Sr.,"Montclair, N.J. / Montclair",drew,,5-2,women,311,,2025,
+Gianna Olson,saber,Jr.,/,drew,,-,women,312,,2025,
+Tala Varoqua,foil,Fr.,"Wayne, N.J. / Wayne Hills",drew,,5-7,women,313,,2025,
+Faith Yap,epee,Fr.,"Denville, N.J. / Morris County School of Technology",drew,,-,women,314,,2025,
+Judy Bang,saber,2028,"Seoul, South Korea / BCC",wellesley,,5-5,women,315,,2025,
+Makana Burch,saber,2025,"Portland, Ore. / Oregon Episcopal School",wellesley,,5-6,women,316,,2025,
+Mia Chao,saber,2025,"Washington, D.C. / Washington International School",wellesley,,5-8,women,317,,2025,
+Leena Hobson,foil,2025,"Oakland, Calif. / Bentley",wellesley,,5-6,women,318,,2025,
+Rebecca Hsieh (foil),foil,2027,"Annandale, Va. / Thomas Jefferson Science and Technology",wellesley,,5-2,women,319,,2025,
+Rebecca Hsieh (saber),saber,2027,"Annandale, Va. / Thomas Jefferson Science and Technology",wellesley,,5-2,women,320,,2025,
+Gina Huang,foil,2026,"Taipei, Taiwan / Kang Chiao International School",wellesley,,5-3,women,321,,2025,
+Lauren Khoo,foil,2027,"San Francisco, Calif. / Lowell",wellesley,,5-4,women,322,,2025,
+Alisha Li,epee,2027,"Warren, N.J. / Watchung Hills",wellesley,,5-6,women,323,,2025,
+Phoebe Li,foil,2027,"Palo Alto, Calif. / Henry M. Gunn",wellesley,,5-5,women,324,,2025,
+Julia Peeler,epee,2028,"Fairfax, Va. / Woodson",wellesley,,5-8,women,325,,2025,
+Renee Sun,epee,2028,"Houston, Texas / Woodlands",wellesley,,5-8,women,326,,2025,
+Elena Vona,epee,2025,"Millstone, N.J. / Culver Academies",wellesley,,5-4,women,327,,2025,
+Naomi Wang,saber,2026,"Boston, Mass. / Buckingham Browne & Nichols",wellesley,,5-4,women,328,,2025,
+Riley Weed,epee,2027,"Guilford, Conn. / Guilford",wellesley,,5-5,women,329,,2025,
+Daisy Wiseman,foil,2028,"Austin, Texas / McCallum",wellesley,,5-7,women,330,,2025,
+Grace Xu,epee,2026,"Toronto, Ontario / Holy Trinity School",wellesley,,5-9,women,331,,2025,
+Emily Zhao,saber,2028,"Yorktown, Va. / Tabb/Governor's School for the Science and Technology",wellesley,,5-7,women,332,,2025,
+Sissi Zou,epee,2028,"Shanghai, China / YK Pao School",wellesley,,5-6,women,333,,2025,
+Esat Adiloglu,epee,Jr.,"Hackettstown, N.J. / Hackettstown",stevens,,6-1,men,334,,2025,
+Dev Badlani,foil,Fy.,"Chatham, N.J. / Chatham High School",stevens,,5-7,men,335,,2025,
+Thomas Cheng,foil,Sr.,"Brookline, Mass. / Brookline",stevens,,5-5,men,336,,2025,
+Spencer Depew,saber,Fy.,/,stevens,,-,men,337,,2025,
+Cyrus Erachshaw,saber,So.,"Colonia, N.J. / St. Thomas Aquinas",stevens,,5-10,men,338,,2025,
+Yuval Fussman,epee,Fy.,/,stevens,,-,men,339,,2025,
+James Glover,foil,Jr.,"Red Bank, N.J. / Culver Military Academy",stevens,,6-1,men,340,,2025,
+Alan Hu,foil,Fy.,"Roseland, N.J. / West Essex High School",stevens,,5-11,men,341,,2025,
+Rishi Kandagadla,foil,Fy.,"Orlando, Fl. / Lake Buena Vista Highschool",stevens,,6-0,men,342,,2025,
+Matthew Kemenosh,epee,Jr.,"Egg Harbor Township, N.J. / St. Augustine Prep",stevens,,6-1,men,343,,2025,
+Tyler Kometani,saber,So.,"Long Valley, N.J. / West Morris Central",stevens,,5-7,men,344,,2025,
+Siddharth Kumar,foil,Fy.,/,stevens,,-,men,345,,2025,
+Colin Mahoney,saber,Sr.,"Holliston, Mass. / Holliston",stevens,,5-11,men,346,,2025,
+Erik Marran,foil,Gr.,"Oldwick, N.J. / Voorhees",stevens,,6-0,men,347,,2025,
+Jose Martinez-Ponce,epee,Sr.,"Red Bank, N.J. / Christian Brothers Academy",stevens,,5-10,men,348,,2025,
+Rocco Mathews,foil,Sr.,"Ringoes, N.J. / Hun School",stevens,,6-1,men,349,,2025,
+John Morreale,saber,Sr.,"Wall, N.J. / Christian Brothers Academy",stevens,,5-9,men,350,,2025,
+James Morris,epee,Gr.,"Rockaway, N.J. / Morris Hills",stevens,,6-4,men,351,,2025,
+Chinli Ong,saber,Fy.,Jersey City / McNair Academic,stevens,,5-7,men,352,,2025,
+Riley Parker,epee,So.,"Austin, Texas / Liberal Arts & Science Academy",stevens,,5-10,men,353,,2025,
+Ethan Pena,epee,Fy.,/,stevens,,-,men,354,,2025,
+Evan Peneiras,foil,Sr.,"Freehold, N.J. / Academy of Allied Health and Science",stevens,,5-10,men,355,,2025,
+Ricardo Pires,foil,Fy.,"Lisbon, Portugal / Colegio Pedro Arrupe",stevens,,5-7,men,356,,2025,
+Myles Reda,saber,Sr.,"Glen Ridge, N.J. / Glen Ridge",stevens,,6-3,men,357,,2025,
+Nick Reznick,foil,Jr.,"Marlboro, N.J. / Biotechnology",stevens,,5-9,men,358,,2025,
+Eric Romero,saber,Jr.,"Newark, N.J. / St. Benedict's Prep",stevens,,5-10,men,359,,2025,
+Graham Shambarger,foil,Fy.,/,stevens,,-,men,360,,2025,
+Nicholas Smith,epee,Sr.,"Martinsville, N.J. / Bridgewater Raritan",stevens,,5-10,men,361,,2025,
+Liam Thomas,foil,So.,"Wanaque, N.J. / Lakeland Regional",stevens,,6-2,men,362,,2025,
+David Trubetski,foil,Fy.,"Newtown, Pa. / Council Rock North High School",stevens,,5-7,men,363,,2025,
+Noah Tumibay,epee,So.,"Airmont, N.Y. / Don Bosco Prep",stevens,,5-7,men,364,,2025,
+Aden Vishnevsky,foil,Jr.,"Livingston, N.J. / Livingston",stevens,,5-7,men,365,,2025,
+Yash Yagnik,epee,Jr.,Mount Laurel. N.J. / Lenape,stevens,,5-7,men,366,,2025,
+Andrew Yurovchak,epee,Jr.,"Nashua, N.H. / Academy for Science & Design",stevens,,6-2,men,367,,2025,
+Alexandra Craine,saber,Fy.,/,stevens,,-,women,368,,2025,
+Sasha Craine,saber,Fy.,"North Caldwell, N.J. / West Essex Regional",stevens,,-,women,369,,2025,
+Annabelle Crescenzo,foil,Sr.,"Medford, N.J. / Moorestown Friends School",stevens,,5-0,women,370,,2025,
+Arianna Daringa,saber,Sr.,5-8,stevens,,5-8,women,371,,2025,
+Faith Delassalas,saber,So.,/,stevens,,5-2,women,372,,2025,
+Julia DiPaolo,foil,Fy.,"Long Valley, N.J. / West Morris Central",stevens,,5-7,women,373,,2025,
+Zoya Duarte-Garcia,epee,So.,"Miami, Fl. / Carrollton School of The Sacred Heart",stevens,,5-2,women,374,,2025,
+Grace Hicks,epee,So.,/,stevens,,5-4,women,375,,2025,
+Alyssa Ip,saber,Sr.,/,stevens,,5-4,women,376,,2025,
+Eren Kokes,foil,Fy.,/,stevens,,-,women,377,,2025,
+Ashlyn Leung,saber,Fy.,/,stevens,,-,women,378,,2025,
+Elizabeth MacDonald,foil,Sr.,"Staten Island, N.Y. / Staten Island Technical High School",stevens,,5-5,women,379,,2025,
+Emily Miller,epee,Jr.,"Staten Island, N.Y. / Staten Island Technical High School",stevens,,5-7,women,380,,2025,
+Anastasia Mose,foil,Jr.,/,stevens,,5-2,women,381,,2025,
+Amber Muzones,foil,Jr.,/,stevens,,4-10,women,382,,2025,
+Rachel Naomi Quedding,saber,Fy.,San Pablo City. Phillipines / Morris Hills,stevens,,5-0,women,383,,2025,
+Akemi Rodriguez,foil,So.,"Miami, Fl. / Mater Academy Charter High",stevens,,5-5,women,384,,2025,
+Sofia Savchuk,foil,Sr.,/,stevens,,5-9,women,385,,2025,
+Paris Sepulveda,foil,So.,"Ponce, Puerto Rico / Centro Residencial de Oportunidades Educativas en Mayagüez(CROEM)",stevens,,5-4,women,386,,2025,
+Sofia Stoeckel,epee,So.,/,stevens,,5-6,women,387,,2025,
+Renny Victoria,epee,Sr.,"Cranbury, N.J. / West Windsor - Plainsboro High School South",stevens,,5-3,women,388,,2025,
+Emily Zgombic,foil,Jr.,"Neshanic Station, N.J. / Somerville High School",stevens,,5-7,women,389,,2025,
+Angela Wandmacher,epee,Jr.,,liu,,6-0,women,390,,2025,
+Yeh,saber,,,liu,,,women,391,,2025,TRUE
+Sherpa,epee,,,liu,,,women,392,,2025,TRUE
+Andrew Chen,foil,Fy,,harvard,,,men,394,,2025,
+James Chen,foil,Sr.,"New York, N.Y.",harvard,Stuyvesant,,men,395,,2025,
+Andrew Deng,saber,Fy,"Livingston, N.J.",harvard,Newark Academy,,men,396,,2025,
+Gabriel Evers,epee,Fy,"Los Angeles, Calif.",harvard,Crossroads School for Arts & Sciences,,men,397,,2025,
+Theodore Fechtmeyer,foil,Fy,"Minneapolis, Minn.",harvard,Blake High School,,men,398,,2025,
+Colin Heathcock,saber,Fy,"Beijing, China",harvard,Laurel Springs (Calif.),,men,399,,2025,
+Owen Jin,epee,So.,"Worcester, Mass.",harvard,Boston Latin School,,men,400,,2025,
+Henry Lawson,epee,So.,"Manhattan, N.Y.",harvard,Trinity,,men,401,,2025,
+Connor Liang,saber,Fy,"San Diego, Calif.",harvard,Classical Academy High School,,men,402,,2025,
+Jeremy Lim,foil,Fy,"Cincinnati, Ohio",harvard,Sycamore High School,,men,403,,2025,
+Matthew Linsky,saber,Jr.,"New York, N.Y.",harvard,"High School for Math, Science, and Engineering",,men,404,,2025,
+Justin Liu,foil,Sr.,"Los Gatos, Calif.",harvard,Leigh,,men,405,,2025,
+Ark Ma,epee,Jr.,"Houston, Texas",harvard,Memorial,,men,406,,2025,
+Anthony Malysz,epee,Sr.,"Orland Park, Ill.",harvard,Carl Sandburg,,men,407,,2025,
+Kevin Sohn,saber,So.,"Irvine, Calif.",harvard,Northwood,,men,408,,2025,
+Prash Subbiah,saber,So.,"Wayland, Mass.",harvard,Wayland,,men,409,,2025,
+Alexander Tafur,epee,Fy,"Johannesburg, South Africa",harvard,St. John's College,,men,410,,2025,
+Daniel Zhang,foil,So.,"Belmont, Mass.",harvard,Belmont,,men,411,,2025,
+Nicholas Zhang,epee,Fy,"Vancouver, B.C.",harvard,Sentinel Secondary School,,men,412,,2025,
+Janna Aboudaher,saber,Gr.,,ucsd,"Houston, Texas / St. Agnes Academy",,women,413,,2025,
+Zehra Anbarlilar,foil,So.,,ucsd,"Istanbul, Turkey / Koc School",,women,414,,2025,
+Bella Balogh,epee,Jr.,,ucsd,"Budapest, Hungary / Városmajori High School",,women,415,,2025,
+Maya Barnovitz,saber,Fr.,,ucsd,"Shingle Springs, Calif. / Union Mine",,women,416,,2025,
+Tean Brooks,epee,Sr.,,ucsd,"Boulder, Colo. / Boulder HS",,women,417,,2025,
+Roxane Cayrat,saber,Sr.,,ucsd,"Pau, France / Lycée Saint John Perse",,women,418,,2025,
+Alexandra Cody,saber,So.,,ucsd,"Sacramento, Calif. / Feather River Charter School",,women,419,,2025,
+Zara Fearns,saber,Jr.,,ucsd,"San Mateo, Calif. / Aragon High School",,women,420,,2025,
+Natalie Brooke Gebala,epee,So.,,ucsd,"San Jose, Calif. / Presentation HS",,women,421,,2025,
+Pia Huber,epee,Fr.,,ucsd,"Maria Enzersdorf, Austria / Liese-Prokop-Privatschule",,women,422,,2025,
+Katherine Kim,foil,Fr.,,ucsd,"Tustin, Calif. / Tustin Connect HS",,women,423,,2025,
+Neta Korol,foil,So.,,ucsd,"San Jose, Calif. / Kehillah Jewish HS",,women,424,,2025,
+Alice Lan,epee,Fr.,,ucsd,"San Mateo, Calif. / Carlmont HS",,women,425,,2025,
+Erenei Ligh,saber,Fr.,,ucsd,New York City / High School of American Studies at Lehman College,,women,426,,2025,
+Emily Naka,epee,Fr.,,ucsd,"Tokyo, Japan / Memorial Senior HS",,women,427,,2025,
+Lily Nelson-Love,epee,Fr.,,ucsd,"Valley Center, Calif. / Valley Center HS",,women,428,,2025,
+Samantha Sayson,epee,Sr.,,ucsd,"Manila, Philippines / United World College of South East Asia (East)",,women,429,,2025,
+Sasha Slobodsky,saber,So.,,ucsd,"New York City, N.Y. / Columbia Secondary School",,women,430,,2025,
+Ella Tang,foil,Fr.,,ucsd,"Sydney, Australia / Kincoppal-Rose Bay",,women,431,,2025,
+Kyra Wu,foil,Sr.,,ucsd,"San Diego, Calif. / Canyon Crest Academy",,women,432,,2025,
+Renee Zuhars,epee,Jr.,,ucsd,"Dublin, Calif. / Dublin High",,women,433,,2025,
+Isabella Chin,epee,So.,"Manhasset, N.Y.",harvard,Manhasset,,women,434,,2025,
+Madison Duckett,saber,Fy,"Greenwich, Conn.",harvard,Greenwich Country Day School,,women,435,,2025,
+Sarah Gu,epee,Fy,"Warren, N.J.",harvard,The Pingry School,,women,436,,2025,
+Jessica Zi Jia Guo,foil,So.,"Toronto, Ontario",harvard,Havergal College,,women,437,,2025,
+Yasmine Khamis,epee,Fy,"Dallas, Texas",harvard,ALA,,women,438,,2025,
+Zoe Kim,saber,Jr.,"Basking Ridge, N.J.",harvard,Ridge,,women,439,,2025,
+Kaitlyn Pak,saber,So.,"Ponte Vedra Beach, Fla.",harvard,High Tech,,women,440,,2025,
+Faith Park,epee,Jr.,"Lorton, Va.",harvard,South County,,women,441,,2025,
+Lauren Scruggs,foil,Sr.,"Queens, N.Y.",harvard,Packer Collegiate Institute,,women,442,,2025,
+Jenna Shoman,saber,Fy,"Short Hills, N.J.",harvard,Newark Academy,,women,443,,2025,
+Emily Vermeule,epee,Sr.,"Cambridge, Mass.",harvard,Winsor,,women,444,,2025,
+Chloe Williams,saber,Jr.,"Atlanta, Ga.",harvard,Atlanta Classical Academy,,women,445,,2025,
+Eileen Ye,foil,Jr.,"New York, N.Y.",harvard,The Brearley School,,women,446,,2025,
+Brendan Barber,saber,Sr.,"Castle Rock, Colorado / Regis Jesuit High School",incarnateword,,5-11,men,447,,2025,
+Jayden Breton,epee,So.,"Orlando, FL / Florida Virtual High School",incarnateword,,5-8,men,448,,2025,
+Nolan Chez,foil,Jr.,"Minnetonka, MN / Minnetonka High",incarnateword,,5-8,men,449,,2025,
+Spencer Dillree,saber,Sr.,"Tualatin, Oregon / Horizon Christian Highschool",incarnateword,,6-3,men,450,,2025,
+Davis Dore,foil,Fr.,"York, England / West Chicago High School",incarnateword,,5-11,men,451,,2025,
+Christian Dudnick,saber,Fr.,"Parker, CO / Ponderosa High School",incarnateword,,5-8,men,452,,2025,
+Daniel Jittan,foil,Fr.,"Orlando, FL / Orlando Science High School",incarnateword,,6-0,men,453,,2025,
+Matt Maguire,saber,Sr.,"Round Rock, TX / Round Rock High School",incarnateword,,5-7,men,454,,2025,
+Luke McKinley,foil,Fr.,"Bloomington, MN / John F Kennedy High School",incarnateword,,5-10,men,455,,2025,
+Manny Sanchez,foil,Fr.,"San Antonio, TX / MacArthur High School",incarnateword,,5-5,men,456,,2025,
+Bryce Thayer,epee,So.,"Port Charlotte, FL / Port Charlotte High School",incarnateword,,-,men,457,,2025,
+Sylvain (Zeph) Yang,epee,So.,"Oklahoma City, OK / Classen School of Advanced Sciences (SAS) at Northeast",incarnateword,,6-2,men,458,,2025,
+Dominic Zubeck,epee,Sr.,"Chicago, Illinois / Marian Catholic High School",incarnateword,,5-9,men,459,,2025,
+Jason Chin,foil,Sr.,,ucsd,"Saratoga, Calif. / Saratoga HS",,men,460,,2025,
+Dayus Gohel,epee,Fr.,,ucsd,"Winchester, Mass. / Winchester HS",,men,461,,2025,
+Benjamin Kim,epee,Fr.,,ucsd,"Pleasanton, Calif. / Foothill HS",,men,462,,2025,
+Brandon Kim,foil,Jr.,,ucsd,"Los Angeles, Calif. / Los Alamitos HS",,men,463,,2025,
+Ryan Kim-Cogan,saber,Fr.,,ucsd,"Ridgefield, Conn. / Ridgefield",,men,464,,2025,
+Scott Lao,foil,Jr.,,ucsd,"San Jose, Calif. / Archbishop Mitty High",,men,465,,2025,
+Jacob Levy,foil,Jr.,,ucsd,"Fresno, Calif. / San Joaquin Memorial High",,men,466,,2025,
+Henry Liang,foil,Fr.,,ucsd,"Huntington, N.Y. / Cold Spring Harbor HS",,men,467,,2025,
+Daniel Noble,saber,Jr.,,ucsd,"Scottsdale, Ariz. / Scottsdale Prep Academy",,men,468,,2025,
+Arnav Raja,saber,Jr.,,ucsd,"Yorba Linda, Calif. / Laurel Springs School",,men,469,,2025,
+Derek Rong,epee,Jr.,,ucsd,"Vancouver, Canada / Sentinel Secondary",,men,470,,2025,
+Sunny Sharma,epee,Jr.,,ucsd,"San Jose, Calif. / Evergreen Valley HS",,men,471,,2025,
+Hananiah So,saber,So.,,ucsd,"New York City, N.Y. / Jericho Senior HS",,men,472,,2025,
+Zander Vazquez,foil,So.,,ucsd,"Goleta, Spain / Dos Pueblos Senior High",,men,473,,2025,
+Daniel Wong,epee,Jr.,,ucsd,"Poway, Calif. / Rancho Bernardo HS",,men,474,,2025,
+Roger Wu,saber,So.,,ucsd,"Monterey Park, Calif. / Aliso Niguel HS",,men,475,,2025,
+Nolan Yumiaco,epee,Jr.,,ucsd,"Las Vegas, Nev. / Bishop Gorman High",,men,476,,2025,
+Sam Zubatiy,saber,Fr.,,ucsd,"San Diego, Calif. / Scripps Ranch H",,men,477,,2025,
+Anahat Bawa,saber,Fr.,"Skillman, N.J. / Montgomery",tufts,,,women,478,,2025,
+Karen Bei,epee,Jr.,"San Diego, Calif. / Canyon Crest Academy",tufts,,,women,479,,2025,
+Ayelet Book,epee,Sr.,"Valley Stream, N.Y. / North Shore Hebrew Academy",tufts,,,women,480,,2025,
+Jessica Charalel,foil,Fr.,"New City, N.Y. / Clarkstown North",tufts,,,women,481,,2025,
+Shannon Chen,foil,Sr.,"Tiapei, Taiwan /",tufts,,,women,482,,2025,
+Mina Chioldi,saber,So.,"New York, N.Y. /",tufts,,,women,483,,2025,
+Millie Girardi,saber,Sr.,Oyster Bay N.Y. / Dominican Academy,tufts,,,women,484,,2025,
+Sophie Guan,foil,Fr.,"Irvine, Calif. /",tufts,,,women,485,,2025,
+Olympe Jean,saber,So.,"Austin, Texas /",tufts,,,women,486,,2025,
+Mikayla Joseph,epee,So.,"Woodmere, N.Y. / Hewlett",tufts,,,women,487,,2025,
+Saanvi Kapoor,foil,Fr.,"West Chester, N.Y. / Mayo College Girls'",tufts,,,women,488,,2025,
+Anat Katz,saber,Sr.,"Newton, Mass. / Newton South",tufts,,,women,489,,2025,
+Lea Levi,foil,Gr.,"Istanbul, Turkey / Great Neck South (N.Y.)",tufts,,,women,490,,2025,
+Elise Lurix,foil,Fr.,"Burlington, Conn. / Chesire Academy",tufts,,,women,491,,2025,
+Alexia Newell,saber,Jr.,"East Brunswick, N.J. / East Brunswick",tufts,`,,women,492,,2025,
+Nitika Subramanian,saber,So.,"New York, N.Y. /",tufts,,,women,493,,2025,
+Olivia Tomasello,epee,Sr.,"Henryville, Pa. / Evergreen Community Charter",tufts,,,women,494,,2025,
+Jaymee Yeung,foil,Fr.,"Macau, China / International School",tufts,,,women,495,,2025,
+Jacob Anderson,foil,So.,,brandeis,"San Francisco, Calif. / San Francisco Waldorf",,men,497,,2025,
+Lev BenAvram,saber,Jr.,,brandeis,"Bethesda, Md. / Charles E. Smith Jewish Day School",,men,498,,2025,
+Matthew Chaves,saber,So.,,brandeis,"Durham, N.C. / Durham Academy Upper School",,men,499,,2025,
+Sam Choun,foil,Jr.,,brandeis,"Nashville, TN / Altamont",,men,500,,2025,
+Seth Edelman,saber,Jr.,,brandeis,"New York, N.Y. / Brooklyn Tech",,men,501,,2025,
+Tony Escueta,saber,Sr.,,brandeis,"Grand Prairie, Texas / Abeka Home School Academy",,men,502,,2025,
+Alex Fortune,foil,Fy.,,brandeis,"Alto, MI / Forest Hills Northern High School",,men,503,,2025,
+Ethan Hortelano,epee,Sr.,,brandeis,"Pittsburgh, Pa. / Cary Academy",,men,504,,2025,
+Tal Kronrod,epee,Sr.,,brandeis,"Concord, Mass. / Concord Carlisle High School",,men,505,,2025,
+Jacob Lee,foil,Fy.,,brandeis,"Naples, FL / Barron Collier High School",,men,506,,2025,
+Jeffrey Longstreet,epee,Fy.,,brandeis,"Commack, NY / Commack High School",,men,507,,2025,
+Alex Piwowar,saber,So.,,brandeis,"Westford, Mass. / Westford Academy",,men,508,,2025,
+Joy Qiu,saber,Sr.,,brandeis,"Guangzhou City, China / Roselle Catholic (N.J.) High School",,men,509,,2025,
+Anthony Rabinkov,saber,Sr.,,brandeis,"Centennial, Colo. / Cherry Creek High School",,men,510,,2025,
+Bryce Rittershaus,epee,Fy.,,brandeis,"Andover, MA / Andover High School",,men,511,,2025,
+Mark Shamis,epee,Sr.,,brandeis,"San Jose, Calif. / Leigh High School",,men,512,,2025,
+Lucas Strauss,epee,Fy.,,brandeis,"Boulder, CO / Boulder Highschool",,men,513,,2025,
+Jack Sullivan,foil,So.,,brandeis,"Somerville, Mass. / Greater Commonwealth Virtual School",,men,514,,2025,
+Max Tsai,foil,So.,,brandeis,"Winchester, Mass. / Winchester High School",,men,515,,2025,
+Ross Vine,epee,So.,,brandeis,"Fairfield, Conn. / Hopkins School",,men,516,,2025,
+James Wallace,epee,Fy.,,brandeis,"Asheville, NC / Asheville High School",,men,517,,2025,
+Zichun Wang,epee,Fy.,,brandeis,"Beijing, China / Beijing National Day School",,men,518,,2025,
+Griffith Werwa,foil,Sr.,,brandeis,"Livingston, N.J. / Livingston High School",,men,519,,2025,
+Michael Yerokhin,foil,Jr.,,brandeis,"Paramus, N.J. / Paramus",,men,520,,2025,
+Hunter Yu,epee,Fy.,,brandeis,"Toronto, ON / Lawrence Park Collegiate Institute",,men,521,,2025,
+Brandon Zhao,foil,Fy.,,brandeis,"Melrose, MA / Mystic Valley Regional Charter School",,men,522,,2025,
+Arianna Cao,foil,Sophomore,"San Jose, Calif.",stanford,,,women,523,,2025,
+Sophia Chin,saber,Freshman,,stanford,,,women,524,,2025,
+Jeanette Han,saber,Senior,"Lake Forest, Ill.",stanford,,,women,525,,2025,
+Charlotte He,saber,Senior,"Foster City, Calif.",stanford,,,women,526,,2025,
+Zhiyin Lin,saber,Senior,"Beijing, China",stanford,,,women,527,,2025,
+Meghana Paturu,epee,Junior,"Belle Mead, N.J.",stanford,,,women,528,,2025,
+Crystal Qian,foil,Junior,"Cupertino, Calif.",stanford,,,women,529,,2025,
+Olivia Raso,epee,Freshman,,stanford,,,women,530,,2025,
+Sofia Raso,foil,Senior,"New York, New York",stanford,,,women,531,,2025,
+Ishani Sood,foil,Freshman,,stanford,,,women,532,,2025,
+Ellen Wang,foil,Sophomore,"Lexington, Mass.",stanford,,,women,533,,2025,
+Joelle Warden,epee,Junior,"Morton Grove, Ill.",stanford,,,women,534,,2025,
+Shining Xi,saber,Junior,"Plano, Texas",stanford,,,women,535,,2025,
+Erika Yong,saber,Junior,"Fremont, Calif.",stanford,,,women,536,,2025,
+Ellen Xu,saber,,,stanford,,,women,537,,2025,
+Eva Bassik,foil,Fy.,,brandeis,"New Albany, OH / New Albany High School",,women,538,,2025,
+Olivia Bennett,epee,Jr.,,brandeis,"Shrewsbury, Mass. / Worcester Academy",,women,539,,2025,
+Zoe Chernis,epee,Fy.,,brandeis,"Houston, TX / Carnegie Vanguard High School",,women,540,,2025,
+Niara Dagli,epee,Fy.,,brandeis,"Boston, MA / Boston Latin School",,women,541,,2025,
+Hannah Du,foil,Jr.,,brandeis,"Winchester, Mass. / Winchester",,women,542,,2025,
+Sophie Graff,saber,Fy.,,brandeis,"Jersey City, NJ / Dr. Ronald E. McNair Academic High School",,women,543,,2025,
+Calla Lee,saber,Sr.,,brandeis,"Duluth, Ga. / Lambert",,women,544,,2025,
+Alex McKee,foil,Sr.,,brandeis,"Nyack, N.Y. / Nyack High School",,women,545,,2025,
+Rhea Menon,foil,Jr.,,brandeis,"Princeton, N.J. / West Windsor Plainsboro",,women,546,,2025,
+Livvy Oliveira,foil,So.,,brandeis,"Swampscott, Mass. / Swampscott Highschool",,women,547,,2025,
+Ella Richards,foil,So.,,brandeis,"Harvard, Mass. / Francis W. Parker Charter Essential School",,women,548,,2025,
+Bronwyn Rothman-Hall,epee,Sr.,,brandeis,"San Francisco, Calif. / Ruth Asawa School of the Arts",,women,549,,2025,
+Kayla Turnof,saber,Sr.,,brandeis,"Westfield, N.J. / Kent Place School",,women,550,,2025,
+Ryan Weinsier,epee,So.,,brandeis,"Northampton, MA / Northampton High School",,women,551,,2025,
+Vera Witte,epee,So.,,brandeis,"Ridgewood, N.J / Ridgewood High School",,women,552,,2025,
+Kat Xikes,saber,Jr.,,brandeis,"Chatham, N.J. / Chatham",,women,553,,2025,
+Ellen Zhen,foil,Sr.,,brandeis,"Newton, Mass. / Newton South",,women,554,,2025,
+Renzo Fukuda,foil,Freshman,,stanford,,,men,555,,2025,
+Jared Hammerstrom,saber,Sophomore,"Atlanta, Georgia",stanford,The Paideia School,,men,556,,2025,
+Alexander Jeon,epee,Sophomore,"Orange, Calif.",stanford,Orange County School of the Arts,,men,557,,2025,
+Connor Jeong,epee,Junior,"Las Vegas, Nev.",stanford,Odyssey Charter School,,men,558,,2025,
+Sanjay Kasi,foil,Junior,"New City, N.Y.",stanford,Clarkstown North,,men,559,,2025,
+Donghwan Park,saber,Senior,"Sacramento, Calif.",stanford,Jesuit,,men,560,,2025,
+Kai Rayle,epee,Senior,"Portland, Ore.",stanford,Catlin Gabel School,,men,561,,2025,
+Benjamin Shih,foil,Graduate Student,"Santa Clara, Calif.",stanford,Archbishop Mitty HS,,men,562,,2025,
+Orion Singha,epee,Freshman,,stanford,,,men,563,,2025,
+Steven Yang,saber,Freshman,"Palo Alto, Calif.",stanford,Vertias Collegiate Academy,,men,564,,2025,
+Nash Young,saber,Sophomore,"Palo Alto, Calif.",stanford,Palo Alto,,men,565,,2025,
+Audrey Baker,saber,So.,"Essex Fells, NJ",airforce,West Essex,,women,566,,2025,
+Madi Converse,foil,So.,"Greenville, TX",airforce,Putnam City,,women,567,,2025,
+Alexis Dragne,foil,So.,"Elk Grove Village, IL",airforce,Culver Academy,,women,568,,2025,
+Ellie Kim,epee,Jr.,"Vienna, VA",airforce,James Madison,,women,569,,2025,
+Melissa Kline,foil,Jr.,"Mission Hills, KS",airforce,Shawnee Mission East,,women,570,,2025,
+Keira Lonadier,epee,Fr.,"Concord, MA",airforce,Concord-Carlisle,,women,571,,2025,
+Shanon Luu,foil,Jr.,"San Francisco, CA",airforce,St. Ignatius College Prep,,women,572,,2025,
+Anning Mi,foil,So.,"Pittsford, NY",airforce,Pittsford Mendon,,women,573,,2025,
+Valeria Pacheco-Lugo,saber,Jr.,"Juncos, Puerto Rico",airforce,Colegio Mater Salvatoris,,women,574,,2025,
+Heila Pearson,epee,So.,"Colorado Springs, CO",airforce,Vista Ridge,,women,575,,2025,
+Mira Vestel,saber,Jr.,"San Francisco, CA",airforce,The Urban School of San Francisco,,women,576,,2025,
+Christina Watrall,epee,So.,"Mahwah, NJ",airforce,Mahwah,,women,577,,2025,
+Priscilla Yao,saber,Fr.,"Flushing, NY",airforce,Francis Lewis,,women,578,,2025,
+Rachael Yim,saber,Fr.,"Orlando, FL",airforce,Dr. Phillips,,women,579,,2025,
+William Barber,saber,Jr.,"Scottsdale, AZ",airforce,Brophy College Prep,,men,580,,2025,
+Omar Emara,epee,Jr.,"Arcadia, CA",airforce,Arcadia,,men,581,,2025,
+George Gasparovich IV,epee,Sr.,"Amarillo, TX",airforce,Homeschooled,,men,582,,2025,
+Jack Griffith,foil,Jr.,"Naples, FL",airforce,Gulf Coast,,men,583,,2025,
+Jackson Houtz,saber,So.,"Lakewood, CO",airforce,Green Mountain,,men,584,,2025,
+Shwan Lee,epee,Fr.,"Haymarket, VA",airforce,Gainesville,,men,585,,2025,
+Raphael Li,foil,So.,"Palo Alto, CA",airforce,Gunn,,men,586,,2025,
+Vlad Lovin,foil,So.,"Lake Orion, MI",airforce,Culver Military Academy,,men,587,,2025,
+Mack Luebbe,saber,Jr.,"Seattle, WA",airforce,Shorecrest,,men,588,,2025,
+Siddhant Padhye,epee,Sr.,"Houston, TX",airforce,Seven Lakes,,men,589,,2025,
+Stylianos Tasikas,saber,Fr.,"Rochester, NY",airforce,Brighton,,men,590,,2025,
+Rowan Park,foil,Sr.,"Hermosa Beach, Calif.",northwestern,mira costa,,women,591,,2025,
+Allison Lee,foil,Jr.,"Kinnelon, N.J.",northwestern,Northern Highlands Regional HS,,women,592,,2025,
+Hanna Lipthay,epee,Sr.,"Balatonfüred, Hungary",northwestern,Budapesti Fazekas Mihály,,women,593,,2025,
+Brianna Ho,foil,Fy.,"Bernardsville, N.J.",northwestern,Bernards,,women,594,,2025,
+Athina Kwon,epee,Sr.,"Las Vegas, Nev.",northwestern,West Career and Technical Academy,,women,595,,2025,
+Adele Bois,saber,So.,"New York City, N.Y.",northwestern,Stuyvesant,,women,596,,2025,
+Kaylin Nguyen,epee,Jr.,"Las Vegas, Nev.",northwestern,Bishop Gorman HS,,women,597,,2025,
+Anna Damratoski,epee,Jr.,"Peapack, N.J.",northwestern,Bernards HS,,women,598,,2025,
+Annie Wang,epee,Jr.,"Toronto, Ontario",northwestern,The Bishop Strachan School,,women,599,,2025,
+Emma Ning,epee,So.,"Toronto, Ontario, Canada",northwestern,Toronto French School,,women,600,,2025,
+Amy Lu,saber,So.,"Rockville, Md.",northwestern,Holton-Arms School,,women,601,,2025,
+Nisha Hild,saber,Fy.,"Holliston, Mass.",northwestern,Holliston,,women,602,,2025,
+Asha Henry,epee,Sr.,"Takoma Park, Md.",northwestern,Montgomery Blair,,women,603,,2025,
+Ava Wade-Currie,epee,So.,"Hyde Park, Mass.",northwestern,Buckingham Browne & Nichols School,,women,604,,2025,
+Lia Douglas,epee,Jr.,"Barrington, R.I.",northwestern,Barrington HS,,women,605,,2025,
+Hailin Chen,epee,Fy.,"Hong Kong, SAR",northwestern,ESF Sha Tin College,,women,606,,2025,
+Christina Liu,epee,So.,"Houston, Texas",northwestern,Memorial Senior,,women,607,,2025,
+Natalie Shearer,saber,Fy.,"Lake Forest, Calif.",northwestern,Santa Margarita Catholic,,women,608,,2025,
+Juliana Hung,foil,Jr.,"San Francisco, Calif.",northwestern,The Bay School,,women,609,,2025,
+Amanda Pirkowski,epee,Gr.,"Longwood, Fla.",northwestern,Lake Mary,,women,610,,2025,
+Kailing Sathyanath,saber,Sr.,"Chatham, N.J.",northwestern,Chatham,,women,611,,2025,
+Ophelia Tong,foil,Sr.,"Arcadia, Calif.",northwestern,,,women,612,,2025,
+Megumi Oishi,saber,Jr.,"Portland, Ore.",northwestern,Lincoln HS,,women,613,,2025,
+Karen Wang,epee,Jr.,"Houston, Texas",northwestern,Taylor HS,,women,614,,2025,
+Yukari Takamizawa,foil,Fy.,"Tokyo, Japan",northwestern,Christian Academy (Japan),,women,615,,2025,
+Samantha Serban,foil,Jr.,"Chatham, N.J.",northwestern,Chatham HS,,women,616,,2025,
+Karina Vasile,foil,So.,"Bucharest, Romania",northwestern,Wellington College,,women,617,,2025,
+Yejine Lee,foil,Sr.,"Norwood, N.J.",northwestern,,,women,618,,2025,
+Alex Chen,saber,So.,"Beijing, China",northwestern,Toronto Montessori School,,women,619,,2025,
+Kira Erikson,saber,Fy.,"Torrance, Calif.",northwestern,West,,women,620,,2025,
+Daphne Chan Nok Sze,foil,Fy.,"Hong Kong, SAR",northwestern,St. Paul's Co-Educational College,,women,621,,2025,
+Charlotte Ahaus,epee,Jr.,"Lemgo, Germany / Engelbert-Kaempfer-Gymnasium",incarnateword,,5-8,women,622,,2025,
+Viktoria Ahaus,foil,Sr.,"Lemgo, Germany / Engelbert-Kaempfer-Gymansium",incarnateword,,5-9,women,623,,2025,
+Amelia Dungey,saber,Sr.,"Keller, Texas / Keller High School",incarnateword,,5-3,women,624,,2025,
+Rodaina Gaafar,epee,Sr.,"Cairo, Egypt / Port- Said American School",incarnateword,,5-7,women,625,,2025,
+Carolina Geyer,saber,Gr.,"Bakersfield, California / Valley Oaks Charter High School",incarnateword,,5-8,women,626,,2025,
+Gracyn Githens,epee,So.,"Edmond, OK / Deer Creek High School",incarnateword,,5-7,women,627,,2025,
+Maia Slowinski,foil,Sr.,"Ocoee, Florida / Ocoee High School",incarnateword,,5-2,women,628,,2025,
+Liana Vasyakin,saber,So.,"Sacramento, CA / Horizon Charter School",incarnateword,,5-7,women,629,,2025,
+Jacqui Willingham,foil,Sr.," San Antonio,TX",incarnateword,,5-3,women,630,,2025,

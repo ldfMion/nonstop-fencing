@@ -1,7 +1,7 @@
 import pandas as pd
 
-BOUTS_CSV = "../data/liu_invitational_bouts.csv"
-MATCHES_CSV = "../data/liu_invitational_matches.csv"
+BOUTS_CSV = "../data/bouts/western_invitational_mens_bouts.csv"
+MATCHES_CSV = "../data/matches/western_invitational_mens_matches.csv"
 
 A = "A"
 B = "B"
@@ -12,45 +12,42 @@ def __main__():
     matches_df = pd.read_csv(MATCHES_CSV)
     bouts_df = pd.read_csv(BOUTS_CSV)
     updated_matches = calculate_match_scores(bouts_df, matches_df)
-    updated_matches.to_csv("updated_matches.csv", index=False)
+    updated_matches.to_csv(MATCHES_CSV, index=False)
 
 
 def get_bout_winner(bout):
     if pd.isna(bout["score_a"]) and pd.isna(bout["score_b"]):
-        print("getting bye")
-        print(bout)
         if is_bye(bout["fencer_a_id"]) and is_bye(bout["fencer_b_id"]):
             return DOUBLE_BYE
         elif is_bye(bout["fencer_a_id"]):
-            print(B)
             return B
         elif is_bye(bout["fencer_b_id"]):
-            print(B)
             return A
         else:
             if pd.isna(bout["winner"]):
                 print(bout)
-                raise "Expected winner"
+                raise Exception("Expected winner")
             else:
                 if bout["winner"] != "a" and bout["winner"] != "b":
                     print(bout)
-                    raise "Expected winner to be 'a' or 'b'"
+                    raise Exception("Expected winner to be 'a' or 'b'")
                 return A if bout["winner"] == "a" else B
     else:
         if pd.isna(bout["score_a"]):
             print(bout)
-            raise "Expected score_a"
+            raise Exception("Expected score_a")
         elif pd.isna(bout["score_b"]):
             print(bout)
-            raise "Expected score_b"
+            raise Exception("Expected score_b")
         else:
             if bout["score_a"] == bout["score_b"]:
                 # TIE
                 if bout["score_a"] == 5:
-                    raise "Can't tie at 5"
+                    print(bout)
+                    raise Exception("Can't tie at 5")
                 if bout["winner"] != "a" and bout["winner"] != "b":
                     print(bout)
-                    raise "Expected winner to be 'a' or 'b'"
+                    raise Exception("Expected winner to be 'a' or 'b'")
                 return A if bout["winner"] == "a" else B
             return A if bout["score_a"] > bout["score_b"] else B
 

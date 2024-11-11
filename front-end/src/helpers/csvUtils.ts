@@ -1,12 +1,17 @@
 import assert from 'assert';
 
 export function parseRowTextProperty(name: string, row: object): string {
-    if (name in row) {
-        const value = (row as Record<string, unknown>)[name];
-        assert(typeof value === 'string');
-        return value;
+    if (!(name in row)) {
+        throw new Error(`Property ${name} not found in row ${JSON.stringify(row)}`);
     }
-    throw new Error(`Property ${name} not found in row ${JSON.stringify(row)}`);
+    const value = (row as Record<string, unknown>)[name];
+    if (typeof value !== 'string') {
+        throw new Error(`Property ${name} is not of type string in row ${JSON.stringify(row)}`);
+    }
+    if (value == '') {
+        throw new Error(`Property ${name} is empty in row ${JSON.stringify(row)}`);
+    }
+    return value;
 }
 
 export function parseOptionalRowTextProperty(name: string, row: object): string | undefined {
