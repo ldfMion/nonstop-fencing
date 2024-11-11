@@ -5,6 +5,7 @@ export abstract class CSVRepository<T extends {id: string}> implements Repositor
     items: T[] | null = null;
     protected filePaths: string[];
     constructor(...filePaths: string[]) {
+        console.log('Got these filepaths', filePaths);
         this.filePaths = filePaths;
     }
     protected abstract parseRow(row: object): T;

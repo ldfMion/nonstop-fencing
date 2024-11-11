@@ -9,25 +9,26 @@ import type {EventRepository} from './EventRepository';
 import type {FencerRepository} from './FencerRepository';
 import type {MatchRepository} from './MatchRepository';
 import type {Repository} from './Repository';
+import {getFilesInDirectory} from '~/helpers/getFilesInDirectory';
 
-const OSU_DUALS_MATCHES_25 = '../data/osu_duals_matches.csv';
-const LIU_INVITATIONAL_MATCHES = '../data/liu_invitational_matches.csv';
-const MATCHES_FILENAME_2024_MEN = '../data/team-results-men.csv';
-const MATCHES_FILENAME_2024_WOMEN = '../data/team-results-women.csv';
-const OSU_DUALS_BOUTS = '../data/osu_duals_bouts.csv';
-const LIU_INVITATIONAL_BOUTS = '../data/liu_invitational_bouts.csv';
+const BOUTS_FOLDER = '../data/bouts';
+const MATCHES_FOLDER = '../data/matches';
 const FENCERS_FILENAME_2025 = '../data/fencers_24_25.csv';
 const FENCERS_FILENAME_2024 = '../data/fencers_23_24.csv';
 const UNIVERSITIES_FILENAME = '../data/universities.csv';
 const EVENTS_FILENAME = '../data/meets_24_25.csv';
 
-export const matchRepository = new CSVMatchRepository(
-    OSU_DUALS_MATCHES_25,
-    MATCHES_FILENAME_2024_MEN,
-    MATCHES_FILENAME_2024_WOMEN,
-    LIU_INVITATIONAL_MATCHES,
-) as MatchRepository;
-export const boutRepository = new CSVBoutRepository(OSU_DUALS_BOUTS, LIU_INVITATIONAL_BOUTS) as BoutRepository;
+const boutsFiles = await getFromDirectoryAndMapFilenames(BOUTS_FOLDER);
+const matchesFiles = await getFromDirectoryAndMapFilenames(MATCHES_FOLDER);
+
+export const matchRepository = new CSVMatchRepository(...matchesFiles) as MatchRepository;
+export const boutRepository = new CSVBoutRepository(...boutsFiles) as BoutRepository;
 export const fencerRepository = new CSVFencerRepository(FENCERS_FILENAME_2024, FENCERS_FILENAME_2025) as FencerRepository;
 export const universityRepository = new CSVUniversityRepository(UNIVERSITIES_FILENAME) as Repository<University2>;
 export const eventRepository = new CSVEventRepository(EVENTS_FILENAME) as EventRepository;
+
+async function getFromDirectoryAndMapFilenames(directory: string): Promise<string[]> {
+    const files: string[] = await getFilesInDirectory(directory);
+    const paths = files.map((filename) => `../data/${directory.split('/').pop()}/${filename}`);
+    return paths;
+}
