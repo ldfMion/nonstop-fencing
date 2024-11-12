@@ -48,7 +48,7 @@ export default function FilteredFencerTable<T extends Fencer & HasRecord>({
                 );
             })}
             {filteredFencers.map((fencer) => (
-                <FencerRow fencer={fencer} key={fencer.name} />
+                <FencerRow fencer={fencer} key={fencer.id} />
             ))}
         </div>
     );

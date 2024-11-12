@@ -2,7 +2,7 @@ import {Fragment} from 'react';
 import ListCard from '~/components/list-card';
 import MatchRow from '~/components/match-row';
 import {Separator} from '~/components/ui/separator';
-import Date from '~/components/date';
+import DateComponent from '~/components/date';
 import MatchTableHeader from '~/components/match-table-header';
 import type {Gender} from '~/models/Gender';
 import type {University2} from '~/models/University2';
@@ -25,15 +25,17 @@ export default async function MatchesCard({
     const matchesGroupedByDate = await groupMatchesByDate(matches);
     return (
         <ListCard title="Matches" tableHeader={<MatchTableHeader />}>
-            {Object.keys(matchesGroupedByDate).map((date) => (
-                <Fragment key={date}>
-                    <Date isoDate={date} />
-                    <Separator className="" />
-                    {matchesGroupedByDate[date]!.map((match) => (
-                        <MatchRow match={match} key={match.teamAId + match.teamBId + date} perspective={university} />
-                    ))}
-                </Fragment>
-            ))}
+            {Object.keys(matchesGroupedByDate)
+                .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())
+                .map((date) => (
+                    <Fragment key={date}>
+                        <DateComponent isoDate={date} />
+                        <Separator className="" />
+                        {matchesGroupedByDate[date]!.map((match) => (
+                            <MatchRow match={match} key={match.teamAId + match.teamBId + date} perspective={university} />
+                        ))}
+                    </Fragment>
+                ))}
         </ListCard>
     );
 }

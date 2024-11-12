@@ -11,7 +11,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-    title: 'Collegiate Fencing Results',
+    title: 'Collegiate Fencing Results by Nonstop Fencing',
     description: 'Browse top NCAA Fencers, Teams, and Squads',
 };
 

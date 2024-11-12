@@ -31,15 +31,21 @@ export default async function Fencers({params}: Props) {
     const gender = parseTeam(params.team);
     const weapon = parseWeapon(params.weapon);
     // const fencers = await getFencersFromTeamAndWeapon(season, team, weapon);
-    const fencers = (
-        await fencerService.getRegionsForFencers(
-            await fencerService.getSeasonRecords(await fencerService.getFromGenderAndWeapon(season, gender, weapon), season),
-        )
-    ).sort((a, b) => b.rating - a.rating);
+    const fencers_ = await fencerService.getFromGenderAndWeapon(season, gender, weapon);
+    const fencersWithRecord = (await fencerService.getSeasonRecords(fencers_, season)).filter(
+        (fencer) => fencer.record.wins + fencer.record.losses > 0,
+    );
+    const fencersWithRegion = await fencerService.getRegionsForFencers(fencersWithRecord);
+    // const fencers = (
+    //     await fencerService.getRegionsForFencers(
+    //         await fencerService.getSeasonRecords(await fencerService.getFromGenderAndWeapon(season, gender, weapon), season),
+    //     )
+    // ).sort((a, b) => b.rating - a.rating);
+    // .filter((fencer) => fencer.record.wins + fencer.record.losses > 0)
     const title = toTitleCase(`${params.team} ${params.weapon}`).replace('ns', "n's");
     return (
         <SingleRankingWrapper title={title} season={season}>
-            <FilteredFencerTableByRegion fencers={mapFencerWithRecordAndRegionToObject(fencers)} />
+            <FilteredFencerTableByRegion fencers={mapFencerWithRecordAndRegionToObject(fencersWithRegion)} />
         </SingleRankingWrapper>
     );
 }

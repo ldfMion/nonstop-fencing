@@ -19,6 +19,7 @@ export default async function SquadCard({
     const fencers = await fencerService.get(season, {university: university, gender: gender});
     const withRecords = await fencerService.getSeasonRecords(fencers, season);
     const dataUnavailable = fencers.length === 0;
+    console.log(fencers.map((fencer) => fencer.name + ' ' + fencer.id));
     return (
         <ListCard title="Roster">
             {dataUnavailable ? (
