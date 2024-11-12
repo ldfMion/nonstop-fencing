@@ -4,6 +4,7 @@ import {type Metadata} from 'next';
 import Navbar from '~/components/navbar';
 import {cn} from '~/lib/utils';
 import Footer from '~/components/footer';
+import {Analytics} from '@vercel/analytics/react';
 
 const fontSans = FontSans({
     subsets: ['latin'],
@@ -22,6 +23,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
                 <div>
                     <Navbar />
                     {children}
+                    <Analytics />
                 </div>
                 <Footer />
             </body>
