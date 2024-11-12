@@ -20,7 +20,7 @@ export default async function EventsPage({params}: {params: {season: string}}) {
         currentSeason = new Season(2025);
     }
     const events = (await eventRepository.findBySeason(currentSeason)).sort((a, b) => a.startDate.getTime() - b.startDate.getTime());
-    const past = events.filter((event) => event.startDate < new Date());
+    const past = events.filter((event) => event.startDate < new Date()).reverse();
     const upcoming = events.filter((event) => event.startDate >= new Date());
     const hasPastAndUpcoming = past.length > 0 && upcoming.length > 0;
     return (
