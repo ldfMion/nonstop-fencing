@@ -1,4 +1,3 @@
-import type {Squad} from '~/models/Squad';
 import {Gender} from '~/models/Gender';
 import {Weapon} from '~/models/Weapon';
 import type {ISeason} from '~/models/Season';

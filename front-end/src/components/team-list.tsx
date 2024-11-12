@@ -1,8 +1,8 @@
-import {HasRecord} from '~/models/HasRecord';
+import type {HasRecord} from '~/models/HasRecord';
 import TeamRow from './team-row';
-import {University2} from '~/models/University2';
+import type {University2} from '~/models/University2';
 import ListCard from './list-card';
-import {Gender} from '~/models/Gender';
+import type {Gender} from '~/models/Gender';
 
 export async function TeamList({
     teams,

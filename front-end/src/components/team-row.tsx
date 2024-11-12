@@ -1,8 +1,6 @@
 import type {University2} from '~/models/University2';
 import RankingRow from './ranking-row';
 import type {HasRecord} from '~/models/HasRecord';
-import type {ITeam} from '~/models/Team';
-import type {Squad} from '~/models/Squad';
 import {Gender} from '~/models/Gender';
 
 export default function TeamRowWrapper({team, gender}: {team: University2 & HasRecord; gender: Gender}) {

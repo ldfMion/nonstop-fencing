@@ -68,7 +68,6 @@ class BoutFromCSV implements Bout {
                 } else if (winner == 'b') {
                     this.winnerId = this.fencerBId;
                 } else {
-                    console.log(row);
                     throw new Error(`Expected winner to be a or b in row ${JSON.stringify(row)}`);
                 }
             } else {
@@ -83,7 +82,6 @@ class BoutFromCSV implements Bout {
             } else if (winner == 'b') {
                 this.winnerId = this.fencerBId;
             } else {
-                console.log(row);
                 throw new Error(`Expected winner to be a or b in row ${JSON.stringify(row)}`);
             }
         }

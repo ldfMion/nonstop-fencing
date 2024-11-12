@@ -1,7 +1,7 @@
-import {Fencer} from '~/models/Fencer';
+import type {Fencer} from '~/models/Fencer';
 import FencerRow from './fencer-row';
 import ListCard from './list-card';
-import {HasRecord} from '~/models/HasRecord';
+import type {HasRecord} from '~/models/HasRecord';
 
 export function PreviewFencerList({fencers, title, url}: {fencers: (Fencer & HasRecord)[]; title: string; url: string}): JSX.Element {
     return (

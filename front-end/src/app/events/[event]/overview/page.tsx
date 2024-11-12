@@ -7,18 +7,17 @@ import {TeamList} from '~/components/team-list';
 import {getTopN} from '~/helpers/getTopN';
 import {PreviewFencerList} from '~/components/preview-fencer-list';
 import MatchRowWithoutPerspective from '~/components/match-row/match-row-without-perspective';
-import {Match2} from '~/models/Match2';
+import type {Match2} from '~/models/Match2';
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from '~/components/ui/carousel';
 import {Button} from '~/components/ui/button';
 import Link from 'next/link';
 
 const NUM_TEAMS = 3;
 const NUM_FENCERS = 10;
-const NUM_MATCHES = 6;
+// const NUM_MATCHES = 6;
 
 export default async function EventPage({params}: {params: {event: string}}) {
     const event = await eventRepository.findById(params.event);
-    const host = event.hostId ? await universityService.getById(event.hostId) : null;
     if (event.hasResults === false) {
         return <NoResultsFallback />;
     }

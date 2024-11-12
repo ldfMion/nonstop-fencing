@@ -1,4 +1,3 @@
-import path from 'path';
 import {readdir} from 'fs/promises';
 
 export async function getFilesInDirectory(directory: string): Promise<string[]> {

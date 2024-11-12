@@ -15,7 +15,6 @@ export default function SeasonDropdown({selectedSeason, seasons}: {selectedSeaso
         } else {
             path = `${season}/${pathname}`;
         }
-        console.log(path);
         router.push(path);
     };
     return (

@@ -1,7 +1,7 @@
 import ListCard from '~/components/list-card';
 import FilteredFencersByWeaponAndGender from '~/components/filtered-fencer-table-by-weapon-and-gender';
 import {mapFencerWithRecordToObject} from '~/helpers/objectMappers';
-import {Bout} from '~/models/Bout';
+import type {Bout} from '~/models/Bout';
 import {boutService, fencerService, recordService} from '~/services';
 
 export default async function EventFencersPage({params}: {params: {event: string}}) {

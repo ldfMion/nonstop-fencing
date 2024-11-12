@@ -3,9 +3,9 @@ import {Card} from '~/components/ui/card';
 import {eventRepository} from '~/repositories';
 import {universityService} from '~/services';
 import Date from '~/components/date';
-import {University2} from '~/models/University2';
+import type {University2} from '~/models/University2';
 import {EventTabs} from './event-tabs';
-import {Metadata} from 'next';
+import type {Metadata} from 'next';
 
 export async function generateMetadata({params}: {params: {event: string}}): Promise<Metadata> {
     const event = await eventRepository.findById(params.event);

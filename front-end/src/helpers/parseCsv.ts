@@ -3,7 +3,6 @@ import csv from 'csv-parser';
 import fs from 'fs';
 
 export default async function parseCSV<T>(filePath: string, parseRow: (row: object) => T): Promise<T[]> {
-    console.log('parsing csv ' + filePath);
     const results: object[] = [];
     const csvFilePath = path.join(process.cwd(), filePath);
     const formattedResults: Promise<T[]> = new Promise<T[]>((resolve) =>

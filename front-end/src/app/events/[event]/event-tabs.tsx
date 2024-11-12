@@ -12,7 +12,6 @@ const subpages: {url: string; title: string}[] = [
 
 export function EventTabs(): JSX.Element {
     const segment = useSelectedLayoutSegment();
-    console.log(segment);
     const active = segment ?? 'overview';
     return (
         <Tabs value={active} className="[&>*]:mt-0">

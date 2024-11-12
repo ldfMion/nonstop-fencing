@@ -1,10 +1,8 @@
-import ListCard from '~/components/list-card';
 import {TeamList} from '~/components/team-list';
-import TeamRow from '~/components/team-row';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '~/components/ui/tabs';
 import {Gender} from '~/models/Gender';
-import {HasRecord} from '~/models/HasRecord';
-import {University2} from '~/models/University2';
+import type {HasRecord} from '~/models/HasRecord';
+import type {University2} from '~/models/University2';
 import {Weapon} from '~/models/Weapon';
 import {matchService, recordService, universityService} from '~/services';
 

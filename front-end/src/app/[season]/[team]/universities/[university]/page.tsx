@@ -1,6 +1,5 @@
 import parseTeam from '~/helpers/parseTeam';
 import Link from 'next/link';
-import Record from '~/components/record';
 import TeamIcon from '~/components/team-icon';
 import {Card} from '~/components/ui/card';
 import {Tabs, TabsList, TabsTrigger} from '~/components/ui/tabs';
@@ -113,22 +112,25 @@ async function UniversityHeaders({team, season, gender}: {team: University2; sea
                 <SeasonDropdown seasons={[{...new Season(2024)}, {...new Season(2025)}]} selectedSeason={{...season}} />
             </div>
             <div className="">
-                <Record record={overall.record} />
+                <p className="text-2xl font-bold">
+                    Record: {overall.record.wins}-{overall.record.losses}
+                </p>
                 <div className="flex flex-row gap-4">
-                    <PartialRecord weaponInitial="F" record={foil.record} />
-                    <PartialRecord weaponInitial="E" record={epee.record} />
-                    <PartialRecord weaponInitial="S" record={saber.record} />
+                    <PartialRecord weapon={Weapon.FOIL} record={foil.record} />
+                    <PartialRecord weapon={Weapon.EPEE} record={epee.record} />
+                    <PartialRecord weapon={Weapon.SABER} record={saber.record} />
                 </div>
             </div>
         </div>
     );
 }
 
-function PartialRecord({record, weaponInitial}: {record: RecordModel; weaponInitial: 'F' | 'E' | 'S'}) {
+function PartialRecord({record, weapon}: {record: RecordModel; weapon: Weapon}) {
+    const weaponTitle = weapon === Weapon.FOIL ? 'Foil' : weapon === Weapon.EPEE ? 'Epee' : 'Saber';
     return (
-        <div className="flex flex-row text-sm">
-            {weaponInitial}: {record.wins}-{record.losses}
-        </div>
+        <p className="text-md flex flex-row font-semibold">
+            {weaponTitle}: {record.wins}-{record.losses}
+        </p>
     );
 }
 

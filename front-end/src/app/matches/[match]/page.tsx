@@ -34,15 +34,12 @@ export async function generateMetadata({params}: {params: {match: string}}): Pro
 
 export async function generateStaticParams() {
     const matches = await matchRepository.findAll();
-    console.log('generating matches');
-    console.log(matches);
     const paths: {match: string}[] = [];
     matches.forEach((match) => {
         if (match.id != '') {
             paths.push({match: match.id});
         }
     });
-    console.log(paths);
     return paths;
 }
 
@@ -50,7 +47,6 @@ export const dynamicParams = false;
 export const revalidate = false;
 
 export default async function MatchPage({params}: {params: {match: string}}) {
-    console.log(params);
     const matchData = await matchService.getById(params.match);
     if (!matchData) return <p>Match not found</p>;
 
