@@ -35,7 +35,7 @@ async function TeamPageForGender({eventId, teams, gender}: {eventId: string; tea
     const epee = recordService.calculateSquadRecords(teams, matches, Weapon.EPEE);
     const saber = recordService.calculateSquadRecords(teams, matches, Weapon.SABER);
     return (
-        <div className="flex flex-row gap-2 [&>*]:grow">
+        <div className="flex flex-row gap-2 overflow-x-scroll [&>*]:grow">
             <TeamList teams={teams} gender={gender} title="Overall" />
             <TeamList teams={foil} gender={gender} title="Foil" />
             <TeamList teams={epee} gender={gender} title="Epee" />
