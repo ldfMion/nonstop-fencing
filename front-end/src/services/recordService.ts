@@ -8,49 +8,55 @@ import type {HasRecord} from '~/models/HasRecord';
 
 export class RecordService {
     calculateRecordsFromBouts<T extends Fencer>(fencers: T[], bouts: Bout[]): (T & {record: Record; rating: number})[] {
-        return fencers.map((fencer) => {
-            const wins = bouts.filter((bout) => bout.isCompleted() && bout.includes(fencer) && bout.winnerId === fencer.id);
-            const losses = bouts.filter((bout) => bout.isCompleted() && bout.includes(fencer) && bout.winnerId !== fencer.id);
-            return {
-                ...fencer,
-                record: {
-                    wins: wins.length,
-                    losses: losses.length,
-                },
-                // rating: wins.length + losses.length == 0 ? 0 : wins.length * (wins.length / (wins.length + losses.length)),
-                rating: wins.length * 3 - losses.length,
-            };
-        });
+        return fencers
+            .map((fencer) => {
+                const wins = bouts.filter((bout) => bout.isCompleted() && bout.includes(fencer) && bout.winnerId === fencer.id);
+                const losses = bouts.filter((bout) => bout.isCompleted() && bout.includes(fencer) && bout.winnerId !== fencer.id);
+                return {
+                    ...fencer,
+                    record: {
+                        wins: wins.length,
+                        losses: losses.length,
+                    },
+                    rating: wins.length + losses.length == 0 ? 0 : wins.length * (wins.length / (wins.length + losses.length)),
+                    // rating: wins.length * 3 - losses.length,
+                };
+            })
+            .sort((a, b) => b.rating - a.rating);
     }
     calculateRecordsFromMatches(universities: University2[], matches: Match2[]): (University2 & HasRecord)[] {
-        return universities.map((university) => {
-            const wins = matches.filter((match) => match.isWinner(university)).length;
-            const losses = matches.filter((match) => match.isLoser(university)).length;
-            return {
-                ...university,
-                record: {
-                    wins: wins,
-                    losses: losses,
-                },
-                rating: wins - losses,
-            };
-        });
+        return universities
+            .map((university) => {
+                const wins = matches.filter((match) => match.isWinner(university)).length;
+                const losses = matches.filter((match) => match.isLoser(university)).length;
+                return {
+                    ...university,
+                    record: {
+                        wins: wins,
+                        losses: losses,
+                    },
+                    rating: wins - losses,
+                };
+            })
+            .sort((a, b) => b.rating - a.rating);
     }
     calculateSquadRecords(universities: University2[], matches: Match2[], weapon: Weapon): (University2 & HasRecord)[] {
-        return universities.map((university) => {
-            const wins = matches.filter((match) => {
-                const value = match.isWinner(university, weapon);
-                return value;
-            }).length;
-            const losses = matches.filter((match) => match.isLoser(university, weapon)).length;
-            return {
-                ...university,
-                record: {
-                    wins: wins,
-                    losses: losses,
-                },
-                rating: wins - losses,
-            };
-        });
+        return universities
+            .map((university) => {
+                const wins = matches.filter((match) => {
+                    const value = match.isWinner(university, weapon);
+                    return value;
+                }).length;
+                const losses = matches.filter((match) => match.isLoser(university, weapon)).length;
+                return {
+                    ...university,
+                    record: {
+                        wins: wins,
+                        losses: losses,
+                    },
+                    rating: wins - losses,
+                };
+            })
+            .sort((a, b) => b.rating - a.rating);
     }
 }

@@ -14,7 +14,7 @@ export default function RankingRow({
     href?: string;
 }) {
     return (
-        <ConditionalLinkWrapper href={href} className="cursor-pointer rounded-md transition-all hover:bg-accent hover:px-1">
+        <ConditionalLinkWrapper href={href} className="cursor-pointer rounded-md transition-all hover:scale-[1.01] hover:bg-accent">
             <li className="flex flex-row items-center justify-between py-2">
                 <NameIcon iconUniversityId={iconUniversityId} name={name} />
                 <Record record={record} />

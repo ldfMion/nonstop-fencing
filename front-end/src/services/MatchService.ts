@@ -24,7 +24,7 @@ export class MatchService {
     async getById(id: string): Promise<Match2> {
         return await matchRepository.findById(id);
     }
-    async fromMeet(meetId: string): Promise<Match2[]> {
-        return await matchRepository.findByMeetId(meetId);
+    async fromMeet(meetId: string, gender?: Gender): Promise<Match2[]> {
+        return (await matchRepository.findByMeetId(meetId)).filter((match) => match.gender === gender);
     }
 }

@@ -11,7 +11,7 @@ export default async function MatchRowWithoutPerspective({match}: {match: Match2
     const topWon = match.overallA > match.overallB;
     return (
         <Link href={`/matches/${match.id}`} legacyBehavior>
-            <li className="flex cursor-pointer flex-row items-center justify-between rounded-md py-2 transition-all hover:bg-accent hover:px-1">
+            <li className="flex cursor-pointer flex-row items-center justify-between gap-2 rounded-md py-2 transition-all hover:scale-[1.01] hover:bg-accent">
                 <div className="flex flex-col gap-1">
                     <Side university={universityA} />
                     <Side university={universityB} />

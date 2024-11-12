@@ -16,6 +16,8 @@ import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious}
 import {EventCard} from '~/components/event-card';
 import {Button} from '~/components/ui/button';
 import Link from 'next/link';
+import {TeamList} from '~/components/team-list';
+import {PreviewFencerList} from '~/components/preview-fencer-list';
 
 export default async function HomePageContent({season}: {season: ISeason}) {
     const fencers = await getHomePageFencers(season);
@@ -38,17 +40,17 @@ export default async function HomePageContent({season}: {season: ISeason}) {
                 <SeasonDropdown selectedSeason={{...season}} seasons={[{...new Season(2024)}, {...new Season(2025)}]} />
             </div>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-                <FencerList fencers={fencers.mens.foil} title="Men's Foil" url={`${season.displayNameShort}/mens/foil/fencers`} />
-                <FencerList fencers={fencers.mens.epee} title="Men's Epee" url={`${season.displayNameShort}/mens/epee/fencers`} />
-                <FencerList fencers={fencers.mens.saber} title="Men's Saber" url={`${season.displayNameShort}/mens/saber/fencers`} />
-                <FencerList fencers={fencers.womens.foil} title="Women's Foil" url={`${season.displayNameShort}/womens/foil/fencers`} />
-                <FencerList fencers={fencers.womens.epee} title="Women's Epee" url={`${season.displayNameShort}/womens/epee/fencers`} />
-                <FencerList fencers={fencers.womens.saber} title="Women's Saber" url={`${season.displayNameShort}/womens/saber/fencers`} />
+                <PreviewFencerList fencers={fencers.mens.foil} title="Men's Foil" url={`${season.displayNameShort}/mens/foil/fencers`} />
+                <PreviewFencerList fencers={fencers.mens.epee} title="Men's Epee" url={`${season.displayNameShort}/mens/epee/fencers`} />
+                <PreviewFencerList fencers={fencers.mens.saber} title="Men's Saber" url={`${season.displayNameShort}/mens/saber/fencers`} />
+                <PreviewFencerList fencers={fencers.womens.foil} title="Women's Foil" url={`${season.displayNameShort}/womens/foil/fencers`} />
+                <PreviewFencerList fencers={fencers.womens.epee} title="Women's Epee" url={`${season.displayNameShort}/womens/epee/fencers`} />
+                <PreviewFencerList fencers={fencers.womens.saber} title="Women's Saber" url={`${season.displayNameShort}/womens/saber/fencers`} />
             </div>
             <PageHeading>Teams</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-                <TeamList gender={Gender.MEN} season={season} />
-                <TeamList gender={Gender.WOMEN} season={season} />
+                <TeamListWrapper gender={Gender.MEN} season={season} />
+                <TeamListWrapper gender={Gender.WOMEN} season={season} />
             </div>
             <PageHeading>Squads</PageHeading>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
@@ -78,28 +80,12 @@ export default async function HomePageContent({season}: {season: ISeason}) {
     );
 }
 
-async function TeamList({gender, season}: {gender: Gender; season: ISeason}): Promise<JSX.Element> {
+async function TeamListWrapper({gender, season}: {gender: Gender; season: ISeason}): Promise<JSX.Element> {
     const teams = await getHomePageTeams(season, gender);
     const genderPath = gender === Gender.MEN ? 'mens' : 'womens';
     const title = gender === Gender.MEN ? "Men's" : "Women's";
     const url = `${season.displayNameShort}/${genderPath}/teams`;
-    return (
-        <StandingsCard title={title} titleHref={url}>
-            {teams.map((team) => (
-                <TeamRow team={team} gender={gender} key={team.id} />
-            ))}
-        </StandingsCard>
-    );
-}
-
-function FencerList({fencers, title, url}: {fencers: (Fencer & HasRecord)[]; title: string; url: string}): JSX.Element {
-    return (
-        <StandingsCard title={title} key={title} titleHref={url}>
-            {fencers.map((fencer) => (
-                <FencerRow fencer={fencer} key={fencer.name} />
-            ))}
-        </StandingsCard>
-    );
+    return <TeamList teams={teams} url={url} gender={gender} title={title} />;
 }
 
 function SquadList({squads, title, url, gender}: {squads: (University2 & HasRecord)[]; title: string; gender: Gender; url: string}): JSX.Element {

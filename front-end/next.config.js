@@ -13,6 +13,11 @@ const config = {
                 destination: '/universities/:id/men',
                 permanent: true,
             },
+            {
+                source: '/events/:id',
+                destination: '/events/:id/overview',
+                permanent: true,
+            },
         ];
     },
 };

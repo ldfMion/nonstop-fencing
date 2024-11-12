@@ -19,7 +19,7 @@ function MatchUI2({university, match, win, flip}: {university: University2; matc
     return (
         <ConditionalLinkWrapper
             href={match.id != '' ? `/matches/${match.id}` : undefined}
-            className="rounded-md transition-all hover:bg-accent hover:px-1"
+            className="rounded-md transition-all hover:scale-[1.01] hover:bg-accent"
         >
             <li className="flex flex-row items-center justify-between gap-10 rounded-md py-1">
                 <div className="flex flex-row items-center gap-2">

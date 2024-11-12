@@ -15,12 +15,10 @@ export default function ListCard({
     tableHeader?: React.ReactNode;
 }) {
     return (
-        <ConditionalLinkWrapper href={titleHref} className="cursor-pointer transition-all hover:scale-[1.03]">
+        <ConditionalLinkWrapper href={titleHref} className="cursor-pointer transition-all">
             <Card className="flex flex-col px-6 py-4">
                 <CardHeaderWrapper title={title} href={titleHref} tableHeader={tableHeader} />
-                <CardContent className="flex flex-col gap-0 p-0">
-                    <ul className="flex flex-col gap-0 p-0">{children}</ul>
-                </CardContent>
+                <CardContent className="flex flex-col gap-0 p-0">{children}</CardContent>
             </Card>
         </ConditionalLinkWrapper>
     );
