@@ -7,7 +7,7 @@ import {z} from 'zod';
 import {useForm} from 'react-hook-form';
 import {useState} from 'react';
 import {uploadEmail} from '~/api/uploadEmail';
-import {Alert, AlertDescription, AlertTitle} from './ui/alert';
+import {Alert, AlertTitle} from './ui/alert';
 import {AlertCircle} from 'lucide-react';
 import {ReportIssueButton} from './report-issue-button';
 
@@ -47,7 +47,7 @@ export function EmailUpdates() {
             <DialogContent className="w-[90vw] max-w-lg !rounded-custom">
                 <DialogHeader>
                     <DialogTitle className="text-left">Receive Updates</DialogTitle>
-                    <DialogDescription className="text-left">We'll let you know when we upload results from a meet.</DialogDescription>
+                    <DialogDescription className="text-left">{"We'll"} let you know when we upload results from a meet.</DialogDescription>
                 </DialogHeader>
                 {error && (
                     <Alert variant="destructive" className="!rounded-custom p-3">
