@@ -15,9 +15,13 @@ export async function generateMetadata({params}: {params: {event: string}}): Pro
         title: title,
         description: description,
         openGraph: {
-            images: [`/team-icons/${event.hostId}`],
+            images: [`/team-icons/${event.hostId}.png`],
             title: title,
             description: description,
+        },
+        twitter: {
+            card: 'summary',
+            images: [`/team-icons/${event.hostId}.png`],
         },
     };
 }

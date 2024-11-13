@@ -12,8 +12,9 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-    title: 'Collegiate Fencing Results by Nonstop Fencing',
-    description: 'Browse top NCAA Fencers, Teams, and Squads',
+    title: 'Collegiate Fencing Results by Nonstop Fencing - NCAA Fencing',
+    description: 'See meet results and browse top fencers, teams, and squads - NCAA / Collegiate Fencing',
+    metadataBase: new URL('https://collegefencing.net'),
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
