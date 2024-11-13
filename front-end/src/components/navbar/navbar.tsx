@@ -16,6 +16,7 @@ import {MenuIcon} from 'lucide-react';
 import {useState} from 'react';
 import {PATHS} from '../../content/paths';
 import type {PathHeading} from '../../content/paths';
+import {EmailUpdates} from '../email-dialog';
 
 function DesktopNavbar(): JSX.Element {
     return (
@@ -49,6 +50,9 @@ function DesktopNavbar(): JSX.Element {
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>About Us</NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <EmailUpdates />
+                    </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
         </div>
@@ -64,29 +68,32 @@ function MobileNavbar(): JSX.Element {
                     <span className="text-primary">nonstop</span>fencing
                 </h1>
             </Link>
-            <Sheet open={open} onOpenChange={setOpen}>
-                <SheetTrigger asChild>
-                    <MenuIcon />
-                </SheetTrigger>
-                <SheetContent className="p-10">
-                    <NavigationMenu>
-                        <NavigationMenuList className="flex flex-col items-start">
-                            <MobileBaseLink href="/about" title="About" onOpenChange={setOpen} />
-                            <MobileBaseLink href="/24-25/events" title="Events" onOpenChange={setOpen} />
-                            <MobileBaseLink href="/" title="Rankings" onOpenChange={setOpen} />
-                            <NavigationMenuItem>
-                                <NavigationMenuList id="navmenulist" className="ml-2 flex flex-col items-start gap-4">
-                                    {PATHS.map((path) => (
-                                        <MobileLink onOpenChange={setOpen} key={path.heading}>
-                                            <SubPathsSection subPath={path} />
-                                        </MobileLink>
-                                    ))}
-                                </NavigationMenuList>
-                            </NavigationMenuItem>
-                        </NavigationMenuList>
-                    </NavigationMenu>
-                </SheetContent>
-            </Sheet>
+            <div className="flex flex-row flex-nowrap items-center gap-2">
+                <EmailUpdates />
+                <Sheet open={open} onOpenChange={setOpen}>
+                    <SheetTrigger asChild>
+                        <MenuIcon />
+                    </SheetTrigger>
+                    <SheetContent className="overflow-y-scroll p-10">
+                        <NavigationMenu>
+                            <NavigationMenuList className="flex flex-col items-start">
+                                <MobileBaseLink href="/about" title="About" onOpenChange={setOpen} />
+                                <MobileBaseLink href="/24-25/events" title="Events" onOpenChange={setOpen} />
+                                <MobileBaseLink href="/" title="Rankings" onOpenChange={setOpen} />
+                                <NavigationMenuItem>
+                                    <NavigationMenuList id="navmenulist" className="ml-2 flex flex-col items-start gap-4">
+                                        {PATHS.map((path) => (
+                                            <MobileLink onOpenChange={setOpen} key={path.heading}>
+                                                <SubPathsSection subPath={path} />
+                                            </MobileLink>
+                                        ))}
+                                    </NavigationMenuList>
+                                </NavigationMenuItem>
+                            </NavigationMenuList>
+                        </NavigationMenu>
+                    </SheetContent>
+                </Sheet>
+            </div>
         </div>
     );
 }
