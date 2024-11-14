@@ -7,8 +7,8 @@ export async function POST(request: Request) {
         if (!email) {
             throw new EmailUploadError('No email provided');
         }
-        const result = await sql`INSERT INTO emails (email) VALUES (${email});`;
-        return NextResponse.json(`Email uploaded ${result}`, {status: 200});
+        await sql`INSERT INTO emails (email) VALUES (${email});`;
+        return NextResponse.json(`Email uploaded`, {status: 200});
     } catch (error) {
         if (error instanceof Error && 'code' in error && error.code === '23505') {
             return NextResponse.json('Email already exists', {status: 200});

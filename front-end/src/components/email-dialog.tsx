@@ -22,7 +22,7 @@ export function EmailUpdates() {
     async function onSubmit(data: z.infer<typeof FormSchema>) {
         console.log(data);
         try {
-            const response = await fetch('/api/upload-email?email=' + data.email, {
+            await fetch('/api/upload-email?email=' + data.email, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',
@@ -33,6 +33,7 @@ export function EmailUpdates() {
         } catch (error) {
             console.log(error);
             setError(true);
+            setUploaded(false);
         }
     }
     const form = useForm<z.infer<typeof FormSchema>>({
