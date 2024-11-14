@@ -6,7 +6,6 @@ import {FormControl, FormField, FormItem, FormLabel, FormMessage, Form} from './
 import {z} from 'zod';
 import {useForm} from 'react-hook-form';
 import {useState} from 'react';
-import {uploadEmail} from '~/api/uploadEmail';
 import {Alert, AlertTitle} from './ui/alert';
 import {AlertCircle} from 'lucide-react';
 import {ReportIssueButton} from './report-issue-button';
@@ -23,11 +22,16 @@ export function EmailUpdates() {
     async function onSubmit(data: z.infer<typeof FormSchema>) {
         console.log(data);
         try {
-            await uploadEmail(data.email);
+            const response = await fetch('/api/upload-email?email=' + data.email, {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            });
             setUploaded(true);
             setError(false);
         } catch (error) {
-            console.log('got an error');
+            console.log(error);
             setError(true);
         }
     }
