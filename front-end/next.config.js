@@ -20,6 +20,7 @@ const config = {
             },
         ];
     },
+    crossOrigin: 'use-credentials',
 };
 
 export default config;
