@@ -1,3 +1,4 @@
+import 'server-only';
 import type {University2} from '~/models/University2';
 import type {BoutRepository} from './BoutRepository';
 import {CSVBoutRepository} from './CSVBoutRepository';

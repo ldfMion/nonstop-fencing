@@ -74,7 +74,7 @@ export function EmailUpdates() {
                                     <FormItem>
                                         <FormLabel>Email</FormLabel>
                                         <FormControl>
-                                            <Input placeholder="Email" {...field} className="!rounded-custom" />
+                                            <Input placeholder="Email" {...field} className="!rounded-custom" type="email" />
                                         </FormControl>
                                         {/* <FormDescription>This is your public display name.</FormDescription> */}
                                         <FormMessage />

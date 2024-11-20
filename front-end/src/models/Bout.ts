@@ -1,7 +1,7 @@
 import type {Fencer} from './Fencer';
 import type {Weapon} from './Weapon';
 
-export interface Bout {
+export interface BoutModel {
     id: string;
     matchId: string;
     fencerAId?: string;
@@ -10,6 +10,9 @@ export interface Bout {
     weapon: Weapon;
     winnerId?: string;
     order: number;
+}
+
+export interface Bout extends BoutModel {
     includes(fencer: Fencer): boolean;
     isCompleted(): this is CompletedBout;
     hasScore(): this is ScoredBout;

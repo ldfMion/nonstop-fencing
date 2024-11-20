@@ -1,3 +1,4 @@
+import 'server-only';
 import {FencerService} from './FencerService';
 import {BoutService} from './boutService';
 import {RecordService} from './recordService';
